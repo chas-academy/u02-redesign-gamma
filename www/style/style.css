@@ -1,6 +1,141 @@
-
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
 }
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-links-nav {
+  background-color: #e0dbdb;
+}
+
+.top-links-nav .top-links-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: right;
+  line-height: 30px;
+}
+
+@media (min-width: 410px) {
+  .top-links-nav .top-links-ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.top-links-nav .top-links-ul .top-links-li {
+  margin-right: 2%;
+  display: inline-block;
+  min-height: 30px;
+}
+
+@media (min-width: 410px) {
+  .top-links-nav .top-links-ul .top-links-li {
+    padding-right: 15px;
+  }
+}
+
+.top-links-nav .top-links-ul .top-links-li a {
+  font-size: 1rem;
+}
+
+.main-menu-nav {
+  background: #ada8af;
+}
+
+.main-menu-nav .main-menu-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 410px) {
+  .main-menu-nav .main-menu-ul {
+    padding-bottom: 12px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li {
+  display: inline-block;
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
+  margin-top: 3%;
+  /*margin-left: 50px;*/
+}
+
+@media (min-width: 410px) {
+  .main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
+    max-width: 240px;
+    margin-left: 0;
+  }
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li-logo {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media (min-width: 410px) {
+  .main-menu-nav .main-menu-ul .main-menu-li-logo {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li-links {
+  display: inline-block;
+  -webkit-box-flex: 0.2;
+      -ms-flex-positive: 0.2;
+          flex-grow: 0.2;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  min-height: 45px;
+  max-width: 100px;
+  padding: 10px 1% 0 1%;
+  margin: 8px 8px 0 8px;
+  border: 3px solid black;
+  border-radius: 6%;
+}
+
+@media (min-width: 410px) {
+  .main-menu-nav .main-menu-ul .main-menu-li-links {
+    /*position: absolute;
+                left: 0;*/
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 15%;
+    margin-top: 16px;
+  }
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li-links a {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

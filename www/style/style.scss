@@ -1,0 +1,116 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+$primary-color: rgb(173, 168, 175);
+$secondary-color: rgb(224, 219, 219);
+
+@mixin mobile-large-res {
+    @media (min-width: 410px) {
+        @content;
+    }
+}
+
+.top-links-nav {
+    background-color: $secondary-color;
+
+    .top-links-ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: right;
+        line-height: 30px;
+
+        @include mobile-large-res {
+            justify-content: flex-end;
+            }
+
+        .top-links-li {
+            margin-right: 2%;
+            display: inline-block;
+            min-height: 30px;
+            
+            @include mobile-large-res {
+                padding-right: 15px;
+                }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.main-menu-nav {
+    background: $primary-color;
+
+    .main-menu-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+
+        @include mobile-large-res {
+        padding-bottom: 12px;
+        justify-content: flex-end;
+        }
+
+        .main-menu-li {
+            display: inline-block;
+
+            .main-menu-img {
+                margin-top: 3%;
+                /*margin-left: 50px;*/
+
+                @include mobile-large-res {
+                    max-width: 240px;
+                    margin-left: 0;
+                }
+                
+            }
+        }
+
+        .main-menu-li-logo {
+            margin-right: 5px;
+            margin-left: 5px;
+
+            @include mobile-large-res {
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .main-menu-li-links {
+            display: inline-block;
+            flex-grow: 0.2;
+            text-align: center;
+            align-self: center;
+            min-height: 45px;
+            max-width: 100px;
+            padding: 10px 1% 0 1%;
+            margin: 8px 8px 0 8px;
+            border: 3px solid black;
+            border-radius: 6%;
+            @include mobile-large-res {
+                /*position: absolute;
+                left: 0;*/
+                flex-grow: 0;
+                width: 15%;
+                margin-top: 16px;
+            }
+           
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+}
