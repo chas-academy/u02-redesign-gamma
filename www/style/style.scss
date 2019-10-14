@@ -112,8 +112,6 @@ $secondary-color: rgb(224, 219, 219);
     }
 }
 
-// menu logic
-
 // Search
 
 #nav-search .main-menu {
@@ -152,9 +150,12 @@ $secondary-color: rgb(224, 219, 219);
         /*margin-top: 10px;*/
         top: 0px;
         left: 280px;
-        color: rgb(126, 51, 51);
+        color: rgb(175, 25, 25);
         font-weight: bold;
         font-size: 18px;
+        background: grey;
+        padding: 8px;
+        border-radius: 4px;
     }
 }
 

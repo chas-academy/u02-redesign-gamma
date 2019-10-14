@@ -184,9 +184,12 @@
   /*margin-top: 10px;*/
   top: 0px;
   left: 280px;
-  color: #7e3333;
+  color: #af1919;
   font-weight: bold;
   font-size: 18px;
+  background: grey;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 #nav-menu .main-menu-2 {
