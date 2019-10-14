@@ -128,7 +128,7 @@
 
 #user-search {
   line-height: 36px;
-  font-size: 16px;
+  font-size: 22px;
   color: #070707;
   position: relative;
   left: 5%;
@@ -150,11 +150,8 @@
   left: 5%;
   top: 200px;
   color: #af1919;
-  font-weight: bold;
-  font-size: 18px;
-  background: #111111;
-  padding: 8px;
-  border-radius: 4px;
+  font-size: 22px;
+  padding: 10px 10px;
   z-index: 999;
 }
 
@@ -182,9 +179,7 @@
   right: 2%;
   top: 0%;
   color: #e04848;
-  background: #535252;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
   z-index: 799;
 }
 
@@ -198,9 +193,9 @@
 
 #nav-menu .main-menu-2 li a {
   text-decoration: none;
-  color: white;
+  color: #4b4949;
   font-size: 24px;
-  background: #535252;
+  background: #f1ecec;
   position: relative;
   display: block;
 }

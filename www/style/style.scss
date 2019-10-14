@@ -80,7 +80,6 @@ $secondary-color: rgb(231, 227, 227);
         }
     }
 }
-
 .burger-menu-image {
     height: 45px;
 }
@@ -113,7 +112,7 @@ $secondary-color: rgb(231, 227, 227);
 
 #user-search {
     line-height: 36px;
-    font-size: 16px;
+    font-size: 22px;
     color: rgb(7, 7, 7);
     position: relative;
     left: 5%;
@@ -139,11 +138,9 @@ $secondary-color: rgb(231, 227, 227);
         left: 5%;
         top: 200px;
         color: rgb(175, 25, 25);
-        font-weight: bold;
-        font-size: 18px;
-        background: rgb(17, 17, 17);
-        padding: 8px;
-        border-radius: 4px;
+        //font-weight: bold;
+        font-size: 22px;
+        padding: 10px 10px;
         z-index: 999;
     }
 }
@@ -182,9 +179,9 @@ $secondary-color: rgb(231, 227, 227);
             right: 2%;
             top: 0%;
             color: rgb(224, 72, 72);
-            background: rgb(83, 82, 82);
-            font-size: 18px;
-            font-weight: bold;
+            //background: rgb(83, 82, 82);
+            font-size: 22px;
+            //font-weight: bold;
             z-index: 799;
         }
 
@@ -197,9 +194,9 @@ $secondary-color: rgb(231, 227, 227);
 
         a {
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: rgb(75, 73, 73);
             font-size: 24px;
-            background: rgb(83, 82, 82);
+            background: rgb(241, 236, 236);
             position: relative;
             display: block;
         }   
