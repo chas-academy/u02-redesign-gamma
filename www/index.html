@@ -10,26 +10,17 @@
 </head>
 
 <body>
-    <nav class="top-links-nav">
-        <ul class="top-links-ul">
-            <li class="top-links-li"><a href="#">In English</a></li>
-            <li class="top-links-li"><a href="#">Lättläst</a></li>
-            <li class="top-links-li"><a href="#">Anpassa</a></li>
-            <li class="top-links-li"><a href="#">Mina sidor</a></li>
-        </ul>
-    </nav>
-
-    <nav class="main-menu-nav">
+     <nav class="main-menu-nav">
         <ul class="main-menu-ul">
             <li class="main-menu-li main-menu-li-logo"> <img src="media/myh_logo.png" class="main-menu-img" alt="Myndigheten för yrkeshögskolan"></li>
             <li class="main-menu-li main-menu-li-links" id="search"><a href="#">
 
                     <nav id="nav-search">
-                        <label for="tm" id="toggle-menu">SÖK</label>
+                        <label for="tm" id="toggle-menu"> <img src="/www/media/search.png" class="search-menu-image" alt="">Sök</label>
                         <input type="checkbox" id="tm">
                         <ul class="main-menu">
-                            <input id="user-search" placeholder="Skriv vad du vill söka efter..." />
-                            <label for="tm" id="tm">Stäng</label>
+                            <div id="opacity-cover"><input id="user-search" placeholder="Skriv vad du vill söka efter..." />
+                            <label for="tm" id="tm" id="search-close">Stäng</label></div>
 
                         </ul>
 
@@ -40,12 +31,15 @@
                 
                     
                         <nav id="nav-menu">
-                                <label for="tm-2" id=toggle-menu-2>MENY</label>
+                                <label for="tm-2" id=toggle-menu-2><img src="media/burger.png" class="burger-menu-image" alt="Meny">Meny</label>
                                 <input type="checkbox" id="tm-2">
                                 <ul class="main-menu-2">
                                     <li><a href="#">Om oss</a> <label for="tm-2" id=label-inside-menu>Stäng</label></li>
                                     <li><a href="#">Verksamhetsområden</a></li>
+                                    <li><a href="#">Lagar, regler, tillsyn</a></li>
                                     <li><a href="#">Statistik</a></li>
+                                    <li><a href="#">Publikationer</a></li>
+                                    <li><a href="#">Nyhetsrum</a></li>
                                     <li><a href="#">Kontakt</a></li>
                                 </ul>
                         </nav>
@@ -54,6 +48,16 @@
             </li>
         </ul>
     </nav>
+
+    <nav class="top-links-nav">
+        <ul class="top-links-ul">
+            <li class="top-links-li"><a href="#">Aa</a></li>
+            <li class="top-links-li"><a href="#">Eye</a></li>
+            <li class="top-links-li"><a href="#">GB</a></li>
+            <li class="top-links-li"><a href="#">LK</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section>
             <header>Header</header>
