@@ -1,5 +1,7 @@
 
 // SCSS for the checkbox dropdown main menu
+$primary-color: rgb(255, 245, 245);
+$secondary-color: rgb(231, 227, 227);
 
 .top-links-nav {
     background-color: $secondary-color;
@@ -77,7 +79,7 @@
     display: none;
 }
 
-#tm:checked+.main-menu {
+#cb-hack:checked+.main-menu {
     display: block;
 }
 
@@ -113,7 +115,7 @@
 #search-close {}
 
 .main-menu {
-    #tm {
+    #cb-hack {
         position: relative;
         left: 5%;
         top: 200px;
@@ -130,7 +132,7 @@
     display: none;
 }
 
-#tm-2:checked+.main-menu-2 {
+#cb-hack-2:checked+.main-menu-2 {
     display: block;
 }
 
