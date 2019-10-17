@@ -1,17 +1,5 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-$primary-color: rgb(255, 245, 245);
-$secondary-color: rgb(231, 227, 227);
+// SCSS for the checkbox dropdown main menu
 
 .top-links-nav {
     background-color: $secondary-color;
@@ -69,6 +57,8 @@ $secondary-color: rgb(231, 227, 227);
 
             a {
                 font-weight: bold;
+                text-decoration: none;
+                color: black;
             }
         }
     }
