@@ -117,6 +117,7 @@ $secondary-color: rgb(231, 227, 227);
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 #search-close {}
@@ -152,7 +153,7 @@ $secondary-color: rgb(231, 227, 227);
 #nav-menu {
 
     .main-menu-2 {
-
+        z-index: 5;
         position: absolute;
         left: 0;
         top: 0;
