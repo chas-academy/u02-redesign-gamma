@@ -214,6 +214,8 @@ main>article {
   margin: 20px 20px;
   padding: 20px 20px;
   background-color: #BFE1F2;
+  min-width: 230px;
+  max-width: 320px;
 }
 
 main>article>h4 {
@@ -229,4 +231,11 @@ main>article>a {
   padding: 5px 5px;
   text-decoration: none;
   color: #101010;
+}
+
+.youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
 }
