@@ -25,7 +25,7 @@
 }
 
 .main-menu-nav {
-  background: #fff5f5;
+  background: white;
 }
 
 .main-menu-nav .main-menu-ul {
@@ -203,3 +203,30 @@
   font-size: 16px;
 }
 /*# sourceMappingURL=main-page.css.map */
+
+
+/***
+MAINPAGE
+***/
+
+main>article {
+  align-items: center;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  background-color: #BFE1F2;
+}
+
+main>article>h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  border-bottom: 1px solid #101010;
+}
+
+main>article>a {
+  display: block;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #101010;
+}

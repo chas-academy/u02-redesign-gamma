@@ -38,7 +38,7 @@ footer>section>h4 {
   margin-bottom: 10px;
 }
 
-footer a {
+footer>section>article>a {
   display: block;
   text-decoration: none;
   color: white;
