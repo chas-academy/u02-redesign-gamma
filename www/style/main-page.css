@@ -209,13 +209,15 @@
 MAINPAGE
 ***/
 
+
+
 main>article {
   align-items: center;
   margin: 20px 20px;
   padding: 20px 20px;
   background-color: #BFE1F2;
   min-width: 230px;
-  max-width: 320px;
+  max-width: 370px;
 }
 
 main>article>h4 {
@@ -246,4 +248,16 @@ main>article>a {
   align-items: center;
   background-color: white;
   padding: 20px 0px;
+}
+
+
+aside>article {
+  margin: 20px 20px;
+  padding: 30px 20px;
+  background-color: #101010;
+}
+
+.image-box {
+  background-color: white;
+  opacity: 0.6;
 }
