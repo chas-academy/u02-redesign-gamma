@@ -211,7 +211,7 @@ MAINPAGE
 
 
 
-main>article {
+main>section>article {
   align-items: center;
   margin: 20px 20px;
   padding: 20px 20px;
@@ -220,7 +220,7 @@ main>article {
   max-width: 370px;
 }
 
-main>article>h4 {
+main>section>article>h4 {
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -228,7 +228,7 @@ main>article>h4 {
   border-bottom: 1px solid #101010;
 }
 
-main>article>a {
+main>section>article>a {
   display: block;
   padding: 5px 5px;
   text-decoration: none;
@@ -237,6 +237,8 @@ main>article>a {
 
 
 .article-button {
+  display: inline-block;
+  align-self: center;
   margin-top: 20px;
   border: 2px solid black;
 }
