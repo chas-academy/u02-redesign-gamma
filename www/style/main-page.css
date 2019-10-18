@@ -233,9 +233,17 @@ main>article>a {
   color: #101010;
 }
 
+
+.article-button {
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
 .youtube {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px;
+  background-color: white;
+  padding: 20px 0px;
 }
