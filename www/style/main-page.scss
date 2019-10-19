@@ -1,11 +1,82 @@
 $primary-color: rgb(255, 245, 245);
 $secondary-color: rgb(231, 227, 227);
 
+$link-color: #08C;
+$hover-font-color: rgb(12, 90, 130);
+
+$font_roboto: "Roboto", sans-serif;
+
 @import "_header-nav.scss";
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+
+/// Clearfix ///
+.clearfix {
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+    }
+  }
+  .row {
+    &:after {
+      clear: both;
+    }
+  }
+
+body {
+    height: 100%;
+    line-height: 1.5;
+    font-size: 10px;
+    font-family: $font_roboto;
+  }
+
+  /// Font-sizes & font-weights, and default padding/margins ///
+h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+  }
+  
+  h5 {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    > strong {
+      font-size: 1.6rem;
+    }
+    > span {
+      font-size: 1.6rem;
+    }
+  }
+  
+  a {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: $link-color;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
