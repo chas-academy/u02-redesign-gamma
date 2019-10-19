@@ -1,12 +1,15 @@
 $primary-color: rgb(255, 245, 245);
 $secondary-color: rgb(231, 227, 227);
 
+@import url(
+  'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+
+@import "_header-nav.scss";
+
 $link-color: #08C;
 $hover-font-color: rgb(12, 90, 130);
 
 $font_roboto: "Roboto", sans-serif;
-
-@import "_header-nav.scss";
 
 * {
   padding: 0px;
@@ -77,6 +80,6 @@ h1 {
     font-weight: 900;
     color: $link-color;
     &:hover {
-      color: $link-hover-color;
+      color: $hover-font-color;
     }
   }
