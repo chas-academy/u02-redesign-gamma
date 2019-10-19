@@ -202,4 +202,70 @@
           box-sizing: border-box;
   font-size: 16px;
 }
+
+#contact-form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-form-div ::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div :-moz-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div ::-moz-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div :-ms-input-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div h1 {
+  font-size: 1.5rem;
+}
+
+#contact-form-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 350px;
+}
+
+#contact-form-div form input,
+#contact-form-div form textarea {
+  padding: 8px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+#contact-form-div form textarea {
+  min-height: 70px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#contact-form-div form #form-send-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  max-width: 50%;
+}
 /*# sourceMappingURL=main-page.css.map */
