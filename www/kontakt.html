@@ -62,18 +62,18 @@
         </ul>
     </nav>
 
-    <main>
-        <header>Header</header>
-        <section>Main-content</section>
+    <main id="kontakta-oss-main">
+        <header id="kontakta-oss-header"><h1>Kontakta oss</h1></header>
 <section>
     <div id="contact-form-div">
-        <h1>Kontaktformulär</h1>
+        
         <form>
-            <input type="text" name="field1" placeholder="Ditt namn" /> 
-            <input type="email" name="field2" placeholder="Din email" /> 
-            <input type="text" name="field3" placeholder="Vad gäller ditt ärende?" /> 
-            <textarea name="field3" placeholder="Meddelande"></textarea> 
-            <input id="form-send-btn" type="submit" value="Skicka" />
+            <label for="field1">Namn *</label> <input type="text" name="field1" /> 
+            <label for="field2">Email *</label> <input type="email" name="field2" /> 
+            <label for="field3">Telefonnummer</label> <input type="tel" name="field3" /> 
+            <label for="field4">Ämne *</label> <input type="text" name="field4" /> 
+            <label for="field5">Meddelande *</label> <textarea name="field5" ></textarea> 
+             <input id="form-send-btn" type="submit" value="Skicka" />
         </form>
 
 
