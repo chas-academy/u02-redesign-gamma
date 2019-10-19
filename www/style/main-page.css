@@ -276,4 +276,88 @@ a {
 a:hover {
   color: #0c5a82;
 }
+
+#kontakta-oss-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#kontakta-oss-header h1 {
+  font-size: 1.8rem;
+  padding-top: 8px;
+}
+
+#contact-form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-form-div ::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div :-moz-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div ::-moz-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div :-ms-input-placeholder {
+  font-style: italic;
+}
+
+#contact-form-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-right: 6px;
+}
+
+#contact-form-div form label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-left: 4px;
+}
+
+#contact-form-div form input,
+#contact-form-div form textarea {
+  padding: 8px;
+  margin: 4px 4px 8px 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#contact-form-div form textarea {
+  min-height: 75px;
+}
+
+#contact-form-div form #form-send-btn {
+  max-width: 80px;
+}
 /*# sourceMappingURL=main-page.css.map */
