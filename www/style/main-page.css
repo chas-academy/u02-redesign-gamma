@@ -205,19 +205,37 @@
 /*# sourceMappingURL=main-page.css.map */
 
 
+
+/***
+HEADER
+***/
+
+header {
+  height: 100px;
+  width: 100%;
+}
+
+header>img {
+  height: 100px;
+  width: 100%;
+}
+
+
 /***
 MAINPAGE
 ***/
 
-
+section + section {
+  margin-top: 50px ;
+}
 
 main>section>article {
   align-items: center;
   margin: 20px 20px;
   padding: 20px 20px;
-  background-color: #BFE1F2;
   min-width: 230px;
   max-width: 370px;
+  min-height: 280px;
 }
 
 main>section>article>h4 {
@@ -229,28 +247,29 @@ main>section>article>h4 {
 }
 
 main>section>article>a {
+  color: black;
   display: block;
   padding: 5px 5px;
   text-decoration: none;
-  color: #101010;
 }
 
 
 .article-button {
+  text-decoration: none;
   display: inline-block;
   align-self: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 5px 5px;
   border: 2px solid black;
 }
 
 .youtube {
-  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 
@@ -258,6 +277,11 @@ aside>article {
   margin: 20px 20px;
   padding: 30px 20px;
   background-color: #101010;
+}
+
+aside>article>h4>a {
+  color: black;
+  text-decoration: none;
 }
 
 .image-box {
@@ -273,15 +297,82 @@ aside>article {
 }
 
 .aktuellt>article {
+  background-color: #E3EDE8;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
 }
 
+.aktuellt>article>p>span {
+  color: darkgrey;
+  display: block;
+  margin: 10px 0px;
+}
+
 article>img {
+  height: 300px;
+  width: 330px;
   margin-bottom: 20px;
 }
 
-h3 {
-  margin: 0px 20px;
+.article-post-link {
+  align-self: flex-end;
+  font-weight: 900;
+  text-decoration: underline;
 }
+
+/***
+EFFECTS 'Aktuellt' title text
+***/
+
+section > h4 {
+  text-align: center;
+  width: 90%;
+  padding-bottom: 10px;
+  font-weight: 900;
+  border-bottom: 1px solid #101010;
+}
+
+
+/***
+COLOR CHANGES TO CONTAINERS
+***/
+
+.lightblue {
+  background-color: #E3EDE8;
+  color: #000000;
+}
+
+.black {
+  background-color: #000000;
+  color: white;
+}
+
+.black > a {
+  color: white;
+}
+
+.black>h4>a {
+  color: white;
+}
+
+.beige {
+  background-color: #FFFFC6;
+  color: #000000;
+}
+
+.lightpurple {
+  background-color: #E8E8E8;
+  color: #000000;
+}
+
+.yellow {
+  background-color: #FFFF00;
+  color: #000000;
+}
+
+.green {
+background-color: #368F5F;
+  color: #000000;
+}
+
