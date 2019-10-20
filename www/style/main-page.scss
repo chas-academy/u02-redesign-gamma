@@ -4,7 +4,8 @@ $primary-color: rgb(255, 245, 245); // nearly white
 $secondary-color: rgb(231, 227, 227); // very light grey
 
 // Background colors
-$standard-box-color: #c4c4c4; //light grey
+$white-box-color: #ffffff; //white
+$grey-box-color: #c4c4c4; //grey
 $dgrey-box-color: #2b2b2b; //dark grey
 $black-box-color: #000000; // black
 $lyellow-box-color: #ffffc6; // light yellow
@@ -14,10 +15,11 @@ $green-box-color: #368f5f; // green
 
 /// Font colors
 $white-text: #ffffff;
+$black-text: #000000;
 $on-image-link-color: #ffffff;
 
 $link-color: #08c;
-$hover-font-color: rgb(12, 90, 130);
+$hover-font-color: #000000;
 
 /// Font
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
@@ -55,6 +57,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: $font_roboto;
+  background-color: $primary-color;
 }
 
 /*** Font-sizes & font-weights, and default padding/margins ***/
@@ -101,7 +104,7 @@ a {
 /*** Styling pages ***/
 @mixin standard-container {
   padding: 16px;
-  background-color: $standard-box-color;
+  background-color: $white-box-color;
   margin: 20px;
 }
 
@@ -109,7 +112,12 @@ a {
   @include standard-container;
   p {
     font-size: 1.2rem;
+    font-weight: 500;
   }
+}
+
+.section {
+  @include standard-container;
 }
 
 .section-lblue {
@@ -157,6 +165,7 @@ a {
   align-items: center;
 }
 
+// Buttons
 .section-button {
   color: $white-text;
   z-index: 1;
@@ -185,6 +194,34 @@ a {
   }
 }
 
+.std-button {
+  margin-top: 20px; 
+  color: $black-text;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+  text-align: center;
+  background-color: transparent;
+  display: inline-block;
+  a {
+    text-decoration: none;
+    color: $black-text;
+  }
+  :hover {
+    text-decoration: none;
+    color: $black-text;
+  }
+  :active {
+    text-decoration: none;
+    color: $black-text;
+  }
+  :visited {
+    text-decoration: none;
+    color: $black-text;
+  }
+}
+
+// Dark effect on image
 .darken {
   position: relative;
 }
@@ -200,15 +237,19 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.darken-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+/*** Styling - Specific pages ***/
+
+/* Verksamhetsområden */
+#om-oss-image {
+  background-image: url("../media/om-oss/om-oss-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 400px;
 }
 
-/*** Styling - Specific pages ***/
 /* Verksamhetsområden */
-
 #yh-image {
   background-image: url("../media/verksamhetsomraden/yh-image.jpg");
   background-color: $black-box-color;
