@@ -501,14 +501,10 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*# sourceMappingURL=main-page.css.map */
-
-
 
 /***
 HEADER
 ***/
-
 header {
   position: relative;
   font-weight: 900;
@@ -531,10 +527,19 @@ header {
 
 .header-content {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   left: 20px;
   top: 50%;
   color: white;
@@ -546,20 +551,21 @@ header {
   text-decoration: none;
   padding: 5px 5px;
   margin: 10px 0px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
-
 
 /***
 MAINPAGE
 ***/
-
 section + section {
-  margin-top: 50px ;
+  margin-top: 50px;
 }
 
-main>section>article {
-  align-items: center;
+main section article {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px 20px;
   padding: 20px 20px;
   min-width: 230px;
@@ -567,7 +573,7 @@ main>section>article {
   min-height: 280px;
 }
 
-main>section>article>h4 {
+main section article h4 {
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -575,18 +581,19 @@ main>section>article>h4 {
   border-bottom: 1px solid #101010;
 }
 
-main>section>article>a {
+main section article a {
   color: black;
   display: block;
   padding: 5px 5px;
   text-decoration: none;
 }
 
-
 .article-button {
   text-decoration: none;
   display: inline-block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 5px 5px;
@@ -594,22 +601,27 @@ main>section>article>a {
 }
 
 .youtube {
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   padding: 10px 0px;
 }
 
-
-
-aside>article {
+aside article {
   margin: 20px 20px;
   padding: 30px 20px;
   background-color: #101010;
 }
 
-aside>article>h4>a {
+aside article h4 a {
   color: black;
   text-decoration: none;
 }
@@ -620,33 +632,50 @@ aside>article>h4>a {
 }
 
 .aktuellt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
-.aktuellt>article {
+.aktuellt article {
   background-color: #E3EDE8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
-.aktuellt>article>p>span {
+.aktuellt article p span {
   color: darkgrey;
   display: block;
   margin: 10px 0px;
 }
 
-article>img {
+article img {
   height: 300px;
   width: 330px;
   margin-bottom: 20px;
 }
 
 .article-post-link {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -654,8 +683,7 @@ article>img {
 /***
 EFFECTS 'Aktuellt' title text
 ***/
-
-section > h4 {
+section h4 {
   text-align: center;
   width: 90%;
   padding-bottom: 10px;
@@ -663,11 +691,9 @@ section > h4 {
   border-bottom: 1px solid #101010;
 }
 
-
 /***
 COLOR CHANGES TO CONTAINERS
 ***/
-
 .lightblue {
   background-color: #E3EDE8;
   color: #000000;
@@ -678,11 +704,11 @@ COLOR CHANGES TO CONTAINERS
   color: white;
 }
 
-.black > a {
+.black a {
   color: white;
 }
 
-.black>h4>a {
+.black h4 a {
   color: white;
 }
 
@@ -702,7 +728,7 @@ COLOR CHANGES TO CONTAINERS
 }
 
 .green {
-background-color: #368F5F;
+  background-color: #368F5F;
   color: #000000;
 }
-
+/*# sourceMappingURL=main-page.css.map */
