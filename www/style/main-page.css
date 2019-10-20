@@ -240,6 +240,7 @@ main>section>article>a {
   display: inline-block;
   align-self: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   border: 2px solid black;
 }
 
@@ -262,4 +263,25 @@ aside>article {
 .image-box {
   background-color: white;
   opacity: 0.6;
+}
+
+.aktuellt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.aktuellt>article {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+article>img {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0px 20px;
 }
