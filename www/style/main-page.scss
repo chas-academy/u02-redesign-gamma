@@ -143,6 +143,7 @@ a {
 
 .section-grey {
   @include standard-container;
+  background-color: $grey-box-color;
 }
 
 .section-dgrey {
