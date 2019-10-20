@@ -456,6 +456,18 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #08c;
+}
+
+a:hover {
+  color: #0c5a82;
+}
+
 #kontakta-oss-main {
   display: -webkit-box;
   display: -ms-flexbox;
