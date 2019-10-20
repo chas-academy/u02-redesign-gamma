@@ -83,21 +83,21 @@ h1 {
       color: $hover-font-color;
     }
   }
+
+///   Kontakta oss
 #kontakta-oss-main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-#kontakta-oss-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  #kontakta-oss-header {
     h1 {
-        font-size: 1.8rem;
-        padding-top: 8px;
+      font-size: 1.8rem;
+      padding-top: 8px;
     }
-    
+  }
 }
 
-
-//Kontakta oss
 #contact-section-1 {
   p {
     font-size: 1.3rem;
@@ -111,61 +111,48 @@ h1 {
 
 
 #contact-form-div {
-    // Make placeholder text italic while user input remain normal 
-    ::-webkit-input-placeholder {
-        font-style: italic;
-     }
-     :-moz-placeholder {
-        font-style: italic;  
-     }
-     ::-moz-placeholder {
-        font-style: italic;  
-     }
-     :-ms-input-placeholder {  
-        font-style: italic; 
-     }
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+
+  form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: $secondary-color;
+    align-items: flex-start;
+    width: 90%;
+    align-content: flex-end;
+    margin-right: 6px;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
-        align-content: flex-end;
-        margin-right: 6px;
-       
-        label {
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding-left: 4px;
-        }
-
-        #top-label {
-          padding-top: 16px;
-        }
-
-        input, 
-        textarea {
-            padding: 8px;
-            margin: 4px 4px 8px 4px;
-            border-radius: 4px;
-            width: 100%;
-            font-size: 1.5rem;
-        }
-        
-        textarea {
-            min-height: 105px;
-        }
-
-        #form-send-btn {
-            max-width: 100px;
-        }
+    label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding-left: 4px;
     }
+
+    #top-label {
+      padding-top: 16px;
+    }
+
+    input,
+    textarea {
+      padding: 8px;
+      margin: 4px 4px 8px 4px;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+    textarea {
+      min-height: 105px;
+    }
+
+    #form-send-btn {
+      max-width: 100px;
+    }
+  }
 }
+
 #contact-section-container {
   display: flex;
   flex-direction: column;
@@ -174,6 +161,7 @@ h1 {
   section:nth-of-type(odd) {
     background-color: $primary-color;
   }
+
   section:nth-of-type(even) {
     background-color: $secondary-color;
   }
@@ -194,9 +182,7 @@ h1 {
     padding-left: 30px;
   }
 
-  #contact-section-2 {
-
-  }
+  #contact-section-2 {}
 
   a {
     font-size: 1.1rem;
@@ -207,17 +193,16 @@ h1 {
     overflow: hidden;
     margin-bottom: 25px;
     padding-top: 56.25%;
-  
 
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 2%;
-    width: 96%;
-    height: 100%;
-    border: 0;
-    margin-top: 20px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      width: 96%;
+      height: 100%;
+      border: 0;
+      margin-top: 20px;
+    }
   }
-}
-
 }

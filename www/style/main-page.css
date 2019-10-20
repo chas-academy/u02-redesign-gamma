@@ -288,7 +288,7 @@ a:hover {
   text-align: center;
 }
 
-#kontakta-oss-header h1 {
+#kontakta-oss-main #kontakta-oss-header h1 {
   font-size: 1.8rem;
   padding-top: 8px;
 }
@@ -314,22 +314,6 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e7e3e3;
-}
-
-#contact-form-div ::-webkit-input-placeholder {
-  font-style: italic;
-}
-
-#contact-form-div :-moz-placeholder {
-  font-style: italic;
-}
-
-#contact-form-div ::-moz-placeholder {
-  font-style: italic;
-}
-
-#contact-form-div :-ms-input-placeholder {
-  font-style: italic;
 }
 
 #contact-form-div form {
