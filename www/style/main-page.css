@@ -293,6 +293,15 @@ a:hover {
   padding-top: 8px;
 }
 
+#contact-section-1 p {
+  font-size: 1.3rem;
+}
+
+#contact-section-1 #contact-img {
+  width: 90%;
+  padding: 10px 0;
+}
+
 #contact-form-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +313,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #e7e3e3;
 }
 
 #contact-form-div ::-webkit-input-placeholder {
@@ -345,19 +355,80 @@ a:hover {
   padding-left: 4px;
 }
 
+#contact-form-div form #top-label {
+  padding-top: 16px;
+}
+
 #contact-form-div form input,
 #contact-form-div form textarea {
   padding: 8px;
   margin: 4px 4px 8px 4px;
   border-radius: 4px;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 #contact-form-div form textarea {
-  min-height: 75px;
+  min-height: 105px;
 }
 
 #contact-form-div form #form-send-btn {
-  max-width: 80px;
+  max-width: 100px;
+}
+
+#contact-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+#contact-section-container section:nth-of-type(odd) {
+  background-color: #fff5f5;
+}
+
+#contact-section-container section:nth-of-type(even) {
+  background-color: #e7e3e3;
+}
+
+#contact-section-container #large-p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 6px;
+  line-height: 1;
+  padding-left: 30px;
+}
+
+#contact-section-container #small-p {
+  font-size: 1.1rem;
+  padding: 0 8px 0 30px;
+  margin: 0 0 4px 0;
+  padding-left: 30px;
+}
+
+#contact-section-container a {
+  font-size: 1.1rem;
+}
+
+#contact-section-container #section-map {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 25px;
+  padding-top: 56.25%;
+}
+
+#contact-section-container #section-map iframe {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 96%;
+  height: 100%;
+  border: 0;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main-page.css.map */
