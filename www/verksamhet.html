@@ -1,106 +1,193 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/main-page.css">
-    <link rel="stylesheet" href="style/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/main-page.css" />
+    <link rel="stylesheet" href="style/footer.css" />
     <title>Myndigheten för yrkeshögskolan</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="main-menu-nav">
-        <ul class="main-menu-ul">
-            <li class="main-menu-li main-menu-li-logo"> <img src="media/myh_logo.png" class="main-menu-img"
-                    alt="Myndigheten för yrkeshögskolan"></li>
-            <li class="main-menu-li main-menu-li-links" id="search"><a href="#">
+      <ul class="main-menu-ul">
+        <li class="main-menu-li main-menu-li-logo">
+          <img
+            src="media/myh_logo.png"
+            class="main-menu-img"
+            alt="Myndigheten för yrkeshögskolan"
+          />
+        </li>
 
-                    <nav id="nav-search">
-                        <label for="cb-hack" id="toggle-menu"> <img src="media/search.png" class="search-menu-image"
-                                alt="">Sök</label>
-                        <input type="checkbox" id="cb-hack">
-                        <ul class="main-menu">
-                            <div id="opacity-cover"><input id="user-search"
-                                    placeholder="Skriv vad du vill söka efter..." />
-                                <label for="cb-hack" id="cb-hack">Stäng</label></div>
-                        </ul>
-                    </nav>
-                </a></li>
+        <li class="main-menu-li main-menu-li-links" id="search">
+          <a href="#">
+            <nav id="nav-search">
+              <label for="cb-hack" id="toggle-menu">
+                <img
+                  src="media/search.png"
+                  class="search-menu-image"
+                  alt=""
+                />Sök</label
+              >
+              <input type="checkbox" id="cb-hack" />
+              <ul class="main-menu">
+                <div id="opacity-cover">
+                  <input
+                    id="user-search"
+                    placeholder="Skriv vad du vill söka efter..."
+                  />
+                  <label for="cb-hack" id="cb-hack">Stäng</label>
+                </div>
+              </ul>
+            </nav>
+          </a>
+        </li>
 
-            <li class="main-menu-li main-menu-li-links">
-                <nav id="nav-menu">
-                    <label for="cb-hack-2" id=toggle-menu-2><img src="media/burger.png" class="burger-menu-image"
-                            alt="Meny">Meny</label>
-                    <input type="checkbox" id="cb-hack-2">
-                    <ul class="main-menu-2">
-                        <li><a href="index.html">Start</a> <label for="cb-hack-2" id=label-inside-menu>Stäng</label>
-                        </li>
-                        <li><a href="om_oss.html">Om oss</a></li>
-                        <li><a href="verksamhet.html">Verksamhetsområden</a></li>
-                        <li><a href="#">Lagar, regler, tillsyn</a></li>
-                        <li><a href="#">Statistik</a></li>
-                        <li><a href="#">Publikationer</a></li>
-                        <li><a href="#">Nyhetsrum</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-
-
-            </li>
-        </ul>
+        <li class="main-menu-li main-menu-li-links">
+          <nav id="nav-menu">
+            <label for="cb-hack-2" id="toggle-menu-2"
+              ><img
+                src="media/burger.png"
+                class="burger-menu-image"
+                alt="Meny"
+              />Meny</label
+            >
+            <input type="checkbox" id="cb-hack-2" />
+            <ul class="main-menu-2">
+              <li>
+                <a href="index.html">Start</a>
+                <label for="cb-hack-2" id="label-inside-menu">Stäng</label>
+              </li>
+              <li><a href="om_oss.html">Om oss</a></li>
+              <li><a href="verksamhet.html">Verksamhetsområden</a></li>
+              <li><a href="#">Lagar, regler, tillsyn</a></li>
+              <li><a href="#">Statistik</a></li>
+              <li><a href="#">Publikationer</a></li>
+              <li><a href="#">Nyhetsrum</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
     </nav>
 
     <nav class="top-links-nav">
-        <ul class="top-links-ul">
-            <li class="top-links-li"><a href="#">Aa</a></li>
-            <li class="top-links-li"><a href="#">Eye</a></li>
-            <li class="top-links-li"><a href="#">GB</a></li>
-            <li class="top-links-li"><a href="#">LK</a></li>
-        </ul>
+      <ul class="top-links-ul">
+        <li class="top-links-li"><a href="#">Aa</a></li>
+        <li class="top-links-li"><a href="#">Eye</a></li>
+        <li class="top-links-li"><a href="#">GB</a></li>
+        <li class="top-links-li"><a href="#">LK</a></li>
+      </ul>
     </nav>
 
-    <main>
-        <header>Header</header>
-        <section>Main-content</section>
+    <main class="page">
+      <header class="head-section">
+        <h1>Verksamhetsområden</h1>
+        <p>
+          Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor
+          som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för
+          ytterligare frågor inom utbildningsområdet.
+        </p>
+      </header>
+
+      <section class="section-yellow">
+        <section id="yh-image" class="section-image darken">
+            <a href="#" class="section-button"><h2>Yrkeshögskolan</h2></a>
+        </section>
+        <p>
+          Utbildningar som svarar mot arbetslivets behov av kvalificerad
+          yrkeskompetens och som drivs i nära samverkan med företag och andra
+          arbetsgivare.
+        </p>
+      </section>
+
+      <section class="section-green">
+        <section id="konst-image" class="section-image darken">
+          <a href="#" class="section-button"><h2>Konst- och kulturutbildningar</h2></a>
+        </section>
+        <p>
+          Utbildningar som är högskoleförberedande, yrkesförberedande eller inom
+          kulturarvsområdet och drivs av privata utbildningsanordnare.
+        </p>
+      </section>
+
+      <section class="section-grey">
+        <section id="tolk-image" class="section-image darken">
+          <a href="#" class="section-button"><h2>Tolkutbildningar</h2></a>
+        </section>
+        <p>
+          Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt
+          skrivtolk som drivs av folkhögskolor och studieförbund.
+        </p>
+      </section>
+
+      <section class="section-dgrey">
+        <section id="tillsyn-image" class="section-image darken">
+          <a href="#" class="section-button"><h2>Utbildningar med endast tillsyn</h2></a>
+        </section>
+        <p>
+          Eftergymnasiala utbildningar inom olika områden som bedrivs av
+          fristående skolor. Utbildningarnas statliga stöd omfattas endast av
+          tillsyn.
+        </p>
+      </section>
+
+      <section class="section-lblue">
+        <section id="seqf-image" class="section-image darken">
+          <a href="#" class="section-button"><h2>SeQF</h2></a>
+        </section>
+        <p>
+          Sveriges referensram för kvalifikationer (SeQF) ska synliggöra allt
+          lärande för att öka matchningen på arbetsmarknaden.
+        </p>
+      </section>
+
+      <section class="section-grey">
+        <section id="validering-image" class="section-image darken">
+          <a href="#" class="section-button"><h2>Validering</h2></a>
+        </section>
+        <p>
+          Validering innebär att en persons kunskaper och kompetenser kartläggs
+          och bedöms på ett strukturerat sätt, för studier eller arbete, oavsett
+          hur, var eller när de förvärvats.
+        </p>
+      </section>
     </main>
+
     <footer>
-        <section>
-            <article>
-                <h4>Kontakta oss</h4>
-                E-post: info@myh.se eller registrator@myh.se
-                Telefon: 0102090100 (vardagar 8.00 - 17.00)
-                <a href="#">Fler kontaktuppgifter</a>
-            </article>
-            <article>
-                <h4>Om webbplatsen</h4>
-                <a href="#">Använda webbplatsen</a>
-                <a href="#">Om webbkakor (cookies)</a>
-                <a href="#">Webbkarta</a>
-            </article>
-            <article>
-                <h4>Våra övriga webbplatser</h4>
-                <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-                <a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-                <a href="https://www.blitolk.nu">www.blitolk.nu</a>
-                <a href="https://www.seqf.se">www.seqf.se</a>
-            </article>
-            <article>
-                Ansvarig utgivare
-                Thomas Persson, generaldirektör MYH.
-            </article>
-        </section>
-        <section class="bottom-footer">
-            <article>
-                Myndigheten för yrkeshögskolan
-                Box 145
-                721 05 Västerås
-            </article>
-        </section>
+      <section>
+        <article>
+          <h4>Kontakta oss</h4>
+          E-post: info@myh.se eller registrator@myh.se Telefon: 0102090100
+          (vardagar 8.00 - 17.00)
+          <a href="#">Fler kontaktuppgifter</a>
+        </article>
+        <article>
+          <h4>Om webbplatsen</h4>
+          <a href="#">Använda webbplatsen</a>
+          <a href="#">Om webbkakor (cookies)</a>
+          <a href="#">Webbkarta</a>
+        </article>
+        <article>
+          <h4>Våra övriga webbplatser</h4>
+          <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+          <a href="https://www.konstkulturutbildning.se"
+            >www.konstkulturutbildning.se</a
+          >
+          <a href="https://www.blitolk.nu">www.blitolk.nu</a>
+          <a href="https://www.seqf.se">www.seqf.se</a>
+        </article>
+        <article>
+          Ansvarig utgivare Thomas Persson, generaldirektör MYH.
+        </article>
+      </section>
+      <section class="bottom-footer">
+        <article>
+          Myndigheten för yrkeshögskolan Box 145 721 05 Västerås
+        </article>
+      </section>
     </footer>
-
-</body>
-
+  </body>
 </html>
