@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/background-dress.jpg);
+}
+
+.pdf-section {
+    margin-bottom: 0px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+
+
+/**
+HEADER/NAVBAR
+**/
+
+
+header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: rgba(16,16,16,0.1);
+    font-family: 'Mansalva', cursive;
+    color: white;
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+nav {
+    background: rgba(16,16,16,0);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Questrial', sans-serif;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background: rgba(16,16,16,0);
+}
+
+
+li, a {
+    color: white;
+    font-size:  50px;
+    text-decoration: none;
+}
+
+span {
+    color: orangered;
+}
+
+
+
+/** 
+MAIN CONTENT CONTAINER
+**/
+
+p { 
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+main {
+    position: relative;
+    top: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+section {
+    height: 400px;
+}
+
+section + section {
+    margin-top: 150px;
+}
+
+.section-header-text {
+    flex-flow: column nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    background-image: url(../img/headet.jpg);
+    background-size: auto;
+    background-repeat: space;
+    background-position: center;
+}
+
+.section-us {
+    overflow: scroll;
+
+}
+
+
+#section-video {
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.style-us {
+    padding: 10px 60px;
+    background: #595959;
+    color: white;
+}
+
+.aside-pic {
+    display: inline-block;
+    background-image: url(../img/sec-pic-1.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    height: 400px;
+}
+
+#port {
+    margin-top: 0px;
+}
+
+h2 {
+    color: white;
+}
+
+.portpic {
+    background-image: url(../img/port1.jpg);
+}
+
+embed {
+    width: 400px;
+    height: 300px;
+}
+
+
+.aside-right {
+    right: 0px;
+}
+
+.content-text {
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.width100 {
+    width: 100%;
+}
+
+
+footer {
+    font-size: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    height: 100px;
+    background-color: orangered;
+    
+}
+
+h6 {
+    color: white;
+    font-size: 20px;
+}
+
+h3 {
+    color: #595959;
+}
+
+.style-pdf {
+    background-color: #e6e6e6;
+}
+
+/**
+PRICING TABLE
+**/
+
+table {
+    height: 100%;
+    width: 60%;
+    border-radius: 20px;
+    background: linear-gradient(orangered, orange);
+    display: flex;
+    color: #e6e6e6;
+    text-align: center;
+    font-size: 12px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+tbody {
+    width: 100%;
+    text-align: center;
+}
+
+tr, th, td {
+    padding:  2px 5px;
+    font-size: 1.5em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/**
+MEDIA QUERY FOR RESPONSIVE DESIGN, CELLPHONE/TABLET
+**/
+
+
+@media only screen and (max-width: 700px) {
+
+
+    
+    embed {
+    width: 200px;
+    height: 100px;
+    }
+
+    h2 {
+        font-size: 0.5em;
+        flex-flow: column wrap;
+    }
+
+    h6 {
+        font-size: 0.2em;
+    }
+
+    
+    tr, th, td {
+        font-size: 1.4em;
+    }
+
+
+    .content-text {
+        font-size: 1em;
+        flex-flow: column wrap;
+        overflow: scroll;
+
+    }
+
+    
+    header {
+        flex-flow: column wrap;
+        min-height: 100px;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5em;
+    }
+    
+    p {
+        overflow-wrap: break-word;
+        flex-flow: column wrap;
+    }
+
+
+    main {
+        top: 130px;
+    }
+
+    a {
+        font-size: 1em
+    }
+    
+    li {
+        font-size: 0.5em;
+    }
+    
+}
