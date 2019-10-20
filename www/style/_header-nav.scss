@@ -23,6 +23,7 @@
 }
 
 .main-menu-nav {
+    overflow: hidden;
     background: $primary-color;
 
     .main-menu-ul {
@@ -36,11 +37,12 @@
 
             .main-menu-img {
                 margin-top: 12px;
-                max-width: 240px;
+                max-width: 250px;
             }
         }
 
         .main-menu-li-logo {
+            padding-top: 4px;
             margin-right: 5px;
             margin-left: 5px;
             position: absolute;
@@ -86,15 +88,15 @@
 
 ::placeholder {
     color: rgb(7, 7, 7);
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 #user-search {
     line-height: 36px;
-    font-size: 22px;
+    font-size: 2rem;
     color: rgb(7, 7, 7);
     position: relative;
-    left: 5%;
+    left: 0%;
     top: 200px;
     z-index: 99;
 }
@@ -114,10 +116,10 @@
 .main-menu {
     #cb-hack {
         position: relative;
-        left: 5%;
+        left: 6px;
         top: 200px;
         color: rgb(175, 25, 25);
-        font-size: 22px;
+        font-size: 1.5rem;
         padding: 10px 10px;
         z-index: 999;
     }
@@ -137,8 +139,6 @@
     display: none;
 }
 
-#toggle-menu-2 {}
-
 #nav-menu {
 
     .main-menu-2 {
@@ -153,7 +153,7 @@
             right: 2%;
             top: 0%;
             color: rgb(224, 72, 72);
-            font-size: 22px;
+            font-size: 1.5rem;
             z-index: 799;
         }
 
@@ -167,17 +167,25 @@
             a {
                 text-decoration: none;
                 color: rgb(75, 73, 73);
-                font-size: 24px;
+                font-size: 1.5rem;
                 background: rgb(241, 236, 236);
                 position: relative;
                 display: block;
+                overflow: hidden;
             }
         }
     }
 }
 
-#nav-search {}
+#nav-search {
+    font-size: 1.1rem;
+}
 
 #nav-menu {
+    font-size: 1.1rem;
     font-weight: bold;
+}
+
+#toggle-menu-2 {
+   //font-size: 16px;
 }

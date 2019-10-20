@@ -1,11 +1,258 @@
-$primary-color: rgb(255, 245, 245);
-$secondary-color: rgb(231, 227, 227);
+/// Colours & fonts
+
+$primary-color: rgb(255, 245, 245); // nearly white
+$secondary-color: rgb(231, 227, 227); // very light grey
+
+// Background colors
+$standard-box-color: #c4c4c4; //light grey
+$dgrey-box-color: #2b2b2b; //dark grey
+$black-box-color: #000000; // black
+$lyellow-box-color: #ffffc6; // light yellow
+$yellow-box-color: #ffff00; // yellow
+$lblue-box-color: #bfe1f2; //light blue
+$green-box-color: #368f5f; // green
+
+/// Font colors
+$white-text: #ffffff;
+$on-image-link-color: #ffffff;
+
+$link-color: #08c;
+$hover-font-color: rgb(12, 90, 130);
+
+/// Font
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 
 @import "_header-nav.scss";
+$font_roboto: "Roboto", sans-serif;
 
+/*** Default styling ***/
+/// Root
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/// Clearfix
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+.row {
+  &:after {
+    clear: both;
+  }
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: $font_roboto;
+}
+
+/*** Font-sizes & font-weights, and default padding/margins ***/
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+  > strong {
+    font-size: 1rem;
+  }
+  > span {
+    font-size: 1rem;
+  }
+}
+
+a {
+  font-size: 1rem;
+  color: $link-color;
+  &:hover {
+    color: $hover-font-color;
+  }
+}
+
+/*** Styling pages ***/
+@mixin standard-container {
+  padding: 16px;
+  background-color: $standard-box-color;
+  margin: 20px;
+}
+
+.head-section {
+  @include standard-container;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.section-lblue {
+  @include standard-container;
+  background-color: $lblue-box-color;
+}
+
+.section-green {
+  @include standard-container;
+  background-color: $green-box-color;
+  color: $white-text;
+}
+
+.section-lyellow {
+  @include standard-container;
+  background-color: $lyellow-box-color;
+}
+
+.section-yellow {
+  @include standard-container;
+  background-color: $yellow-box-color;
+}
+
+.section-grey {
+  @include standard-container;
+}
+
+.section-dgrey {
+  @include standard-container;
+  background-color: $dgrey-box-color;
+  color: $white-text;
+}
+
+.section-black {
+  @include standard-container;
+  background-color: $black-box-color;
+  color: $white-text;
+}
+
+.section-image {
+  min-height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-button {
+  color: $white-text;
+  z-index: 1;
+  text-decoration: none;
+  h2 {
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: $white-text;
+  }
+  :hover {
+    text-decoration: none;
+    color: $white-text;
+  }
+  :active {
+    text-decoration: none;
+    color: $white-text;
+  }
+  :visited {
+    text-decoration: none;
+    color: $white-text;
+  }
+}
+
+.darken {
+  position: relative;
+}
+
+.darken:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.darken-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*** Styling - Specific pages ***/
+/* Verksamhetsområden */
+
+#yh-image {
+  background-image: url("../media/verksamhetsomraden/yh-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#konst-image {
+  background-image: url("../media/verksamhetsomraden/konst-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tolk-image {
+  background-image: url("../media/verksamhetsomraden/tolk-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tillsyn-image {
+  background-image: url("../media/verksamhetsomraden/tillsyn-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seqf-image {
+  background-image: url("../media/verksamhetsomraden/seqf-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#validering-image {
+  background-image: url("../media/verksamhetsomraden/validering-image.jpg");
+  background-color: $black-box-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

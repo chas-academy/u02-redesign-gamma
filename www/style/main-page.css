@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 .top-links-nav {
   background-color: #e7e3e3;
 }
@@ -25,7 +27,8 @@
 }
 
 .main-menu-nav {
-  background: white;
+  overflow: hidden;
+  background: #fff5f5;
 }
 
 .main-menu-nav .main-menu-ul {
@@ -49,10 +52,11 @@
 
 .main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
   margin-top: 12px;
-  max-width: 240px;
+  max-width: 250px;
 }
 
 .main-menu-nav .main-menu-ul .main-menu-li-logo {
+  padding-top: 4px;
   margin-right: 5px;
   margin-left: 5px;
   position: absolute;
@@ -97,30 +101,30 @@
 
 ::-webkit-input-placeholder {
   color: #070707;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 :-ms-input-placeholder {
   color: #070707;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 ::-ms-input-placeholder {
   color: #070707;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 ::placeholder {
   color: #070707;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 #user-search {
   line-height: 36px;
-  font-size: 22px;
+  font-size: 2rem;
   color: #070707;
   position: relative;
-  left: 5%;
+  left: 0%;
   top: 200px;
   z-index: 99;
 }
@@ -137,10 +141,10 @@
 
 .main-menu #cb-hack {
   position: relative;
-  left: 5%;
+  left: 6px;
   top: 200px;
   color: #af1919;
-  font-size: 22px;
+  font-size: 1.5rem;
   padding: 10px 10px;
   z-index: 999;
 }
@@ -170,7 +174,7 @@
   right: 2%;
   top: 0%;
   color: #e04848;
-  font-size: 22px;
+  font-size: 1.5rem;
   z-index: 799;
 }
 
@@ -185,22 +189,273 @@
 #nav-menu .main-menu-2 li a {
   text-decoration: none;
   color: #4b4949;
-  font-size: 24px;
+  font-size: 1.5rem;
   background: #f1ecec;
   position: relative;
   display: block;
+  overflow: hidden;
+}
+
+#nav-search {
+  font-size: 1.1rem;
 }
 
 #nav-menu {
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
+/*** Default styling ***/
 * {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*** Font-sizes & font-weights, and default padding/margins ***/
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+p > strong {
+  font-size: 1rem;
+}
+
+p > span {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  color: #08c;
+}
+
+a:hover {
+  color: #0c5a82;
+}
+
+/*** Styling pages ***/
+.head-section {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+}
+
+.head-section p {
+  font-size: 1.2rem;
+}
+
+.section-lblue {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #bfe1f2;
+}
+
+.section-green {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #368f5f;
+  color: #ffffff;
+}
+
+.section-lyellow {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #ffffc6;
+}
+
+.section-yellow {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #ffff00;
+}
+
+.section-grey {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+}
+
+.section-dgrey {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.section-black {
+  padding: 16px;
+  background-color: #c4c4c4;
+  margin: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.section-image {
+  min-height: 200px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-button {
+  color: #ffffff;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.section-button h2 {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.section-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-button :hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-button :active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-button :visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.darken {
+  position: relative;
+}
+
+.darken:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.darken-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*** Styling - Specific pages ***/
+/* Verksamhetsområden */
+#yh-image {
+  background-image: url("../media/verksamhetsomraden/yh-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#konst-image {
+  background-image: url("../media/verksamhetsomraden/konst-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tolk-image {
+  background-image: url("../media/verksamhetsomraden/tolk-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tillsyn-image {
+  background-image: url("../media/verksamhetsomraden/tillsyn-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seqf-image {
+  background-image: url("../media/verksamhetsomraden/seqf-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#validering-image {
+  background-image: url("../media/verksamhetsomraden/validering-image.jpg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main-page.css.map */
 
