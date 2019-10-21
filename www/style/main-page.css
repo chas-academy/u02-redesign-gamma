@@ -363,70 +363,40 @@ a:hover {
           align-items: center;
 }
 
+/* Buttons */
 .section-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #969696;
+  text-align: center;
   color: #ffffff;
   z-index: 1;
   text-decoration: none;
 }
 
-.section-button h2 {
-  padding: 10px;
-  text-decoration: none;
+.section-button:hover {
+  color: #ffffff;
   border: 1px solid white;
-  text-align: center;
 }
 
-.section-button a {
+.std-button > a {
   text-decoration: none;
-  color: #ffffff;
-}
-
-.section-button :hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.section-button :active {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.section-button :visited {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.std-button {
+  color: #000000;
   margin-top: 20px;
   color: #000000;
   padding: 10px;
   text-decoration: none;
-  border: 1px solid black;
   text-align: center;
   background-color: transparent;
   display: inline-block;
+  border: 1px solid #646464;
 }
 
-.std-button a {
-  text-decoration: none;
-  color: #000000;
+.std-button > a:hover {
+  border: 1px solid black;
 }
 
-.std-button :hover {
-  text-decoration: none;
-  color: #000000;
-}
-
-.std-button :active {
-  text-decoration: none;
-  color: #000000;
-}
-
-.std-button :visited {
-  text-decoration: none;
-  color: #000000;
-}
-
+/* Dark effect on image */
 .darken {
   position: relative;
 }
@@ -443,7 +413,7 @@ a:hover {
 }
 
 /*** Styling - Specific pages ***/
-/* Verksamhetsområden */
+/* Om oss */
 #om-oss-image {
   background-image: url("../media/om-oss/om-oss-image.jpg");
   background-color: #000000;
@@ -823,7 +793,7 @@ section + section {
 .aktuellt-article {
   margin: 20px 20px;
   padding: 10px 20px;
-  background-color: #E3EDE8;
+  background-color: #e3ede8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +844,7 @@ EFFECT FOR 'AKTUELLT' TITLE TEXT
 COLOR CHANGES TO CONTAINERS
 ***/
 .lightblue {
-  background-color: #E3EDE8;
+  background-color: #e3ede8;
   color: #000000;
 }
 
@@ -892,22 +862,22 @@ COLOR CHANGES TO CONTAINERS
 }
 
 .beige {
-  background-color: #FFFFC6;
+  background-color: #ffffc6;
   color: #000000;
 }
 
 .lightpurple {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   color: #000000;
 }
 
 .yellow {
-  background-color: #FFFF00;
+  background-color: #ffff00;
   color: #000000;
 }
 
 .green {
-  background-color: #368F5F;
+  background-color: #368f5f;
   color: #000000;
 }
 /*# sourceMappingURL=main-page.css.map */
