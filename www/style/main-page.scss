@@ -166,63 +166,40 @@ a {
   align-items: center;
 }
 
-// Buttons
-.section-button {
-  color: $white-text;
-  z-index: 1;
-  text-decoration: none;
-  h2 {
+/* Buttons */
+.section-button { 
     padding: 10px;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid rgb(150, 150, 150);
     text-align: center;
-  }
-  a {
-    text-decoration: none;
     color: $white-text;
-  }
-  :hover {
+    z-index: 1;
     text-decoration: none;
-    color: $white-text;
-  }
-  :active {
-    text-decoration: none;
-    color: $white-text;
-  }
-  :visited {
-    text-decoration: none;
-    color: $white-text;
+    &:hover {
+      color: $white-text;
+      border: 1px solid rgb(255, 255, 255);
   }
 }
 
 .std-button {
-  margin-top: 20px; 
-  color: $black-text;
-  padding: 10px;
-  text-decoration: none;
-  border: 1px solid black;
-  text-align: center;
-  background-color: transparent;
-  display: inline-block;
-  a {
+  > a {
     text-decoration: none;
     color: $black-text;
-  }
-  :hover {
-    text-decoration: none;
+    margin-top: 20px;
     color: $black-text;
-  }
-  :active {
+    padding: 10px;
     text-decoration: none;
-    color: $black-text;
-  }
-  :visited {
-    text-decoration: none;
-    color: $black-text;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    border: 1px solid rgb(100, 100, 100);
+    &:hover {
+      border: 1px solid rgb(0, 0, 0);
+    }
   }
 }
 
-// Dark effect on image
+/* Dark effect on image */
 .darken {
   position: relative;
 }
@@ -240,7 +217,7 @@ a {
 
 /*** Styling - Specific pages ***/
 
-/* Verksamhetsområden */
+/* Om oss */
 #om-oss-image {
   background-image: url("../media/om-oss/om-oss-image.jpg");
   background-color: $black-box-color;
@@ -332,7 +309,6 @@ a {
   }
 }
 
-
 #contact-form-div {
   display: flex;
   flex-direction: column;
@@ -409,18 +385,16 @@ a {
   }
 
   #contact-section-2 {
-
-  a {
-    font-size: 1.1rem;
+    a {
+      font-size: 1.1rem;
+    }
   }
-}
 
   #section-map {
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
     padding-top: 56.25%;
-
 
     iframe {
       position: absolute;
@@ -433,10 +407,6 @@ a {
     }
   }
 }
-
-
-
-
 
 /***
 HEADER
@@ -482,13 +452,12 @@ header {
   align-self: flex-start;
 }
 
-
 /***
 MAINPAGE: MAINLY PROPERTIES FOR CONTAINERS
 ***/
 
 section + section {
-  margin-top: 50px ;
+  margin-top: 50px;
 }
 
 .big-container {
@@ -569,7 +538,7 @@ section + section {
 .aktuellt-article {
   margin: 20px 20px;
   padding: 10px 20px;
-  background-color: #E3EDE8;
+  background-color: #e3ede8;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -588,7 +557,7 @@ section + section {
     height: 300px;
     width: 330px;
     margin-bottom: 20px;
-  } 
+  }
 }
 
 .article-post-link {
@@ -612,13 +581,12 @@ EFFECT FOR 'AKTUELLT' TITLE TEXT
   }
 }
 
-
 /***
 COLOR CHANGES TO CONTAINERS
 ***/
 
 .lightblue {
-  background-color: #E3EDE8;
+  background-color: #e3ede8;
   color: #000000;
 }
 
@@ -642,23 +610,21 @@ COLOR CHANGES TO CONTAINERS
 }
 
 .beige {
-  background-color: #FFFFC6;
+  background-color: #ffffc6;
   color: #000000;
 }
 
 .lightpurple {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   color: #000000;
 }
 
 .yellow {
-  background-color: #FFFF00;
+  background-color: #ffff00;
   color: #000000;
 }
 
 .green {
-background-color: #368F5F;
+  background-color: #368f5f;
   color: #000000;
 }
-
-
