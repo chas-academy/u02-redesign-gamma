@@ -104,7 +104,7 @@ a {
 /*** Styling pages ***/
 @mixin standard-container {
   padding: 16px;
-  background-color: $secondary-color
+  background-color: $secondary-color;
   margin: 20px;
 }
 
@@ -302,34 +302,21 @@ a {
 
 /* Kontakta oss */
 #kontakta-oss-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   #kontakta-oss-header {
+
     h1 {
-      font-size: 2.5rem;
-      padding-top: 8px;
+      
     }
   }
 }
 
 #contact-section-1 {
-  p {
-    font-size: 1.3rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    padding-top: 14px;
-    padding-bottom: 8px;
-    //align-self: flex-start;
-    //padding-left: 30px;
-  }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   #contact-img {
     width: 90%;
-    padding: 10px 0;
   }
 }
 
@@ -338,7 +325,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $secondary-color;
+  width: 100%;
 
   form {
     display: flex;
@@ -355,7 +342,6 @@ a {
     }
 
     #top-label {
-      //padding-top: 16px;
     }
 
     input,
@@ -373,9 +359,6 @@ a {
 
     #form-send-btn {
       max-width: 100px;
-      background-color: $primary-color;
-      box-shadow: 1px 1px;
-      border: 1px solid black;
     }
   }
 }
@@ -386,11 +369,11 @@ a {
   text-align: left;
 
   section:nth-of-type(odd) {
-    background-color: $primary-color;
+    //background-color: $primary-color;
   }
 
   section:nth-of-type(even) {
-    background-color: $secondary-color;
+   // background-color: $secondary-color;
   }
 
   #large-p {
@@ -403,10 +386,7 @@ a {
   }
 
   #small-p {
-    font-size: 1.1rem;
-    padding: 0 8px 0 30px;
-    margin: 0 0 4px 0;
-    padding-left: 30px;
+    
   }
 
   #contact-section-2 {
