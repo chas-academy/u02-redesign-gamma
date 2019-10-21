@@ -502,16 +502,7 @@ a:hover {
   background-size: cover;
 }
 
-a {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #08c;
-}
-
-a:hover {
-  color: #0c5a82;
-}
-
+/* Kontakta oss */
 #kontakta-oss-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,7 +627,7 @@ a:hover {
   padding-left: 30px;
 }
 
-#contact-section-container a {
+#contact-section-container #contact-section-2 a {
   font-size: 1.1rem;
 }
 

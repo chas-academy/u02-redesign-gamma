@@ -299,16 +299,8 @@ a {
   background-size: cover;
 }
   
-  a {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: $link-color;
-    &:hover {
-      color: $hover-font-color;
-    }
-  }
 
-///   Kontakta oss
+/* Kontakta oss */
 #kontakta-oss-main {
   display: flex;
   flex-direction: column;
@@ -417,11 +409,12 @@ a {
     padding-left: 30px;
   }
 
-  #contact-section-2 {}
+  #contact-section-2 {
 
   a {
     font-size: 1.1rem;
   }
+}
 
   #section-map {
     position: relative;
