@@ -599,8 +599,6 @@ a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
   padding: 16px;
   background-color: white;
   margin: 20px;
