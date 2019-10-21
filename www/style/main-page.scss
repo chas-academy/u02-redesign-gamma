@@ -468,15 +468,17 @@ section + section {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-
-}
-
-.aktuellt-article {
   p {
     span {
       color: darkgrey;
       display: block;
       margin: 10px 0px;
+    }
+  }
+}
+
+
+
 #contact-form-div {
   display: flex;
   flex-direction: column;
