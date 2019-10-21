@@ -1,7 +1,7 @@
 /// Colours & fonts
 
-$primary-color: rgb(255, 245, 245); // nearly white
-$secondary-color: rgb(231, 227, 227); // very light grey
+$primary-color: rgb(245, 245, 245); // nearly white
+$secondary-color: rgb(255, 255, 255); // very light grey
 
 // Background colors
 $white-box-color: #ffffff; //white
@@ -104,7 +104,7 @@ a {
 /*** Styling pages ***/
 @mixin standard-container {
   padding: 16px;
-  background-color: $white-box-color;
+  background-color: $secondary-color
   margin: 20px;
 }
 
@@ -247,7 +247,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 400px;
+  min-height: 400px;
 }
 
 /* Verksamhetsområden */
