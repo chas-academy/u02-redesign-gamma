@@ -474,6 +474,15 @@ a:hover {
 
 /* Kontakta oss */
 #kontakta-oss-main {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+#kontakta-oss-main #kontakta-oss-header h1 {
+  padding: 20px 20px 0 20px;
+}
+
+#contact-section-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,27 +490,51 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-}
-
-#kontakta-oss-main #kontakta-oss-header h1 {
-  font-size: 2.5rem;
-  padding-top: 8px;
-}
-
-#contact-section-1 p {
-  font-size: 1.3rem;
-}
-
-#contact-section-1 h2 {
-  font-size: 1.7rem;
-  padding-top: 14px;
-  padding-bottom: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: whitesmoke;
 }
 
 #contact-section-1 #contact-img {
-  width: 90%;
-  padding: 10px 0;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+#contact-section-2 {
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+#contact-section-3 {
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  background-color: #ffffc6;
+  margin-bottom: 0px;
+}
+
+#contact-section-4 {
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  background-color: #ffff00;
+  margin-bottom: 0px;
+}
+
+#contact-section-5 {
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  background-color: #c4c4c4;
 }
 
 #contact-form-div {
@@ -515,7 +548,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 16px;
   background-color: white;
+  margin: 20px;
+  padding: 0 8px 0 0;
+  margin-bottom: 0px;
+  background-color: #bfe1f2;
+  width: 100%;
 }
 
 #contact-form-div form {
@@ -529,10 +568,14 @@ a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 90%;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  margin-right: 6px;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  margin: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  background-color: #bfe1f2;
 }
 
 #contact-form-div form label {
@@ -556,10 +599,6 @@ a:hover {
 
 #contact-form-div form #form-send-btn {
   max-width: 100px;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 1px 1px;
-          box-shadow: 1px 1px;
-  border: 1px solid black;
 }
 
 #contact-section-container {
@@ -573,32 +612,12 @@ a:hover {
   text-align: left;
 }
 
-#contact-section-container section:nth-of-type(odd) {
-  background-color: whitesmoke;
-}
-
-#contact-section-container section:nth-of-type(even) {
-  background-color: white;
-}
-
 #contact-section-container #large-p {
   font-size: 1.6rem;
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: 6px;
   line-height: 1;
-  padding-left: 30px;
-}
-
-#contact-section-container #small-p {
-  font-size: 1.1rem;
-  padding: 0 8px 0 30px;
-  margin: 0 0 4px 0;
-  padding-left: 30px;
-}
-
-#contact-section-container #contact-section-2 a {
-  font-size: 1.1rem;
 }
 
 #contact-section-container #section-map {
