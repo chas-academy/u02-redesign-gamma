@@ -105,7 +105,10 @@ a {
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 .head-section {
@@ -218,6 +221,11 @@ a {
 /*** Styling - Specific pages ***/
 
 /* Om oss */
+#om-oss-main {
+  display: flex;
+  flex-direction: column;
+}
+
 #om-oss-image {
   background-image: url("../media/om-oss/om-oss-image.jpg");
   background-color: $black-box-color;
@@ -228,6 +236,11 @@ a {
 }
 
 /* Verksamhetsområden */
+#verksamhet-main {
+  display: flex;
+  flex-direction: column;
+}
+
 #yh-image {
   background-image: url("../media/verksamhetsomraden/yh-image.jpg");
   background-color: $black-box-color;
