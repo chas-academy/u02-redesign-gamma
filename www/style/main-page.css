@@ -290,6 +290,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.head-section:first-of-type {
+  margin-top: 0px;
+}
+
 .head-section p {
   font-size: 1.2rem;
   font-weight: 500;
@@ -305,6 +309,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section:first-of-type {
+  margin-top: 0px;
+}
+
 .section-lblue {
   padding: 16px;
   background-color: white;
@@ -314,6 +322,10 @@ a:hover {
 
 .section-lblue:last-of-type {
   margin-bottom: 20px;
+}
+
+.section-lblue:first-of-type {
+  margin-top: 0px;
 }
 
 .section-green {
@@ -328,6 +340,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section-green:first-of-type {
+  margin-top: 0px;
+}
+
 .section-lyellow {
   padding: 16px;
   background-color: white;
@@ -337,6 +353,10 @@ a:hover {
 
 .section-lyellow:last-of-type {
   margin-bottom: 20px;
+}
+
+.section-lyellow:first-of-type {
+  margin-top: 0px;
 }
 
 .section-yellow {
@@ -350,6 +370,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section-yellow:first-of-type {
+  margin-top: 0px;
+}
+
 .section-grey {
   padding: 16px;
   background-color: white;
@@ -359,6 +383,10 @@ a:hover {
 
 .section-grey:last-of-type {
   margin-bottom: 20px;
+}
+
+.section-grey:first-of-type {
+  margin-top: 0px;
 }
 
 .section-dgrey {
@@ -373,6 +401,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section-dgrey:first-of-type {
+  margin-top: 0px;
+}
+
 .section-black {
   padding: 16px;
   background-color: white;
@@ -383,6 +415,10 @@ a:hover {
 
 .section-black:last-of-type {
   margin-bottom: 20px;
+}
+
+.section-black:first-of-type {
+  margin-top: 0px;
 }
 
 .section-image {
@@ -551,11 +587,19 @@ a:hover {
           align-items: center;
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   padding: 0;
   margin-bottom: 0px;
   margin-top: 0px;
   background-color: whitesmoke;
+}
+
+#contact-section-1:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-section-1:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-section-1 #contact-img {
@@ -566,31 +610,63 @@ a:hover {
 #contact-section-2 {
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   margin-bottom: 0px;
+}
+
+#contact-section-2:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-section-2:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-section-3 {
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   background-color: #ffffc6;
   margin-bottom: 0px;
+}
+
+#contact-section-3:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-section-3:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-section-4 {
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   background-color: #ffff00;
   margin-bottom: 0px;
+}
+
+#contact-section-4:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-section-4:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-section-5 {
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   background-color: #c4c4c4;
+}
+
+#contact-section-5:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-section-5:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-form-div {
@@ -606,11 +682,19 @@ a:hover {
           align-items: center;
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   padding: 0 8px 0 0;
   margin-bottom: 0px;
   background-color: #bfe1f2;
   width: 100%;
+}
+
+#contact-form-div:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-form-div:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-form-div form {
@@ -627,11 +711,19 @@ a:hover {
   width: 100%;
   padding: 16px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   background-color: #bfe1f2;
+}
+
+#contact-form-div form:last-of-type {
+  margin-bottom: 20px;
+}
+
+#contact-form-div form:first-of-type {
+  margin-top: 0px;
 }
 
 #contact-form-div form label {
