@@ -331,7 +331,7 @@ header {
   justify-content: center;
   flex-flow: column nowrap;
   left: 20px;
-  top: 50%;
+  top: 20%;
   color: white;
 }
 
@@ -346,52 +346,50 @@ header {
 
 
 /***
-MAINPAGE
+MAINPAGE: MAINLY PROPERTIES FOR CONTAINERS
 ***/
 
 section + section {
   margin-top: 50px ;
 }
 
-main {
-  section {
-    article {
-      align-items: center;
-      margin: 20px 20px;
-      padding: 20px 20px;
-      min-width: 230px;
-      max-width: 370px;
-      min-height: 280px;
+.big-container {
+  align-items: center;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  min-width: 230px;
+  max-width: 370px;
+}
 
-    }
+
+.big-container {
+  h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid #101010;
   }
 }
 
-main {
-  section {
-    article {
-      h4 {
-        text-align: center;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        font-weight: 900;
-        border-bottom: 1px solid #101010;
-      }
-    }
+
+.big-container {
+  a {
+    color: black;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
   }
 }
 
-main {
-  section {
-    article {
-      a {
-        color: black;
-        display: block;
-        padding: 5px 5px;
-        text-decoration: none;
-      }
-    }
-  }
+.small-container {
+  align-items: center;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  min-width: 230px;
+  max-width: 370px;
+  min-height: 100px;
+  max-height: 200px;
 }
 
 .article-button {
@@ -408,27 +406,8 @@ main {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #fff5f5;
   padding: 10px 0px;
-}
-
-aside {
-  article {
-    margin: 20px 20px;
-    padding: 30px 20px;
-    background-color: #101010;
-  }
-}
-
-aside {
-  article {
-    h4 {
-      a {
-        color: black;
-        text-decoration: none;
-      }
-    }
-  }
 }
 
 .image-box {
@@ -443,29 +422,29 @@ aside {
   flex-flow: column nowrap;
 }
 
-.aktuellt {
-  article {
-    background-color: #E3EDE8;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-  }
+.aktuellt-article {
+  margin: 20px 20px;
+  padding: 10px 20px;
+  background-color: #E3EDE8;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+
 }
 
-.aktuellt {
-  article {
-    p {
-      span {
-        color: darkgrey;
-        display: block;
-        margin: 10px 0px;
-      }
+.aktuellt-article {
+  p {
+    span {
+      color: darkgrey;
+      display: block;
+      margin: 10px 0px;
     }
   }
 }
 
-article {
+.aktuellt-article {
   img {
+    align-self: center;
     height: 300px;
     width: 330px;
     margin-bottom: 20px;
@@ -473,6 +452,7 @@ article {
 }
 
 .article-post-link {
+  color: black;
   align-self: flex-end;
   font-weight: 900;
   text-decoration: underline;
