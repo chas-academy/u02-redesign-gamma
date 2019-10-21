@@ -563,9 +563,16 @@ section + section {
 }
 
 .big-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 20px 20px;
   padding: 20px 20px;
   min-width: 230px;
@@ -573,7 +580,9 @@ section + section {
 }
 
 .big-container h4 {
-  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-bottom: 20px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -582,21 +591,32 @@ section + section {
 
 .big-container a {
   color: black;
-  display: block;
+  display: inline-block;
   padding: 5px 5px;
   text-decoration: none;
 }
 
 .small-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px 20px;
   padding: 20px 20px;
   min-width: 230px;
   max-width: 370px;
   min-height: 100px;
   max-height: 200px;
+}
+
+.small-container a {
+  text-decoration: none;
+  color: black;
 }
 
 .article-button {
@@ -605,8 +625,7 @@ section + section {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   padding: 5px 5px;
   border: 2px solid black;
 }
@@ -628,7 +647,15 @@ section + section {
 
 .image-box {
   background-color: white;
+  padding: 0;
   opacity: 0.6;
+}
+
+.image-box .thomas-image {
+  height: 100%;
+  width: 100%;
+  min-width: 230px;
+  max-width: 370px;
 }
 
 .aktuellt {
@@ -687,9 +714,9 @@ section + section {
 }
 
 /***
-EFFECTS 'Aktuellt' title text
+EFFECT FOR 'AKTUELLT' TITLE TEXT
 ***/
-section h4 {
+.aktuellt h4 {
   text-align: center;
   width: 90%;
   padding-bottom: 10px;

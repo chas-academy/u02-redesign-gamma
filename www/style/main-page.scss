@@ -354,50 +354,50 @@ section + section {
 }
 
 .big-container {
-  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
   margin: 20px 20px;
   padding: 20px 20px;
   min-width: 230px;
   max-width: 370px;
-}
-
-
-.big-container {
   h4 {
-    text-align: center;
+    align-self: center;
     padding-bottom: 20px;
     margin-bottom: 30px;
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
-}
-
-
-.big-container {
   a {
     color: black;
-    display: block;
+    display: inline-block;
     padding: 5px 5px;
     text-decoration: none;
   }
 }
 
+
 .small-container {
+  display: flex;
   align-items: center;
-  margin: 20px 20px;
+  justify-content: flex-end;
+  margin: 10px 20px;
   padding: 20px 20px;
   min-width: 230px;
   max-width: 370px;
   min-height: 100px;
   max-height: 200px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .article-button {
   text-decoration: none;
   display: inline-block;
   align-self: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   padding: 5px 5px;
   border: 2px solid black;
 }
@@ -412,7 +412,14 @@ section + section {
 
 .image-box {
   background-color: white;
+  padding: 0;
   opacity: 0.6;
+  .thomas-image {
+    height: 100%;
+    width: 100%;
+    min-width: 230px;
+    max-width: 370px;
+  }
 }
 
 .aktuellt {
@@ -459,10 +466,10 @@ section + section {
 }
 
 /***
-EFFECTS 'Aktuellt' title text
+EFFECT FOR 'AKTUELLT' TITLE TEXT
 ***/
 
-section {
+.aktuellt {
   h4 {
     text-align: center;
     width: 90%;
