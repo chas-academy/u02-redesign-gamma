@@ -291,50 +291,75 @@ a {
 
 /* Kontakta oss */
 #kontakta-oss-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
+  background-color: $primary-color;
+  width: 100%;
+  
   #kontakta-oss-header {
+
     h1 {
-      font-size: 2.5rem;
-      padding-top: 8px;
+      padding: 20px 20px 0 20px;
     }
   }
 }
 
 #contact-section-1 {
-  p {
-    font-size: 1.3rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    padding-top: 14px;
-    padding-bottom: 8px;
-    //align-self: flex-start;
-    //padding-left: 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include standard-container;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: $primary-color;
 
   #contact-img {
-    width: 90%;
-    padding: 10px 0;
+    width: 100%;
+    padding-bottom: 12px;
   }
+}
+
+#contact-section-2 {
+  @include standard-container;
+  margin-bottom: 0px;
+}
+
+#contact-section-3 {
+  @include standard-container;
+  background-color: $lyellow-box-color;
+  margin-bottom: 0px;
+}
+
+#contact-section-4 {
+  @include standard-container;
+  background-color: $yellow-box-color;
+  margin-bottom: 0px;
+}
+
+#contact-section-5 {
+  @include standard-container;
+  background-color: $grey-box-color;
 }
 
 #contact-form-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $secondary-color;
+  @include standard-container;
+  padding: 0 8px 0 0;
+  margin-bottom: 0px;
+  background-color: $lblue-box-color;
+  width: 100%;
 
   form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90%;
-    align-content: flex-end;
-    margin-right: 6px;
+    width: 100%;
+    @include standard-container;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    background-color: $lblue-box-color;
 
     label {
       font-size: 1.1rem;
@@ -342,8 +367,10 @@ a {
       padding-left: 4px;
     }
 
+    h2 {
+    }
+
     #top-label {
-      //padding-top: 16px;
     }
 
     input,
@@ -361,9 +388,6 @@ a {
 
     #form-send-btn {
       max-width: 100px;
-      background-color: $primary-color;
-      box-shadow: 1px 1px;
-      border: 1px solid black;
     }
   }
 }
@@ -373,34 +397,15 @@ a {
   flex-direction: column;
   text-align: left;
 
-  section:nth-of-type(odd) {
-    background-color: $primary-color;
-  }
-
-  section:nth-of-type(even) {
-    background-color: $secondary-color;
-  }
-
   #large-p {
     font-size: 1.6rem;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 6px;
     line-height: 1;
-    padding-left: 30px;
   }
 
   #small-p {
-    font-size: 1.1rem;
-    padding: 0 8px 0 30px;
-    margin: 0 0 4px 0;
-    padding-left: 30px;
-  }
-
-  #contact-section-2 {
-    a {
-      font-size: 1.1rem;
-    }
   }
 
   #section-map {
