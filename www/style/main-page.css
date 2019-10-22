@@ -788,6 +788,17 @@ a:hover {
 /***
 CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
+.top-links-ul .top-links-li a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-links-ul .top-links-li .top-links-image {
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 0px 0px;
+}
+
 header {
   position: relative;
   font-weight: 900;
@@ -927,6 +938,51 @@ FRONTPAGE CONTAINER PROPERTIES
           align-items: center;
   background-color: #fff5f5;
   padding: 10px 0px;
+}
+
+/***
+CALENDER PROPERTIES
+***/
+.calendar-container .calendar-header {
+  width: 100%;
+}
+
+.calendar-container .calendar-header h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calendar-container .calendar-header h4 span {
+  text-decoration: underline;
+}
+
+.calendar-container .calendar-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calendar-container .calendar-post a {
+  text-decoration: underline;
+}
+
+.calendar-container .calendar-post .date {
+  display: block;
+  width: 100px;
+  height: 80px;
+  margin-right: 50px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .image-box {
