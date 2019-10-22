@@ -461,15 +461,6 @@ FRONTPAGE CONTAINER PROPERTIES
   }
 }
 
-.article-button {
-  text-decoration: none;
-  display: inline-block;
-  align-self: center;
-  margin: 20px 0px;
-  padding: 5px 5px;
-  border: 2px solid black;
-}
-
 .youtube {
   flex-flow: column nowrap;
   justify-content: center;
@@ -525,6 +516,7 @@ CALENDAR PROPERTIES
 }
 
 .aktuellt {
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;

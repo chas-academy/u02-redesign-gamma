@@ -778,17 +778,6 @@ FRONTPAGE CONTAINER PROPERTIES
   color: black;
 }
 
-.article-button {
-  text-decoration: none;
-  display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 20px 0px;
-  padding: 5px 5px;
-  border: 2px solid black;
-}
-
 .youtube {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -860,6 +849,7 @@ CALENDAR PROPERTIES
 }
 
 .aktuellt {
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
