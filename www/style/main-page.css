@@ -672,6 +672,7 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 header {
   position: relative;
   font-weight: 900;
+  margin-bottom: 50px;
 }
 
 .header-image {
@@ -717,13 +718,6 @@ header {
   margin: 10px 0px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-/***
-MAINPAGE: MAINLY PROPERTIES FOR CONTAINERS
-***/
-section + section {
-  margin-top: 50px;
 }
 
 /***
@@ -806,13 +800,17 @@ FRONTPAGE CONTAINER PROPERTIES
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff5f5;
+  background-color: whitesmoke;
   padding: 10px 0px;
 }
 
 /***
-CALENDER PROPERTIES
+CALENDAR PROPERTIES
 ***/
+.calendar-container {
+  width: 100%;
+}
+
 .calendar-container .calendar-header {
   width: 100%;
 }
@@ -829,7 +827,7 @@ CALENDER PROPERTIES
           justify-content: space-between;
 }
 
-.calendar-container .calendar-header h4 span {
+.calendar-container .calendar-header h4 a {
   text-decoration: underline;
 }
 
