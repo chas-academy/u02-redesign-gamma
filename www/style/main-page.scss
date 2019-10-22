@@ -430,7 +430,7 @@ a {
 }
 
 /***
-HEADER
+CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 
 header {
@@ -481,14 +481,18 @@ section + section {
   margin-top: 50px;
 }
 
-.big-container {
+
+/***
+FRONTPAGE CONTAINER PROPERTIES
+***/
+
+
+.frontpage-link-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   margin: 20px 20px;
   padding: 20px 20px;
-  min-width: 230px;
-  max-width: 370px;
   h4 {
     align-self: center;
     padding-bottom: 20px;

@@ -786,7 +786,7 @@ a:hover {
 }
 
 /***
-HEADER
+CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 header {
   position: relative;
@@ -845,7 +845,10 @@ section + section {
   margin-top: 50px;
 }
 
-.big-container {
+/***
+FRONTPAGE CONTAINER PROPERTIES
+***/
+.frontpage-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,11 +861,9 @@ section + section {
           align-items: flex-start;
   margin: 20px 20px;
   padding: 20px 20px;
-  min-width: 230px;
-  max-width: 370px;
 }
 
-.big-container h4 {
+.frontpage-link-container h4 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -872,7 +873,7 @@ section + section {
   border-bottom: 1px solid #101010;
 }
 
-.big-container a {
+.frontpage-link-container a {
   color: black;
   display: inline-block;
   padding: 5px 5px;
