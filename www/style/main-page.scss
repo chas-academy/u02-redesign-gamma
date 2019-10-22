@@ -484,7 +484,6 @@ CALENDAR PROPERTIES
 ***/
 
 .calendar-container {
-  width: 100%;
   .calendar-header {
     width: 100%;
     h4 {
@@ -496,6 +495,7 @@ CALENDAR PROPERTIES
       }
     }
   }
+}
 
 .calendar-post {
   display: flex;
@@ -575,52 +575,4 @@ EFFECT FOR 'AKTUELLT' TITLE TEXT
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
-}
-
-/***
-COLOR CHANGES TO CONTAINERS
-***/
-
-.lightblue {
-  background-color: #e3ede8;
-  color: #000000;
-}
-
-.black {
-  background-color: #000000;
-  color: white;
-}
-
-.black {
-  a {
-    color: white;
-  }
-}
-
-.black {
-  h4 {
-    a {
-      color: white;
-    }
-  }
-}
-
-.beige {
-  background-color: #ffffc6;
-  color: #000000;
-}
-
-.lightpurple {
-  background-color: #e8e8e8;
-  color: #000000;
-}
-
-.yellow {
-  background-color: #ffff00;
-  color: #000000;
-}
-
-.green {
-  background-color: #368f5f;
-  color: #000000;
 }
