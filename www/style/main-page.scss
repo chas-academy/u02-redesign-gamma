@@ -417,6 +417,21 @@ a {
 HEADER
 ***/
 
+.top-links-ul {
+  .top-links-li {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .top-links-image {
+      width: 20px;
+      height: 20px;
+      margin: 5px 5px 0px 0px;
+    }
+  }
+}
+
+
 header {
   position: relative;
   font-weight: 900;
@@ -460,10 +475,6 @@ header {
 /***
 MAINPAGE: MAINLY PROPERTIES FOR CONTAINERS
 ***/
-
-section + section {
-  margin-top: 50px;
-}
 
 .big-container {
   display: flex;
@@ -520,6 +531,42 @@ section + section {
   background-color: #fff5f5;
   padding: 10px 0px;
 }
+
+
+/***
+CALENDER PROPERTIES
+***/
+
+.calendar-container {
+  .calendar-header {
+    width: 100%;
+    h4 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .calendar-post {
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: underline;
+    }
+    .date {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin-right: 50px;
+      background-color: white;
+      border: 1px solid black;
+    }
+  }
+}
+
 
 .image-box {
   background-color: white;
