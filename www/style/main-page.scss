@@ -293,96 +293,36 @@ a {
 }
 
 /* Kontakta oss */
-#kontakta-oss-main {
-  background-color: $primary-color;
-  width: 100%;
-  
-  #kontakta-oss-header {
-
-    h1 {
-      padding: 20px 20px 0 20px;
-    }
-  }
-}
-
-#contact-section-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include standard-container;
-  padding: 0;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  background-color: $primary-color;
-
-  #contact-img {
+#contact-img {
     width: 100%;
-    padding-bottom: 12px;
-  }
 }
 
-#contact-section-2 {
-  @include standard-container;
-  margin-bottom: 0px;
-}
-
-#contact-section-3 {
-  @include standard-container;
-  background-color: $lyellow-box-color;
-  margin-bottom: 0px;
-}
-
-#contact-section-4 {
-  @include standard-container;
-  background-color: $yellow-box-color;
-  margin-bottom: 0px;
-}
-
-#contact-section-5 {
-  @include standard-container;
-  background-color: $grey-box-color;
-}
-
-#contact-form-div {
+#contact-form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   @include standard-container;
-  padding: 0 8px 0 0;
-  margin-bottom: 0px;
   background-color: $lblue-box-color;
-  width: 100%;
 
   form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    @include standard-container;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
     background-color: $lblue-box-color;
 
     label {
-      font-size: 1.1rem;
-      font-weight: bold;
-      padding-left: 4px;
-    }
+      padding-top: 8px;
 
-    h2 {
-    }
-
-    #top-label {
+      &:first-of-type {
+        padding-top: 0;
+      }
     }
 
     input,
     textarea {
-      padding: 8px;
-      margin: 4px 4px 8px 4px;
-      border-radius: 4px;
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     textarea {
@@ -390,7 +330,6 @@ a {
     }
 
     #form-send-btn {
-      max-width: 100px;
     }
   }
 }
@@ -399,17 +338,6 @@ a {
   display: flex;
   flex-direction: column;
   text-align: left;
-
-  #large-p {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 6px;
-    line-height: 1;
-  }
-
-  #small-p {
-  }
 
   #section-map {
     position: relative;
