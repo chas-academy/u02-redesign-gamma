@@ -938,8 +938,6 @@ FRONTPAGE CONTAINER PROPERTIES
 .image-box .thomas-image {
   height: 100%;
   width: 100%;
-  min-width: 230px;
-  max-width: 370px;
 }
 
 .aktuellt {
