@@ -328,6 +328,10 @@ a:hover {
   margin-top: 0px;
 }
 
+.section-lblue a {
+  color: black;
+}
+
 .section-green {
   padding: 16px;
   background-color: white;
@@ -363,6 +367,10 @@ a:hover {
   margin-top: 0px;
 }
 
+.section-lyellow a {
+  color: black;
+}
+
 .section-yellow {
   padding: 16px;
   background-color: white;
@@ -376,6 +384,10 @@ a:hover {
 
 .section-yellow:first-of-type {
   margin-top: 0px;
+}
+
+.section-yellow a {
+  color: black;
 }
 
 .section-grey {
@@ -393,6 +405,10 @@ a:hover {
   margin-top: 0px;
 }
 
+.section-grey a {
+  color: black;
+}
+
 .section-dgrey {
   padding: 16px;
   background-color: white;
@@ -407,6 +423,10 @@ a:hover {
 
 .section-dgrey:first-of-type {
   margin-top: 0px;
+}
+
+.section-dgrey a {
+  color: black;
 }
 
 .section-black {
@@ -780,17 +800,14 @@ FRONTPAGE CONTAINER PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  text-justify: flex-end;
+  text-align: right;
   margin: 10px 20px;
-  padding: 20px 20px;
-  min-width: 230px;
-  max-width: 370px;
-  min-height: 100px;
-  max-height: 200px;
+  padding: 40px 20px;
 }
 
 .small-container a {
   text-decoration: none;
-  color: black;
 }
 
 .youtube {

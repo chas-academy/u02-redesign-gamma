@@ -129,6 +129,9 @@ a {
 .section-lblue {
   @include standard-container;
   background-color: $lblue-box-color;
+  a {
+    color: black;
+  }
 }
 
 .section-green {
@@ -143,22 +146,34 @@ a {
 .section-lyellow {
   @include standard-container;
   background-color: $lyellow-box-color;
+  a {
+    color: black;
+  }
 }
 
 .section-yellow {
   @include standard-container;
   background-color: $yellow-box-color;
+  a {
+    color: black;
+  }
 }
 
 .section-grey {
   @include standard-container;
   background-color: $grey-box-color;
+  a {
+    color: black;
+  }
 }
 
 .section-dgrey {
   @include standard-container;
   background-color: $dgrey-box-color;
   color: $white-text;
+  a {
+    color: black;
+  }
 }
 
 .section-black {
@@ -457,15 +472,12 @@ FRONTPAGE CONTAINER PROPERTIES
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-justify: flex-end;
+  text-align: right;
   margin: 10px 20px;
-  padding: 20px 20px;
-  min-width: 230px;
-  max-width: 370px;
-  min-height: 100px;
-  max-height: 200px;
+  padding: 40px 20px;
   a {
     text-decoration: none;
-    color: black;
   }
 }
 
