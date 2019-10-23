@@ -1,7 +1,7 @@
 /// Colours & fonts
 
 $primary-color: rgb(245, 245, 245); // nearly white
-$secondary-color: rgb(255, 255, 255); // very light grey
+$secondary-color: rgb(255, 255, 255); // white
 
 // Background colors
 $white-box-color: #ffffff; //white
@@ -126,6 +126,11 @@ a {
   @include standard-container;
 }
 
+.section-no-bg {
+  @include standard-container;
+  background-color: $primary-color;
+}
+
 .section-lblue {
   @include standard-container;
   background-color: $lblue-box-color;
@@ -178,17 +183,17 @@ a {
 }
 
 /* Buttons */
-.section-button { 
-    padding: 10px;
-    text-decoration: none;
-    border: 1px solid rgb(150, 150, 150);
-    text-align: center;
+.section-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(150, 150, 150);
+  text-align: center;
+  color: $white-text;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
     color: $white-text;
-    z-index: 1;
-    text-decoration: none;
-    &:hover {
-      color: $white-text;
-      border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
   }
 }
 
@@ -207,6 +212,20 @@ a {
     &:hover {
       border: 1px solid rgb(0, 0, 0);
     }
+  }
+}
+
+.to-top-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(100, 100, 100);
+  text-align: center;
+  color: $black-text;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    color: $black-text;
+    border: 1px solid rgb(0, 0, 0);
   }
 }
 
@@ -234,8 +253,27 @@ General settings images
   width: 100%;
 }
 
-img, object {
+img,
+object {
   margin: 10px 0px 20px 0px;
+}
+
+/***  
+Positioning styling
+***/
+.pos-center {
+  display: flex;
+  justify-content: center;
+}
+
+.pos-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pos-left {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /*** 
@@ -565,7 +603,7 @@ footer {
   background-color: #101010;
 }
 
-footer>section {
+footer > section {
   background-color: #363636;
   padding: 10px 30px;
   color: white;
@@ -574,19 +612,19 @@ footer>section {
   font-weight: 400;
 }
 
-
-footer>section>article {
+footer > section > article {
   padding: 20px 50px;
 }
 
-footer>section>h4 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+footer > section > h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-footer>section>article>a {
+footer > section > article > a {
   display: block;
   text-decoration: none;
   color: white;
@@ -594,11 +632,11 @@ footer>section>article>a {
 }
 
 @media only screen and (min-width: 768px) {
-  footer>section {
+  footer > section {
     flex-flow: row nowrap;
   }
 
-  footer>article {
+  footer > article {
     margin: 10px 10px;
   }
 
