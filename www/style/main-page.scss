@@ -276,6 +276,11 @@ Positioning styling
   justify-content: flex-start;
 }
 
+.make-column {
+  display: flex;
+  flex-flow: column;
+}
+
 /*** 
 Styling - Specific pages 
 ***/
@@ -643,4 +648,52 @@ footer > section > article > a {
   .bottom-footer {
     display: block;
   }
+}
+
+/***
+COLOR CHANGES TO CONTAINERS
+***/
+
+.lightblue {
+  background-color: #e3ede8;
+  color: #000000;
+}
+
+.black {
+  background-color: #000000;
+  color: white;
+}
+
+.black {
+  a {
+    color: white;
+  }
+}
+
+.black {
+  h4 {
+    a {
+      color: white;
+    }
+  }
+}
+
+.beige {
+  background-color: #ffffc6;
+  color: #000000;
+}
+
+.lightpurple {
+  background-color: #e8e8e8;
+  color: #000000;
+}
+
+.yellow {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.green {
+  background-color: #368f5f;
+  color: #000000;
 }
