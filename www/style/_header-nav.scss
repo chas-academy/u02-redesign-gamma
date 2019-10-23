@@ -1,8 +1,11 @@
 // SCSS for the checkbox dropdown main menu
 
 .top-links-nav {
-    background-color: $secondary-color;
-
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     .top-links-ul {
         display: flex;
         justify-content: flex-end;
@@ -11,12 +14,22 @@
         font-weight: bold;
 
         .top-links-li {
-            padding-right: 10px;
+            min-height: 40px;
             display: inline-block;
-            min-height: 30px;
-
+            margin-right: 10px;
             a {
-                font-size: 1rem;
+                color: black;
+                max-width: 30px;
+                text-decoration: none;
+                font-size: 0.7rem;
+                font-weight: 300;
+
+                .top-links-image {
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px 5px;
+                }
+            
             }
         }
     }

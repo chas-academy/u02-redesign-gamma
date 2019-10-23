@@ -383,20 +383,6 @@ a {
 CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 
-.top-links-ul {
-  .top-links-li {
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    .top-links-image {
-      width: 20px;
-      height: 20px;
-      margin: 5px 5px 0px 0px;
-    }
-  }
-}
-
 
 header {
   position: relative;
@@ -538,8 +524,7 @@ CALENDAR PROPERTIES
   padding: 0;
   opacity: 0.6;
   .thomas-image {
-    background-color: red;
-    background: url("media/thomas.png");
+    background: url("/www/media/thomas.jpg");
     height: 100%;
     width: 100%;
   }
