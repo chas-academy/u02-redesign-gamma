@@ -344,6 +344,10 @@ a:hover {
   margin-top: 0px;
 }
 
+.section-green a {
+  color: white;
+}
+
 .section-lyellow {
   padding: 16px;
   background-color: white;
@@ -419,6 +423,10 @@ a:hover {
 
 .section-black:first-of-type {
   margin-top: 0px;
+}
+
+.section-black a {
+  color: white;
 }
 
 .section-image {
@@ -757,7 +765,6 @@ FRONTPAGE CONTAINER PROPERTIES
 }
 
 .frontpage-link-container a {
-  color: black;
   display: inline-block;
   padding: 5px 5px;
   text-decoration: none;
@@ -869,6 +876,8 @@ CALENDAR PROPERTIES
 }
 
 .image-box .thomas-image {
+  background-color: red;
+  background: url("media/thomas.png");
   height: 100%;
   width: 100%;
 }

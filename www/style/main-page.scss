@@ -135,6 +135,9 @@ a {
   @include standard-container;
   background-color: $green-box-color;
   color: $white-text;
+  a {
+    color: white;
+  }
 }
 
 .section-lyellow {
@@ -162,6 +165,9 @@ a {
   @include standard-container;
   background-color: $black-box-color;
   color: $white-text;
+  a {
+    color: white;
+  }
 }
 
 .section-image {
@@ -441,7 +447,6 @@ FRONTPAGE CONTAINER PROPERTIES
     border-bottom: 1px solid #101010;
   }
   a {
-    color: black;
     display: inline-block;
     padding: 5px 5px;
     text-decoration: none;
@@ -521,6 +526,8 @@ CALENDAR PROPERTIES
   padding: 0;
   opacity: 0.6;
   .thomas-image {
+    background-color: red;
+    background: url("media/thomas.png");
     height: 100%;
     width: 100%;
   }
