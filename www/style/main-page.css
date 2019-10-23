@@ -712,17 +712,23 @@ a:hover {
 CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 header {
+  height: 300px;
+  width: 100%;
   position: relative;
   font-weight: 900;
   margin-bottom: 50px;
 }
 
-.header-image {
+header .header-image {
+  background-image: url("../../prod/header-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100%;
-  width: 100%;
 }
 
-.header-fade {
+header .header-fade {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -732,7 +738,7 @@ header {
   opacity: 0.7;
 }
 
-.header-content {
+header .header-content {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,7 +758,7 @@ header {
   color: white;
 }
 
-.header-link {
+header .header-link {
   border: 2px solid white;
   color: white;
   text-decoration: none;
@@ -901,7 +907,7 @@ CALENDAR PROPERTIES
 }
 
 .image-box .thomas-image {
-  background: url("/www/media/thomas.jpg");
+  background: url("../media/thomas.jpg");
   height: 100%;
   width: 100%;
 }
