@@ -172,6 +172,11 @@ a {
   align-items: center;
 }
 
+/* Styling for bulletin-lists */
+.no-bull {
+  list-style-type: none;
+}
+
 /* Buttons */
 .section-button { 
     padding: 10px;
@@ -221,7 +226,21 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/*** Styling - Specific pages ***/
+/*** 
+General settings images 
+***/
+
+.page-head-img {
+  width: 100%;
+}
+
+img, object {
+  margin: 10px 0px 20px 0px;
+}
+
+/*** 
+Styling - Specific pages 
+***/
 
 /* Om oss */
 #om-oss-main {
@@ -293,9 +312,6 @@ a {
 }
 
 /* Kontakta oss */
-#contact-img {
-    width: 100%;
-}
 
 #contact-form-section {
   display: flex;
@@ -530,50 +546,63 @@ EFFECT FOR 'AKTUELLT' TITLE TEXT
   }
 }
 
-/***
-COLOR CHANGES TO CONTAINERS
-***/
-
-.lightblue {
-  background-color: #e3ede8;
-  color: #000000;
+/**
+FOOTER
+**/
+footer {
+  width: 100%;
+  background-color: #363636;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
 }
 
-.black {
-  background-color: #000000;
+.bottom-footer {
+  background-color: #101010;
+}
+
+footer>section {
+  background-color: #363636;
+  padding: 10px 30px;
   color: white;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.black {
-  a {
-    color: white;
+
+footer>section>article {
+  padding: 20px 50px;
+}
+
+footer>section>h4 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer>section>article>a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  footer>section {
+    flex-flow: row nowrap;
   }
-}
 
-.black {
-  h4 {
-    a {
-      color: white;
-    }
+  footer>article {
+    margin: 10px 10px;
   }
-}
 
-.beige {
-  background-color: #ffffc6;
-  color: #000000;
-}
-
-.lightpurple {
-  background-color: #e8e8e8;
-  color: #000000;
-}
-
-.yellow {
-  background-color: #ffff00;
-  color: #000000;
-}
-
-.green {
-  background-color: #368f5f;
-  color: #000000;
+  .bottom-footer {
+    display: block;
+  }
 }
