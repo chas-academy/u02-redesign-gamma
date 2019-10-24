@@ -54,7 +54,7 @@
 }
         .main-menu-li-links {
             width: 45px;
-            margin: 10px 10px 10px 0px;
+            margin: 10px 10px 5px 0px;
             text-align: center;
         
             :hover {
@@ -165,8 +165,13 @@
         left: 0;
         top: 0;
         width: 100%;
+        //height: 100vh;
+        background-color: rgb(218, 207, 207);
+        :hover {
+            cursor: default;
+        }
         //display: none;
-
+        
         #label-inside-menu {
             position: absolute;
             right: 2%;
@@ -176,18 +181,44 @@
             z-index: 799;
         }
 
+        #opacity-cover-2 {
+            z-index: 4;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1050%; // not right
+            background-color: rgba(218, 207, 207, 0.85);
+            :hover {
+                cursor: default;
+                }
+            
+            
+            }
+
         li {
             position: relative;
             display: block;
             width: 100%;
             text-align: center;
             line-height: 42px;
+            z-index: 6;
+           /* :hover {
+                cursor: pointer;
+            }*/
+            :hover {
+                cursor: pointer;
+                }
+
+            
+
+
 
             a {
                 text-decoration: none;
                 color: rgb(75, 73, 73);
                 font-size: 1.5rem;
-                background: rgb(241, 236, 236);
+                //background: rgb(241, 236, 236);
                 position: relative;
                 display: block;
                 overflow: hidden;
