@@ -1,9 +1,9 @@
-/// Colours & fonts
+/// COLORS & FONTS
 
 $primary-color: rgb(245, 245, 245); // nearly white
 $secondary-color: rgb(255, 255, 255); // white
 
-// Background colors
+// BACKGROUND COLORS
 $white-box-color: #ffffff; //white
 $grey-box-color: #c4c4c4; //grey
 $dgrey-box-color: #2b2b2b; //dark grey
@@ -13,7 +13,7 @@ $yellow-box-color: #ffff00; // yellow
 $lblue-box-color: #bfe1f2; //light blue
 $green-box-color: #368f5f; // green
 
-/// Font colors
+/// FONT COLORS
 $white-text: #ffffff;
 $black-text: #000000;
 $on-image-link-color: #ffffff;
@@ -27,8 +27,11 @@ $hover-font-color: #000000;
 @import "_header-nav.scss";
 $font_roboto: "Roboto", sans-serif;
 
-/*** Default styling ***/
-/// Root
+/*** 
+DEFAULT STYLING 
+***/
+
+/// ROOT
 * {
   padding: 0px;
   margin: 0px;
@@ -60,7 +63,9 @@ body {
   background-color: $primary-color;
 }
 
-/*** Font-sizes & font-weights, and default padding/margins ***/
+/*** 
+DEFAULT FONT SIZES
+***/
 h1 {
   font-size: 1.9rem;
 }
@@ -101,7 +106,9 @@ a {
   }
 }
 
-/*** Styling pages ***/
+/*** 
+DEFAULT STYLING PAGES 
+***/
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
@@ -180,26 +187,34 @@ a {
   align-items: center;
 }
 
+.social {
+  h4 {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid #101010;
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
 /* Styling for bulletin-lists */
 .no-bull {
   list-style-type: none;
 }
 
-/* Buttons */
-.section-button {
-  padding: 10px;
-  text-decoration: none;
-  border: 1px solid rgb(150, 150, 150);
-  text-align: center;
-  color: $white-text;
-  z-index: 1;
-  text-decoration: none;
-  &:hover {
-    color: $white-text;
-    border: 1px solid rgb(255, 255, 255);
-  }
-}
+/*** 
+BUTTONS 
+***/
 
+/* Standard button */
 .std-button {
   align-self: center;
   > a {
@@ -219,6 +234,22 @@ a {
   }
 }
 
+/* Button on top of image */
+.section-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(150, 150, 150);
+  text-align: center;
+  color: $white-text;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    color: $white-text;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+/* Go to top button */
 .to-top-button {
   padding: 10px;
   text-decoration: none;
@@ -232,6 +263,10 @@ a {
     border: 1px solid rgb(0, 0, 0);
   }
 }
+
+/*** 
+DEFAULT EFFECTS 
+***/
 
 /* Dark effect on image */
 .darken {
@@ -250,7 +285,7 @@ a {
 }
 
 /*** 
-General settings images 
+DEFAULT STYLING IMAGES
 ***/
 
 .page-head-img {
@@ -263,7 +298,7 @@ object {
 }
 
 /***  
-Positioning styling
+POSITIONING STYLING
 ***/
 .pos-center {
   display: flex;
@@ -285,8 +320,13 @@ Positioning styling
   flex-flow: column;
 }
 
+.make-row {
+  display: flex;
+  flex-flow: row;
+}
+
 /*** 
-Styling - Specific pages 
+STYLING: SPECIFIC PAGES 
 ***/
 
 /* Om oss */
@@ -359,7 +399,6 @@ Styling - Specific pages
 }
 
 /* Kontakta oss */
-
 #contact-form-section {
   display: flex;
   flex-direction: column;
@@ -424,7 +463,6 @@ Styling - Specific pages
 CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 
-
 .header-container {
   height: 300px;
   width: 100%;
@@ -471,16 +509,9 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
   }
 }
 
-
-
-
-
-
-
 /***
 FRONTPAGE CONTAINER PROPERTIES
 ***/
-
 
 .frontpage-link-container {
   display: flex;
@@ -525,7 +556,6 @@ FRONTPAGE CONTAINER PROPERTIES
   padding: 10px 0px;
 }
 
-
 /***
 CALENDAR PROPERTIES
 ***/
@@ -566,8 +596,6 @@ CALENDAR PROPERTIES
 .calendar-post + .calendar-post {
   margin-top: 20px;
 }
-
-
 
 .image-box {
   background-color: white;
@@ -634,11 +662,9 @@ EFFECT FOR 'AKTUELLT' TITLE TEXT
   }
 }
 
-
 /**
 FOOTER
 **/
-
 
 footer {
   width: 100%;
@@ -659,9 +685,10 @@ footer {
   width: 100%;
   font-size: 14px;
   font-weight: 400;
-  
+
   h4 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 10px;
@@ -686,7 +713,7 @@ footer {
   .footer-container {
     flex-flow: row nowrap;
   }
-  
+
   .footer-section {
     margin: 10px 10px;
   }

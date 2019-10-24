@@ -479,19 +479,7 @@ DEFAULT STYLING PAGES
           align-items: center;
 }
 
-.social h4 {
-  width: 100%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  border-bottom: 1px solid #101010;
-}
-
-.social-icons {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,9 +487,8 @@ DEFAULT STYLING PAGES
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* Styling for bulletin-lists */
