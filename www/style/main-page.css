@@ -362,10 +362,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-lblue a {
-  color: black;
-}
-
 .section-green {
   padding: 16px;
   background-color: white;
@@ -380,10 +376,6 @@ a:hover {
 
 .section-green:first-of-type {
   margin-top: 0px;
-}
-
-.section-green a {
-  color: white;
 }
 
 .section-lyellow {
@@ -401,10 +393,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-lyellow a {
-  color: black;
-}
-
 .section-yellow {
   padding: 16px;
   background-color: white;
@@ -418,10 +406,6 @@ a:hover {
 
 .section-yellow:first-of-type {
   margin-top: 0px;
-}
-
-.section-yellow a {
-  color: black;
 }
 
 .section-grey {
@@ -439,10 +423,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-grey a {
-  color: black;
-}
-
 .section-dgrey {
   padding: 16px;
   background-color: white;
@@ -457,10 +437,6 @@ a:hover {
 
 .section-dgrey:first-of-type {
   margin-top: 0px;
-}
-
-.section-dgrey a {
-  color: black;
 }
 
 .section-black {

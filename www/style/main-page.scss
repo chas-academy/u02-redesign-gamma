@@ -134,51 +134,33 @@ a {
 .section-lblue {
   @include standard-container;
   background-color: $lblue-box-color;
-  a {
-    color: black;
-  }
 }
 
 .section-green {
   @include standard-container;
   background-color: $green-box-color;
   color: $white-text;
-  a {
-    color: white;
-  }
 }
 
 .section-lyellow {
   @include standard-container;
   background-color: $lyellow-box-color;
-  a {
-    color: black;
-  }
 }
 
 .section-yellow {
   @include standard-container;
   background-color: $yellow-box-color;
-  a {
-    color: black;
-  }
 }
 
 .section-grey {
   @include standard-container;
   background-color: $grey-box-color;
-  a {
-    color: black;
-  }
 }
 
 .section-dgrey {
   @include standard-container;
   background-color: $dgrey-box-color;
   color: $white-text;
-  a {
-    color: black;
-  }
 }
 
 .section-black {
