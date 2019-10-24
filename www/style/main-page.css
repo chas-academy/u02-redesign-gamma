@@ -29,6 +29,12 @@
   margin: 5px 5px;
 }
 
+*:focus {
+  outline: #3b99fc auto 5px;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
 .main-menu-nav .main-menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +82,14 @@
 
 .main-menu-nav .main-menu-ul .main-menu-li-links :focus-within {
   outline: #3b99fc auto 5px;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+.main-menu-nav .main-menu-ul .main-menu-li-links :focus-within::after {
+  outline: none;
+  outline-width: none;
+  outline-style: none;
 }
 
 .main-menu-nav .main-menu-ul .main-menu-li-links .anchor-focus:focus {

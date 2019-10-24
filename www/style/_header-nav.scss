@@ -28,7 +28,11 @@
     }
 }
 
-
+*:focus {
+    outline: rgb(59, 153, 252) auto 5px;
+            outline-width: 1px;
+            outline-style: solid;
+}
 
 
 
@@ -72,9 +76,17 @@
             }
 
             :focus-within {
-                outline: rgb(59, 153, 252) auto 5px;
-            }
+            outline: rgb(59, 153, 252) auto 5px;
+            outline-width: 1px;
+            outline-style: solid;
+        }
             
+            :focus-within::after {
+                outline: none;
+                outline-width: none;
+                outline-style: none;
+            }
+
             .anchor-focus {
                 
             }
