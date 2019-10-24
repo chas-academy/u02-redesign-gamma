@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/main-page.css">
     <title>Myndigheten för yrkeshögskolan</title>
 </head>
 
 <body>
-    <nav class="main-menu-nav">
-        <ul class="main-menu-ul">
-            <li class="main-menu-li main-menu-li-logo"> <img src="media/myh_logo.png" class="main-menu-img"
-                    alt="Myndigheten för yrkeshögskolan"></li>
+        <nav class="main-menu-nav">
+          <ul class="main-menu-ul">
+            <li class="main-menu-li main-menu-li-logo">
+              <a href="index.html">
+              <img
+                id="top"
+                src="media/myh_logo.png"
+                class="main-menu-img"
+                alt="Myndigheten för yrkeshögskolan"
+              />
+            </a>
+          </li>
+
             <li class="main-menu-li main-menu-li-links" id="search"><a href="#">
 
                     <nav id="nav-search">
@@ -56,125 +64,137 @@
 
     <nav class="top-links-nav">
         <ul class="top-links-ul">
-            <li class="top-links-li"><a href="#">Aa</a></li>
-            <li class="top-links-li"><a href="#">Eye</a></li>
-            <li class="top-links-li"><a href="#">GB</a></li>
-            <li class="top-links-li"><a href="#">LK</a></li>
+            <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/burger.png" alt="top-links-image">Större text</a></li>
+            <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/eye-icon.png" alt="top-links-image">Lättläst</a></li>
+            <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/uk-flag.png" alt="top-links-image">English</a></li>
+            <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/lock-icon.png" alt="top-links-image">Mina sidor</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="page">
         <section>
             <header>
-                <img src="../prod/header-image.jpg" 
-                alt="header-image" 
-                class="header-image">
+                <div class="header-image"></div>
                 <section class="header-fade"></section>
                 <article class="header-content">
                 Myndigheten för yrkeshögskolan fyller 10 år
                 <a class="header-link" href="#">Läs mer</a>
                 </article>
             </header>
-            <article class="big-container lightblue">
+            <section class="frontpage-link-container section-lblue">
                 <h4>Verksamhetsområden</h4>
-                <a href="#">Yrkeshögskolan ></a>
-                <a href="#">Konst- och kulturutbildningar ></a>
-                <a href="#">Tolkutbildningar ></a>
-                <a href="#">Utbildningar med endast tillsyn ></a>
-                <a href="#">SeQF ></a>
-                <a href="#">Validering ></a>
-            </article>
-            <article class="big-container black">
+                <a href="verksamhet.html">Yrkeshögskolan ></a>
+                <a href="verksamhet.html">Konst- och kulturutbildningar ></a>
+                <a href="verksamhet.html">Tolkutbildningar ></a>
+                <a href="verksamhet.html">Utbildningar med endast tillsyn ></a>
+                <a href="verksamhet.html">SeQF ></a>
+                <a href="verksamhet.html">Validering ></a>
+            </section>
+            <section class="frontpage-link-container section-black">
                 <h4>Ansök om:</h4>
                 <a href="#">Att bedriva utbildning inom yrkeshögskolan ></a>
                 <a href="#">Stöd för konst- och kulturutbildningar ></a>
                 <a href="#">Statsbidrag för tolkutbildningar inom folkbildningen ></a>
                 <a href="#">Stöd i form av endast tillsyn ></a>
-            </article>
-            <article class="big-container beige">
+            </section>
+            <section class="frontpage-link-container section-lyellow">
                 <h4>För dig som bedriver utbildning</h4>
                 <a href="#">För utbildningsanordnare inom yrkeshögskolan ></a>
                 <a href="#">För utbildningsanordnare av konst- och kulturutbildning ></a>
                 <a href="#">För anordnare av tolkutbildningar ></a>
                 <a href="#">För anordnare av utbildning med endast tillsyn ></a>
-            </article>
-            <article class="big-container lightpurple">
+            </section>
+            <section class="frontpage-link-container section-lblue">
                 <h4>För företag och organisationer</h4>
                 <span>Arbetslivet är den främsta drivkraften bakom vilka yrkeshögskoleutbildningar som startar och hur de är upplagda.</span>
                 <a href="#">Läs om hur du kan engagera dig och påverka utbildningarna inom yrkeshögskolan ></a>
-            </article>
-            <article class="big-container youtube">
+            </section>
+            <section class="frontpage-link-container section youtube">
                 <h4>Vår Youtube-kanal</h4>
-                <embed src="https://www.youtube.com/embed?v=8LkwRue9aK4" 
-                frameborder="0"
-                height="250"
-                width="370"
-                allowfullscreen
-                ></embed>
-                <a class="article-button" href="#">Gå till vår kanal på Youtube</a>
-            </article>
-            <article class="big-container lightblue">
-                <h4>Kalender <span>WebCal</span></h4>
-                <div class="calender-post">
-                    <img src="#" alt="DATE-IMAGE">
-                    <a href="#">Workshop i att skriva ansökan om inplacering i SeQF ></a>
-                </div>
-                <div class="calender-post">
-                    <img src="#" alt="DATE-IMAGE">
-                    <a href="#">Workshop i att skriva ansökan om inplacering i SeQF ></a>
-                </div>
-                <div class="calender-post">
-                        <img src="#" alt="DATE-IMAGE">
+                <iframe src="https://www.youtube.com/embed/z08L0dklN3o"
+                width="370" 
+                height="300" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+                <span class="std-button"><a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">Gå till vår kanal på Youtube</a></span>
+            </section>
+            <section class="frontpage-link-container section-lblue">
+                <section class="calendar-container">
+                    <section class="calendar-header">
+                        <h4>Kalender <a href="#">WebCal</a></h4>
+                    </section>
+                    <section class="calendar-post">
+                        <div class="date">
+                            <h2>30</h2>
+                            <h5>OCT</h5>
+                        </div>
                         <a href="#">Workshop i att skriva ansökan om inplacering i SeQF ></a>
-                </div>
-                <a class="article-button href="#">Visa hela kalendern</a>         
-            </article>
+                    </section>
+                    <section class="calendar-post">
+                        <div class="date">
+                            <h2>10</h2>
+                            <h5>NOV</h5>
+                        </div>
+                        <a href="#">Workshop i att skriva ansökan om inplacering i SeQF ></a>
+                    </section>
+                    <section class="calendar-post">
+                        <div class="date">
+                            <h2>23</h2>
+                            <h5>NOV</h5>
+                        </div>
+                        <a href="#">Workshop i att skriva ansökan om inplacering i SeQF ></a>
+                    </section>
+                </section>
+                <span class="std-button"><a href="#">Visa hela kalendern</a></span>        
+            </section>
             <aside>
-                <article class="small-container black">
+                <section class="section-black small-container">
                     <h4><a href="#">Anmäl brister i en utbildning ></a></h4>
-                </article>
-                <article class="small-container yellow">
+                </section>
+                <section class="section-yellow small-container">
                     <h4><a href="#">Hitta utbildningar ></a></h4>
-                </article>
-                <article class="small-container green">
+                </section>
+                <section class="section-green small-container">
                     <h4><a href="#">För dig som vägledare ></a></h4>
-                </article>
-                <article class="big-container image-box">
-                    <img src="../prod/thomas.jpg" 
-                    alt="thomas-image" 
-                    class="thomas-image">
-                </article>
-                <article class="small-container lightblue">
+                </section>
+                <section class="frontpage-link-container section image-box">
+                    <div class="thomas-image">
+                    </div>
+                </section>
+                <section class="section-lblue small-container">
                     <h4><a href="#">EPALE, digital mötesplats för vuxenutbildningar ></a></h4>
-                </article>
-                <article class="small-container lightpurple">
+                </section>
+                <section class="section-grey small-container">
+                    <img src="./media/YA-logo.png" alt="YA-logo">
                     <h4><a href="#">Material från YA ></a></h4>
-                </article>
+                </section>
             </aside>
-            <article class="big-container beige">
+            <section class="frontpage-link-container section-lyellow">
                 <h4>Gå direkt till:</h4>
                 <a href="#">Lediga Jobb ></a>
                 <a href="#">Pågående upphandlingar ></a>
                 <a href="#">Pressmeddelanden ></a>
                 <a href="#">Nyheter ></a>    
                 <a href="#">Nyhetsbrev ></a>
-            </article>
-            <article class="big-container green">
+            </section>
+            <section class="frontpage-link-container section-green">
                 <h4>Senaste publikationer</h4>
                 <a href="#">MYH jubileumsbroschyr 2019 ></a>
                 <a href="#">Resultat av tillsyn 2018 ></a>
                 <a href="#">Anvisningar för ansökan om behörighetsgivande förutbildning ></a>
-                <a class="article-button" href="#">Se alla publikationer</a>
-            </article> 
+                <span class="std-button"><a href="#">Se alla publikationer</a></span>
+            </section> 
         </section>
-        <section class="aktuellt">
+        <section class="section aktuellt">
             <h4>Aktuellt</h4>
-            <article class="aktuellt-article">
-                <img src="./media/burger.png" alt="NWI"
+            <section class="aktuellt-article">
+                <img src="./media/aktuellt1.jpg" alt="NWI"
                 frameborder="0"
-                height="200"
-                width="250"
-                allowfullscreen>
+                height="100"
+                width="150"
+                >
                 <h3>Hon Jobbar med  att göra YH mer känt och erkänt</h3>
                 <p>
                     <span>Publiceringsdatum: 1 oktober 2019</span>
@@ -183,14 +203,14 @@
                     Innan dess var hon handläggare på Myndigheten för yrkeshögskolan och...
                 </p>
                 <a class="article-post-link" href="#">Läs hela inlägget ></a>
-            </article>
-            <article class="aktuellt-article">
-                <img src="./media/burger.png" alt="NWI"
+            </section>
+            <section class="aktuellt-article">
+                <img src="./media/aktuellt2.jpg" alt="NWI"
                 frameborder="0"
                 height="200"
                 width="250"
                 allowfullscreen>
-                <h3>Hon Jobbar med  att göra YH mer känt och erkänt</h3>
+                <h3>Ansök om statsbidrag för utbildning till teckenspråks- och dövblindtolk samt skrivtolk</h3>
                 <p>
                     <span>Publiceringsdatum: 1 oktober 2019</span>
                     Maria Granberg är en tongivande YH-ambassadör. 
@@ -198,14 +218,14 @@
                     Innan dess var hon handläggare på Myndigheten för yrkeshögskolan och...
                 </p>
                 <a class="article-post-link" href="#">Läs hela inlägget ></a>
-            </article>
-            <article class="aktuellt-article">
-                <img src="./media/burger.png" alt="NWI"
+            </section>
+            <section class="aktuellt-article">
+                <img src="./media/aktuellt3.jpg" alt="NWI"
                 frameborder="0"
                 height="200"
                 width="250"
                 allowfullscreen>
-                <h3>Hon Jobbar med  att göra YH mer känt och erkänt</h3>
+                <h3>Informationsträff för vägledare</h3>
                 <p>
                     <span>Publiceringsdatum: 1 oktober 2019</span>
                     Maria Granberg är en tongivande YH-ambassadör. 
@@ -213,9 +233,22 @@
                     Innan dess var hon handläggare på Myndigheten för yrkeshögskolan och...
                 </p>
                 <a class="article-post-link" href="#">Läs hela inlägget ></a>
-            </article>
-            <a class="article-button" href="#">Läs alla nyheter</a>
+            </section>
+            <span class="std-button"><a href="#">Läs alla nyheter</a></span>
         </section>
+
+        <section class="section-no-bg pos-right">
+                <a
+                  class="to-top-button"
+                  href="#top"
+                  role="button"
+                  title="Gå till toppen"
+                  aria-label="Topp av webbsida"
+                >
+                  Gå till toppen av webbsidan
+                </a>
+              </section>
+
     <footer>
         <section>
             <article>
