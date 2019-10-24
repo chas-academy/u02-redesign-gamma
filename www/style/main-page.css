@@ -332,6 +332,21 @@ a:hover {
   margin-top: 0px;
 }
 
+.section-no-bg {
+  padding: 16px;
+  background-color: white;
+  margin: 20px 20px 0px 20px;
+  background-color: whitesmoke;
+}
+
+.section-no-bg:last-of-type {
+  margin-bottom: 20px;
+}
+
+.section-no-bg:first-of-type {
+  margin-top: 0px;
+}
+
 .section-lblue {
   padding: 16px;
   background-color: white;
@@ -482,6 +497,11 @@ a:hover {
           align-items: center;
 }
 
+/* Styling for bulletin-lists */
+.no-bull {
+  list-style-type: none;
+}
+
 /* Buttons */
 .section-button {
   padding: 10px;
@@ -521,6 +541,21 @@ a:hover {
   border: 1px solid black;
 }
 
+.to-top-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #646464;
+  text-align: center;
+  color: #000000;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.to-top-button:hover {
+  color: #000000;
+  border: 1px solid black;
+}
+
 /* Dark effect on image */
 .darken {
   position: relative;
@@ -537,7 +572,61 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/*** Styling - Specific pages ***/
+/*** 
+General settings images 
+***/
+.page-head-img {
+  width: 100%;
+}
+
+img,
+object {
+  margin: 10px 0px 20px 0px;
+}
+
+/***  
+Positioning styling
+***/
+.pos-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pos-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pos-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.make-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+/*** 
+Styling - Specific pages 
+***/
 /* Om oss */
 #om-oss-main {
   display: -webkit-box;
@@ -618,10 +707,6 @@ a:hover {
 }
 
 /* Kontakta oss */
-#contact-img {
-  width: 100%;
-}
-
 #contact-form-section {
   display: -webkit-box;
   display: -ms-flexbox;

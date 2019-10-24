@@ -1,7 +1,7 @@
 /// Colours & fonts
 
 $primary-color: rgb(245, 245, 245); // nearly white
-$secondary-color: rgb(255, 255, 255); // very light grey
+$secondary-color: rgb(255, 255, 255); // white
 
 // Background colors
 $white-box-color: #ffffff; //white
@@ -126,6 +126,11 @@ a {
   @include standard-container;
 }
 
+.section-no-bg {
+  @include standard-container;
+  background-color: $primary-color;
+}
+
 .section-lblue {
   @include standard-container;
   background-color: $lblue-box-color;
@@ -193,18 +198,23 @@ a {
   align-items: center;
 }
 
+/* Styling for bulletin-lists */
+.no-bull {
+  list-style-type: none;
+}
+
 /* Buttons */
-.section-button { 
-    padding: 10px;
-    text-decoration: none;
-    border: 1px solid rgb(150, 150, 150);
-    text-align: center;
+.section-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(150, 150, 150);
+  text-align: center;
+  color: $white-text;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
     color: $white-text;
-    z-index: 1;
-    text-decoration: none;
-    &:hover {
-      color: $white-text;
-      border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
   }
 }
 
@@ -227,6 +237,20 @@ a {
   }
 }
 
+.to-top-button {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(100, 100, 100);
+  text-align: center;
+  color: $black-text;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    color: $black-text;
+    border: 1px solid rgb(0, 0, 0);
+  }
+}
+
 /* Dark effect on image */
 .darken {
   position: relative;
@@ -243,7 +267,45 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/*** Styling - Specific pages ***/
+/*** 
+General settings images 
+***/
+
+.page-head-img {
+  width: 100%;
+}
+
+img,
+object {
+  margin: 10px 0px 20px 0px;
+}
+
+/***  
+Positioning styling
+***/
+.pos-center {
+  display: flex;
+  justify-content: center;
+}
+
+.pos-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pos-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.make-column {
+  display: flex;
+  flex-flow: column;
+}
+
+/*** 
+Styling - Specific pages 
+***/
 
 /* Om oss */
 #om-oss-main {
@@ -315,9 +377,6 @@ a {
 }
 
 /* Kontakta oss */
-#contact-img {
-    width: 100%;
-}
 
 #contact-form-section {
   display: flex;
