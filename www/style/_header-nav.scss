@@ -22,47 +22,47 @@
     }
 }
 
+
+
+
+#kontakt-logo-anchor {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}  
+
+#main-menu-li-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
 .main-menu-nav {
-    overflow: hidden;
-    background: $primary-color;
-
     .main-menu-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
-        .main-menu-li {
-            display: inline-block;
-
-            .main-menu-img {
-                margin-top: 12px;
-                max-width: 250px;
-            }
-        }
-
-        .main-menu-li-logo {
-            padding-top: 4px;
-            margin-right: 5px;
-            margin-left: 5px;
-            position: absolute;
-            left: 0;
-        }
-
+    li {
+        display: inline-block;
+    
+            .kontakt-logo-img {
+                max-width: 260px;
+            } 
+        }    
+    }
+}
         .main-menu-li-links {
-            display: inline-block;
+            width: 45px;
+            margin: 10px 10px 10px 0px;
             text-align: center;
-            align-self: center;
-            //max-width: 55px;
-            margin-top: 8px;
-            
+        
             :hover {
                 cursor: pointer;
             }
 
             :focus-within {
-                border: 2px solid rgb(75, 103, 180);
+                outline: rgb(59, 153, 252) auto 5px;
             }
             
             .anchor-focus {
@@ -70,20 +70,11 @@
             }
 
             .anchor-focus:focus {
-                //outline: none;
                 border: none;
-                //box-sizing: none;
             }
-            
-
-            /*a {
-                font-weight: bold;
-                text-decoration: none;
-                color: black;
-            }*/
         }
-    }
-}
+    
+
 
 .burger-menu-image {
     height: 45px;
@@ -104,7 +95,9 @@
 
 #nav-search input[type="checkbox"] {
     //display: none;
-    opacity: 0;
+    //opacity: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 ::placeholder {
@@ -159,7 +152,9 @@
 
 #nav-menu input[type="checkbox"] {
     //display: none;
-    opacity: 0;
+    //opacity: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 #nav-menu {
@@ -212,6 +207,10 @@
 }
 
 
-#toggle-menu-2 {
-   //font-size: 16px;
+#toggle-menu-1 {
+    //display: block;
 }
+
+#toggle-menu-2 {
+    //font-size: 16px;
+ }

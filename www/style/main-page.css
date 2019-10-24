@@ -26,9 +26,16 @@
   font-size: 1rem;
 }
 
-.main-menu-nav {
-  overflow: hidden;
-  background: whitesmoke;
+#kontakt-logo-anchor {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+}
+
+#main-menu-li-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .main-menu-nav .main-menu-ul {
@@ -42,51 +49,31 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 90px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li {
+.main-menu-nav .main-menu-ul li {
   display: inline-block;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
-  margin-top: 12px;
-  max-width: 250px;
+.main-menu-nav .main-menu-ul li .kontakt-logo-img {
+  max-width: 260px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-logo {
-  padding-top: 4px;
-  margin-right: 5px;
-  margin-left: 5px;
-  position: absolute;
-  left: 0;
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li-links {
-  display: inline-block;
+.main-menu-li-links {
+  width: 45px;
+  margin: 10px 10px 10px 0px;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 8px;
-  /*a {
-                font-weight: bold;
-                text-decoration: none;
-                color: black;
-            }*/
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links :hover {
+.main-menu-li-links :hover {
   cursor: pointer;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links :focus-within {
-  border: 2px solid #4b67b4;
+.main-menu-li-links :focus-within {
+  outline: #3b99fc auto 5px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links .anchor-focus:focus {
+.main-menu-li-links .anchor-focus:focus {
   border: none;
 }
 
@@ -107,7 +94,8 @@
 }
 
 #nav-search input[type="checkbox"] {
-  opacity: 0;
+  position: absolute;
+  left: -9999px;
 }
 
 ::-webkit-input-placeholder {
@@ -169,7 +157,8 @@
 }
 
 #nav-menu input[type="checkbox"] {
-  opacity: 0;
+  position: absolute;
+  left: -9999px;
 }
 
 #nav-menu .main-menu-2 {
