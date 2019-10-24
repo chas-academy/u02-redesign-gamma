@@ -479,31 +479,6 @@ DEFAULT STYLING PAGES
           align-items: center;
 }
 
-.social h4 {
-  width: 100%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  border-bottom: 1px solid #101010;
-}
-
-.social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 /* Styling for bulletin-lists */
 .no-bull {
   list-style-type: none;
@@ -513,34 +488,30 @@ DEFAULT STYLING PAGES
 BUTTONS 
 ***/
 /* Standard button */
-.std-button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .std-button > a {
   text-decoration: none;
-  color: #000000;
-  margin-top: 20px;
   color: #000000;
   padding: 10px;
   text-decoration: none;
   text-align: center;
   background-color: transparent;
   display: inline-block;
-  border: 1px solid #646464;
+  border: 1px solid black;
 }
 
 .std-button > a:hover {
   border: 1px solid black;
 }
 
+.std-button > a {
+  margin-top: 20px;
+}
+
 /* Button on top of image */
 .section-button {
   padding: 10px;
   text-decoration: none;
-  border: 1px solid #969696;
+  border: 1px solid white;
   text-align: center;
   color: #ffffff;
   z-index: 1;
@@ -585,6 +556,36 @@ DEFAULT EFFECTS
   right: 0;
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*** 
+CONTENT USED ON MULTIPLE PAGES
+***/
+/* Styling for heading - social container */
+.social h4 {
+  width: 100%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  border-bottom: 1px solid #101010;
+}
+
+/* Styling for social icons */
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 /*** 
@@ -773,21 +774,37 @@ STYLING: SPECIFIC PAGES
 }
 
 #contact-form-section form label {
-  padding-top: 8px;
-}
-
-#contact-form-section form label:first-of-type {
-  padding-top: 0;
+  padding-top: 20px;
 }
 
 #contact-form-section form input,
 #contact-form-section form textarea {
   width: 100%;
   font-size: 1.2rem;
+  height: 45px;
+  border: 1px solid #000000;
 }
 
 #contact-form-section form textarea {
-  min-height: 105px;
+  min-height: 135px;
+}
+
+#contact-form-section form #form-send-btn {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.small-form-text {
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 #contact-section-container {
