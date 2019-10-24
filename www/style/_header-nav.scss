@@ -35,48 +35,61 @@
     }
 }
 
+
+
+
+#kontakt-logo-anchor {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}  
+
+#main-menu-li-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
 .main-menu-nav {
-    overflow: hidden;
-    background: $primary-color;
-
     .main-menu-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1.2;
+  
 
-        .main-menu-li {
-            display: inline-block;
-
-            .main-menu-img {
-                margin-top: 12px;
-                max-width: 250px;
-            }
-        }
-
-        .main-menu-li-logo {
-            padding-top: 4px;
-            margin-right: 5px;
-            margin-left: 5px;
-            position: absolute;
-            left: 0;
-        }
-
-        .main-menu-li-links {
-            display: inline-block;
-            text-align: center;
-            align-self: center;
-            width: 55px;
-            margin-top: 16px;
-
-            a {
-                font-weight: bold;
-                text-decoration: none;
-                color: black;
-            }
-        }
+    li {
+        display: inline-block;
+    
+            .kontakt-logo-img {
+                max-width: 260px;
+            } 
+        }    
     }
 }
+        .main-menu-li-links {
+            width: 45px;
+            margin: 10px 10px 5px 0px;
+            text-align: center;
+        
+            :hover {
+                cursor: pointer;
+            }
+
+            :focus-within {
+                outline: rgb(59, 153, 252) auto 5px;
+            }
+            
+            .anchor-focus {
+                
+            }
+
+            .anchor-focus:focus {
+                border: none;
+            }
+        }
+    
+
 
 .burger-menu-image {
     height: 45px;
@@ -96,7 +109,10 @@
 }
 
 #nav-search input[type="checkbox"] {
-    display: none;
+    //display: none;
+    //opacity: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 ::placeholder {
@@ -127,6 +143,7 @@
 #search-close {}
 
 .main-menu {
+ 
     #cb-hack {
         position: relative;
         left: 6px;
@@ -149,18 +166,27 @@
 }
 
 #nav-menu input[type="checkbox"] {
-    display: none;
+    //display: none;
+    //opacity: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 #nav-menu {
-
+ 
     .main-menu-2 {
         z-index: 5;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-
+        //height: 100vh;
+        background-color: rgb(218, 207, 207);
+        :hover {
+            cursor: default;
+        }
+        //display: none;
+        
         #label-inside-menu {
             position: absolute;
             right: 2%;
@@ -170,18 +196,45 @@
             z-index: 799;
         }
 
+        #opacity-cover-2 {
+            z-index: 4;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1000vh; // not right
+            background-color: rgba(218, 207, 207, 1);
+            overflow: hidden;
+            :hover {
+                cursor: default;
+                }
+            
+            
+            }
+
         li {
             position: relative;
             display: block;
             width: 100%;
             text-align: center;
             line-height: 42px;
+            z-index: 6;
+           /* :hover {
+                cursor: pointer;
+            }*/
+            :hover {
+                cursor: pointer;
+                }
+
+            
+
+
 
             a {
                 text-decoration: none;
                 color: rgb(75, 73, 73);
                 font-size: 1.5rem;
-                background: rgb(241, 236, 236);
+                //background: rgb(241, 236, 236);
                 position: relative;
                 display: block;
                 overflow: hidden;
@@ -190,15 +243,21 @@
     }
 }
 
-#nav-search {
-    font-size: 1.1rem;
-}
-
-#nav-menu {
+#nav-search, #nav-menu {
     font-size: 1.1rem;
     font-weight: bold;
+    z-index: 1;
+
+    :focus-within {
+        border: none;
+    }
+}
+
+
+#toggle-menu-1 {
+    //display: block;
 }
 
 #toggle-menu-2 {
-   //font-size: 16px;
-}
+    //font-size: 16px;
+ }

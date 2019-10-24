@@ -45,9 +45,16 @@
   margin: 5px 5px;
 }
 
-.main-menu-nav {
-  overflow: hidden;
-  background: whitesmoke;
+#kontakt-logo-anchor {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+}
+
+#main-menu-li-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .main-menu-nav .main-menu-ul {
@@ -61,41 +68,33 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  line-height: 1.2;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li {
+.main-menu-nav .main-menu-ul li {
   display: inline-block;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
-  margin-top: 12px;
-  max-width: 250px;
+.main-menu-nav .main-menu-ul li .kontakt-logo-img {
+  max-width: 260px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-logo {
-  padding-top: 4px;
-  margin-right: 5px;
-  margin-left: 5px;
-  position: absolute;
-  left: 0;
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li-links {
-  display: inline-block;
+.main-menu-li-links {
+  width: 45px;
+  margin: 10px 10px 5px 0px;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 55px;
-  margin-top: 16px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+.main-menu-li-links :hover {
+  cursor: pointer;
+}
+
+.main-menu-li-links :focus-within {
+  outline: #3b99fc auto 5px;
+}
+
+.main-menu-li-links .anchor-focus:focus {
+  border: none;
 }
 
 .burger-menu-image {
@@ -115,7 +114,8 @@
 }
 
 #nav-search input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 ::-webkit-input-placeholder {
@@ -177,7 +177,8 @@
 }
 
 #nav-menu input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 #nav-menu .main-menu-2 {
@@ -186,6 +187,11 @@
   left: 0;
   top: 0;
   width: 100%;
+  background-color: #dacfcf;
+}
+
+#nav-menu .main-menu-2 :hover {
+  cursor: default;
 }
 
 #nav-menu .main-menu-2 #label-inside-menu {
@@ -197,31 +203,54 @@
   z-index: 799;
 }
 
+#nav-menu .main-menu-2 #opacity-cover-2 {
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000vh;
+  background-color: #dacfcf;
+  overflow: hidden;
+}
+
+#nav-menu .main-menu-2 #opacity-cover-2 :hover {
+  cursor: default;
+}
+
 #nav-menu .main-menu-2 li {
   position: relative;
   display: block;
   width: 100%;
   text-align: center;
   line-height: 42px;
+  z-index: 6;
+  /* :hover {
+                cursor: pointer;
+            }*/
+}
+
+#nav-menu .main-menu-2 li :hover {
+  cursor: pointer;
 }
 
 #nav-menu .main-menu-2 li a {
   text-decoration: none;
   color: #4b4949;
   font-size: 1.5rem;
-  background: #f1ecec;
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-#nav-search {
-  font-size: 1.1rem;
-}
-
-#nav-menu {
+#nav-search, #nav-menu {
   font-size: 1.1rem;
   font-weight: bold;
+  z-index: 1;
+}
+
+#nav-search :focus-within, #nav-menu :focus-within {
+  border: none;
 }
 
 /*** Default styling ***/
