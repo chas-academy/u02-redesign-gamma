@@ -5,28 +5,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.top-links-nav .top-links-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  text-align: right;
-  line-height: 30px;
-  font-weight: bold;
-}
-
 .top-links-nav .top-links-ul .top-links-li {
-  min-height: 40px;
   display: inline-block;
   margin-right: 10px;
 }
@@ -35,7 +19,7 @@
   color: black;
   max-width: 30px;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
@@ -48,7 +32,7 @@
 #kontakt-logo-anchor {
   position: absolute;
   top: 0;
-  margin: 10px;
+  margin: 10px 0px 0px 10px;
 }
 
 #main-menu-li-logo {
@@ -68,7 +52,8 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  line-height: 1.2;
+  line-height: 0;
+  padding: 0;
 }
 
 .main-menu-nav .main-menu-ul li {
@@ -97,12 +82,9 @@
   border: none;
 }
 
-.burger-menu-image {
+.burger-menu-image, .search-menu-image {
   height: 45px;
-}
-
-.search-menu-image {
-  height: 45px;
+  margin-bottom: 16px;
 }
 
 #nav-search .main-menu {
@@ -225,9 +207,6 @@
   text-align: center;
   line-height: 42px;
   z-index: 6;
-  /* :hover {
-                cursor: pointer;
-            }*/
 }
 
 #nav-menu .main-menu-2 li :hover {
@@ -247,6 +226,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   z-index: 1;
+  padding-bottom: 12px;
 }
 
 #nav-search :focus-within, #nav-menu :focus-within {
