@@ -29,18 +29,6 @@
   margin: 5px 5px;
 }
 
-#kontakt-logo-anchor {
-  position: absolute;
-  top: 0;
-  margin: 10px 0px 0px 10px;
-}
-
-#main-menu-li-logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .main-menu-nav .main-menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,29 +44,41 @@
   padding: 0;
 }
 
+.main-menu-nav .main-menu-ul #main-menu-li-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor {
+  position: absolute;
+  top: 0;
+  margin: 10px 0px 0px 10px;
+}
+
+.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
+  max-width: 260px;
+}
+
 .main-menu-nav .main-menu-ul li {
   display: inline-block;
 }
 
-.main-menu-nav .main-menu-ul li .kontakt-logo-img {
-  max-width: 260px;
-}
-
-.main-menu-li-links {
+.main-menu-nav .main-menu-ul .main-menu-li-links {
   width: 45px;
   margin: 10px 10px 5px 0px;
   text-align: center;
 }
 
-.main-menu-li-links :hover {
+.main-menu-nav .main-menu-ul .main-menu-li-links :hover {
   cursor: pointer;
 }
 
-.main-menu-li-links :focus-within {
+.main-menu-nav .main-menu-ul .main-menu-li-links :focus-within {
   outline: #3b99fc auto 5px;
 }
 
-.main-menu-li-links .anchor-focus:focus {
+.main-menu-nav .main-menu-ul .main-menu-li-links .anchor-focus:focus {
   border: none;
 }
 
@@ -142,12 +142,12 @@
 
 .main-menu #cb-hack {
   position: relative;
-  left: 6px;
-  top: 200px;
+  top: 210px;
   color: #af1919;
   font-size: 1.5rem;
-  padding: 10px 10px;
-  z-index: 999;
+  padding: 10px;
+  z-index: 1;
+  display: block;
 }
 
 #nav-menu .main-menu-2 {

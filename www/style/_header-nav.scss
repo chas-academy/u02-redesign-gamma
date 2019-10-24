@@ -28,19 +28,12 @@
     }
 }
 
-#kontakt-logo-anchor {
-    position: absolute;
-    top: 0;
-    margin: 10px 0px 0px 10px;
-}  
 
-#main-menu-li-logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-} 
+
+
 
 .main-menu-nav {
+
     .main-menu-ul {
     display: flex;
     flex-direction: row;
@@ -48,16 +41,27 @@
     line-height: 0;
     padding: 0;
   
+    #main-menu-li-logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        #kontakt-logo-anchor {
+            position: absolute;
+            top: 0;
+            margin: 10px 0px 0px 10px;
+
+            .kontakt-logo-img {
+                max-width: 260px;
+            } 
+        }  
+    } 
 
     li {
         display: inline-block;
     
-            .kontakt-logo-img {
-                max-width: 260px;
-            } 
+            
         }    
-    }
-}
+ 
         .main-menu-li-links {
             width: 45px;
             margin: 10px 10px 5px 0px;
@@ -79,7 +83,8 @@
                 border: none;
             }
         }
-    
+    }
+}    
 
 
 .burger-menu-image, .search-menu-image{
@@ -132,12 +137,12 @@
  
     #cb-hack {
         position: relative;
-        left: 6px;
-        top: 200px;
+        top: 210px;
         color: rgb(175, 25, 25);
         font-size: 1.5rem;
-        padding: 10px 10px;
-        z-index: 999;
+        padding: 10px;
+        z-index: 1;
+        display: block;
     }
 }
 
