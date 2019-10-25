@@ -35,7 +35,8 @@
   outline-style: solid;
 }
 
-input:focus + label {
+input:focus + #toggle-menu,
+input:focus + #toggle-menu-2 {
   outline: #3b99fc auto 5px;
   outline-width: 1px;
   outline-style: solid;

@@ -34,7 +34,8 @@
             outline-style: solid;
 }
 
-input:focus + label 
+input:focus + #toggle-menu, 
+input:focus + #toggle-menu-2
 /*input:focus:not(:checked) + label*/ { 
   outline: rgb(59, 153, 252) auto 5px;
   outline-width: 1px; 
