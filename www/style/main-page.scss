@@ -22,11 +22,11 @@ $link-color: #08c;
 $hover-font-color: #000000;
 
 /// Font
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
-
-@import "_header-nav.scss";
-$font_roboto: "Roboto", sans-serif;
 $focus-setting: rgb(59, 153, 252) 1px solid;
+$font_roboto: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+@import "_header-nav.scss";
+
 
 /*** 
 DEFAULT STYLING 

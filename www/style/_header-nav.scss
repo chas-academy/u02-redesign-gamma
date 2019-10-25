@@ -72,7 +72,6 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
             }
 
             .anchor-focus {
-                
             }
         }
     }
@@ -94,15 +93,13 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
     left: -9999px;
 }
 
-::placeholder {
-    color: rgb(7, 7, 7);
-    font-size: 1.5rem;
-}
+//Search dropdown
+
+
 
 .main-menu {
     /* cursor: default;
      z-index: 5;*/
- }
 
 #user-search {
     line-height: 36px;
@@ -112,6 +109,8 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
     left: 0%;
     top: 200px;
     z-index: 99;
+   
+    }
 }
 
 #opacity-cover {
@@ -121,7 +120,7 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 2;
     overflow: hidden;
     cursor: default;
     :hover {
@@ -139,7 +138,7 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
         color: rgb(175, 25, 25);
         font-size: 1.5rem;
         padding: 10px;
-        z-index: 1;
+        z-index: 2;
         display: block;
         cursor: pointer;
     }
@@ -161,7 +160,7 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
     left: -9999px;
 }
 
-// Menu dropdown
+// Burger dropdown
 #nav-menu {
  
     .main-menu-2 {
