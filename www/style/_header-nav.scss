@@ -111,6 +111,11 @@ input:focus + #toggle-menu-2
 }
 
 // search
+.main-menu {
+   /* cursor: default;
+    z-index: 5;*/
+}
+
 #nav-search .main-menu {
     display: none;
 }
@@ -141,12 +146,17 @@ input:focus + #toggle-menu-2
 
 #opacity-cover {
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     background: rgba($color: #000000, $alpha: 0.8);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 0;
+    overflow: hidden;
+    cursor: default;
+    :hover {
+        cursor: text;
+    }
 }
 
 #search-close {}
@@ -161,6 +171,7 @@ input:focus + #toggle-menu-2
         padding: 10px;
         z-index: 1;
         display: block;
+        cursor: pointer;
     }
 }
 
@@ -234,7 +245,7 @@ input:focus + #toggle-menu-2
                 color: rgb(75, 73, 73);
                 font-size: 1.5rem;
                 position: relative;
-                display: block;
+                /*display: block;*/ //remove for focus not whole li, just the text
                 overflow: hidden;
             }
         }
@@ -251,6 +262,7 @@ input:focus + #toggle-menu-2
         border: none;
     }*/
 }
+
 
 
 #toggle-menu-1 {
