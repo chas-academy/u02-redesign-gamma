@@ -34,7 +34,12 @@
             outline-style: solid;
 }
 
-
+input:focus + label 
+/*input:focus:not(:checked) + label*/ { 
+  outline: rgb(59, 153, 252) auto 5px;
+  outline-width: 1px; 
+  outline-style: solid;
+}
 
 .main-menu-nav {
 
@@ -76,15 +81,15 @@
             }
 
             :focus-within {
-            outline: rgb(59, 153, 252) auto 5px;
+            /*outline: rgb(59, 153, 252) auto 5px;
             outline-width: 1px;
-            outline-style: solid;
+            outline-style: solid;*/
         }
             
             :focus-within::after {
-                outline: none;
+               /* outline: none;
                 outline-width: none;
-                outline-style: none;
+                outline-style: none;*/
             }
 
             .anchor-focus {
@@ -109,7 +114,7 @@
     display: none;
 }
 
-#cb-hack:checked+.main-menu {
+#cb-hack:checked ~ .main-menu {
     display: block;
 }
 
@@ -164,7 +169,7 @@
     display: none;
 }
 
-#cb-hack-2:checked+.main-menu-2 {
+#cb-hack-2:checked ~ .main-menu-2 {
     display: block;
 }
 
@@ -217,7 +222,7 @@
             width: 100%;
             text-align: center;
             line-height: 42px;
-            z-index: 6;
+            z-index: +6;
 
             :hover {
                 cursor: pointer;
@@ -239,11 +244,11 @@
     font-size: 1.1rem;
     font-weight: bold;
     z-index: 1;
-    padding-bottom: 12px;
+    padding-bottom: 12px;   
 
-    :focus-within {
+    /*:focus-within {
         border: none;
-    }
+    }*/
 }
 
 
