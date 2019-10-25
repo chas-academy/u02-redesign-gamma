@@ -29,19 +29,12 @@
   margin: 5px 5px;
 }
 
-*:focus {
-  outline: #3b99fc auto 5px;
-  outline-width: 1px;
-  outline-style: solid;
-}
-
 input:focus + #toggle-menu,
 input:focus + #toggle-menu-2 {
-  outline: #3b99fc auto 5px;
-  outline-width: 1px;
-  outline-style: solid;
+  outline: #3b99fc 1px solid;
 }
 
+/*** Main nav settings ***/
 .main-menu-nav .main-menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +72,7 @@ input:focus + #toggle-menu-2 {
 
 .main-menu-nav .main-menu-ul .main-menu-li-links {
   width: 45px;
-  margin: 10px 10px 5px 0px;
+  margin: 10px 10px 10px 0px;
   text-align: center;
 }
 
@@ -87,32 +80,7 @@ input:focus + #toggle-menu-2 {
   cursor: pointer;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links :focus-within {
-  /*outline: rgb(59, 153, 252) auto 5px;
-            outline-width: 1px;
-            outline-style: solid;*/
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li-links :focus-within::after {
-  /* outline: none;
-                outline-width: none;
-                outline-style: none;*/
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li-links .anchor-focus:focus {
-  border: none;
-}
-
-.burger-menu-image, .search-menu-image {
-  height: 45px;
-  margin-bottom: 16px;
-}
-
-.main-menu {
-  /* cursor: default;
-    z-index: 5;*/
-}
-
+/* Search Menu */
 #nav-search .main-menu {
   display: none;
 }
@@ -144,6 +112,11 @@ input:focus + #toggle-menu-2 {
 ::placeholder {
   color: #070707;
   font-size: 1.5rem;
+}
+
+.main-menu {
+  /* cursor: default;
+     z-index: 5;*/
 }
 
 #user-search {
@@ -183,6 +156,7 @@ input:focus + #toggle-menu-2 {
   cursor: pointer;
 }
 
+/* Hamburger Menu */
 #nav-menu .main-menu-2 {
   display: none;
 }
@@ -255,14 +229,16 @@ input:focus + #toggle-menu-2 {
   overflow: hidden;
 }
 
+/* some common styling between search menu and hamburger menu */
 #nav-search, #nav-menu {
   font-size: 1.1rem;
   font-weight: bold;
   z-index: 1;
-  padding-bottom: 12px;
-  /*:focus-within {
-        border: none;
-    }*/
+}
+
+.burger-menu-image, .search-menu-image {
+  height: 45px;
+  margin-bottom: 16px;
 }
 
 /*** Default styling ***/
@@ -271,6 +247,11 @@ input:focus + #toggle-menu-2 {
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*:focus {
+  /*outline: rgb(59, 153, 252) 1px solid;*/
+  outline: #3b99fc 1px solid;
 }
 
 .clearfix:before {

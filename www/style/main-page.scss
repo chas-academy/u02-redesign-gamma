@@ -26,6 +26,7 @@ $hover-font-color: #000000;
 
 @import "_header-nav.scss";
 $font_roboto: "Roboto", sans-serif;
+$focus-setting: rgb(59, 153, 252) 1px solid;
 
 /*** Default styling ***/
 /// Root
@@ -33,6 +34,12 @@ $font_roboto: "Roboto", sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+
+  &:focus {
+    // Make sure focus is the same on all browsers as it  
+    // needs to be assigned for search and hamburger menu
+    outline: $focus-setting;
+  }
 }
 
 /// Clearfix

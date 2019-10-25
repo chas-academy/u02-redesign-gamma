@@ -28,20 +28,12 @@
     }
 }
 
-*:focus {
-    outline: rgb(59, 153, 252) auto 5px;
-            outline-width: 1px;
-            outline-style: solid;
+input:focus+#toggle-menu, // Enable focus on search menu
+input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
+   outline: $focus-setting;
 }
 
-input:focus + #toggle-menu, 
-input:focus + #toggle-menu-2
-/*input:focus:not(:checked) + label*/ { 
-  outline: rgb(59, 153, 252) auto 5px;
-  outline-width: 1px; 
-  outline-style: solid;
-}
-
+/*** Main nav settings ***/
 .main-menu-nav {
 
     .main-menu-ul {
@@ -68,63 +60,36 @@ input:focus + #toggle-menu-2
 
     li {
         display: inline-block;
-    
-            
         }    
  
         .main-menu-li-links {
             width: 45px;
-            margin: 10px 10px 5px 0px;
+            margin: 10px 10px 10px 0px;
             text-align: center;
         
             :hover {
                 cursor: pointer;
             }
 
-            :focus-within {
-            /*outline: rgb(59, 153, 252) auto 5px;
-            outline-width: 1px;
-            outline-style: solid;*/
-        }
-            
-            :focus-within::after {
-               /* outline: none;
-                outline-width: none;
-                outline-style: none;*/
-            }
-
             .anchor-focus {
                 
-            }
-
-            .anchor-focus:focus {
-                border: none;
             }
         }
     }
 }    
 
+/* Search Menu */
 
-.burger-menu-image, .search-menu-image{
-    height: 45px;
-    margin-bottom: 16px;
-}
-
-// search
-.main-menu {
-   /* cursor: default;
-    z-index: 5;*/
-}
-
-#nav-search .main-menu {
+//Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
+#nav-search .main-menu { //hide dropdown as default
     display: none;
 }
 
-#cb-hack:checked ~ .main-menu {
+#cb-hack:checked ~ .main-menu { //make dropdown visible when checkbox is checked
     display: block;
 }
 
-#nav-search input[type="checkbox"] {
+#nav-search input[type="checkbox"] { // hide the checkbox
     position: absolute;
     left: -9999px;
 }
@@ -133,6 +98,11 @@ input:focus + #toggle-menu-2
     color: rgb(7, 7, 7);
     font-size: 1.5rem;
 }
+
+.main-menu {
+    /* cursor: default;
+     z-index: 5;*/
+ }
 
 #user-search {
     line-height: 36px;
@@ -175,21 +145,23 @@ input:focus + #toggle-menu-2
     }
 }
 
-// Hamburger Menu 
+/* Hamburger Menu */
 
-#nav-menu .main-menu-2 {
+//Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
+#nav-menu .main-menu-2 { //hide dropdown as default
     display: none;
 }
 
-#cb-hack-2:checked ~ .main-menu-2 {
+#cb-hack-2:checked ~ .main-menu-2 { //make dropdown visible when checkbox is checked
     display: block;
 }
 
-#nav-menu input[type="checkbox"] {
+#nav-menu input[type="checkbox"] { // hide the checkbox
     position: absolute;
     left: -9999px;
 }
 
+// Menu dropdown
 #nav-menu {
  
     .main-menu-2 {
@@ -223,10 +195,8 @@ input:focus + #toggle-menu-2
             overflow: hidden;
             :hover {
                 cursor: default;
-                }
-            
-            
             }
+        }
 
         li {
             position: relative;
@@ -245,25 +215,24 @@ input:focus + #toggle-menu-2
                 color: rgb(75, 73, 73);
                 font-size: 1.5rem;
                 position: relative;
-                /*display: block;*/ //remove for focus not whole li, just the text
+                /*display: block;*/ //Make links in dropdown take up a whole <li> each
                 overflow: hidden;
             }
         }
     }
 }
 
+/* some common styling between search menu and hamburger menu */
 #nav-search, #nav-menu {
     font-size: 1.1rem;
     font-weight: bold;
     z-index: 1;
-    padding-bottom: 12px;   
-
-    /*:focus-within {
-        border: none;
-    }*/
 }
 
-
+.burger-menu-image, .search-menu-image{
+    height: 45px;
+    margin-bottom: 16px;
+}
 
 #toggle-menu-1 {
 }
