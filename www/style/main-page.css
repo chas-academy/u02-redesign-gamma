@@ -1103,7 +1103,6 @@ footer .footer-container h4 {
 
 footer .footer-container .footer-section {
   width: 300px;
-  background-color: red;
   text-align: center;
 }
 
@@ -1126,16 +1125,5 @@ footer .bottom-footer {
   height: 100px;
   background-color: #101010;
   color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    max-width: 300px;
-    margin: 10px 10px;
-  }
 }
 /*# sourceMappingURL=main-page.css.map */
