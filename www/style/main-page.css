@@ -5,28 +5,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.top-links-nav .top-links-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  text-align: right;
-  line-height: 30px;
-  font-weight: bold;
-}
-
 .top-links-nav .top-links-ul .top-links-li {
-  min-height: 40px;
   display: inline-block;
   margin-right: 10px;
 }
@@ -35,7 +19,7 @@
   color: black;
   max-width: 30px;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
@@ -45,11 +29,12 @@
   margin: 5px 5px;
 }
 
-.main-menu-nav {
-  overflow: hidden;
-  background: whitesmoke;
+input:focus + #toggle-menu,
+input:focus + #toggle-menu-2 {
+  outline: #3b99fc 1px solid;
 }
 
+/*** Main nav settings ***/
 .main-menu-nav .main-menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,84 +46,60 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  line-height: 0;
+  padding: 0;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li {
-  display: inline-block;
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li .main-menu-img {
-  margin-top: 12px;
-  max-width: 250px;
-}
-
-.main-menu-nav .main-menu-ul .main-menu-li-logo {
-  padding-top: 4px;
-  margin-right: 5px;
-  margin-left: 5px;
+.main-menu-nav .main-menu-ul #main-menu-li-logo {
   position: absolute;
   left: 0;
+  top: 0;
+}
+
+.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor {
+  position: absolute;
+  top: 0;
+  margin: 10px 0px 0px 10px;
+}
+
+.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
+  max-width: 260px;
+}
+
+.main-menu-nav .main-menu-ul li {
+  display: inline-block;
 }
 
 .main-menu-nav .main-menu-ul .main-menu-li-links {
-  display: inline-block;
+  width: 45px;
+  margin: 10px 10px 10px 0px;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 55px;
-  margin-top: 16px;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+.main-menu-nav .main-menu-ul .main-menu-li-links :hover {
+  cursor: pointer;
 }
 
-.burger-menu-image {
-  height: 45px;
-}
-
-.search-menu-image {
-  height: 45px;
-}
-
+/* Search Menu */
 #nav-search .main-menu {
   display: none;
 }
 
-#cb-hack:checked + .main-menu {
+#cb-hack:checked ~ .main-menu {
   display: block;
 }
 
 #nav-search input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
-::-webkit-input-placeholder {
-  color: #070707;
-  font-size: 1.5rem;
+.main-menu {
+  /* cursor: default;
+     z-index: 5;*/
 }
 
-:-ms-input-placeholder {
-  color: #070707;
-  font-size: 1.5rem;
-}
-
-::-ms-input-placeholder {
-  color: #070707;
-  font-size: 1.5rem;
-}
-
-::placeholder {
-  color: #070707;
-  font-size: 1.5rem;
-}
-
-#user-search {
+.main-menu #user-search {
   line-height: 36px;
   font-size: 2rem;
   color: #070707;
@@ -150,34 +111,43 @@
 
 #opacity-cover {
   width: 100%;
-  height: 100vh;
+  height: 1000vh;
   background: rgba(0, 0, 0, 0.8);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 2;
+  overflow: hidden;
+  cursor: default;
+}
+
+#opacity-cover :hover {
+  cursor: text;
 }
 
 .main-menu #cb-hack {
   position: relative;
-  left: 6px;
-  top: 200px;
+  top: 210px;
   color: #af1919;
   font-size: 1.5rem;
-  padding: 10px 10px;
-  z-index: 999;
+  padding: 10px;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
 }
 
+/* Hamburger Menu */
 #nav-menu .main-menu-2 {
   display: none;
 }
 
-#cb-hack-2:checked + .main-menu-2 {
+#cb-hack-2:checked ~ .main-menu-2 {
   display: block;
 }
 
 #nav-menu input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 #nav-menu .main-menu-2 {
@@ -186,6 +156,11 @@
   left: 0;
   top: 0;
   width: 100%;
+  background-color: #dacfcf;
+}
+
+#nav-menu .main-menu-2 :hover {
+  cursor: default;
 }
 
 #nav-menu .main-menu-2 #label-inside-menu {
@@ -197,39 +172,67 @@
   z-index: 799;
 }
 
+#nav-menu .main-menu-2 #opacity-cover-2 {
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000vh;
+  background-color: #dacfcf;
+  overflow: hidden;
+}
+
+#nav-menu .main-menu-2 #opacity-cover-2 :hover {
+  cursor: default;
+}
+
 #nav-menu .main-menu-2 li {
   position: relative;
   display: block;
   width: 100%;
   text-align: center;
   line-height: 42px;
+  z-index: +6;
+}
+
+#nav-menu .main-menu-2 li :hover {
+  cursor: pointer;
 }
 
 #nav-menu .main-menu-2 li a {
   text-decoration: none;
   color: #4b4949;
   font-size: 1.5rem;
-  background: #f1ecec;
   position: relative;
-  display: block;
+  /*display: block;*/
   overflow: hidden;
 }
 
-#nav-search {
-  font-size: 1.1rem;
-}
-
-#nav-menu {
+/* some common styling between search menu and hamburger menu */
+#nav-search, #nav-menu {
   font-size: 1.1rem;
   font-weight: bold;
+  z-index: 1;
 }
 
-/*** Default styling ***/
+.burger-menu-image, .search-menu-image {
+  height: 45px;
+  margin-bottom: 16px;
+}
+
+/*** 
+DEFAULT STYLING 
+***/
 * {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*:focus {
+  outline: #3b99fc 1px solid;
 }
 
 .clearfix:before {
@@ -254,7 +257,9 @@ body {
   background-color: whitesmoke;
 }
 
-/*** Font-sizes & font-weights, and default padding/margins ***/
+/*** 
+DEFAULT FONT SIZES
+***/
 h1 {
   font-size: 1.9rem;
 }
@@ -298,7 +303,9 @@ a:hover {
   color: #000000;
 }
 
-/*** Styling pages ***/
+/*** 
+DEFAULT STYLING PAGES 
+***/
 .head-section {
   padding: 16px;
   background-color: white;
@@ -362,10 +369,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-lblue a {
-  color: black;
-}
-
 .section-green {
   padding: 16px;
   background-color: white;
@@ -380,10 +383,6 @@ a:hover {
 
 .section-green:first-of-type {
   margin-top: 0px;
-}
-
-.section-green a {
-  color: white;
 }
 
 .section-lyellow {
@@ -401,10 +400,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-lyellow a {
-  color: black;
-}
-
 .section-yellow {
   padding: 16px;
   background-color: white;
@@ -418,10 +413,6 @@ a:hover {
 
 .section-yellow:first-of-type {
   margin-top: 0px;
-}
-
-.section-yellow a {
-  color: black;
 }
 
 .section-grey {
@@ -439,10 +430,6 @@ a:hover {
   margin-top: 0px;
 }
 
-.section-grey a {
-  color: black;
-}
-
 .section-dgrey {
   padding: 16px;
   background-color: white;
@@ -457,10 +444,6 @@ a:hover {
 
 .section-dgrey:first-of-type {
   margin-top: 0px;
-}
-
-.section-dgrey a {
-  color: black;
 }
 
 .section-black {
@@ -502,11 +485,34 @@ a:hover {
   list-style-type: none;
 }
 
-/* Buttons */
+/*** 
+BUTTONS 
+***/
+/* Standard button */
+.std-button > a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.std-button > a:hover {
+  border: 1px solid black;
+}
+
+.std-button > a {
+  margin-top: 20px;
+}
+
+/* Button on top of image */
 .section-button {
   padding: 10px;
   text-decoration: none;
-  border: 1px solid #969696;
+  border: 1px solid white;
   text-align: center;
   color: #ffffff;
   z-index: 1;
@@ -518,29 +524,7 @@ a:hover {
   border: 1px solid white;
 }
 
-.std-button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.std-button > a {
-  text-decoration: none;
-  color: #000000;
-  margin-top: 20px;
-  color: #000000;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  background-color: transparent;
-  display: inline-block;
-  border: 1px solid #646464;
-}
-
-.std-button > a:hover {
-  border: 1px solid black;
-}
-
+/* Go to top button */
 .to-top-button {
   padding: 10px;
   text-decoration: none;
@@ -556,6 +540,9 @@ a:hover {
   border: 1px solid black;
 }
 
+/*** 
+DEFAULT EFFECTS 
+***/
 /* Dark effect on image */
 .darken {
   position: relative;
@@ -573,7 +560,37 @@ a:hover {
 }
 
 /*** 
-General settings images 
+CONTENT USED ON MULTIPLE PAGES
+***/
+/* Styling for heading - social container */
+.social h4 {
+  width: 100%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  border-bottom: 1px solid #101010;
+}
+
+/* Styling for social icons */
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/*** 
+DEFAULT STYLING IMAGES
 ***/
 .page-head-img {
   width: 100%;
@@ -585,7 +602,7 @@ object {
 }
 
 /***  
-Positioning styling
+POSITIONING STYLING
 ***/
 .pos-center {
   display: -webkit-box;
@@ -624,8 +641,18 @@ Positioning styling
           flex-flow: column;
 }
 
+.make-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
 /*** 
-Styling - Specific pages 
+STYLING: SPECIFIC PAGES 
 ***/
 /* Om oss */
 #om-oss-main {
@@ -748,21 +775,37 @@ Styling - Specific pages
 }
 
 #contact-form-section form label {
-  padding-top: 8px;
-}
-
-#contact-form-section form label:first-of-type {
-  padding-top: 0;
+  padding-top: 20px;
 }
 
 #contact-form-section form input,
 #contact-form-section form textarea {
   width: 100%;
   font-size: 1.2rem;
+  height: 45px;
+  border: 1px solid #000000;
 }
 
 #contact-form-section form textarea {
-  min-height: 105px;
+  min-height: 135px;
+}
+
+#contact-form-section form #form-send-btn {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.small-form-text {
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 #contact-section-container {
@@ -1098,7 +1141,7 @@ footer {
 }
 
 .footer-container h4 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 10px;

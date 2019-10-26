@@ -3,25 +3,18 @@
 .top-links-nav {
     background-color: whitesmoke;
     display: flex;
-    align-items: center;
     justify-content: center;
     
     .top-links-ul {
-        display: flex;
-        justify-content: flex-end;
-        text-align: right;
-        line-height: 30px;
-        font-weight: bold;
 
         .top-links-li {
-            min-height: 40px;
             display: inline-block;
             margin-right: 10px;
             a {
                 color: black;
                 max-width: 30px;
                 text-decoration: none;
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 font-weight: 300;
 
                 .top-links-image {
@@ -35,74 +28,78 @@
     }
 }
 
+input:focus+#toggle-menu, // Enable focus on search menu
+input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
+   outline: $focus-setting;
+}
+
+/*** Main nav settings ***/
 .main-menu-nav {
-    overflow: hidden;
-    background: $primary-color;
 
     .main-menu-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-
-        .main-menu-li {
-            display: inline-block;
-
-            .main-menu-img {
-                margin-top: 12px;
-                max-width: 250px;
-            }
-        }
-
-        .main-menu-li-logo {
-            padding-top: 4px;
-            margin-right: 5px;
-            margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 0;
+    padding: 0;
+  
+    #main-menu-li-logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        #kontakt-logo-anchor {
             position: absolute;
-            left: 0;
-        }
+            top: 0;
+            margin: 10px 0px 0px 10px;
 
+            .kontakt-logo-img {
+                max-width: 260px;
+            } 
+        }  
+    } 
+
+    li {
+        display: inline-block;
+        }    
+ 
         .main-menu-li-links {
-            display: inline-block;
+            width: 45px;
+            margin: 10px 10px 10px 0px;
             text-align: center;
-            align-self: center;
-            width: 55px;
-            margin-top: 16px;
+        
+            :hover {
+                cursor: pointer;
+            }
 
-            a {
-                font-weight: bold;
-                text-decoration: none;
-                color: black;
+            .anchor-focus {
             }
         }
     }
-}
+}    
 
-.burger-menu-image {
-    height: 45px;
-}
+/* Search Menu */
 
-.search-menu-image {
-    height: 45px;
-}
-
-// search
-#nav-search .main-menu {
+//Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
+#nav-search .main-menu { //hide dropdown as default
     display: none;
 }
 
-#cb-hack:checked+.main-menu {
+#cb-hack:checked ~ .main-menu { //make dropdown visible when checkbox is checked
     display: block;
 }
 
-#nav-search input[type="checkbox"] {
-    display: none;
+#nav-search input[type="checkbox"] { // hide the checkbox
+    position: absolute;
+    left: -9999px;
 }
 
-::placeholder {
-    color: rgb(7, 7, 7);
-    font-size: 1.5rem;
-}
+//Search dropdown
+
+
+
+.main-menu {
+    /* cursor: default;
+     z-index: 5;*/
 
 #user-search {
     line-height: 36px;
@@ -112,55 +109,71 @@
     left: 0%;
     top: 200px;
     z-index: 99;
+   
+    }
 }
 
 #opacity-cover {
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     background: rgba($color: #000000, $alpha: 0.8);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 2;
+    overflow: hidden;
+    cursor: default;
+    :hover {
+        cursor: text;
+    }
 }
 
 #search-close {}
 
 .main-menu {
+ 
     #cb-hack {
         position: relative;
-        left: 6px;
-        top: 200px;
+        top: 210px;
         color: rgb(175, 25, 25);
         font-size: 1.5rem;
-        padding: 10px 10px;
-        z-index: 999;
+        padding: 10px;
+        z-index: 2;
+        display: block;
+        cursor: pointer;
     }
 }
 
-// Menu 
+/* Hamburger Menu */
 
-#nav-menu .main-menu-2 {
+//Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
+#nav-menu .main-menu-2 { //hide dropdown as default
     display: none;
 }
 
-#cb-hack-2:checked+.main-menu-2 {
+#cb-hack-2:checked ~ .main-menu-2 { //make dropdown visible when checkbox is checked
     display: block;
 }
 
-#nav-menu input[type="checkbox"] {
-    display: none;
+#nav-menu input[type="checkbox"] { // hide the checkbox
+    position: absolute;
+    left: -9999px;
 }
 
+// Burger dropdown
 #nav-menu {
-
+ 
     .main-menu-2 {
         z-index: 5;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-
+        background-color: rgb(218, 207, 207);
+        :hover {
+            cursor: default;
+        }
+        
         #label-inside-menu {
             position: absolute;
             right: 2%;
@@ -170,35 +183,58 @@
             z-index: 799;
         }
 
+        #opacity-cover-2 {
+            z-index: 4;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1000vh;
+            background-color: rgba(218, 207, 207, 1);
+            overflow: hidden;
+            :hover {
+                cursor: default;
+            }
+        }
+
         li {
             position: relative;
             display: block;
             width: 100%;
             text-align: center;
             line-height: 42px;
+            z-index: +6;
+
+            :hover {
+                cursor: pointer;
+                }
 
             a {
                 text-decoration: none;
                 color: rgb(75, 73, 73);
                 font-size: 1.5rem;
-                background: rgb(241, 236, 236);
                 position: relative;
-                display: block;
+                /*display: block;*/ //Make links in dropdown take up a whole <li> each
                 overflow: hidden;
             }
         }
     }
 }
 
-#nav-search {
-    font-size: 1.1rem;
-}
-
-#nav-menu {
+/* some common styling between search menu and hamburger menu */
+#nav-search, #nav-menu {
     font-size: 1.1rem;
     font-weight: bold;
+    z-index: 1;
+}
+
+.burger-menu-image, .search-menu-image{
+    height: 45px;
+    margin-bottom: 16px;
+}
+
+#toggle-menu-1 {
 }
 
 #toggle-menu-2 {
-   //font-size: 16px;
-}
+ }

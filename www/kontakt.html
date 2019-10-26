@@ -1,247 +1,244 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style/main-page.css" />
-    <title>Myndigheten för yrkeshögskolan</title>
-  </head>
 
-  <body>
-    <nav class="main-menu-nav">
-      <ul class="main-menu-ul">
-        <li class="main-menu-li main-menu-li-logo">
-          <a href="index.html">
-            <img
-              id="top"
-              src="media/myh_logo.png"
-              class="main-menu-img"
-              alt="Myndigheten för yrkeshögskolan"
-            />
-          </a>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style/main-page.css" />
+  <title>Myndigheten för yrkeshögskolan</title>
+</head>
 
-        <li class="main-menu-li main-menu-li-links" id="search">
-          <a href="#">
-            <nav id="nav-search">
-              <label for="cb-hack" id="toggle-menu">
-                <img
-                  src="media/search.png"
-                  class="search-menu-image"
-                  alt=""
-                />Sök</label
-              >
-              <input type="checkbox" id="cb-hack" />
-              <ul class="main-menu">
-                <div id="opacity-cover">
-                  <input
-                    id="user-search"
-                    placeholder="Skriv vad du vill söka efter..."
-                  />
-                  <label for="cb-hack" id="cb-hack">Stäng</label>
-                </div>
-              </ul>
-            </nav>
-          </a>
-        </li>
-        <li class="main-menu-li main-menu-li-links">
-          <nav id="nav-menu">
-            <label for="cb-hack-2" id="toggle-menu-2"
-              ><img
-                src="media/burger.png"
-                class="burger-menu-image"
-                alt="Meny"
-              />Meny</label
-            >
-            <input type="checkbox" id="cb-hack-2" />
-            <ul class="main-menu-2">
-              <li>
-                <a href="index.html">Start</a>
-                <label for="cb-hack-2" id="label-inside-menu">Stäng</label>
-              </li>
-              <li><a href="om_oss.html">Om oss</a></li>
-              <li><a href="verksamhet.html">Verksamhetsområden</a></li>
-              <li><a href="#">Lagar, regler, tillsyn</a></li>
-              <li><a href="#">Statistik</a></li>
-              <li><a href="#">Publikationer</a></li>
-              <li><a href="#">Nyhetsrum</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-          </nav>
-        </li>
-      </ul>
-    </nav>
+<body>
+  <nav class="main-menu-nav">
+    <ul class="main-menu-ul">
 
-    <nav class="top-links-nav">
-      <ul class="top-links-ul">
-        <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/burger.png" alt="top-links-image">Större text</a></li>
-        <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/eye-icon.png" alt="top-links-image">Lättläst</a></li>
-        <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/uk-flag.png" alt="top-links-image">English</a></li>
-        <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/lock-icon.png" alt="top-links-image">Mina sidor</a></li>
-      </ul>
-    </nav>
+      <li id="main-menu-li-logo">
+        <a id="kontakt-logo-anchor" href="index.html">
+          <img src="media/myh_logo.png" class="kontakt-logo-img" class="#top" alt="Myndigheten för yrkeshögskolan">
+        </a>
+      </li>
 
-    <main>
-      <section class="head-section">
-        <header id="kontakta-oss-header">
-          <h1>Kontakta oss</h1>
-        </header>
-        <img
-          src="media/kontakt/telephone.jpeg"
-          class="page-head-img"
-          alt="Kontakta oss"
-        />
-        <p>
-          Här hittar du kontaktuppgifter till oss på Myndigheten för
-          yrkeshögskolan.
-        </p>
-      </section>
+      <li class="main-menu-li-links">
+        <nav id="nav-search">
+          <input type="checkbox" id="cb-hack">
+          <label for="cb-hack" id="toggle-menu"> <img src="media/search_icon.png" class="search-menu-image"
+              alt="">Sök</label>
+          <ul class="main-menu">
+            <div id="opacity-cover">
+              <input id="user-search" placeholder="Sök..." />
+              <label for="cb-hack" id="cb-hack">Stäng</label>
+            </div>
+          </ul>
+        </nav>
+      </li>
 
-      <section id="contact-form-section">
-        <h2>Kontaktformulär</h2>
-        <form>
-          <label for="field1" id="top-label">Namn *</label>
-          <input type="text" name="field1" />
-          <label for="field2">E-post *</label>
-          <input type="email" name="field2" />
-          <label for="field3">Telefonnummer</label>
-          <input type="tel" name="field3" /> <label for="field4">Ämne *</label>
-          <input type="text" name="field4" />
-          <label for="field5">Meddelande *</label>
-          <textarea name="field5"></textarea>
-          <input id="form-send-btn" type="submit" value="Skicka" />
-        </form>
-      </section>
-    </main>
+      <li class="main-menu-li-links">
+        <nav id="nav-menu">
+          <input type="checkbox" id="cb-hack-2">
+          <label for="cb-hack-2" id=toggle-menu-2><img src="media/burger_icon.png" class="burger-menu-image"
+              alt="Meny">Meny</label>
+          <ul class="main-menu-2">
+            <li><a href="index.html">Start</a> <label for="cb-hack-2" id=label-inside-menu>Stäng</label></li>
+            <li><a href="om_oss.html">Om oss</a></li>
+            <li><a href="verksamhet.html">Verksamhetsområden</a></li>
+            <li><a href="#">Lagar, regler, tillsyn</a></li>
+            <li><a href="#">Statistik</a></li>
+            <li><a href="#">Publikationer</a></li>
+            <li><a href="#">Nyhetsrum</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <div id="opacity-cover-2"></div>
+          </ul>
+        </nav>
+      </li>
 
-    <div id="contact-section-container">
-      <section class="section">
-        <h2>Telefon</h2>
-        <p>
-          Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende! Växeln
-          är öppen vardagar kl 8.00-17.00.
-        </p>
+    </ul>
+  </nav>
 
-        <h2>Kundforum</h2>
-        <p>
-          Se vanliga frågor och svar samt ställ dina frågor i vårt
-          <a href="#">digitala frågeforum</a>.
-        </p>
+  <nav class="top-links-nav">
+    <ul class="top-links-ul">
+      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/larger_icon.png"
+            alt="top-links-image">Större text</a></li>
+      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/eye_icon.png"
+            alt="top-links-image">Lättläst</a></li>
+      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/uk_icon.png"
+            alt="top-links-image">English</a></li>
+      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/lock_icon.png"
+            alt="top-links-image">Mina sidor</a></li>
+    </ul>
+  </nav>
 
-        <h2>E-post</h2>
-        <p>Allmänna frågor/synpunkter: <a href="#">info@myh.se</a></p>
-        <p>Registrator: <a href="#">registrator@myh.se</a></p>
-        <p>Webbfrågor: <a href="#">webbredaktionen@myh.se</a></p>
-        <p>Personlig e-post enligt <a href="#">fornamn.efternamn@myh.se</a></p>
-      </section>
-
-      <section class="section-lyellow">
-        <h2>Postadress Västerås</h2>
-        <p>Myndigheten för yrkeshögskolan</p>
-        <p>Box 145</p>
-        <p>721 05 Västerås</p>
-
-        <h2>Besöksadress Västerås</h2>
-        <p>Ingenjör Bååths gata 19</p>
-        <p>722 12 Västerås</p>
-        <p>
-          Öppettider: Helgfri måndag-fredag kl 9.00-15.00 med lunchstängt kl
-          12.00-13.00. Begränsade öppettider 24 juni-16 augusti: 9.00-11.00.
-        </p>
-
-        <h2>Postadress Hässleholm</h2>
-        <p>Myndigheten för yrkeshögskolan</p>
-        <p>Box 85</p>
-        <p>281 21 Hässleholm</p>
-
-        <h2>Besöksadress Hässleholm</h2>
-        <p>Frykholmsgatan 10</p>
-        <p>281 31 Hässleholm</p>
-      </section>
-
-      <section class="section-yellow">
-        <h2>Organisationsnummer</h2>
-        <p>202100-6230</p>
-
-        <h2>Skicka faktura</h2>
-        <p>
-          Från och med den 1 april 2019 blir det lag på att alla inköp i
-          offentlig sektor ska faktureras med elektronisk faktura (e-faktura).
-          <a href="#">Läs här om hur du kan fakturera oss elektroniskt.</a>
-        </p>
-
-        <h2>Bra att veta innan du kontaktar oss</h2>
-        <p>
-          Myndigheten för yrkeshögskolan är en statlig myndighet. Det du skickar
-          till oss via e-post, post eller fax blir därför en allmän handling. Vi
-          registrerar allmänna handlingar och sparar dem i vårt diarium.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2>Hitta till oss</h2>
-        <div id="section-map">
-          <iframe
-            src="https://maps.google.se/maps/ms?msa=0&msid=208106955202648480291.0004b2df7f01bd721b100&ie=UTF8&t=m&vpsrc=6&ll=58.813742,14.194336&spn=9.11878,20.610352&z=5&output=embed"
-            title="Our location on Google Maps"
-            style="border:0;"
-            allowfullscreen=""
-          >
-          </iframe>
-        </div>
-        <p>
-          Visa <a href="#">Myndigheten för yrkeshögskolan</a> på en större karta
-        </p>
-      </section>
-    </div>
-
-    <section class="section-no-bg pos-right">
-      <a
-        class="to-top-button"
-        href="#top"
-        role="button"
-        title="Gå till toppen"
-        aria-label="Topp av webbsida"
-      >
-        Gå till toppen av webbsidan
-      </a>
+  <main>
+    <section class="head-section">
+      <header id="kontakta-oss-header">
+        <h1>Kontakta oss</h1>
+      </header>
+      <img src="media/kontakt/telephone.jpeg" class="page-head-img" alt="Kontakta oss" />
+      <p>
+        Här hittar du kontaktuppgifter till oss på Myndigheten för
+        yrkeshögskolan.
+      </p>
     </section>
 
-    <footer>
-      <section class="footer-container">
-          <section class="footer-section">
-              <h4>Kontakta oss</h4>
-              E-post: info@myh.se eller registrator@myh.se
-              Telefon: 0102090100 (vardagar 8.00 - 17.00)
-              <a href="#">Fler kontaktuppgifter</a>
-          </section class="footer-section">
-          <section class="footer-section">
-              <h4>Om webbplatsen</h4>
-              <a href="#">Använda webbplatsen</a>
-              <a href="#">Om webbkakor (cookies)</a>
-              <a href="#">Webbkarta</a>
-          </section class="footer-section">
-          <section class="footer-section">
-              <h4>Våra övriga webbplatser</h4>
-              <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-              <a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-              <a href="https://www.blitolk.nu">www.blitolk.nu</a>
-              <a href="https://www.seqf.se">www.seqf.se</a>
-          </section class="footer-section">
-          <section class="footer-section">
-              Ansvarig utgivare
-              Thomas Persson, generaldirektör MYH.
-          </section class="footer-section">
-      </section>
-      <section class="bottom-footer">
-          <section class="footer-section">
-              Myndigheten för yrkeshögskolan
-              Box 145
-              721 05 Västerås
-          </section class="footer-section">
-      </section>
+    <section id="contact-form-section">
+      <form>
+        <h2>Kontaktformulär</h2>
+        <label for="field1" id="top-label">För- och efternamn*</label>
+        <input type="text" name="field1" />
+        <label for="field2">E-postadress*</label>
+        <input type="email" name="field2" />
+        <label for="field3">Telefonnummer</label>
+        <input type="tel" name="field3" />
+        <label for="field4">Ämne*</label>
+        <input type="text" name="field4" />
+        <label for="field5">Meddelande*</label>
+        <textarea name="field5"></textarea>
+        <p class="small-form-text">Samtliga fält markerade med * är obligatoriska.</p>
+        <input id="form-send-btn" type="submit" value="Skicka" />
+      </form>
+    </section>
+  </main>
+
+  <div id="contact-section-container">
+    <section class="section">
+      <h2>Telefon</h2>
+      <p>
+        Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende! Växeln
+        är öppen vardagar kl 8.00-17.00.
+      </p>
+
+      <h2>Kundforum</h2>
+      <p>
+        Se vanliga frågor och svar samt ställ dina frågor i vårt
+        <a href="#">digitala frågeforum</a>.
+      </p>
+
+      <h2>E-post</h2>
+      <p>Allmänna frågor/synpunkter: <a href="#">info@myh.se</a></p>
+      <p>Registrator: <a href="#">registrator@myh.se</a></p>
+      <p>Webbfrågor: <a href="#">webbredaktionen@myh.se</a></p>
+      <p>Personlig e-post enligt <a href="#">fornamn.efternamn@myh.se</a></p>
+    </section>
+
+    <section class="section-lyellow">
+      <h2>Postadress Västerås</h2>
+      <p>Myndigheten för yrkeshögskolan</p>
+      <p>Box 145</p>
+      <p>721 05 Västerås</p>
+
+      <h2>Besöksadress Västerås</h2>
+      <p>Ingenjör Bååths gata 19</p>
+      <p>722 12 Västerås</p>
+      <p>
+        Öppettider: Helgfri måndag-fredag kl 9.00-15.00 med lunchstängt kl
+        12.00-13.00. Begränsade öppettider 24 juni-16 augusti: 9.00-11.00.
+      </p>
+
+      <h2>Postadress Hässleholm</h2>
+      <p>Myndigheten för yrkeshögskolan</p>
+      <p>Box 85</p>
+      <p>281 21 Hässleholm</p>
+
+      <h2>Besöksadress Hässleholm</h2>
+      <p>Frykholmsgatan 10</p>
+      <p>281 31 Hässleholm</p>
+    </section>
+
+    <section class="section-yellow">
+      <h2>Organisationsnummer</h2>
+      <p>202100-6230</p>
+
+      <h2>Skicka faktura</h2>
+      <p>
+        Från och med den 1 april 2019 blir det lag på att alla inköp i
+        offentlig sektor ska faktureras med elektronisk faktura (e-faktura).
+        <a href="#">Läs här om hur du kan fakturera oss elektroniskt.</a></p>
+
+
+      <h2>Bra att veta innan du kontaktar oss</h2>
+      <p>
+        Myndigheten för yrkeshögskolan är en statlig myndighet. Det du skickar
+        till oss via e-post, post eller fax blir därför en allmän handling. Vi
+        registrerar allmänna handlingar och sparar dem i vårt diarium.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Hitta till oss</h2>
+      <div id="section-map">
+        <iframe
+          src="https://maps.google.se/maps/ms?msa=0&msid=208106955202648480291.0004b2df7f01bd721b100&ie=UTF8&t=m&vpsrc=6&ll=58.813742,14.194336&spn=9.11878,20.610352&z=5&output=embed"
+          title="Our location on Google Maps" style="border:0;" allowfullscreen="">
+        </iframe>
+      </div>
+      <p>
+        Visa <a href="#">Myndigheten för yrkeshögskolan</a> på en större karta
+      </p>
+    </section>
+  </div>
+
+  <aside>
+    <section class="section-yellow small-container">
+      <h4><a href="#">Hitta utbildningar</a></h4>
+    </section>
+    <section class="section-black small-container">
+      <h4><a href="#">Anmäl brister i en utbildning</a></h4>
+    </section>
+    <section class="section-lblue small-container">
+      <h4><a href="#">Jobba hos oss</a></h4>
+    </section>
+    <section class="section social">
+      <h4>Dela denna sida</h4>
+      <ul class="no-bull social-icons">
+        <li><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
+        <li><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
+        <li><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
+        <li><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
+      </ul>
+    </section>
+  </aside>
+
+  <section class="section-no-bg pos-right">
+    <a class="to-top-button" href="#top" role="button" title="Gå till toppen" aria-label="Topp av webbsida">
+      Gå till toppen av webbsidan
+    </a>
+  </section>
+
+  <footer>
+    <section class="footer-container">
+      <section class="footer-section">
+        <h4>Kontakta oss</h4>
+        E-post: info@myh.se eller registrator@myh.se
+        Telefon: 0102090100 (vardagar 8.00 - 17.00)
+        <a href="#">Fler kontaktuppgifter</a>
+      </section class="footer-section">
+      <section class="footer-section">
+        <h4>Om webbplatsen</h4>
+        <a href="#">Använda webbplatsen</a>
+        <a href="#">Om webbkakor (cookies)</a>
+        <a href="#">Webbkarta</a>
+      </section class="footer-section">
+      <section class="footer-section">
+        <h4>Våra övriga webbplatser</h4>
+        <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+        <a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
+        <a href="https://www.blitolk.nu">www.blitolk.nu</a>
+        <a href="https://www.seqf.se">www.seqf.se</a>
+      </section class="footer-section">
+      <section class="footer-section">
+        Ansvarig utgivare
+        Thomas Persson, generaldirektör MYH.
+      </section class="footer-section">
+    </section>
+    <section class="bottom-footer">
+      <section class="footer-section">
+        Myndigheten för yrkeshögskolan
+        Box 145
+        721 05 Västerås
+      </section class="footer-section">
+    </section>
   </footer>
-  </body>
+</body>
+
 </html>
