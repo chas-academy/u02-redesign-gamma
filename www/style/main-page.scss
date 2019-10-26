@@ -543,6 +543,9 @@ FRONTPAGE CONTAINER PROPERTIES
   padding: 10px 0px;
 }
 
+.content-spread {
+  justify-content: space-between;
+}
 
 /***
 CALENDAR PROPERTIES
@@ -603,6 +606,12 @@ CALENDAR PROPERTIES
 AKTUELLT
 ***/
 .aktuellt {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+
   h4 {
     text-align: center;
     width: 100%;
@@ -610,53 +619,46 @@ AKTUELLT
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
+  
   .aktuellt-container {
     display: flex;
     flex-flow: row wrap;
+    
     span {
       margin: 0 auto;
     }
   }
-}
-
-.aktuellt {
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
-}
-
-.aktuellt-article {
-  width: 400px;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  background-color: #e3ede8;
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  p {
-    span {
-      color: darkgrey;
-      display: block;
-      margin: 10px 0px;
+  .aktuellt-article {
+    width: 400px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #e3ede8;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    p {
+      span {
+        color: darkgrey;
+        display: block;
+        margin: 10px 0px;
+      }
+    }
+    img {
+      align-self: center;
+      height: 300px;
+      width: 330px;
+      margin-bottom: 20px;
+    }
+    .article-post-link {
+      color: black;
+      align-self: flex-end;
+      font-weight: 900;
+      text-decoration: underline;
     }
   }
-  img {
-    top: 10px
-    align-self: center;
-    height: 300px;
-    width: 330px;
-    margin-bottom: 20px;
-  }
 }
 
-.article-post-link {
-  color: black;
-  align-self: flex-end;
-  font-weight: 900;
-  text-decoration: underline;
-}
+
 
 
 /**

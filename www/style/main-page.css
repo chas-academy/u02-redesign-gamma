@@ -924,6 +924,12 @@ FRONTPAGE CONTAINER PROPERTIES
   padding: 10px 0px;
 }
 
+.content-spread {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /***
 CALENDAR PROPERTIES
 ***/
@@ -1000,6 +1006,23 @@ CALENDAR PROPERTIES
 /***
 AKTUELLT
 ***/
+.aktuellt {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
 .aktuellt h4 {
   text-align: center;
   width: 100%;
@@ -1022,24 +1045,7 @@ AKTUELLT
   margin: 0 auto;
 }
 
-.aktuellt {
-  background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-}
-
-.aktuellt-article {
+.aktuellt .aktuellt-article {
   width: 400px;
   margin: 20px 20px;
   padding: 20px 20px;
@@ -1056,13 +1062,13 @@ AKTUELLT
           flex-flow: column wrap;
 }
 
-.aktuellt-article p span {
+.aktuellt .aktuellt-article p span {
   color: darkgrey;
   display: block;
   margin: 10px 0px;
 }
 
-.aktuellt-article img {
+.aktuellt .aktuellt-article img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1071,7 +1077,7 @@ AKTUELLT
   margin-bottom: 20px;
 }
 
-.article-post-link {
+.aktuellt .aktuellt-article .article-post-link {
   color: black;
   -ms-flex-item-align: end;
       align-self: flex-end;
