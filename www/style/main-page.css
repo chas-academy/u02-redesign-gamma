@@ -29,8 +29,8 @@
   margin: 5px 5px;
 }
 
-input:focus + #toggle-menu,
-input:focus + #toggle-menu-2 {
+input:focus:not(:checked) + #toggle-menu,
+input:focus:not(:checked) + #toggle-menu-2 {
   outline: #3b99fc 1px solid;
 }
 
@@ -101,18 +101,18 @@ input:focus + #toggle-menu-2 {
 
 .main-menu #user-search {
   line-height: 36px;
-  font-size: 2rem;
-  color: #070707;
-  position: relative;
-  left: 0%;
-  top: 200px;
-  z-index: 99;
+  font-size: 1.5rem;
+  width: 100%;
+  /* color: rgb(7, 7, 7);
+    position: relative;
+    left: 0%;
+    z-index: 99;*/
 }
 
 #opacity-cover {
   width: 100%;
   height: 1000vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   position: fixed;
   top: 0;
   left: 0;
@@ -125,15 +125,39 @@ input:focus + #toggle-menu-2 {
   cursor: text;
 }
 
-.main-menu #cb-hack {
+.main-menu form {
   position: relative;
   top: 210px;
-  color: #af1919;
+  width: 100%;
+}
+
+.main-menu form input[type=submit] {
+  font-size: 1.2rem;
+  margin: 8px 4px;
+  background: #ffffff;
+}
+
+.main-menu form #submit-close {
+  /*font-family: FontAwesome;
+                color: red;
+                font-size: 4rem;
+                font-weight: normal;
+                background-color: Transparent;
+                border: none;
+                position: fixed;
+                top: 130px;
+                right: 5px;*/
+  background-color: Transparent;
+  border: none;
+  position: fixed;
+  right: 16px;
+  top: 10px;
   font-size: 1.5rem;
-  padding: 10px;
-  z-index: 2;
-  display: block;
-  cursor: pointer;
+  font-family: FontAwesome;
+  color: red;
+  font-size: 3rem;
+  overflow: visible;
+  font-weight: normal;
 }
 
 /* Hamburger Menu */
@@ -163,13 +187,23 @@ input:focus + #toggle-menu-2 {
   cursor: default;
 }
 
-#nav-menu .main-menu-2 #label-inside-menu {
-  position: absolute;
+#nav-menu .main-menu-2 #close-li {
+  position: fixed;
+  top: 0;
   right: 2%;
-  top: 0%;
-  color: #e04848;
+  /*text-align: right;*/
+}
+
+#nav-menu .main-menu-2 #close-menu-icon {
+  position: fixed;
+  right: 16px;
+  top: 10px;
   font-size: 1.5rem;
-  z-index: 799;
+  font-family: FontAwesome;
+  color: red;
+  font-size: 3rem;
+  overflow: visible;
+  font-weight: normal;
 }
 
 #nav-menu .main-menu-2 #opacity-cover-2 {

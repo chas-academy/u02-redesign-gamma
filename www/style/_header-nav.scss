@@ -28,8 +28,9 @@
     }
 }
 
-input:focus+#toggle-menu, // Enable focus on search menu
-input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
+// Enable focus on search and hamburger menu labels. No focus while dropdown is open
+input:focus:not(:checked)+#toggle-menu, 
+input:focus:not(:checked)+#toggle-menu-2 {
    outline: $focus-setting;
 }
 
@@ -70,9 +71,6 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
             :hover {
                 cursor: pointer;
             }
-
-            .anchor-focus {
-            }
         }
     }
 }    
@@ -103,20 +101,19 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
 
 #user-search {
     line-height: 36px;
-    font-size: 2rem;
-    color: rgb(7, 7, 7);
+    font-size: 1.5rem;
+    width: 100%;
+   /* color: rgb(7, 7, 7);
     position: relative;
     left: 0%;
-    top: 200px;
-    z-index: 99;
-   
+    z-index: 99;*/
     }
 }
 
 #opacity-cover {
     width: 100%;
     height: 1000vh;
-    background: rgba($color: #000000, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.85);
     position: fixed;
     top: 0;
     left: 0;
@@ -126,24 +123,48 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
     :hover {
         cursor: text;
     }
-}
 
-#search-close {}
+}
 
 .main-menu {
- 
-    #cb-hack {
+
+    form {
         position: relative;
         top: 210px;
-        color: rgb(175, 25, 25);
-        font-size: 1.5rem;
-        padding: 10px;
-        z-index: 2;
-        display: block;
-        cursor: pointer;
-    }
-}
+        width: 100%;
 
+            input[type=submit] {
+                font-size: 1.2rem;
+                margin: 8px 4px;
+                background: $white-box-color;
+            }
+
+            #submit-close {
+                /*font-family: FontAwesome;
+                color: red;
+                font-size: 4rem;
+                font-weight: normal;
+                background-color: Transparent;
+                border: none;
+                position: fixed;
+                top: 130px;
+                right: 5px;*/
+                background-color: Transparent;
+                border: none;
+                position: fixed;
+                right: 16px;
+                top: 10px;
+                font-size: 1.5rem;
+                font-family: FontAwesome;
+                color: red;
+                font-size: 3rem;
+                overflow: visible;
+                font-weight: normal;
+
+            }
+        }
+    
+}
 /* Hamburger Menu */
 
 //Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
@@ -174,13 +195,24 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
             cursor: default;
         }
         
-        #label-inside-menu {
-            position: absolute;
+        #close-li {
+            position: fixed;
+            top: 0;
             right: 2%;
-            top: 0%;
-            color: rgb(224, 72, 72);
+            /*text-align: right;*/
+        }
+
+        #close-menu-icon {
+            position: fixed;
+            right: 16px;
+            top: 10px;
             font-size: 1.5rem;
-            z-index: 799;
+            font-family: FontAwesome;
+            color: red;
+            font-size: 3rem;
+            overflow: visible;
+            font-weight: normal;
+
         }
 
         #opacity-cover-2 {
