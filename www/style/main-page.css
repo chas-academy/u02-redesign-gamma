@@ -333,6 +333,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.head-section .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.head-section a:hover .arrow {
+  padding-left: 10px;
+}
+
 .head-section p {
   font-size: 1.2rem;
   font-weight: 500;
@@ -352,6 +362,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section a:hover .arrow {
+  padding-left: 10px;
+}
+
 .section-no-bg {
   padding: 16px;
   background-color: white;
@@ -367,6 +387,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-no-bg .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-no-bg a:hover .arrow {
+  padding-left: 10px;
+}
+
 .section-lblue {
   padding: 16px;
   background-color: white;
@@ -380,6 +410,16 @@ DEFAULT STYLING PAGES
 
 .section-lblue:first-of-type {
   margin-top: 0px;
+}
+
+.section-lblue .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-lblue a:hover .arrow {
+  padding-left: 10px;
 }
 
 .section-green {
@@ -398,6 +438,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-green .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-green a:hover .arrow {
+  padding-left: 10px;
+}
+
 .section-lyellow {
   padding: 16px;
   background-color: white;
@@ -411,6 +461,16 @@ DEFAULT STYLING PAGES
 
 .section-lyellow:first-of-type {
   margin-top: 0px;
+}
+
+.section-lyellow .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-lyellow a:hover .arrow {
+  padding-left: 10px;
 }
 
 .section-yellow {
@@ -428,6 +488,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-yellow .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-yellow a:hover .arrow {
+  padding-left: 10px;
+}
+
 .section-grey {
   padding: 16px;
   background-color: white;
@@ -441,6 +511,16 @@ DEFAULT STYLING PAGES
 
 .section-grey:first-of-type {
   margin-top: 0px;
+}
+
+.section-grey .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-grey a:hover .arrow {
+  padding-left: 10px;
 }
 
 .section-dgrey {
@@ -459,6 +539,16 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-dgrey .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-dgrey a:hover .arrow {
+  padding-left: 10px;
+}
+
 .section-black {
   padding: 16px;
   background-color: white;
@@ -473,6 +563,16 @@ DEFAULT STYLING PAGES
 
 .section-black:first-of-type {
   margin-top: 0px;
+}
+
+.section-black .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+.section-black a:hover .arrow {
+  padding-left: 10px;
 }
 
 .section-black a {
@@ -770,6 +870,16 @@ STYLING: SPECIFIC PAGES
 
 #contact-form-section:first-of-type {
   margin-top: 0px;
+}
+
+#contact-form-section .arrow {
+  font-weight: 900;
+  -webkit-transition: padding-left .7s;
+  transition: padding-left .7s;
+}
+
+#contact-form-section a:hover .arrow {
+  padding-left: 10px;
 }
 
 #contact-form-section form {
