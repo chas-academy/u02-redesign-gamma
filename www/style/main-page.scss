@@ -651,13 +651,26 @@ CALENDAR PROPERTIES
 }
 
 .image-box {
+  position: relative;
   background-color: white;
   padding: 0;
-  opacity: 0.6;
+  opacity: 0.7;
+
   .thomas-image {
-    background: url("../media/thomas.jpg");
-    height: 100%;
+    background-image: url(../media/thomas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
     width: 100%;
+    
+  }
+  .thomas-content-container {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    a {
+      color: black;
+    }
   }
 }
 
