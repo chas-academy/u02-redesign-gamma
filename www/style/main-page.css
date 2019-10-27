@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+/*** SCSS for the main menu ***/
+/* Accessibility links */
 .top-links-nav {
   background-color: whitesmoke;
   display: -webkit-box;
@@ -17,7 +19,6 @@
 
 .top-links-nav .top-links-ul .top-links-li a {
   color: black;
-  max-width: 30px;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 300;
@@ -52,14 +53,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .main-menu-nav .main-menu-ul #main-menu-li-logo {
   position: absolute;
-  left: 0;
+  left: 8px;
   top: 0;
 }
 
 .main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor {
   position: absolute;
-  top: 0;
-  margin: 10px 0px 0px 10px;
 }
 
 .main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
@@ -71,8 +70,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .main-menu-nav .main-menu-ul .main-menu-li-links {
-  width: 45px;
-  margin: 10px 10px 10px 0px;
+  width: 50px;
+  margin-right: 8px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -81,11 +81,11 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 /* Search Menu */
-#nav-search .main-menu {
+#nav-search .search-menu-ul {
   display: none;
 }
 
-#cb-hack:checked ~ .main-menu {
+#cb-hack:checked ~ .search-menu-ul {
   display: block;
 }
 
@@ -94,17 +94,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: -9999px;
 }
 
-.main-menu #user-search {
+.search-menu-ul #user-search {
   line-height: 36px;
   font-size: 1.5rem;
   width: 100%;
-  /* color: rgb(7, 7, 7);
-    position: relative;
-    left: 0%;
-    z-index: 99;*/
 }
 
-.main-menu #opacity-cover {
+.search-menu-ul #opacity-cover {
   width: 100%;
   height: 1000vh;
   background: rgba(0, 0, 0, 0.85);
@@ -116,36 +112,27 @@ input:focus:not(:checked) + #toggle-menu-2 {
   cursor: default;
 }
 
-.main-menu #opacity-cover :hover {
+.search-menu-ul #opacity-cover :hover {
   cursor: text;
 }
 
-.main-menu form {
+.search-menu-ul form {
   position: relative;
   top: 210px;
   width: 100%;
 }
 
-.main-menu form #menu-submit {
+.search-menu-ul form #menu-submit {
   font-size: 1.2rem;
   margin: 8px 4px;
   background: #ffffff;
 }
 
-.main-menu form #menu-submit:hover {
+.search-menu-ul form #menu-submit:hover {
   cursor: pointer;
 }
 
-.main-menu form #menu-submit-close {
-  /*font-family: FontAwesome;
-                color: red;
-                font-size: 4rem;
-                font-weight: normal;
-                background-color: Transparent;
-                border: none;
-                position: fixed;
-                top: 130px;
-                right: 5px;*/
+.search-menu-ul form #menu-submit-close {
   background-color: Transparent;
   border: none;
   position: fixed;
@@ -159,16 +146,16 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-weight: normal;
 }
 
-.main-menu form #menu-submit-close:hover {
+.search-menu-ul form #menu-submit-close:hover {
   cursor: pointer;
 }
 
 /* Hamburger Menu */
-#nav-menu .main-menu-2 {
+#nav-menu .burger-menu-ul {
   display: none;
 }
 
-#cb-hack-2:checked ~ .main-menu-2 {
+#cb-hack-2:checked ~ .burger-menu-ul {
   display: block;
 }
 
@@ -177,28 +164,27 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: -9999px;
 }
 
-#nav-menu .main-menu-2 {
+#nav-menu .burger-menu-ul {
   z-index: 5;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #dacfcf;
+  background-color: whitesmoke;
 }
 
-#nav-menu .main-menu-2 :hover {
+#nav-menu .burger-menu-ul :hover {
   cursor: default;
 }
 
-#nav-menu .main-menu-2 #close-li {
+#nav-menu .burger-menu-ul #close-li {
   position: fixed;
   top: 0;
   right: 2%;
-  /*text-align: right;*/
   cursor: pointer;
 }
 
-#nav-menu .main-menu-2 #close-menu-icon {
+#nav-menu .burger-menu-ul #close-menu-icon {
   position: fixed;
   right: 16px;
   top: 10px;
@@ -210,22 +196,22 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-weight: normal;
 }
 
-#nav-menu .main-menu-2 #opacity-cover-2 {
+#nav-menu .burger-menu-ul #opacity-cover-2 {
   z-index: 4;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 1000vh;
-  background-color: #dacfcf;
+  background-color: whitesmoke;
   overflow: hidden;
 }
 
-#nav-menu .main-menu-2 #opacity-cover-2 :hover {
+#nav-menu .burger-menu-ul #opacity-cover-2 :hover {
   cursor: default;
 }
 
-#nav-menu .main-menu-2 li {
+#nav-menu .burger-menu-ul li {
   position: relative;
   display: block;
   width: 100%;
@@ -234,28 +220,35 @@ input:focus:not(:checked) + #toggle-menu-2 {
   z-index: +6;
 }
 
-#nav-menu .main-menu-2 li :hover {
+#nav-menu .burger-menu-ul li :hover {
   cursor: pointer;
 }
 
-#nav-menu .main-menu-2 li a {
+#nav-menu .burger-menu-ul li a {
   text-decoration: none;
-  color: #4b4949;
-  font-size: 1.5rem;
+  color: #000000;
+  font-size: 1.6rem;
   position: relative;
   /*display: block;*/
   overflow: hidden;
 }
 
+#nav-menu .burger-menu-ul li a#burger-menu-current-page {
+  color: #807e7e;
+  font-size: 1.6rem;
+}
+
 /* some common styling between search menu and hamburger menu */
-#nav-search, #nav-menu {
+#nav-search,
+#nav-menu {
   font-size: 1.1rem;
   font-weight: bold;
   z-index: 1;
 }
 
-.burger-menu-image, .search-menu-image {
-  height: 45px;
+.burger-menu-image,
+.search-menu-image {
+  width: 50px;
   margin-bottom: 16px;
 }
 

@@ -26,15 +26,15 @@
           <input type="checkbox" id="cb-hack">
           <label for="cb-hack" id="toggle-menu"> <img src="media/search_icon.png" class="search-menu-image"
               alt="">Sök</label>
-          <ul class="main-menu">
-              <div id="opacity-cover">
-                <form>
-              <input id="user-search" name="search" placeholder="Sök..." aria-required="true" aria-label="Search"/>
-              <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"/>
-              <input id="menu-submit-close" type="submit" value="&#xf00d" aria-required="false" aria-label="Close"/>
-            </form>
-              </div>
-            </ul>
+          <ul class="search-menu-ul">
+            <div id="opacity-cover">
+              <form>
+                <input id="user-search" name="search" placeholder="Sök..." aria-required="true" aria-label="Search" />
+                <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true" />
+                <input id="menu-submit-close" type="submit" value="&#xf00d" aria-required="false" aria-label="Close" />
+              </form>
+            </div>
+          </ul>
         </nav>
       </li>
 
@@ -43,16 +43,16 @@
           <input type="checkbox" id="cb-hack-2">
           <label for="cb-hack-2" id=toggle-menu-2><img src="media/burger_icon.png" class="burger-menu-image"
               alt="Meny">Meny</label>
-          <ul class="main-menu-2">
+          <ul class="burger-menu-ul">
             <li><a href="index.html">Start</a> </li>
-              <!--<label for="cb-hack-2" id=label-inside-menu>Stäng</label>-->
+            <!--<label for="cb-hack-2" id=label-inside-menu>Stäng</label>-->
             <li><a href="om_oss.html">Om oss</a></li>
             <li><a href="verksamhet.html">Verksamhetsområden</a></li>
             <li><a href="#">Lagar, regler, tillsyn</a></li>
             <li><a href="#">Statistik</a></li>
             <li><a href="#">Publikationer</a></li>
             <li><a href="#">Nyhetsrum</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a id="burger-menu-current-page" href="kontakt.html">Kontakt</a></li>
             <li id="close-li"> <a id=close-menu-icon href="kontakt.html">&#xf00d</a></li>
             <div id="opacity-cover-2"></div>
           </ul>
@@ -91,17 +91,17 @@
       <form>
         <h2>Kontaktformulär</h2>
         <label for="field1" id="top-label">För- och efternamn*</label>
-        <input type="text" name="field1" aria-required="true" aria-labelledby="field1"/>
+        <input type="text" name="field1" aria-required="true" aria-labelledby="field1" />
         <label for="field2">E-postadress*</label>
-        <input type="email" name="field2" aria-required="true" aria-labelledby="field2"/>
+        <input type="email" name="field2" aria-required="true" aria-labelledby="field2" />
         <label for="field3">Telefonnummer</label>
-        <input type="tel" name="field3" aria-required="false" aria-labelledby="field3"/>
+        <input type="tel" name="field3" aria-required="false" aria-labelledby="field3" />
         <label for="field4">Ämne*</label>
-        <input type="text" name="field4" aria-required="true" aria-labelledby="field4"/>
+        <input type="text" name="field4" aria-required="true" aria-labelledby="field4" />
         <label for="field5">Meddelande*</label>
         <textarea name="field5" aria-required="true" aria-multiline="true" aria-labelledby="field5"></textarea>
         <p class="small-form-text">Samtliga fält markerade med * är obligatoriska.</p>
-        <input id="form-send-btn" type="submit" value="Skicka" aria-required="true"/>
+        <input id="form-send-btn" type="submit" value="Skicka" aria-required="true" />
       </form>
     </section>
   </main>
