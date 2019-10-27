@@ -6,23 +6,26 @@
     justify-content: center;
     
     .top-links-ul {
-
         .top-links-li {
             display: inline-block;
-            margin-right: 10px;
+            margin: 0px 20px;
+            span {
+                white-space: nowrap;
+            }
             a {
+                display: flex;
+                flex-direction: column;
                 color: black;
-                max-width: 30px;
                 text-decoration: none;
                 font-size: 0.8rem;
                 font-weight: 300;
 
                 .top-links-image {
+                    align-self: center;
+                    margin-bottom: 0px;
                     width: 20px;
                     height: 20px;
-                    margin: 5px 5px;
-                }
-            
+                }  
             }
         }
     }
