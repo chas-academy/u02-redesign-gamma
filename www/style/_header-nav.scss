@@ -127,19 +127,20 @@ input:focus:not(:checked)+#toggle-menu-2 {
 }
 
 .main-menu {
-
+z-index: 99999;
     form {
         position: relative;
         top: 210px;
         width: 100%;
 
-            input[type=submit] {
+            #menu-submit {
                 font-size: 1.2rem;
                 margin: 8px 4px;
                 background: $white-box-color;
+                cursor: pointer;
             }
 
-            #submit-close {
+            #menu-submit-close {
                 /*font-family: FontAwesome;
                 color: red;
                 font-size: 4rem;
@@ -160,7 +161,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 font-size: 3rem;
                 overflow: visible;
                 font-weight: normal;
-
+                cursor: pointer;
             }
         }
     
@@ -200,6 +201,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
             top: 0;
             right: 2%;
             /*text-align: right;*/
+            cursor: pointer;
         }
 
         #close-menu-icon {
@@ -212,7 +214,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
             font-size: 3rem;
             overflow: visible;
             font-weight: normal;
-
         }
 
         #opacity-cover-2 {

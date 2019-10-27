@@ -125,19 +125,24 @@ input:focus:not(:checked) + #toggle-menu-2 {
   cursor: text;
 }
 
+.main-menu {
+  z-index: 99999;
+}
+
 .main-menu form {
   position: relative;
   top: 210px;
   width: 100%;
 }
 
-.main-menu form input[type=submit] {
+.main-menu form #menu-submit {
   font-size: 1.2rem;
   margin: 8px 4px;
   background: #ffffff;
+  cursor: pointer;
 }
 
-.main-menu form #submit-close {
+.main-menu form #menu-submit-close {
   /*font-family: FontAwesome;
                 color: red;
                 font-size: 4rem;
@@ -158,6 +163,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-size: 3rem;
   overflow: visible;
   font-weight: normal;
+  cursor: pointer;
 }
 
 /* Hamburger Menu */
@@ -192,6 +198,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   top: 0;
   right: 2%;
   /*text-align: right;*/
+  cursor: pointer;
 }
 
 #nav-menu .main-menu-2 #close-menu-icon {
