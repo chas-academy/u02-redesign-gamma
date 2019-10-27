@@ -439,7 +439,9 @@ Styling - Specific pages
 }
 
 /***
-CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
+FRONTPAGE CSS
+------------------------
+CSS FOR FRONTPAGE HEADER
 ***/
 
 
@@ -476,7 +478,7 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
     justify-content: center;
     flex-flow: column nowrap;
     left: 20px;
-    top: 20%;
+    bottom: 20%;
     color: white;
   }
   .header-link {
@@ -488,11 +490,6 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
     align-self: flex-start;
   }
 }
-
-
-
-
-
 
 
 /***
@@ -547,9 +544,11 @@ FRONTPAGE CONTAINER PROPERTIES
   justify-content: space-between;
 }
 
+
 /***
 CALENDAR PROPERTIES
 ***/
+
 
 .calendar-container {
   .calendar-header {
@@ -605,6 +604,8 @@ CALENDAR PROPERTIES
 /***
 AKTUELLT
 ***/
+
+
 .aktuellt {
   background-color: whitesmoke;
   display: flex;
@@ -657,8 +658,6 @@ AKTUELLT
     }
   }
 }
-
-
 
 
 /**

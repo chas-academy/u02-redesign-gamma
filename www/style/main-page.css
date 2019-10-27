@@ -794,7 +794,9 @@ Styling - Specific pages
 }
 
 /***
-CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
+FRONTPAGE CSS
+------------------------
+CSS FOR FRONTPAGE HEADER
 ***/
 .header-container {
   height: 300px;
@@ -839,7 +841,7 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   left: 20px;
-  top: 20%;
+  bottom: 20%;
   color: white;
 }
 
