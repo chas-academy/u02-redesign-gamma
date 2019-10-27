@@ -29,7 +29,7 @@
 }
 
 // Enable focus on search and hamburger menu labels. No focus while dropdown is open
-input:focus:not(:checked)+#toggle-menu, 
+input:focus:not(:checked)+#toggle-menu,
 input:focus:not(:checked)+#toggle-menu-2 {
    outline: $focus-setting;
 }
@@ -93,55 +93,52 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 //Search dropdown
 
-
-
 .main-menu {
-    /* cursor: default;
-     z-index: 5;*/
+    //z-index: 99999;
 
-#user-search {
-    line-height: 36px;
-    font-size: 1.5rem;
-    width: 100%;
-   /* color: rgb(7, 7, 7);
+    #user-search {
+        line-height: 36px;
+        font-size: 1.5rem;
+        width: 100%;
+        /* color: rgb(7, 7, 7);
     position: relative;
     left: 0%;
     z-index: 99;*/
     }
-}
 
-#opacity-cover {
-    width: 100%;
-    height: 1000vh;
-    background: rgba($color: #000000, $alpha: 0.85);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    overflow: hidden;
-    cursor: default;
-    :hover {
-        cursor: text;
+    #opacity-cover {
+        width: 100%;
+        height: 1000vh;
+        background: rgba($color: #000000, $alpha: 0.85);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        cursor: default;
+
+        :hover {
+            cursor: text;
+        }
     }
 
-}
-
-.main-menu {
-z-index: 99999;
     form {
         position: relative;
         top: 210px;
         width: 100%;
 
-            #menu-submit {
-                font-size: 1.2rem;
-                margin: 8px 4px;
-                background: $white-box-color;
+        #menu-submit {
+            font-size: 1.2rem;
+            margin: 8px 4px;
+            background: $white-box-color;
+            //cursor: pointer;
+            &:hover {
                 cursor: pointer;
             }
+        }
 
-            #menu-submit-close {
-                /*font-family: FontAwesome;
+        #menu-submit-close {
+            /*font-family: FontAwesome;
                 color: red;
                 font-size: 4rem;
                 font-weight: normal;
@@ -150,21 +147,23 @@ z-index: 99999;
                 position: fixed;
                 top: 130px;
                 right: 5px;*/
-                background-color: Transparent;
-                border: none;
-                position: fixed;
-                right: 16px;
-                top: 10px;
-                font-size: 1.5rem;
-                font-family: FontAwesome;
-                color: red;
-                font-size: 3rem;
-                overflow: visible;
-                font-weight: normal;
+            background-color: Transparent;
+            border: none;
+            position: fixed;
+            right: 16px;
+            top: 10px;
+            font-size: 1.5rem;
+            font-family: FontAwesome;
+            color: red;
+            font-size: 3rem;
+            overflow: visible;
+            font-weight: normal;
+            //cursor: pointer;
+            &:hover {
                 cursor: pointer;
             }
         }
-    
+    }
 }
 /* Hamburger Menu */
 

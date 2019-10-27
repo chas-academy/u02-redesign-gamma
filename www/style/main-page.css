@@ -94,11 +94,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: -9999px;
 }
 
-.main-menu {
-  /* cursor: default;
-     z-index: 5;*/
-}
-
 .main-menu #user-search {
   line-height: 36px;
   font-size: 1.5rem;
@@ -109,24 +104,20 @@ input:focus:not(:checked) + #toggle-menu-2 {
     z-index: 99;*/
 }
 
-#opacity-cover {
+.main-menu #opacity-cover {
   width: 100%;
   height: 1000vh;
   background: rgba(0, 0, 0, 0.85);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 0;
   overflow: hidden;
   cursor: default;
 }
 
-#opacity-cover :hover {
+.main-menu #opacity-cover :hover {
   cursor: text;
-}
-
-.main-menu {
-  z-index: 99999;
 }
 
 .main-menu form {
@@ -139,6 +130,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-size: 1.2rem;
   margin: 8px 4px;
   background: #ffffff;
+}
+
+.main-menu form #menu-submit:hover {
   cursor: pointer;
 }
 
@@ -163,6 +157,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-size: 3rem;
   overflow: visible;
   font-weight: normal;
+}
+
+.main-menu form #menu-submit-close:hover {
   cursor: pointer;
 }
 
