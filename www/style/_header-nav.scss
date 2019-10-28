@@ -1,8 +1,8 @@
 /*** SCSS for the main menu ***/
-$tablet-width: 950px;
+$desktop-width: 900px;
 
 @mixin tablet-and-up {
-    @media (min-width: #{$tablet-width}) {
+    @media (min-width: #{$desktop-width}) {
         @content;
     }
 }
@@ -14,6 +14,14 @@ $tablet-width: 950px;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
+    grid-area: c;
+
+    @include tablet-and-up {
+        top: 10px;
+        right: 0;
+        position: absolute;
+    }
+
 
     .top-links-ul {
 
@@ -60,9 +68,9 @@ input:focus:not(:checked)+#toggle-menu-2 {
            // height: 400px;
             display: grid;
             grid-template-columns: 280px 120px 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: "a b c";
-                               // "c c c";
+            grid-template-rows: 1fr 40px;
+            grid-template-areas: "a b c"
+                                 "d d d";
             }
         }
 
@@ -182,6 +190,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             &:hover {
                 cursor: pointer;
                 font-weight: bold;
+
+                @include tablet-and-up {
+                    font-weight: normal;
+                }
             }
         }
 
@@ -229,7 +241,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 #nav-menu {
     @include tablet-and-up {
         display: inline-block;
-        grid-area: c;
+        grid-area: d;
     }
 
     .burger-menu-ul {
@@ -246,14 +258,16 @@ input:focus:not(:checked)+#toggle-menu-2 {
         }
 
         @include tablet-and-up {
-            display: inline;
-            left: auto;
-            top: auto;
-            width: auto;
+            display: flex;
+            //left: 0;
+            top: 100px;
+            width: 100%;
             z-index: 0;
-            margin-left: 20px;
-            max-width: 615px;
+            //margin-left: 20px;
+            height: 43px;
+            //max-width: 615px;
             /*position: relative;*/
+            justify-content: center;
         }
 
         #close-li {
@@ -319,11 +333,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
             @include tablet-and-up {
                 width: auto;
-                margin-left: 6px;
+                margin-left: 16px;
 
                 :hover {
                     cursor: pointer;
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                 }
 
             }
@@ -338,10 +352,12 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 overflow: hidden;
 
                 @include tablet-and-up {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     //background: rgb(228, 223, 223);
-                    padding: 6px;
-                    border-bottom: black solid 3px;
+                    //padding: 6px;
+                    display: block;
+                    border-bottom: black solid 2px;
+                    line-height: 1.8rem;
                 }
 
                 &#burger-menu-current-page {
@@ -350,7 +366,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
                     @include tablet-and-up {
                         color: black;
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
                 }
 
@@ -412,5 +428,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
     @include tablet-and-up {
         grid-area: b;
         display: inline-block;
+        justify-self: center;
     }
 }
