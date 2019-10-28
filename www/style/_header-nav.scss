@@ -24,18 +24,23 @@ $desktop-width: 900px;
 
 
     .top-links-ul {
-
         .top-links-li {
             display: inline-block;
-            margin-right: 10px;
-
+            margin: 0px 20px;
+            span {
+                white-space: nowrap;
+            }
             a {
+                display: flex;
+                flex-direction: column;
                 color: black;
                 text-decoration: none;
                 font-size: 0.8rem;
                 font-weight: 300;
 
                 .top-links-image {
+                    align-self: center;
+                    margin-bottom: 0px;
                     width: 20px;
                     height: 20px;
                     margin: 5px 5px;
@@ -239,6 +244,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 // Burger dropdown
 #nav-menu {
+    
     @include tablet-and-up {
         display: inline-block;
         grid-area: d;
@@ -406,12 +412,15 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 
 // make focus on checkbox labels cover both image and text in a rectangle
-#toggle-menu, #toggle-menu-2 {
+#toggle-menu {
     display: block;
     height: 85px;
 }
 
 #toggle-menu-2 {
+    display: block;
+    height: 85px;
+
     @include tablet-and-up {
         display: none;
     }
@@ -429,5 +438,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
         grid-area: b;
         display: inline-block;
         justify-self: center;
+    }
+}
+
+#cb-hack {
+    @include tablet-and-up {
+        display: none;
     }
 }
