@@ -169,16 +169,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .search-menu-ul form #menu-submit-close {
-  /*background-color: Transparent;
-            border: none;
-            position: fixed;
-            right: 16px;
-            top: 10px; */
-  /* font-family: FontAwesome;
-            color: red;
-            font-size: 3rem;*/
-  /* overflow: visible;
-            font-weight: normal;*/
   background-color: Transparent;
   position: fixed;
   right: 27px;
@@ -186,11 +176,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
   width: 55px;
   height: 72px;
   border: none;
-}
-
-.search-menu-ul form #menu-submit-close:hover {
-  cursor: pointer;
-  /*font-size: 3.5rem;*/
 }
 
 /* Hamburger Menu */
@@ -230,20 +215,11 @@ input:focus:not(:checked) + #toggle-menu-2 {
   position: fixed;
   right: 27px;
   top: 15px;
-  /*font-family: FontAwesome;
-            color: red;
-            font-size: 3rem;*/
   font-weight: normal;
   width: 55px;
   height: 72px;
   font-size: 1.1rem;
   line-height: 0;
-}
-
-#nav-menu .burger-menu-ul #close-menu-icon:hover {
-  /* font-size: 3.5rem;*/
-  /*width: 50px;
-               height: 85px;*/
 }
 
 #nav-menu .burger-menu-ul #close-menu-icon .img-close {
@@ -284,7 +260,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
   color: #ffffff;
   font-size: 1.8rem;
   position: relative;
-  /*display: block;*/
   overflow: hidden;
 }
 
