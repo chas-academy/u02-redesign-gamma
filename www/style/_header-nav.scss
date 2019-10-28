@@ -1,4 +1,12 @@
 /*** SCSS for the main menu ***/
+$tablet-width: 950px;
+
+@mixin tablet-and-up {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
 
 /* Accessibility links */
 
@@ -37,7 +45,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 /*** Main nav settings ***/
 .main-menu-nav {
-
+    @include tablet-and-up {
+        display: inline-block;
+    }
+        
     .main-menu-ul {
         display: flex;
         flex-direction: row;
@@ -45,13 +56,36 @@ input:focus:not(:checked)+#toggle-menu-2 {
         line-height: 0;
         padding: 0;
 
+        @include tablet-and-up {
+           // height: 400px;
+            display: grid;
+            grid-template-columns: 280px 120px 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "a b c";
+                               // "c c c";
+            }
+        }
+
         #main-menu-li-logo {
             position: absolute;
             left: 8px;
             top: 0;
 
+            @include tablet-and-up {
+                /*position: relative;
+                left: auto;
+                top: auto;*/
+                display: inline-block;
+                grid-area: a;
+                }
+
             #kontakt-logo-anchor {
                 position: absolute;
+
+                @include tablet-and-up {
+                    /*position: relative;*/
+                    display: inline-block;
+                    }
 
                 .kontakt-logo-img {
                     max-width: 260px;
@@ -61,6 +95,9 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         li {
             display: inline-block;
+            @include tablet-and-up {
+                display: inline;
+            }
         }
 
         .main-menu-li-links {
@@ -72,9 +109,16 @@ input:focus:not(:checked)+#toggle-menu-2 {
             :hover {
                 cursor: pointer;
             }
+
+            @include tablet-and-up {
+                text-align: center;
+                padding-right: 10px;
+                width: 60px;
+                //height: 120px;
+                }
+
         }
     }
-}
 
 /* Search Menu */
 
@@ -129,7 +173,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         #menu-submit {
             color: $white-text;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             padding: 8px;
             background: transparent;
             margin-top: 16px;
@@ -183,6 +227,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 // Burger dropdown
 #nav-menu {
+    @include tablet-and-up {
+        display: inline-block;
+        grid-area: c;
+    }
 
     .burger-menu-ul {
         z-index: 5;
@@ -191,9 +239,21 @@ input:focus:not(:checked)+#toggle-menu-2 {
         top: 0;
         width: 100%;
         background-color: $primary-color;
+        
 
         :hover {
             cursor: default;
+        }
+
+        @include tablet-and-up {
+            display: inline;
+            left: auto;
+            top: auto;
+            width: auto;
+            z-index: 0;
+            margin-left: 20px;
+            max-width: 615px;
+            /*position: relative;*/
         }
 
         #close-li {
@@ -201,6 +261,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             top: 0;
             right: 2%;
             cursor: pointer;
+
+            @include tablet-and-up {
+               display: none;
+            }
         }
 
         #close-menu-icon {
@@ -215,6 +279,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
             &:hover {
                 font-size: 3.5rem;
+            }
+
+            @include tablet-and-up {
+                display: none;
             }
 
         }
@@ -232,6 +300,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             :hover {
                 cursor: default;
             }
+
+            @include tablet-and-up {
+                display: none;
+            }
         }
 
         li {
@@ -245,6 +317,17 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 font-size: 1.7rem;
             }
 
+            @include tablet-and-up {
+                width: auto;
+                margin-left: 6px;
+
+                :hover {
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                }
+
+            }
+
             a {
                 text-decoration: none;
                 color: $black-text;
@@ -254,9 +337,21 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 //Make links in dropdown take up a whole <li> each
                 overflow: hidden;
 
+                @include tablet-and-up {
+                    font-size: 1.3rem;
+                    //background: rgb(228, 223, 223);
+                    padding: 6px;
+                    border-bottom: black solid 3px;
+                }
+
                 &#burger-menu-current-page {
                     color: $grey-text;
                     font-size: 1.6rem;
+
+                    @include tablet-and-up {
+                        color: black;
+                        font-size: 1.3rem;
+                    }
                 }
 
             }
@@ -271,16 +366,51 @@ input:focus:not(:checked)+#toggle-menu-2 {
     font-size: 1.1rem;
     font-weight: bold;
     z-index: 1;
-}
+    }
 
+    #nav-search {
+        @include tablet-and-up {
+            //width: 85px;
+            display: inline-block;
+            
+        }
+    }
 .burger-menu-image,
 .search-menu-image {
     width: 50px;
     margin-bottom: 16px;
+
+    @include tablet-and-up {
+        //width: 85px;
+        //display: inline-block;
+        
+    }
 }
+
+
 
 // make focus on checkbox labels cover both image and text in a rectangle
 #toggle-menu, #toggle-menu-2 {
     display: block;
     height: 85px;
+}
+
+#toggle-menu-2 {
+    @include tablet-and-up {
+        display: none;
+    }
+}
+
+/*#cb-hack, #cb-hack-2 {
+    @include tablet-and-up {
+    
+        display: none;
+    }
+}*/
+
+.main-menu-li-links {
+    @include tablet-and-up {
+        grid-area: b;
+        display: inline-block;
+    }
 }
