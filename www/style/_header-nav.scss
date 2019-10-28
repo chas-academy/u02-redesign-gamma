@@ -279,6 +279,8 @@ input:focus:not(:checked)+#toggle-menu-2 {
     margin-bottom: 16px;
 }
 
-#toggle-menu {}
-
-#toggle-menu-2 {}
+// make focus on checkbox labels cover both image and text in a rectangle
+#toggle-menu, #toggle-menu-2 {
+    display: block;
+    height: 85px;
+}

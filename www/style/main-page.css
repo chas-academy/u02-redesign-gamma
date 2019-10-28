@@ -259,6 +259,11 @@ input:focus:not(:checked) + #toggle-menu-2 {
   margin-bottom: 16px;
 }
 
+#toggle-menu, #toggle-menu-2 {
+  display: block;
+  height: 85px;
+}
+
 /*** 
 DEFAULT STYLING 
 ***/
