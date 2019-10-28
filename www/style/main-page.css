@@ -134,7 +134,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 .search-menu-ul form {
   position: relative;
   top: 200px;
-  margin-right: 16px;
 }
 
 .search-menu-ul form #close-label {
