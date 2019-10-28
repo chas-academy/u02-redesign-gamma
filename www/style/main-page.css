@@ -181,9 +181,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
             font-weight: normal;*/
   background-color: Transparent;
   position: fixed;
-  right: 30px;
+  right: 27px;
   top: 15px;
-  width: 45px;
+  width: 55px;
   height: 72px;
   border: none;
 }
@@ -228,13 +228,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul #close-menu-icon {
   position: fixed;
-  right: 28px;
+  right: 27px;
   top: 15px;
   /*font-family: FontAwesome;
             color: red;
             font-size: 3rem;*/
   font-weight: normal;
-  width: 45px;
+  width: 55px;
   height: 72px;
   font-size: 1.1rem;
   line-height: 0;
@@ -247,7 +247,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 #nav-menu .burger-menu-ul #close-menu-icon .img-close {
-  width: 100%;
+  height: 45px;
   margin: 0 0 8px 0;
 }
 
