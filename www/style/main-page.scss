@@ -493,7 +493,9 @@ margin-top: 10px;
 }
 
 /***
-CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
+FRONTPAGE CSS
+------------------------
+CSS FOR FRONTPAGE HEADER
 ***/
 
 .header-container {
@@ -529,7 +531,7 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
     justify-content: center;
     flex-flow: column nowrap;
     left: 20px;
-    top: 20%;
+    bottom: 20%;
     color: white;
   }
   .header-link {
@@ -550,7 +552,6 @@ FRONTPAGE CONTAINER PROPERTIES
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  margin: 20px 20px;
   padding: 20px 20px;
   h4 {
     width: 100%;
@@ -561,6 +562,7 @@ FRONTPAGE CONTAINER PROPERTIES
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
+  
   a {
     display: inline-block;
     padding: 5px 5px;
@@ -574,7 +576,6 @@ FRONTPAGE CONTAINER PROPERTIES
   justify-content: flex-end;
   text-justify: flex-end;
   text-align: right;
-  margin: 10px 20px;
   padding: 40px 20px;
   a {
     text-decoration: none;
@@ -589,21 +590,33 @@ FRONTPAGE CONTAINER PROPERTIES
   padding: 10px 0px;
 }
 
+.content-spread {
+  justify-content: space-between;
+}
+
+
 /***
 CALENDAR PROPERTIES
 ***/
 
-.calendar-container {
-  .calendar-header {
-    width: 100%;
-    h4 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a {
-        text-decoration: underline;
+.calendar {
+  .calendar-container {
+    flex-flow: row wrap;
+    align-self: center;
+    .calendar-header {
+      width: 100%;
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          text-decoration: underline;
+        }
       }
     }
+  }
+  .std-button {
+    align-self: center;
   }
 }
 
@@ -631,15 +644,34 @@ CALENDAR PROPERTIES
 }
 
 .image-box {
+  position: relative;
   background-color: white;
   padding: 0;
-  opacity: 0.6;
+  opacity: 0.7;
+
   .thomas-image {
-    background: url("../media/thomas.jpg");
-    height: 100%;
+    background-image: url(../media/thomas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
     width: 100%;
+    
+  }
+  .thomas-content-container {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    a {
+      color: black;
+    }
   }
 }
+
+
+/***
+AKTUELLT
+***/
+
 
 .aktuellt {
   background-color: whitesmoke;
@@ -647,53 +679,59 @@ CALENDAR PROPERTIES
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-}
 
-.aktuellt-article {
-  margin: 20px 20px;
-  padding: 10px 20px;
-  background-color: #e3ede8;
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  p {
-    span {
-      color: darkgrey;
-      display: block;
-      margin: 10px 0px;
-    }
-  }
-}
-
-.aktuellt-article {
-  img {
-    align-self: center;
-    height: 300px;
-    width: 330px;
-    margin-bottom: 20px;
-  }
-}
-
-.article-post-link {
-  color: black;
-  align-self: flex-end;
-  font-weight: 900;
-  text-decoration: underline;
-}
-
-/***
-EFFECT FOR 'AKTUELLT' TITLE TEXT
-***/
-
-.aktuellt {
   h4 {
     text-align: center;
-    width: 90%;
+    width: 100%;
     padding-bottom: 10px;
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
+  
+  .aktuellt-container {
+    display: flex;
+    flex-flow: row wrap;
+    
+    span {
+      margin: 0 auto;
+    }
+  }
+  .aktuellt-article {
+    width: 400px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #e3ede8;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    p {
+      span {
+        color: darkgrey;
+        display: block;
+        margin: 10px 0px;
+      }
+    }
+    img {
+      align-self: center;
+      height: 300px;
+      width: 330px;
+      margin-bottom: 20px;
+    }
+    .article-post-link {
+      color: black;
+      align-self: flex-end;
+      font-weight: 900;
+      text-decoration: underline;
+    }
+  }
 }
+
+/**
+COLOR FOR LINKS
+**/
+
+
+
 
 /**
 FOOTER
@@ -704,54 +742,44 @@ footer {
   background-color: #363636;
   position: relative;
   bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  text-align: center;
-}
-
-.footer-container {
-  background-color: #363636;
-  padding: 10px 30px;
-  color: white;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-
-  h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-}
-
-.footer-section {
-  padding: 20px 50px;
-  a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-  }
-}
-
-.bottom-footer {
-  background-color: #101010;
-}
-
-@media only screen and (min-width: 768px) {
   .footer-container {
-    flex-flow: row nowrap;
+    background-color: #363636;
+    padding: 10px 30px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    /** FLEX **/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  
+    h4 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-section {
+      
+      width: 300px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
-
-  .footer-section {
-    margin: 10px 10px;
-  }
-
   .bottom-footer {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #101010;
+    color: white;
   }
+}
+
+.footer-section + .footer-section {
+  margin-left: 20px;
 }
