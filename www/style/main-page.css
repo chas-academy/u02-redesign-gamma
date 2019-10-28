@@ -177,6 +177,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
   border: none;
 }
 
+.search-menu-ul form #menu-submit-close:hover {
+  cursor: pointer;
+}
+
 /* Hamburger Menu */
 #nav-menu .burger-menu-ul {
   display: none;

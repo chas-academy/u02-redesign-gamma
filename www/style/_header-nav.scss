@@ -171,6 +171,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             width: 55px;
             height: 72px;
             border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
