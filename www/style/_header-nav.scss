@@ -100,9 +100,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
 .search-menu-ul {
 
     #user-search {
+        position: relative;
         line-height: 36px;
         font-size: 1.5rem;
-        width: 100%;
+        width: 90%;
     }
 
     #opacity-cover {
@@ -127,13 +128,16 @@ input:focus:not(:checked)+#toggle-menu-2 {
         width: 100%;
 
         #menu-submit {
-            font-size: 1.2rem;
-            margin: 8px 4px;
-            background: $white-box-color;
+            color: $white-text;
+            font-size: 1.4rem;
+            padding: 8px;
+            background: transparent;
+            margin-top: 16px;
+            width: 90px;
 
-            //cursor: pointer;
             &:hover {
                 cursor: pointer;
+                font-weight: bold;
             }
         }
 
@@ -143,7 +147,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
             position: fixed;
             right: 16px;
             top: 10px;
-            font-size: 1.5rem;
             font-family: FontAwesome;
             color: red;
             font-size: 3rem;
@@ -152,6 +155,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
             &:hover {
                 cursor: pointer;
+                font-size: 3.5rem;
             }
         }
     }
@@ -203,12 +207,16 @@ input:focus:not(:checked)+#toggle-menu-2 {
             position: fixed;
             right: 16px;
             top: 10px;
-            font-size: 1.5rem;
             font-family: FontAwesome;
             color: red;
             font-size: 3rem;
             overflow: visible;
             font-weight: normal;
+
+            &:hover {
+                font-size: 3.5rem;
+            }
+
         }
 
         #opacity-cover-2 {
@@ -228,14 +236,13 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         li {
             position: relative;
-            display: block;
             width: 100%;
-            text-align: center;
             line-height: 42px;
-            z-index: +6;
+            z-index: 6;
 
             :hover {
                 cursor: pointer;
+                font-size: 1.7rem;
             }
 
             a {
@@ -272,6 +279,8 @@ input:focus:not(:checked)+#toggle-menu-2 {
     margin-bottom: 16px;
 }
 
-#toggle-menu {}
-
-#toggle-menu-2 {}
+// make focus on checkbox labels cover both image and text in a rectangle
+#toggle-menu, #toggle-menu-2 {
+    display: block;
+    height: 85px;
+}
