@@ -1035,7 +1035,6 @@ FRONTPAGE CONTAINER PROPERTIES
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 20px 20px;
   padding: 20px 20px;
 }
 
@@ -1069,7 +1068,6 @@ FRONTPAGE CONTAINER PROPERTIES
           justify-content: flex-end;
   text-justify: flex-end;
   text-align: right;
-  margin: 10px 20px;
   padding: 40px 20px;
 }
 
@@ -1101,11 +1099,21 @@ FRONTPAGE CONTAINER PROPERTIES
 /***
 CALENDAR PROPERTIES
 ***/
-.calendar-container .calendar-header {
+.calendar .calendar-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.calendar .calendar-container .calendar-header {
   width: 100%;
 }
 
-.calendar-container .calendar-header h4 {
+.calendar .calendar-container .calendar-header h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1117,8 +1125,14 @@ CALENDAR PROPERTIES
           justify-content: space-between;
 }
 
-.calendar-container .calendar-header h4 a {
+.calendar .calendar-container .calendar-header h4 a {
   text-decoration: underline;
+}
+
+.calendar .std-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .calendar-post {
@@ -1267,6 +1281,9 @@ AKTUELLT
 }
 
 /**
+COLOR FOR LINKS
+**/
+/**
 FOOTER
 **/
 footer {
@@ -1305,13 +1322,11 @@ footer .footer-container h4 {
 
 footer .footer-container .footer-section {
   width: 300px;
-  text-align: center;
 }
 
 footer .footer-container .footer-section a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
 }
 
 footer .bottom-footer {
@@ -1327,5 +1342,9 @@ footer .bottom-footer {
   height: 100px;
   background-color: #101010;
   color: white;
+}
+
+.footer-section + .footer-section {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main-page.css.map */

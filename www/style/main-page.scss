@@ -563,7 +563,6 @@ FRONTPAGE CONTAINER PROPERTIES
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  margin: 20px 20px;
   padding: 20px 20px;
   h4 {
     width: 100%;
@@ -588,7 +587,6 @@ FRONTPAGE CONTAINER PROPERTIES
   justify-content: flex-end;
   text-justify: flex-end;
   text-align: right;
-  margin: 10px 20px;
   padding: 40px 20px;
   a {
     text-decoration: none;
@@ -612,18 +610,24 @@ FRONTPAGE CONTAINER PROPERTIES
 CALENDAR PROPERTIES
 ***/
 
-
-.calendar-container {
-  .calendar-header {
-    width: 100%;
-    h4 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a {
-        text-decoration: underline;
+.calendar {
+  .calendar-container {
+    flex-flow: row wrap;
+    align-self: center;
+    .calendar-header {
+      width: 100%;
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          text-decoration: underline;
+        }
       }
     }
+  }
+  .std-button {
+    align-self: center;
   }
 }
 
@@ -734,6 +738,13 @@ AKTUELLT
 }
 
 /**
+COLOR FOR LINKS
+**/
+
+
+
+
+/**
 FOOTER
 **/
 
@@ -762,12 +773,11 @@ footer {
     }
     
     .footer-section {
+      
       width: 300px;
-      text-align: center;
       a {
         text-decoration: none;
         color: white;
-        font-size: 1.2rem;
       }
     }
   }
@@ -779,4 +789,8 @@ footer {
     background-color: #101010;
     color: white;
   }
+}
+
+.footer-section + .footer-section {
+  margin-left: 20px;
 }
