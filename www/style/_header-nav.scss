@@ -128,8 +128,9 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
     form {
         position: relative;
-        top: 210px;
-        width: 100%;
+        top: 200px;
+        //width: 100%;
+        margin-right: 16px;
 
         #close-label {
             //width: 50px;
