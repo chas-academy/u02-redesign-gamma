@@ -10,15 +10,10 @@
     .top-links-ul {
         .top-links-li {
             display: inline-block;
-<<<<<<< HEAD
             margin: 0px 20px;
             span {
                 white-space: nowrap;
             }
-=======
-            margin-right: 10px;
-
->>>>>>> origin
             a {
                 display: flex;
                 flex-direction: column;
@@ -32,12 +27,7 @@
                     margin-bottom: 0px;
                     width: 20px;
                     height: 20px;
-<<<<<<< HEAD
                 }  
-=======
-                    margin: 5px 5px;
-                }
->>>>>>> origin
             }
         }
     }
@@ -123,7 +113,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
     #opacity-cover {
         width: 100%;
         height: 1000vh;
-        background: rgba($color: #000000, $alpha: 0.85);
+        background: rgba($color: #000000, $alpha: 0.95);
         position: fixed;
         top: 0;
         left: 0;
@@ -141,6 +131,32 @@ input:focus:not(:checked)+#toggle-menu-2 {
         top: 210px;
         width: 100%;
 
+        #close-label {
+            //width: 50px;
+            color: white;
+            padding: 0;
+            //margin: 0;
+            //font-size: 1.1rem;
+            //display: block;
+            //line-height: 0;
+            position: fixed;
+            right: 32px;
+            top: 70px;
+            //text-align: end;
+            font-weight: normal;
+
+        #img-close-search {
+            //width: 45px;
+            height: 45px;
+            margin: 0;
+            //padding: 0;
+            position: fixed;
+            right: 32px;
+            top: 15px;
+        }
+    }
+       
+
         #menu-submit {
             color: $white-text;
             font-size: 1.4rem;
@@ -156,21 +172,38 @@ input:focus:not(:checked)+#toggle-menu-2 {
         }
 
         #menu-submit-close {
-            background-color: Transparent;
+            /*background-color: Transparent;
             border: none;
             position: fixed;
             right: 16px;
-            top: 10px;
-            font-family: FontAwesome;
+            top: 10px; */
+           /* font-family: FontAwesome;
             color: red;
-            font-size: 3rem;
-            overflow: visible;
-            font-weight: normal;
+            font-size: 3rem;*/
+           /* overflow: visible;
+            font-weight: normal;*/
+            
 
             &:hover {
                 cursor: pointer;
-                font-size: 3.5rem;
+                /*font-size: 3.5rem;*/
             }
+            background-color: Transparent;
+            position: fixed;
+            right: 30px;
+            top: 15px;
+            //overflow: visible;
+            //font-weight: normal;
+            width: 45px;
+            height: 72px;
+            //color: white;
+            //padding: 0;
+            //margin: 0;
+            //font-size: 1.1rem;
+            //display: block;
+            //line-height: 0;
+            border: none;
+
         }
     }
 }
@@ -200,11 +233,12 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
     .burger-menu-ul {
         z-index: 5;
-        position: absolute;
+        position: fixed;
         left: 0;
-        top: 0;
+        //top: 80px;
         width: 100%;
-        background-color: $primary-color;
+        //background-color: rgba(0, 0, 0, 0.9);
+        background-color: transparent;
 
         :hover {
             cursor: default;
@@ -219,18 +253,39 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         #close-menu-icon {
             position: fixed;
-            right: 16px;
-            top: 10px;
-            font-family: FontAwesome;
+            right: 28px;
+            top: 15px;
+            /*font-family: FontAwesome;
             color: red;
-            font-size: 3rem;
-            overflow: visible;
+            font-size: 3rem;*/
+            //overflow: visible;
             font-weight: normal;
+            width: 45px;
+            height: 72px;
+            //display: block;
+            //color: white;
+            //padding: 0;
+            //margin: 0;
+            font-size: 1.1rem;
+            //display: block;
+            line-height: 0;
 
             &:hover {
-                font-size: 3.5rem;
+               /* font-size: 3.5rem;*/
+               /*width: 50px;
+               height: 85px;*/
             }
 
+            .img-close {
+                width: 100%;
+                //padding: 0;
+                margin: 0 0 8px 0;
+                //display: block;
+
+                &:hover {
+                    //width: 110%;
+                } 
+            }
         }
 
         #opacity-cover-2 {
@@ -240,7 +295,8 @@ input:focus:not(:checked)+#toggle-menu-2 {
             top: 0;
             width: 100%;
             height: 1000vh;
-            background-color: $primary-color;
+            //background-color: $primary-color;
+            background-color: rgba(0, 0, 0, 0.95);
             overflow: hidden;
 
             :hover {
@@ -253,6 +309,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
             width: 100%;
             line-height: 42px;
             z-index: 6;
+            margin-bottom: 15px;
 
             :hover {
                 cursor: pointer;
@@ -261,8 +318,8 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
             a {
                 text-decoration: none;
-                color: $black-text;
-                font-size: 1.6rem;
+                color: $white-text;
+                font-size: 1.8rem;
                 position: relative;
                 /*display: block;*/
                 //Make links in dropdown take up a whole <li> each
@@ -270,7 +327,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
                 &#burger-menu-current-page {
                     color: $grey-text;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
 
             }
