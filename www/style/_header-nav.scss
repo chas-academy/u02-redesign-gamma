@@ -1,17 +1,24 @@
-// SCSS for the checkbox dropdown main menu
+/*** SCSS for the main menu ***/
+
+/* Accessibility links */
 
 .top-links-nav {
-    background-color: whitesmoke;
+    background-color: $primary-color;
     display: flex;
     justify-content: center;
-    
+
     .top-links-ul {
         .top-links-li {
             display: inline-block;
+<<<<<<< HEAD
             margin: 0px 20px;
             span {
                 white-space: nowrap;
             }
+=======
+            margin-right: 10px;
+
+>>>>>>> origin
             a {
                 display: flex;
                 flex-direction: column;
@@ -25,165 +32,205 @@
                     margin-bottom: 0px;
                     width: 20px;
                     height: 20px;
+<<<<<<< HEAD
                 }  
+=======
+                    margin: 5px 5px;
+                }
+>>>>>>> origin
             }
         }
     }
 }
 
-input:focus+#toggle-menu, // Enable focus on search menu
-input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
-   outline: $focus-setting;
+// Enable focus on search and hamburger menu labels. No focus while dropdown is open
+input:focus:not(:checked)+#toggle-menu,
+input:focus:not(:checked)+#toggle-menu-2 {
+    outline: $focus-setting;
 }
 
 /*** Main nav settings ***/
 .main-menu-nav {
 
     .main-menu-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    line-height: 0;
-    padding: 0;
-  
-    #main-menu-li-logo {
-        position: absolute;
-        left: 0;
-        top: 0;
-        #kontakt-logo-anchor {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        line-height: 0;
+        padding: 0;
+
+        #main-menu-li-logo {
             position: absolute;
+            left: 8px;
             top: 0;
-            margin: 10px 0px 0px 10px;
 
-            .kontakt-logo-img {
-                max-width: 260px;
-            } 
-        }  
-    } 
+            #kontakt-logo-anchor {
+                position: absolute;
 
-    li {
-        display: inline-block;
-        }    
- 
+                .kontakt-logo-img {
+                    max-width: 260px;
+                }
+            }
+        }
+
+        li {
+            display: inline-block;
+        }
+
         .main-menu-li-links {
-            width: 45px;
-            margin: 10px 10px 10px 0px;
+            width: 50px;
+            margin-right: 8px;
+            margin-bottom: 20px;
             text-align: center;
-        
+
             :hover {
                 cursor: pointer;
             }
-
-            .anchor-focus {
-            }
         }
     }
-}    
+}
 
 /* Search Menu */
 
 //Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
-#nav-search .main-menu { //hide dropdown as default
+
+//hide dropdown as default
+#nav-search .search-menu-ul {
     display: none;
 }
 
-#cb-hack:checked ~ .main-menu { //make dropdown visible when checkbox is checked
+//make dropdown visible when checkbox is checked
+#cb-hack:checked~.search-menu-ul {
     display: block;
 }
 
-#nav-search input[type="checkbox"] { // hide the checkbox
+// hide the checkbox
+#nav-search input[type="checkbox"] {
     position: absolute;
     left: -9999px;
 }
 
 //Search dropdown
+.search-menu-ul {
 
-
-
-.main-menu {
-    /* cursor: default;
-     z-index: 5;*/
-
-#user-search {
-    line-height: 36px;
-    font-size: 2rem;
-    color: rgb(7, 7, 7);
-    position: relative;
-    left: 0%;
-    top: 200px;
-    z-index: 99;
-   
+    #user-search {
+        position: relative;
+        line-height: 36px;
+        font-size: 1.5rem;
+        width: 90%;
     }
-}
 
-#opacity-cover {
-    width: 100%;
-    height: 1000vh;
-    background: rgba($color: #000000, $alpha: 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    overflow: hidden;
-    cursor: default;
-    :hover {
-        cursor: text;
+    #opacity-cover {
+        width: 100%;
+        height: 1000vh;
+        background: rgba($color: #000000, $alpha: 0.85);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        overflow: hidden;
+        cursor: default;
+
+        :hover {
+            cursor: text;
+        }
     }
-}
 
-#search-close {}
-
-.main-menu {
- 
-    #cb-hack {
+    form {
         position: relative;
         top: 210px;
-        color: rgb(175, 25, 25);
-        font-size: 1.5rem;
-        padding: 10px;
-        z-index: 2;
-        display: block;
-        cursor: pointer;
+        width: 100%;
+
+        #menu-submit {
+            color: $white-text;
+            font-size: 1.4rem;
+            padding: 8px;
+            background: transparent;
+            margin-top: 16px;
+            width: 90px;
+
+            &:hover {
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        #menu-submit-close {
+            background-color: Transparent;
+            border: none;
+            position: fixed;
+            right: 16px;
+            top: 10px;
+            font-family: FontAwesome;
+            color: red;
+            font-size: 3rem;
+            overflow: visible;
+            font-weight: normal;
+
+            &:hover {
+                cursor: pointer;
+                font-size: 3.5rem;
+            }
+        }
     }
 }
 
 /* Hamburger Menu */
 
 //Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
-#nav-menu .main-menu-2 { //hide dropdown as default
+
+//hide dropdown as default
+#nav-menu .burger-menu-ul {
     display: none;
 }
 
-#cb-hack-2:checked ~ .main-menu-2 { //make dropdown visible when checkbox is checked
+//make dropdown visible when checkbox is checked
+#cb-hack-2:checked~.burger-menu-ul {
     display: block;
 }
 
-#nav-menu input[type="checkbox"] { // hide the checkbox
+// hide the checkbox
+#nav-menu input[type="checkbox"] {
     position: absolute;
     left: -9999px;
 }
 
 // Burger dropdown
 #nav-menu {
- 
-    .main-menu-2 {
+
+    .burger-menu-ul {
         z-index: 5;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-        background-color: rgb(218, 207, 207);
+        background-color: $primary-color;
+
         :hover {
             cursor: default;
         }
-        
-        #label-inside-menu {
-            position: absolute;
+
+        #close-li {
+            position: fixed;
+            top: 0;
             right: 2%;
-            top: 0%;
-            color: rgb(224, 72, 72);
-            font-size: 1.5rem;
-            z-index: 799;
+            cursor: pointer;
+        }
+
+        #close-menu-icon {
+            position: fixed;
+            right: 16px;
+            top: 10px;
+            font-family: FontAwesome;
+            color: red;
+            font-size: 3rem;
+            overflow: visible;
+            font-weight: normal;
+
+            &:hover {
+                font-size: 3.5rem;
+            }
+
         }
 
         #opacity-cover-2 {
@@ -193,8 +240,9 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
             top: 0;
             width: 100%;
             height: 1000vh;
-            background-color: rgba(218, 207, 207, 1);
+            background-color: $primary-color;
             overflow: hidden;
+
             :hover {
                 cursor: default;
             }
@@ -202,42 +250,51 @@ input:focus+#toggle-menu-2 { // Enable focus on hamburger menu
 
         li {
             position: relative;
-            display: block;
             width: 100%;
-            text-align: center;
             line-height: 42px;
-            z-index: +6;
+            z-index: 6;
 
             :hover {
                 cursor: pointer;
-                }
+                font-size: 1.7rem;
+            }
 
             a {
                 text-decoration: none;
-                color: rgb(75, 73, 73);
-                font-size: 1.5rem;
+                color: $black-text;
+                font-size: 1.6rem;
                 position: relative;
-                /*display: block;*/ //Make links in dropdown take up a whole <li> each
+                /*display: block;*/
+                //Make links in dropdown take up a whole <li> each
                 overflow: hidden;
+
+                &#burger-menu-current-page {
+                    color: $grey-text;
+                    font-size: 1.6rem;
+                }
+
             }
         }
     }
 }
 
 /* some common styling between search menu and hamburger menu */
-#nav-search, #nav-menu {
+
+#nav-search,
+#nav-menu {
     font-size: 1.1rem;
     font-weight: bold;
     z-index: 1;
 }
 
-.burger-menu-image, .search-menu-image{
-    height: 45px;
+.burger-menu-image,
+.search-menu-image {
+    width: 50px;
     margin-bottom: 16px;
 }
 
-#toggle-menu-1 {
+// make focus on checkbox labels cover both image and text in a rectangle
+#toggle-menu, #toggle-menu-2 {
+    display: block;
+    height: 85px;
 }
-
-#toggle-menu-2 {
- }
