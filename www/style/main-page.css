@@ -364,7 +364,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.head-section a + a {
+.head-section li + li a {
   margin-top: 10px;
 }
 
@@ -396,7 +396,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section a + a {
+.section li + li a {
   margin-top: 10px;
 }
 
@@ -424,7 +424,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-no-bg a + a {
+.section-no-bg li + li a {
   margin-top: 10px;
 }
 
@@ -452,7 +452,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-lblue a + a {
+.section-lblue li + li a {
   margin-top: 10px;
 }
 
@@ -480,7 +480,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-lgrey a + a {
+.section-lgrey li + li a {
   margin-top: 10px;
 }
 
@@ -509,7 +509,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-green a + a {
+.section-green li + li a {
   margin-top: 10px;
 }
 
@@ -545,7 +545,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-lyellow a + a {
+.section-lyellow li + li a {
   margin-top: 10px;
 }
 
@@ -573,7 +573,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-yellow a + a {
+.section-yellow li + li a {
   margin-top: 10px;
 }
 
@@ -601,7 +601,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-grey a + a {
+.section-grey li + li a {
   margin-top: 10px;
 }
 
@@ -630,7 +630,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-dgrey a + a {
+.section-dgrey li + li a {
   margin-top: 10px;
 }
 
@@ -659,7 +659,7 @@ DEFAULT STYLING PAGES
   font-weight: 900;
 }
 
-.section-black a + a {
+.section-black li + li a {
   margin-top: 10px;
 }
 
@@ -1024,7 +1024,7 @@ STYLING: SPECIFIC PAGES
   font-weight: 900;
 }
 
-#contact-form-section a + a {
+#contact-form-section li + li a {
   margin-top: 10px;
 }
 
