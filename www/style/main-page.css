@@ -368,17 +368,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.head-section a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.head-section a:hover {
-  color: #08c;
-}
-
 .head-section h4 {
   border-bottom: 1px solid #101010;
 }
@@ -411,17 +400,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.section a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section a:hover {
-  color: #08c;
-}
-
 .section h4 {
   border-bottom: 1px solid #101010;
 }
@@ -448,17 +426,6 @@ DEFAULT STYLING PAGES
 
 .section-no-bg a + a {
   margin-top: 10px;
-}
-
-.section-no-bg a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-no-bg a:hover {
-  color: #08c;
 }
 
 .section-no-bg h4 {
@@ -489,17 +456,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.section-lblue a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-lblue a:hover {
-  color: #08c;
-}
-
 .section-lblue h4 {
   border-bottom: 1px solid #101010;
 }
@@ -526,17 +482,6 @@ DEFAULT STYLING PAGES
 
 .section-lgrey a + a {
   margin-top: 10px;
-}
-
-.section-lgrey a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-lgrey a:hover {
-  color: #08c;
 }
 
 .section-lgrey h4 {
@@ -566,17 +511,6 @@ DEFAULT STYLING PAGES
 
 .section-green a + a {
   margin-top: 10px;
-}
-
-.section-green a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-green a:hover {
-  color: #08c;
 }
 
 .section-green h4 {
@@ -615,17 +549,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.section-lyellow a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-lyellow a:hover {
-  color: #08c;
-}
-
 .section-lyellow h4 {
   border-bottom: 1px solid #101010;
 }
@@ -654,17 +577,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.section-yellow a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-yellow a:hover {
-  color: #08c;
-}
-
 .section-yellow h4 {
   border-bottom: 1px solid #101010;
 }
@@ -691,17 +603,6 @@ DEFAULT STYLING PAGES
 
 .section-grey a + a {
   margin-top: 10px;
-}
-
-.section-grey a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-grey a:hover {
-  color: #08c;
 }
 
 .section-grey h4 {
@@ -733,17 +634,6 @@ DEFAULT STYLING PAGES
   margin-top: 10px;
 }
 
-.section-dgrey a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-dgrey a:hover {
-  color: #08c;
-}
-
 .section-dgrey h4 {
   border-bottom: 1px solid #101010;
 }
@@ -771,17 +661,6 @@ DEFAULT STYLING PAGES
 
 .section-black a + a {
   margin-top: 10px;
-}
-
-.section-black a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-.section-black a:hover {
-  color: #08c;
 }
 
 .section-black h4 {
@@ -1149,17 +1028,6 @@ STYLING: SPECIFIC PAGES
   margin-top: 10px;
 }
 
-#contact-form-section a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
-  display: inline-block;
-}
-
-#contact-form-section a:hover {
-  color: #08c;
-}
-
 #contact-form-section h4 {
   border-bottom: 1px solid #101010;
 }
@@ -1384,11 +1252,27 @@ FRONTPAGE CONTAINER PROPERTIES
   text-justify: flex-end;
   text-align: right;
   margin: 20px 20px;
-  padding: 40px 20px;
+  padding: 40px 30px;
 }
 
 .small-container a {
   text-decoration: none;
+  position: relative;
+  right: 5px;
+}
+
+.small-container a:after {
+  position: absolute;
+  font-weight: 900;
+  content: ">";
+  margin-left: 10px;
+  right: -15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.small-container a:hover:after {
+  right: -20px;
 }
 
 .youtube {
@@ -1567,7 +1451,7 @@ CALENDAR PROPERTIES
 }
 
 .epale-image a {
-  background-image: url("../media/eu_flag.png");
+  background-image: url("../media/eu_flag.");
   background-position-y: 28px;
   background-position-x: 25px;
   background-size: 10%;

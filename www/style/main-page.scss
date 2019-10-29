@@ -130,15 +130,6 @@ DEFAULT STYLING PAGES
   a + a {
     margin-top: 10px;
   }
-  a:after {
-    font-weight: 900;
-    content: ">";
-    padding-left: 10px;
-    display: inline-block;
-  }
-  a:hover {
-    color: $link-color;
-  }
   h4 {
     border-bottom: 1px solid #101010;
   }
@@ -635,9 +626,24 @@ FRONTPAGE CONTAINER PROPERTIES
   text-justify: flex-end;
   text-align: right;
   margin: 20px 20px;
-  padding: 40px 20px;
+  padding: 40px 30px;
   a {
     text-decoration: none;
+    position: relative;
+    right: 5px;
+    &:after {
+      position: absolute;
+      font-weight: 900;
+      content: ">";
+      margin-left: 10px;
+      right: -15px;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  a:hover {
+    &:after {
+      right: -20px;
+    }
   }
 }
 
@@ -690,39 +696,6 @@ CALENDAR PROPERTIES
   margin-top: 20px;
 }
 
-@mixin image-background-section {
-  text-align: right;
-  margin: 20px 20px;
-  background-color: $secondary-color;
-  a {
-    background-repeat: no-repeat;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-justify: flex-end;
-    padding-right: 20px;
-    color: white;
-    font-weight: 900;
-    height: 104px;
-    position: relative;
-    right: 15px;
-    &:after {
-      position: absolute;
-      font-weight: 900;
-      content: ">";
-      margin-left: 10px;
-      right: 5px;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-  a:hover {
-    &:after {
-      right: 0;
-    }
-  }
-}
-
 .thomas-image {
   background-color: $black-box-color;
   text-align: right;
@@ -771,11 +744,44 @@ CALENDAR PROPERTIES
   }
 }
 
+@mixin image-background-section {
+  text-align: right;
+  margin: 20px 20px;
+  background-color: $secondary-color;
+  a {
+    background-repeat: no-repeat;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-justify: flex-end;
+    padding-right: 20px;
+    color: white;
+    font-weight: 900;
+    height: 104px;
+    position: relative;
+    right: 15px;
+    &:after {
+      position: absolute;
+      font-weight: 900;
+      content: ">";
+      margin-left: 10px;
+      right: 5px;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  a:hover {
+    &:after {
+      right: 0;
+    }
+  }
+}
+
 .epale-image {
   @include image-background-section;
   background-color: #004890;
   a {
-    background-image: url("../media/eu_flag.png");
+    background-image: url("../media/eu_flag.");
     background-position-y: 28px;
     background-position-x: 25px;
     background-size: 10%;
