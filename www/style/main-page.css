@@ -512,6 +512,45 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-lgrey {
+  padding: 16px;
+  background-color: white;
+  margin: 20px 20px 0px 20px;
+  background-color: #c4c4c4;
+}
+
+.section-lgrey a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-lgrey a + a {
+  margin-top: 10px;
+}
+
+.section-lgrey a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.section-lgrey a:hover {
+  color: #08c;
+}
+
+.section-lgrey h4 {
+  border-bottom: 1px solid #101010;
+}
+
+.section-lgrey:last-of-type {
+  margin-bottom: 20px;
+}
+
+.section-lgrey:first-of-type {
+  margin-top: 0px;
+}
+
 .section-green {
   padding: 16px;
   background-color: white;
@@ -1445,75 +1484,54 @@ CALENDAR PROPERTIES
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-justify: flex-end;
-  padding-right: 20px;
+  padding-right: 50px;
   min-height: 400px;
-  color: #101012;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
   font-weight: 900;
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  position: relative;
+  right: 0px;
 }
 
-.thomas-image a:after {
+.thomas-image > a:after {
+  position: absolute;
   font-weight: 900;
   content: ">";
-  padding-left: 10px;
+  margin-left: 10px;
+  right: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.thomas-image > a:hover {
+.thomas-image a:hover {
   background-image: url("../media/thomas.jpg");
   background-size: cover;
 }
 
-.ya-image {
-  text-align: right;
-  margin: 20px 20px;
-  background-color: #c4c4c4;
-}
-
-.ya-image > a {
-  background-image: url("../media/YA-logo.png");
-  background-position-x: 20px;
-  background-position-y: 17px;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  text-justify: flex-end;
-  padding-right: 20px;
-  color: #101012;
-  font-weight: 900;
-  min-height: 104px;
-}
-
-.ya-image a:after {
-  font-weight: 900;
-  content: ">";
-  padding-left: 10px;
+.thomas-image a:hover:after {
+  right: 15px;
 }
 
 .epale-image {
   text-align: right;
   margin: 20px 20px;
+  background-color: white;
   background-color: #004890;
 }
 
-.epale-image > a {
-  background-image: url("../media/eu_flag.jpg");
-  background-position-y: -40px;
-  background-position-x: -40px;
-  background-size: 20%;
+.epale-image a {
   background-repeat: no-repeat;
   text-decoration: none;
   display: -webkit-box;
@@ -1527,16 +1545,82 @@ CALENDAR PROPERTIES
           justify-content: flex-end;
   text-justify: flex-end;
   padding-right: 20px;
-  color: #101012;
-  font-weight: 900;
-  min-height: 104px;
   color: white;
+  font-weight: 900;
+  height: 104px;
+  position: relative;
+  right: 15px;
 }
 
 .epale-image a:after {
+  position: absolute;
   font-weight: 900;
   content: ">";
-  padding-left: 10px;
+  margin-left: 10px;
+  right: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.epale-image a:hover:after {
+  right: 0;
+}
+
+.epale-image a {
+  background-image: url("../media/eu_flag.png");
+  background-position-y: 28px;
+  background-position-x: 25px;
+  background-size: 10%;
+}
+
+.ya-image {
+  text-align: right;
+  margin: 20px 20px;
+  background-color: white;
+  background-color: white;
+  border: solid #c3c3c3 1px;
+}
+
+.ya-image a {
+  background-repeat: no-repeat;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-justify: flex-end;
+  padding-right: 20px;
+  color: white;
+  font-weight: 900;
+  height: 104px;
+  position: relative;
+  right: 15px;
+}
+
+.ya-image a:after {
+  position: absolute;
+  font-weight: 900;
+  content: ">";
+  margin-left: 10px;
+  right: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ya-image a:hover:after {
+  right: 0;
+}
+
+.ya-image > a {
+  background-image: url("../media/ya-logo.png");
+  background-position-x: 30px;
+  background-position-y: 17px;
+  color: #101012;
 }
 
 .aktuellt {
