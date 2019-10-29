@@ -355,6 +355,29 @@ DEFAULT STYLING PAGES
   margin: 20px 20px 0px 20px;
 }
 
+.head-section a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.head-section a + a {
+  margin-top: 10px;
+}
+
+.head-section a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.head-section a:hover {
+  color: green;
+}
+
+.head-section h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .head-section:last-of-type {
   margin-bottom: 20px;
 }
@@ -374,6 +397,29 @@ DEFAULT STYLING PAGES
   margin: 20px 20px 0px 20px;
 }
 
+.section a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section a + a {
+  margin-top: 10px;
+}
+
+.section a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section a:hover {
+  color: green;
+}
+
+.section h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .section:last-of-type {
   margin-bottom: 20px;
 }
@@ -389,6 +435,29 @@ DEFAULT STYLING PAGES
   background-color: whitesmoke;
 }
 
+.section-no-bg a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-no-bg a + a {
+  margin-top: 10px;
+}
+
+.section-no-bg a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-no-bg a:hover {
+  color: green;
+}
+
+.section-no-bg h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .section-no-bg:last-of-type {
   margin-bottom: 20px;
 }
@@ -402,6 +471,29 @@ DEFAULT STYLING PAGES
   background-color: white;
   margin: 20px 20px 0px 20px;
   background-color: #bfe1f2;
+}
+
+.section-lblue a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-lblue a + a {
+  margin-top: 10px;
+}
+
+.section-lblue a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-lblue a:hover {
+  color: green;
+}
+
+.section-lblue h4 {
+  border-bottom: 1px solid #101010;
 }
 
 .section-lblue:last-of-type {
@@ -420,6 +512,29 @@ DEFAULT STYLING PAGES
   color: white;
 }
 
+.section-green a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-green a + a {
+  margin-top: 10px;
+}
+
+.section-green a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-green a:hover {
+  color: green;
+}
+
+.section-green h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .section-green:last-of-type {
   margin-bottom: 20px;
 }
@@ -428,11 +543,42 @@ DEFAULT STYLING PAGES
   margin-top: 0px;
 }
 
+.section-green a {
+  color: white;
+}
+
+.section-green h4 {
+  border-bottom: 1px solid white;
+}
+
 .section-lyellow {
   padding: 16px;
   background-color: white;
   margin: 20px 20px 0px 20px;
   background-color: #ffffc6;
+}
+
+.section-lyellow a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-lyellow a + a {
+  margin-top: 10px;
+}
+
+.section-lyellow a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-lyellow a:hover {
+  color: green;
+}
+
+.section-lyellow h4 {
+  border-bottom: 1px solid #101010;
 }
 
 .section-lyellow:last-of-type {
@@ -450,6 +596,29 @@ DEFAULT STYLING PAGES
   background-color: #ffff00;
 }
 
+.section-yellow a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-yellow a + a {
+  margin-top: 10px;
+}
+
+.section-yellow a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-yellow a:hover {
+  color: green;
+}
+
+.section-yellow h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .section-yellow:last-of-type {
   margin-bottom: 20px;
 }
@@ -463,6 +632,29 @@ DEFAULT STYLING PAGES
   background-color: white;
   margin: 20px 20px 0px 20px;
   background-color: #c4c4c4;
+}
+
+.section-grey a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-grey a + a {
+  margin-top: 10px;
+}
+
+.section-grey a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-grey a:hover {
+  color: green;
+}
+
+.section-grey h4 {
+  border-bottom: 1px solid #101010;
 }
 
 .section-grey:last-of-type {
@@ -481,6 +673,29 @@ DEFAULT STYLING PAGES
   color: white;
 }
 
+.section-dgrey a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-dgrey a + a {
+  margin-top: 10px;
+}
+
+.section-dgrey a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-dgrey a:hover {
+  color: green;
+}
+
+.section-dgrey h4 {
+  border-bottom: 1px solid #101010;
+}
+
 .section-dgrey:last-of-type {
   margin-bottom: 20px;
 }
@@ -495,6 +710,29 @@ DEFAULT STYLING PAGES
   margin: 20px 20px 0px 20px;
   background-color: #101012;
   color: white;
+}
+
+.section-black a {
+  color: #101012;
+  font-weight: 900;
+}
+
+.section-black a + a {
+  margin-top: 10px;
+}
+
+.section-black a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+.section-black a:hover {
+  color: green;
+}
+
+.section-black h4 {
+  border-bottom: 1px solid #101010;
 }
 
 .section-black:last-of-type {
@@ -849,6 +1087,29 @@ STYLING: SPECIFIC PAGES
   background-color: #bfe1f2;
 }
 
+#contact-form-section a {
+  color: #101012;
+  font-weight: 900;
+}
+
+#contact-form-section a + a {
+  margin-top: 10px;
+}
+
+#contact-form-section a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
+}
+
+#contact-form-section a:hover {
+  color: green;
+}
+
+#contact-form-section h4 {
+  border-bottom: 1px solid #101010;
+}
+
 #contact-form-section:last-of-type {
   margin-bottom: 20px;
 }
@@ -1049,13 +1310,11 @@ FRONTPAGE CONTAINER PROPERTIES
   padding-bottom: 20px;
   margin-bottom: 30px;
   font-weight: 900;
-  border-bottom: 1px solid #101010;
 }
 
 .frontpage-link-container a {
   display: inline-block;
   text-decoration: none;
-  color: #101012;
 }
 
 .small-container {
@@ -1180,6 +1439,14 @@ CALENDAR PROPERTIES
   text-justify: flex-end;
   padding-right: 20px;
   min-height: 400px;
+  color: #101012;
+  font-weight: 900;
+}
+
+.thomas-image a:after {
+  font-weight: 900;
+  content: ">";
+  padding-left: 10px;
 }
 
 .thomas-image > a:hover {
@@ -1204,8 +1471,11 @@ CALENDAR PROPERTIES
           flex-flow: column nowrap;
 }
 
+.aktuellt h4 {
+  margin-bottom: 20px;
+}
+
 .aktuellt-article {
-  margin-top: 20px;
   padding: 10px 20px;
   background-color: #e3ede8;
   display: -webkit-box;
@@ -1233,6 +1503,7 @@ CALENDAR PROPERTIES
       align-self: flex-end;
   font-weight: 900;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .article-post-link:after {

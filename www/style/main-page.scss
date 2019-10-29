@@ -119,6 +119,24 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: $secondary-color;
   margin: 20px 20px 0px 20px;
+  a {
+    color: $black-text;
+    font-weight: 900;
+  }
+  a + a {
+    margin-top: 10px;
+  }
+  a:after {
+    font-weight: 900;
+    content: ">";
+    padding-left: 10px;
+  }
+  a:hover {
+    color: green;
+  }
+  h4 {
+    border-bottom: 1px solid #101010;
+  }
   &:last-of-type {
     margin-bottom: 20px;
   }
@@ -153,8 +171,13 @@ DEFAULT STYLING PAGES
   @include standard-container;
   background-color: $green-box-color;
   color: white;
+  a {
+    color: white;
+  }
+  h4 {
+    border-bottom: 1px solid white;
+  }
 }
-
 .section-lyellow {
   @include standard-container;
   background-color: $lyellow-box-color;
@@ -589,12 +612,10 @@ FRONTPAGE CONTAINER PROPERTIES
     padding-bottom: 20px;
     margin-bottom: 30px;
     font-weight: 900;
-    border-bottom: 1px solid #101010;
   }
   a {
     display: inline-block;
     text-decoration: none;
-    color: $black-text;
   }
 }
 
@@ -678,6 +699,13 @@ CALENDAR PROPERTIES
     text-justify: flex-end;
     padding-right: 20px;
     min-height: 400px;
+    color: $black-text;
+    font-weight: 900;
+  }
+  a:after {
+    font-weight: 900;
+    content: ">";
+    padding-left: 10px;
   }
   > a:hover {
     background-image: url("../media/thomas.jpg");
@@ -693,18 +721,17 @@ CALENDAR PROPERTIES
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
+  h4 {
+    margin-bottom: 20px;
+  }
 }
 
 .aktuellt-article {
-  margin-top: 20px;
   padding: 10px 20px;
   background-color: #e3ede8;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-}
-
-.aktuellt-article {
   img {
     align-self: center;
     margin-bottom: 20px;
@@ -716,6 +743,7 @@ CALENDAR PROPERTIES
   align-self: flex-end;
   font-weight: 900;
   text-decoration: none;
+  margin-top: 20px;
   &:after {
     font-weight: 900;
     content: ">";
