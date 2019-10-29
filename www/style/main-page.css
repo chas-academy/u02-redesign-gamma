@@ -260,7 +260,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 1.8rem;
   position: relative;
   overflow: hidden;
@@ -1066,11 +1066,8 @@ a:hover:after {
   right: 0;
 }
 
-/*** 
-BUTTONS 
-***/
-/* Standard button */
-.std-button > a {
+.section-button {
+  padding: 10px 40px 10px 20px;
   text-decoration: none;
   font-weight: 900;
   text-decoration: none;
@@ -1129,6 +1126,9 @@ BUTTONS
   border: 1px solid black;
 }
 
+/*** 
+STYLED LINKS 
+***/
 /*** 
 DEFAULT EFFECTS 
 ***/
@@ -1581,7 +1581,8 @@ FRONTPAGE CONTAINER PROPERTIES
           justify-content: flex-end;
   text-justify: flex-end;
   text-align: right;
-  padding: 40px 20px;
+  margin: 20px 20px;
+  padding: 40px 30px;
 }
 
 .small-container a {
@@ -1874,16 +1875,6 @@ CALENDAR PROPERTIES
   color: #101012;
 }
 
-.image-box .thomas-content-container {
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
-}
-
-.image-box .thomas-content-container a {
-  color: black;
-}
-
 /***
 AKTUELLT
 ***/
@@ -1905,31 +1896,11 @@ AKTUELLT
 }
 
 .aktuellt h4 {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 10px;
-  font-weight: 900;
-  border-bottom: 1px solid #101010;
+  margin-bottom: 20px;
 }
 
-.aktuellt .aktuellt-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.aktuellt .aktuellt-container span {
-  margin: 0 auto;
-}
-
-.aktuellt .aktuellt-article {
-  width: 400px;
-  margin: 20px 20px;
-  padding: 20px 20px;
+.aktuellt-article {
+  padding: 10px 20px;
   background-color: #e3ede8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,20 +1914,14 @@ AKTUELLT
           flex-flow: column wrap;
 }
 
-.aktuellt .aktuellt-article p span {
-  color: darkgrey;
-  display: block;
-  margin: 10px 0px;
-}
-
-.aktuellt .aktuellt-article img {
+.aktuellt-article img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 20px;
 }
 
-.aktuellt .aktuellt-article .article-post-link {
+.article-post-link {
   color: black;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1970,17 +1935,6 @@ AKTUELLT
   padding-left: 5px;
   text-decoration: none;
   display: inline-block;
-}
-
-/***
-EFFECT FOR 'AKTUELLT' TITLE TEXT
-***/
-.aktuellt h4 {
-  text-align: center;
-  width: 90%;
-  padding-bottom: 10px;
-  font-weight: 900;
-  border-bottom: 1px solid #101010;
 }
 
 /**
@@ -2013,8 +1967,8 @@ footer .footer-container {
           justify-content: center;
 }
 
-.footer-container h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+footer .footer-container h4 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 10px;
