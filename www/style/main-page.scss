@@ -304,22 +304,22 @@ a:hover {
   border: 1px solid rgb(200, 200, 200);
   text-align: left;
   position: relative;
+  &:after {
+    position: absolute;
+    font-weight: 900;
+    content: ">";
+    margin-right: 15px;
+    right: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  a:hover {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
     &:after {
-      position: absolute;
-      font-weight: 900;
-      content: ">";
-      margin-right: 15px;
-      right: 5px;
-      transition: all 0.5s ease-in-out;
-    }
-    a:hover {
-      color: white;
-      border: 1px solid rgb(255, 255, 255);
-      &:after {
-        right: 0;
-      }
+      right: 0;
     }
   }
+}
 
 .section-button {
   @include button;
@@ -359,6 +359,10 @@ a:hover {
     border: 1px solid rgb(0, 0, 0);
   }
 }
+
+/*** 
+STYLED LINKS 
+***/
 
 /*** 
 DEFAULT EFFECTS 
@@ -631,7 +635,8 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
       font-size: 1.4rem;
       font-weight: 900;
     }
-    a, a:hover {
+    a,
+    a:hover {
       margin-top: 20px;
       color: white;
     }
@@ -659,6 +664,16 @@ FRONTPAGE CONTAINER PROPERTIES
   a {
     display: inline-block;
     text-decoration: none;
+  }
+  p a {
+    text-decoration: underline;
+    font-weight: 500;
+    &:after {
+      content: ">";
+      padding-left: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
   }
 }
 
@@ -889,9 +904,8 @@ CALENDAR PROPERTIES
   margin-top: 20px;
   text-decoration: underline;
   &:after {
-    font-weight: 900;
     content: ">";
-    padding-left: 10px;
+    padding-left: 5px;
     text-decoration: none;
     display: inline-block;
   }

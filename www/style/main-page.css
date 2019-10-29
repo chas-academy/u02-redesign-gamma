@@ -1101,6 +1101,9 @@ a:hover:after {
 }
 
 /*** 
+STYLED LINKS 
+***/
+/*** 
 DEFAULT EFFECTS 
 ***/
 /* Dark effect on image */
@@ -1487,7 +1490,8 @@ CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
   font-weight: 900;
 }
 
-.header-container .header-content a, .header-container .header-content a:hover {
+.header-container .header-content a,
+.header-container .header-content a:hover {
   margin-top: 20px;
   color: white;
 }
@@ -1524,6 +1528,18 @@ FRONTPAGE CONTAINER PROPERTIES
 .frontpage-link-container a {
   display: inline-block;
   text-decoration: none;
+}
+
+.frontpage-link-container p a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.frontpage-link-container p a:after {
+  content: ">";
+  padding-left: 10px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .small-container {
@@ -1863,9 +1879,8 @@ CALENDAR PROPERTIES
 }
 
 .article-post-link:after {
-  font-weight: 900;
   content: ">";
-  padding-left: 10px;
+  padding-left: 5px;
   text-decoration: none;
   display: inline-block;
 }
