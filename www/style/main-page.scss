@@ -757,9 +757,11 @@ footer {
     /** FLEX **/
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
 
     @include Tablet-and-up {
-      justify-content: center;
+
     }
   
     h4 {
