@@ -118,7 +118,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 .search-menu-ul #opacity-cover {
   width: 100%;
   height: 1000vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.95);
   position: fixed;
   top: 0;
   left: 0;
@@ -133,8 +133,24 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .search-menu-ul form {
   position: relative;
-  top: 210px;
-  width: 100%;
+  top: 200px;
+}
+
+.search-menu-ul form #close-label {
+  color: white;
+  padding: 0;
+  position: fixed;
+  right: 32px;
+  top: 70px;
+  font-weight: normal;
+}
+
+.search-menu-ul form #close-label #img-close-search {
+  height: 45px;
+  margin: 0;
+  position: fixed;
+  right: 32px;
+  top: 15px;
 }
 
 .search-menu-ul form #menu-submit {
@@ -153,20 +169,16 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .search-menu-ul form #menu-submit-close {
   background-color: Transparent;
-  border: none;
   position: fixed;
-  right: 16px;
-  top: 10px;
-  font-family: FontAwesome;
-  color: red;
-  font-size: 3rem;
-  overflow: visible;
-  font-weight: normal;
+  right: 27px;
+  top: 15px;
+  width: 55px;
+  height: 72px;
+  border: none;
 }
 
 .search-menu-ul form #menu-submit-close:hover {
   cursor: pointer;
-  font-size: 3.5rem;
 }
 
 /* Hamburger Menu */
@@ -185,11 +197,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul {
   z-index: 5;
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 0;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 #nav-menu .burger-menu-ul :hover {
@@ -205,17 +216,18 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul #close-menu-icon {
   position: fixed;
-  right: 16px;
-  top: 10px;
-  font-family: FontAwesome;
-  color: red;
-  font-size: 3rem;
-  overflow: visible;
+  right: 27px;
+  top: 15px;
   font-weight: normal;
+  width: 55px;
+  height: 72px;
+  font-size: 1.1rem;
+  line-height: 0;
 }
 
-#nav-menu .burger-menu-ul #close-menu-icon:hover {
-  font-size: 3.5rem;
+#nav-menu .burger-menu-ul #close-menu-icon .img-close {
+  height: 45px;
+  margin: 0 0 8px 0;
 }
 
 #nav-menu .burger-menu-ul #opacity-cover-2 {
@@ -225,7 +237,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   top: 0;
   width: 100%;
   height: 1000vh;
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.95);
   overflow: hidden;
 }
 
@@ -238,6 +250,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   width: 100%;
   line-height: 42px;
   z-index: 6;
+  margin-bottom: 15px;
 }
 
 #nav-menu .burger-menu-ul li :hover {
@@ -247,16 +260,15 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul li a {
   text-decoration: none;
-  color: #000000;
-  font-size: 1.6rem;
+  color: #ffffff;
+  font-size: 1.8rem;
   position: relative;
-  /*display: block;*/
   overflow: hidden;
 }
 
 #nav-menu .burger-menu-ul li a#burger-menu-current-page {
   color: #807e7e;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 /* some common styling between search menu and hamburger menu */
