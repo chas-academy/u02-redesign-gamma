@@ -134,6 +134,7 @@ DEFAULT STYLING PAGES
     font-weight: 900;
     content: ">";
     padding-left: 10px;
+    display:inline-block;
   }
   a:hover {
     color: $link-color;
@@ -802,11 +803,13 @@ CALENDAR PROPERTIES
   font-weight: 900;
   text-decoration: none;
   margin-top: 20px;
+  text-decoration: underline;
   &:after {
     font-weight: 900;
     content: ">";
     padding-left: 10px;
     text-decoration: none;
+    display:inline-block;
   }
 }
 
