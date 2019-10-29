@@ -6,7 +6,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/main-page.css" />
   <title>Myndigheten för yrkeshögskolan</title>
 </head>
@@ -31,7 +30,10 @@
               <form>
                 <input id="user-search" name="search" placeholder="Sök..." aria-required="true" aria-label="Search" />
                 <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true" />
-                <input id="menu-submit-close" type="submit" value="&#xf00d" aria-required="false" aria-label="Close" />
+                <label id="close-label" for="close-form"> <img id="img-close-search"
+                  src="media/close_icon_white.png" alt="Close"> stäng </label>
+          <input id="menu-submit-close" type="submit" value="" name="close-form"
+              aria-required="false" aria-label="Close" />
               </form>
             </div>
           </ul>
@@ -52,7 +54,8 @@
             <li><a href="#">Publikationer</a></li>
             <li><a href="#">Nyhetsrum</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-            <li id="close-li"> <a id=close-menu-icon href="om_oss.html">&#xf00d</a></li>
+            <li id="close-li"> <a id=close-menu-icon href="om_oss.html"> <img class="img-close"
+              src="media/close_icon_white.png" alt="Close"> stäng </a></li>
             <div id="opacity-cover-2"></div>
           </ul>
         </nav>
@@ -63,14 +66,30 @@
 
   <nav class="top-links-nav">
     <ul class="top-links-ul">
-      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/larger_icon.png"
-            alt="top-links-image">Större text</a></li>
-      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/eye_icon.png"
-            alt="top-links-image">Lättläst</a></li>
-      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/uk_icon.png"
-            alt="top-links-image">English</a></li>
-      <li class="top-links-li"><a href="#"><img class="top-links-image" src="./media/lock_icon.png"
-            alt="top-links-image">Mina sidor</a></li>
+      <li class="top-links-li">
+        <a href="#">
+          <img class="top-links-image" src="./media/larger_icon.png" alt="top-links-image">
+          <span>Större text</span>
+        </a>
+      </li>
+      <li class="top-links-li">
+        <a href="#">
+          <img class="top-links-image" src="./media/eye_icon.png" alt="top-links-image">
+          <span>Lättläst</span>
+        </a>
+      </li>
+      <li class="top-links-li">
+        <a href="#">
+          <img class="top-links-image" src="./media/uk_icon.png" alt="top-links-image">
+          <span>English</span>
+        </a>
+      </li>
+      <li class="top-links-li">
+        <a href="#">
+          <img class="top-links-image" src="./media/lock_icon.png" alt="top-links-image">
+          <span>Mina sidor</span>
+        </a>
+      </li>
     </ul>
   </nav>
 
@@ -162,36 +181,38 @@
 
   <footer>
     <section class="footer-container">
+      <ul class="footer-section no-bull">
+        <li>
+          <h4>Kontakta oss</h4>
+        </li>
+        <li>E-post: <a href="#">info@myh.se</a> eller <a href="#">registrator@myh.se</a></li>
+        <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
+        <li><a href="#">Fler kontaktuppgifter</a></li>
+      </ul>
+      <ul class="footer-section no-bull">
+        <li>
+          <h4>Om webbplatsen</h4>
+        </li>
+        <li><a href="#">Använda webbplatsen</a></li>
+        <li><a href="#">Om webbkakor (cookies)</a></li>
+        <li><a href="#">Webbkarta</a></li>
+      </ul>
+      <ul class="footer-section no-bull">
+        <li>
+          <h4>Våra övriga webbplatser</h4>
+        </li>
+        <li><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
+        <li><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a></li>
+        <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+        <li><a href="https://www.seqf.se">www.seqf.se</a></li>
+      </ul>
       <section class="footer-section">
-        <h4>Kontakta oss</h4>
-        E-post: info@myh.se eller registrator@myh.se
-        Telefon: 0102090100 (vardagar 8.00 - 17.00)
-        <a href="#">Fler kontaktuppgifter</a>
-      </section class="footer-section">
-      <section class="footer-section">
-        <h4>Om webbplatsen</h4>
-        <a href="#">Använda webbplatsen</a>
-        <a href="#">Om webbkakor (cookies)</a>
-        <a href="#">Webbkarta</a>
-      </section class="footer-section">
-      <section class="footer-section">
-        <h4>Våra övriga webbplatser</h4>
-        <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-        <a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-        <a href="https://www.blitolk.nu">www.blitolk.nu</a>
-        <a href="https://www.seqf.se">www.seqf.se</a>
-      </section class="footer-section">
-      <section class="footer-section">
-        Ansvarig utgivare
-        Thomas Persson, generaldirektör MYH.
-      </section class="footer-section">
+        <h4>Ansvarig utgivare</h4>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+      </section>
     </section>
     <section class="bottom-footer">
-      <section class="footer-section">
-        Myndigheten för yrkeshögskolan
-        Box 145
-        721 05 Västerås
-      </section class="footer-section">
+      <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
     </section>
   </footer>
 </body>
