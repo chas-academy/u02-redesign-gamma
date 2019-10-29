@@ -28,6 +28,11 @@ $font_roboto: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import "_header-nav.scss";
 
+// Media query mixins
+@mixin Tablet-and-up {
+   @media (min-width: 720px) {@content;}
+}
+
 
 /*** 
 DEFAULT STYLING 
@@ -697,7 +702,6 @@ AKTUELLT
     }
   }
   .aktuellt-article {
-    //width: 400px;
     margin: 20px 20px;
     padding: 20px 20px;
     background-color: #e3ede8;
@@ -742,6 +746,7 @@ footer {
   background-color: #363636;
   position: relative;
   bottom: 0px;
+
   .footer-container {
     background-color: #363636;
     padding: 10px 30px;
@@ -752,27 +757,34 @@ footer {
     /** FLEX **/
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+
+    @include Tablet-and-up {
+      justify-content: center;
+    }
   
     h4 {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-weight: 500;
-      //font-size: 1.4rem;
-      //line-height: 1.5;
-      //margin-top: 8px;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      margin-top: 8px;
     }
     
     .footer-section {
-      //margin-left: 20px;
-
-
+      margin-left: 20px;
       width: 300px;
+
+      @include Tablet-and-up {
+        margin-left: 20px;
+      }
+
       a {
         text-decoration: none;
         color: white;
       }
     }
   }
+
   .bottom-footer {
     display: flex;
     justify-content: center;
@@ -781,10 +793,6 @@ footer {
     background-color: #101010;
     color: white;
     padding: 0 20px;
-    margin-bottom: 20px;
+    text-align: center;
   }
-}
-
-.footer-section + .footer-section {
-  /*margin-left: 20px;*/
 }
