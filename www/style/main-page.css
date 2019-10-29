@@ -300,6 +300,10 @@ body {
   background-color: whitesmoke;
 }
 
+.page {
+  margin-top: 20px;
+}
+
 /*** 
 DEFAULT FONT SIZES
 ***/
@@ -1199,11 +1203,11 @@ STYLING: SPECIFIC PAGES
 CSS FOR FRONTPAGE HEADER, CONTAINERS, ASIDE
 ***/
 .header-container {
-  height: 300px;
+  height: 400px;
   width: 100%;
   position: relative;
   font-weight: 900;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .header-container .header-image {
@@ -1329,7 +1333,7 @@ FRONTPAGE CONTAINER PROPERTIES
           justify-content: flex-end;
   text-justify: flex-end;
   text-align: right;
-  margin: 10px 20px;
+  margin: 20px 20px;
   padding: 40px 20px;
 }
 
