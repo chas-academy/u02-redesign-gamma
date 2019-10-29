@@ -21,20 +21,27 @@
         </li>
   
         <li class="main-menu-li-links">
-          <nav id="nav-search">
-            <input type="checkbox" id="cb-hack">
-            <label for="cb-hack" id="toggle-menu"> <img src="media/search_icon.png" class="search-menu-image"
-                alt="">Sök</label>
-            <ul class="search-menu-ul">
-              <div id="opacity-cover">
-                <form>
-                  <input id="user-search" name="search" placeholder="Sök..." aria-required="true" aria-label="Search" />
-                  <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true" />
-                  <input id="menu-submit-close" type="submit" value="&#xf00d" aria-required="false" aria-label="Close" />
-                </form>
-              </div>
-            </ul>
-          </nav>
+            <nav id="nav-search">
+                <input type="checkbox" id="cb-hack">
+                <label for="cb-hack" id="toggle-menu"> <img src="media/search_icon.png" class="search-menu-image"
+                        alt="">Sök</label>
+                <ul class="search-menu-ul">
+                    <div id="opacity-cover">
+                        <form>
+                            <input id="user-search" name="search" placeholder="Sök..." aria-required="true"
+                                aria-label="Search" />
+                            <input id="menu-submit" type="submit" name="submit" value="Skicka"
+                                aria-required="true" />
+                            <!--<input id="menu-submit-close" type="submit" value="&#xf00d" aria-required="false" aria-label="Close" />-->
+                            <label id="close-label" for="close-form"> <img id="img-close-search"
+                                    src="media/close_icon_white.png" alt="Stäng"> Stäng </label>
+                            <input id="menu-submit-close" type="submit" value="" name="close-form"
+                                aria-required="false" aria-label="Close" />
+
+                        </form>
+                    </div>
+                </ul>
+            </nav>
         </li>
   
         <li class="main-menu-li-links">
@@ -164,7 +171,7 @@
         Gå till toppen av webbsidan
       </a>
     </section>
-    
+
   <footer>
     <section class="footer-container">
       <ul class="footer-section no-bull">
