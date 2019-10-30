@@ -1994,6 +1994,11 @@ footer {
   bottom: 0px;
 }
 
+footer p, footer li {
+  font-size: 0.9rem;
+  padding-bottom: 5px;
+}
+
 footer .footer-container {
   background-color: #363636;
   padding: 10px 30px;
@@ -2020,21 +2025,14 @@ footer .footer-container h4 {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.5;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 footer .footer-container .footer-section {
   width: 300px;
 }
 
-@media (min-width: 720px) {
-  footer .footer-container .footer-section {
-    margin-left: 20px;
-  }
-}
-
 footer .footer-container .footer-section a {
-  text-decoration: none;
   color: white;
 }
 

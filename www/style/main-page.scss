@@ -991,6 +991,11 @@ footer {
   position: relative;
   bottom: 0px;
 
+  p, li {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+  }
+
   .footer-container {
     background-color: #363636;
     padding: 10px 30px;
@@ -1005,7 +1010,6 @@ footer {
     text-align: center;
 
     @include Tablet-and-up {
-
     }
   
     h4 {
@@ -1013,18 +1017,16 @@ footer {
       font-weight: 500;
       font-size: 1.4rem;
       line-height: 1.5;
-      margin-top: 8px;
+      margin-top: 10px;
     }
     
     .footer-section {
       width: 300px;
 
       @include Tablet-and-up {
-        margin-left: 20px;
       }
 
       a {
-        text-decoration: none;
         color: white;
       }
     }
