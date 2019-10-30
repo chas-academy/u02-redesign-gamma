@@ -27,6 +27,12 @@ $font_roboto: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import "_header-nav.scss";
 
+// Media query mixins
+@mixin Tablet-and-up {
+   @media (min-width: 720px) {@content;}
+}
+
+
 /*** 
 DEFAULT STYLING 
 ***/
@@ -901,10 +907,52 @@ AKTUELLT
   justify-content: center;
   flex-flow: column nowrap;
   h4 {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    font-weight: 900;
+    border-bottom: 1px solid #101010;
+  }
+  
+  .aktuellt-container {
+    display: flex;
+    flex-flow: row wrap;
+    
+    span {
+      margin: 0 auto;
+    }
+  }
+  .aktuellt-article {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #e3ede8;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    p {
+      span {
+        color: darkgrey;
+        display: block;
+        margin: 10px 0px;
+      }
+    }
+    img {
+      align-self: center;
+      height: 300px;
+      width: 330px;
+      margin-bottom: 20px;
+    }
+    .article-post-link {
+      color: black;
+      align-self: flex-end;
+      font-weight: 900;
+      text-decoration: underline;
+    }
   }
 }
 
+/*
 .aktuellt-article {
   padding: 10px 20px;
   background-color: #e3ede8;
@@ -930,7 +978,7 @@ AKTUELLT
     display: inline-block;
   }
 }
-
+*/
 
 
 /**
@@ -942,6 +990,12 @@ footer {
   background-color: #363636;
   position: relative;
   bottom: 0px;
+
+  p, li {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+  }
+
   .footer-container {
     background-color: #363636;
     padding: 10px 30px;
@@ -953,23 +1007,31 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
+
+    @include Tablet-and-up {
+    }
   
     h4 {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-weight: 500;
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      margin-top: 10px;
     }
     
     .footer-section {
-      
       width: 300px;
+
+      @include Tablet-and-up {
+      }
+
       a {
-        text-decoration: none;
         color: white;
       }
     }
   }
+
   .bottom-footer {
     display: flex;
     justify-content: center;
@@ -977,9 +1039,7 @@ footer {
     height: 100px;
     background-color: #101010;
     color: white;
+    padding: 0 20px;
+    text-align: center;
   }
-}
-
-.footer-section + .footer-section {
-  margin-left: 20px;
 }
