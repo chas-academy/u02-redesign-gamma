@@ -14,7 +14,7 @@
     <nav class="main-menu-nav" role="navigation">
         <ul class="main-menu-ul" role="menu">
             <li id="main-menu-li-logo">
-                <a id="kontakt-logo-anchor" href="index.html" role="banner">
+                <a id="kontakt-logo-anchor" href="index.html">
                     <img src="media/myh_logo.png" class="kontakt-logo-img" class="#top"
                         alt="Länk till förstasidan">
                 </a>
@@ -34,7 +34,7 @@
                         </label>
 
                     <ul class="search-menu-ul">
-                        <div id="opacity-cover">
+                        <div id="opacity-cover" role="search">
                             <form>
                                 <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
                                     aria-label="Sök" />
@@ -44,8 +44,7 @@
                                 <label id="close-label" for="close-form"> <img id="img-close-search"
                                         src="media/close_icon_white.png" alt=""> stäng </label>
                                 <input id="menu-submit-close" type="submit" value="stäng" name="close-form"
-                                    aria-required="false" aria-label="Stäng meny" />
-
+                                    aria-required="false" aria-label="Stäng meny"/>
                             </form>
                         </div>
                     </ul>
@@ -114,17 +113,17 @@
     </nav>
 
     <main class="page" role="main">
-        <section>
-            <header class="header-container">
+        <section role="region">
+            <header class="header-container" role="banner">
                 <div class="header-image darken"></div>
-                <article class="header-content">
+                <article class="header-content" role="article">
                     <h1>Myndigheten för yrkeshögskolan</h1>
                       <p>- Fyller 10 år!</p>
                     <a class="white-button" href="#">Läs mer</a>
                 </article>
             </header>
 
-            <section class="frontpage-link-container section-lblue">
+            <section class="frontpage-link-container section-lblue" role="region">
                 <h4>Verksamhetsområden</h4>
                 <ul role="menu">
                     <li class="no-bull" role="menuitem"><a href="verksamhet.html">Yrkeshögskolan</a></li>
@@ -136,7 +135,7 @@
                 </ul>
             </section>
 
-            <section class="frontpage-link-container section-black">
+            <section class="frontpage-link-container section-black" role="region">
                 <h4>Ansök om</h4>
                 <ul role="menu">
                     <li class="no-bull" role="menuitem"><a href="#">Att bedriva utbildning inom yrkeshögskolan</a></li>
@@ -146,7 +145,7 @@
                 </ul>
             </section>
 
-            <section class="frontpage-link-container section-lyellow">
+            <section class="frontpage-link-container section-lyellow" role="region">
                 <h4>För dig som bedriver utbildning</h4>
                 <ul role="menu">
                     <li class="no-bull" role="menuitem"><a href="#">För utbildningsanordnare inom yrkeshögskolan</a></li>
@@ -156,14 +155,14 @@
                 </ul>
             </section>
 
-            <section class="frontpage-link-container section-lblue">
+            <section class="frontpage-link-container section-lblue" role="region">
                 <h4>För företag och organisationer</h4>
                 <p>Arbetslivet är den främsta drivkraften bakom vilka yrkeshögskoleutbildningar som startar och hur
                     de är upplagda.</p>
                 <p><a href="#">Läs om hur du kan engagera dig och påverka utbildningarna inom yrkeshögskolan</a></p>
             </section>
 
-            <section class="frontpage-link-container section youtube">
+            <section class="frontpage-link-container section youtube" role="region">
                 <h4>Vår Youtube-kanal</h4>
                 <iframe src="https://www.youtube.com/embed/z08L0dklN3o" width="370" height="300" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -173,14 +172,14 @@
                         kanal på Youtube</a>
             </section>
 
-            <section class="frontpage-link-container section-lblue">
+            <section class="frontpage-link-container section-lblue" role="region">
                 <section class="calendar-container">
 
-                    <section class="calendar-header">
+                    <section class="calendar-header" role="region">
                         <h4>Kalender <a href="#">WebCal</a></h4>
                     </section>
 
-                    <section class="calendar-post">
+                    <section class="calendar-post" role="region">
                         <div class="date">
                             <h2>30</h2>
                             <h5>OCT</h5>
@@ -188,7 +187,7 @@
                         <a href="#">Workshop i att skriva ansökan om inplacering i SeQF</a>
                     </section>
 
-                    <section class="calendar-post">
+                    <section class="calendar-post" role="region">
                         <div class="date">
                             <h2>10</h2>
                             <h5>NOV</h5>
@@ -196,7 +195,7 @@
                         <a href="#">Workshop i att skriva ansökan om inplacering i SeQF</a>
                     </section>
 
-                    <section class="calendar-post">
+                    <section class="calendar-post" role="region">
                         <div class="date">
                             <h2>23</h2>
                             <h5>NOV</h5>
@@ -204,37 +203,37 @@
                         <a href="#">Workshop i att skriva ansökan om inplacering i SeQF</a>
                     </section>
 
-                </section>
+                </section role="region">
                 <a class="std-button" href="#">Visa hela kalendern</a>
             </section>
 
             <aside role="complementary">
-                <section class="section-black small-container">
+                <section class="section-black small-container" role="region">
                     <a href="#">Anmäl brister i en utbildning</a>
                 </section>
 
-                <section class="section-yellow small-container">
+                <section class="section-yellow small-container" role="region">
                     <a href="#">Hitta utbildningar</a>
                 </section>
 
-                <section class="section-green small-container">
+                <section class="section-green small-container" role="region">
                     <a href="#">För dig som vägledare</a>
                 </section>
 
-                <section class="thomas-image">
+                <section class="thomas-image" role="region">
                         <a href="#">GD har ordet</a>
                 </section>
 
-                <section class="epale-image">
+                <section class="epale-image" role="region">
                     <a href="#">EPALE, digital mötesplats för vuxenutbildningar</a>
                 </section>
 
-                <section class="ya-image">
+                <section class="ya-image" role="region">
                     <a href="#">Material från YA-delegationen</a>
                 </section>
             </aside>
 
-            <section class="frontpage-link-container section-lyellow">
+            <section class="frontpage-link-container section-lyellow" role="region">
                 <h4>Gå direkt till:</h4>
                 <ul>
                     <li class="no-bull"><a href="#">Lediga jobb</a></li>
@@ -244,7 +243,7 @@
                     <li class="no-bull"><a href="#">Nyhetsbrev</a></li>
                 </ul>
             </section>
-            <section class="frontpage-link-container section-green">
+            <section class="frontpage-link-container section-green" role="region">
                 <h4>Senaste publikationer</h4>
                 <ul>
                     <li class="no-bull"><a href="#">MYH jubileumsbroschyr 2019</a></li>
@@ -255,10 +254,10 @@
             </section>
         </section>
 
-        <section class="aktuellt">
+        <section class="aktuellt" role="region">
             <h4>Aktuellt</h4>
             
-            <section class="section aktuellt-article">
+            <section class="section aktuellt-article" role="region">
                 <img src="./media/aktuellt1.jpg" width="292" height="185" alt="Malin Granberg">
                 <h3>Hon Jobbar med att göra YH mer känt och erkänt</h3>
                 <p>
@@ -270,7 +269,7 @@
                 <a class="article-post-link" href="#">Läs hela inlägget</a>
             </section>
 
-            <section class="section aktuellt-article">
+            <section class="section aktuellt-article" role="region">
                 <img src="./media/aktuellt2.jpg" width="292" height="185" alt="Stadsbidrag">
                 <h3>Ansök om statsbidrag för utbildning till teckenspråks- och dövblindtolk samt skrivtolk</h3>
                 <p>
@@ -282,7 +281,7 @@
                 <a class="article-post-link" href="#">Läs hela inlägget</a>
             </section>
 
-            <section class="section aktuellt-article">
+            <section class="section aktuellt-article" role="region">
                 <img src="./media/aktuellt3.jpg" width="292" height="185" alt="Handelskammaren">
                 <h3>Informationsträff för vägledare</h3>
                 <p>
@@ -297,14 +296,14 @@
             <a class="std-button" href="#">Läs alla nyheter</a>
         </section>
 
-        <section class="section-no-bg pos-right">
+        <section class="section-no-bg pos-right" role="region">
             <a class="to-top-button" href="#top" role="button" title="Gå till toppen" aria-label="Gå till toppen av webbsidan">
                 Gå till toppen av webbsidan
             </a>
         </section>
 
         <footer role="contentinfo">
-            <section class="footer-container">
+            <section class="footer-container" role="region">
                 <ul class="footer-section no-bull">
                     <li>
                         <h4>Kontakta oss</h4>
@@ -317,25 +316,25 @@
                     <li>
                         <h4>Om webbplatsen</h4>
                     </li>
-                    <li><a href="#">Använda webbplatsen</a></li>
-                    <li><a href="#">Om webbkakor (cookies)</a></li>
-                    <li><a href="#">Webbkarta</a></li>
+                    <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
+                    <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
+                    <li role="menuitem"><a href="#">Webbkarta</a></li>
                 </ul>
-                <ul class="footer-section no-bull">
+                <ul class="footer-section no-bull" role="menu">
                     <li>
                         <h4>Våra övriga webbplatser</h4>
                     </li>
-                    <li><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
-                    <li><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a></li>
-                    <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-                    <li><a href="https://www.seqf.se">www.seqf.se</a></li>
+                    <li role="menuitem"><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
+                    <li role="menuitem"><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a></li>
+                    <li role="menuitem"><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+                    <li role="menuitem"><a href="https://www.seqf.se">www.seqf.se</a></li>
                 </ul>
-                <section class="footer-section">
+                <section class="footer-section" role="region">
                     <h4>Ansvarig utgivare</h4>
                     <p>Thomas Persson, generaldirektör MYH.</p>
                 </section>
             </section>
-            <section class="bottom-footer">
+            <section class="bottom-footer" role="region">
                 <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
             </section>
         </footer>
