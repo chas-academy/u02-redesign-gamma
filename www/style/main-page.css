@@ -290,6 +290,35 @@ input:focus:not(:checked) + #toggle-menu-2 {
   height: 85px;
 }
 
+/* Search menu and hamburger menu accessibility */
+/* class to hide spans visually */
+.vh {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* reveal the correct state wording to screen readers based on state */
+[type="checkbox"]:checked ~ label .expanded-text {
+  display: inline;
+}
+
+[type="checkbox"]:checked ~ label .collapsed-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) ~ label .expanded-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) ~ label .collapsed-text {
+  display: inline;
+}
+
 /*** 
 DEFAULT STYLING 
 ***/
