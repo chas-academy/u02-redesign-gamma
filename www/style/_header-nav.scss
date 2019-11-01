@@ -90,7 +90,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 }
 
 //make dropdown visible when checkbox is checked
-#cb-hack:checked~.search-menu-ul {
+#toggle:checked~.search-menu-ul {
     display: block;
 }
 
@@ -127,9 +127,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
     }
 
     form {
-        position: relative;
+        position: absolute;
         top: 200px;
-        //margin-right: 8px;
+        left: 0;
+        z-index: 3;
+        width: 100%;
 
         #close-label {
             color: white;
@@ -189,7 +191,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 }
 
 //make dropdown visible when checkbox is checked
-#cb-hack-2:checked~.burger-menu-ul {
+#toggle-2:checked~.burger-menu-ul {
     display: block;
 }
 
@@ -303,7 +305,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 /* Search menu and hamburger menu accessibility */
 
-/* class to hide spans visually */
+/* Hide spans */
 .vh {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
@@ -314,7 +316,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
     overflow: hidden;
 }
 
-/* reveal the correct state wording to screen readers based on state */
+/* Show spans based on checked/unchecked states */
 
 [type="checkbox"]:checked ~ label .expanded-text {
     display: inline;
