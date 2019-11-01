@@ -108,11 +108,24 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: -9999px;
 }
 
+.search-menu-ul {
+  cursor: text;
+}
+
+.search-menu-ul:hover {
+  cursor: text;
+}
+
 .search-menu-ul #user-search {
   position: relative;
   line-height: 36px;
   font-size: 1.5rem;
   width: 90%;
+  cursor: text;
+}
+
+.search-menu-ul #user-search:hover {
+  cursor: text;
 }
 
 .search-menu-ul #opacity-cover {
@@ -128,7 +141,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .search-menu-ul #opacity-cover :hover {
-  cursor: text;
+  cursor: default;
 }
 
 .search-menu-ul form {
@@ -137,6 +150,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: 0;
   z-index: 3;
   width: 100%;
+  height: 0px;
+  cursor: default;
+}
+
+.search-menu-ul form:hover {
+  cursor: default;
 }
 
 .search-menu-ul form #close-label {
