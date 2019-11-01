@@ -11,102 +11,99 @@
 </head>
 
 <body>
-    <nav class="main-menu-nav" role="navigation">
-        <ul class="main-menu-ul" role="menu">
-            <li id="main-menu-li-logo">
-                <a id="kontakt-logo-anchor" href="index.html">
-                    <img src="media/myh_logo.png" class="kontakt-logo-img" alt="Länk till förstasidan">
-                </a>
-            </li>
+  <nav class="main-menu-nav" role="navigation">
+    <ul class="main-menu-ul" role="menu">
+      <li id="main-menu-li-logo">
+        <a id="kontakt-logo-anchor" href="index.html">
+          <img src="media/myh_logo.png" class="kontakt-logo-img" alt="Länk till förstasidan">
+        </a>
+      </li>
 
-            <li class="main-menu-li-links">
-                <nav id="nav-search" aria-label="Sökmeny">
-                    <input type="checkbox" id="toggle" role="button" aria-haspopup="true">
-                    <label for="toggle" id="toggle-menu">
+      <li class="main-menu-li-links">
+        <nav id="nav-search" aria-label="Sökmeny">
+          <input type="checkbox" id="toggle" role="button" aria-haspopup="true">
+          <label for="toggle" id="toggle-menu">
 
-                        <span class="vh expanded-text">Expanderad&lt;</span>
-                        <span class="vh collapsed-text">Kollapsad</span>
+            <span class="vh expanded-text">Expanderad&lt;</span>
+            <span class="vh collapsed-text">Kollapsad</span>
 
-                        <img src="media/search_icon.png" class="search-menu-image" alt="">Sök
+            <img src="media/search_icon.png" class="search-menu-image" alt="">Sök
+          </label>
 
+          <ul class="search-menu-ul">
+            <div id="opacity-cover" aria-hidden="true"></div>
+            <form role="form" aria-label="Sök på hemsidan">
+              <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
+                aria-label="Sökfält" />
+              <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
+                aria-label="Skicka sökningen" />
+              <label id="close-label" for="close-form"> <img id="img-close-search" src="media/close_icon_white.png"
+                  alt=""> stäng </label>
+              <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
+                aria-required="false" aria-label="Stäng sökmeny" />
+            </form>
+          </ul>
+        </nav>
+      </li>
 
-                    </label>
+      <li class="main-menu-li-links">
+        <nav id="nav-menu" role="navigation" aria-label="Dropdownmeny">
+          <input type="checkbox" id="toggle-2" role="button" aria-haspopup="true">
 
-                    <ul class="search-menu-ul">
-                        <div id="opacity-cover" aria-hidden="true"></div>
-                        <form role="form" aria-label="Sök på hemsidan">
-                            <input id="user-search" name="search" placeholder="Sök..." type="search"
-                                aria-required="true" aria-label="Sökfält" />
-                            <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true" aria-label="Skicka sökningen" />
-                            <label id="close-label" for="close-form"> <img id="img-close-search"
-                                    src="media/close_icon_white.png" alt=""> stäng </label>
-                            <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
-                                aria-required="false" aria-label="Stäng sökmeny" />
-                        </form>
+          <label for="toggle-2" id=toggle-menu-2>
 
-                    </ul>
-                </nav>
-            </li>
+            <span class="vh expanded-text">Expanderad&lt;</span>
+            <span class="vh collapsed-text">Kollapsad</span>
 
-            <li class="main-menu-li-links">
-                <nav id="nav-menu" role="navigation" aria-label="Dropdownmeny">
-                    <input type="checkbox" id="toggle-2" role="button" aria-haspopup="true">
+            <img src="media/burger_icon.png" class="burger-menu-image" alt="">Meny
+          </label>
 
-                    <label for="toggle-2" id=toggle-menu-2>
+          <ul class="burger-menu-ul" role="menu">
+            <li role="menuitem"><a id="burger-menu-current-page" href="index.html">Start</a> </li>
+            <li role="menuitem"><a href="om_oss.html">Om oss</a></li>
+            <li role="menuitem"><a href="verksamhet.html">Verksamhetsområden</a></li>
+            <li role="menuitem"><a href="#">Lagar, regler, tillsyn</a></li>
+            <li role="menuitem"><a href="#">Statistik</a></li>
+            <li role="menuitem"><a href="#">Publikationer</a></li>
+            <li role="menuitem"><a href="#">Nyhetsrum</a></li>
+            <li role="menuitem"><a href="kontakt.html">Kontakt</a></li>
+            <li id="close-li"> <a id=close-menu-icon href="index.html" aria-label="Stäng meny">
+                <img class="img-close" src="media/close_icon_white.png" alt=""> stäng </a></li>
+            <div id="opacity-cover-2" aria-hidden="true"></div>
+          </ul>
+        </nav>
+      </li>
+    </ul>
+  </nav>
 
-                        <span class="vh expanded-text">Expanderad&lt;</span>
-                        <span class="vh collapsed-text">Kollapsad</span>
-
-                        <img src="media/burger_icon.png" class="burger-menu-image" alt="">Meny
-
-                    </label>
-
-                    <ul class="burger-menu-ul" role="menu">
-                        <li role="menuitem"><a id="burger-menu-current-page" href="index.html">Start</a> </li>
-                        <li role="menuitem"><a href="om_oss.html">Om oss</a></li>
-                        <li role="menuitem"><a href="verksamhet.html">Verksamhetsområden</a></li>
-                        <li role="menuitem"><a href="#">Lagar, regler, tillsyn</a></li>
-                        <li role="menuitem"><a href="#">Statistik</a></li>
-                        <li role="menuitem"><a href="#">Publikationer</a></li>
-                        <li role="menuitem"><a href="#">Nyhetsrum</a></li>
-                        <li role="menuitem"><a href="kontakt.html">Kontakt</a></li>
-                        <li id="close-li"> <a id=close-menu-icon href="index.html" aria-label="Stäng meny">
-                                <img class="img-close" src="media/close_icon_white.png" alt=""> stäng </a></li>
-                        <div id="opacity-cover-2" aria-hidden="true"></div>
-                    </ul>
-                </nav>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="top-links-nav" role="navigation" aria-label="Meny för användarvänlighet">
-        <ul class="top-links-ul" role="menubar">
-            <li class="top-links-li" role="menuitem" aria-label="Större text">
-                <a href="#">
-                    <img class="top-links-image" src="./media/larger_icon.png" alt="">
-                    <span>Större text</span>
-                </a>
-            </li>
-            <li class="top-links-li" role="menuitem" aria-label="Lättläst">
-                <a href="#">
-                    <img class="top-links-image" src="./media/eye_icon.png" alt="">
-                    <span>Lättläst</span>
-                </a>
-            </li>
-            <li class="top-links-li" role="menuitem" aria-label="English">
-                <a href="#">
-                    <img class="top-links-image" src="./media/uk_icon.png" alt="">
-                    <span>English</span>
-                </a>
-            </li>
-            <li class="top-links-li" role="menuitem" aria-label="Mina sidor">
-                <a href="#">
-                    <img class="top-links-image" src="./media/lock_icon.png" alt="">
-                    <span>Mina sidor</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="top-links-nav" role="navigation" aria-label="Meny för användarvänlighet">
+    <ul class="top-links-ul" role="menubar">
+      <li class="top-links-li" role="menuitem" aria-label="Större text">
+        <a href="#">
+          <img class="top-links-image" src="./media/larger_icon.png" alt="">
+          <span>Större text</span>
+        </a>
+      </li>
+      <li class="top-links-li" role="menuitem" aria-label="Lättläst">
+        <a href="#">
+          <img class="top-links-image" src="./media/eye_icon.png" alt="">
+          <span>Lättläst</span>
+        </a>
+      </li>
+      <li class="top-links-li" role="menuitem" aria-label="English">
+        <a href="#">
+          <img class="top-links-image" src="./media/uk_icon.png" alt="">
+          <span>English</span>
+        </a>
+      </li>
+      <li class="top-links-li" role="menuitem" aria-label="Mina sidor">
+        <a href="#">
+          <img class="top-links-image" src="./media/lock_icon.png" alt="">
+          <span>Mina sidor</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <main class="page" id="om-oss-main">
     <header class="head-section">
@@ -143,7 +140,7 @@
         Qualifications Framework) som ska göra det lättare att jämföra
         utbildnings- och yrkeskvalifikationer inom EU.
       </p>
-        <a class="std-button" href="verksamhet.html">Läs mer om våra verksamhetsområden</a>
+      <a class="std-button" href="verksamhet.html">Läs mer om våra verksamhetsområden</a>
     </article>
   </main>
 
@@ -167,10 +164,10 @@
     </section>
 
     <section class="thomas-image">
-        <a href="#">GD har ordet</a>
-</section>
+      <a href="#">GD har ordet</a>
+    </section>
 
-    <section class="frontpage-link-container section-lblue"s>
+    <section class="frontpage-link-container section-lblue" s>
       <h4>Yrkes-SM, EM och VM</h4>
       <p>Som ansvarig myndighet för yrkeshögskoleutbildningarna i Sverige har vi ett naturligt engagemang i de
         yrkestävlingar som bedrivs.</p>
@@ -194,45 +191,45 @@
     </a>
   </section>
 
-<footer role="contentinfo">
-      <section class="footer-container" role="region">
-          <div class="footer-section no-bull">
-              <h4>Kontakta oss</h4>
-          <ul class="no-bull" role="menu" aria-label="Kontakta oss">
-              <li>E-post: <a href="#">info@myh.se</a> eller <a href="#">registrator@myh.se</a></li>
-              <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
-              <li><a href="#">Fler kontaktuppgifter</a></li>
-          </ul>
+  <footer role="contentinfo">
+    <section class="footer-container" role="region">
+      <div class="footer-section no-bull">
+        <h4>Kontakta oss</h4>
+        <ul class="no-bull" role="menu" aria-label="Kontakta oss">
+          <li>E-post: <a href="#">info@myh.se</a> eller <a href="#">registrator@myh.se</a></li>
+          <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
+          <li><a href="#">Fler kontaktuppgifter</a></li>
+        </ul>
       </div>
 
-          <div class="footer-section no-bull" >
-          <h4>Om webbplatsen</h4>
-          <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
-              <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
-              <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
-              <li role="menuitem"><a href="#">Webbkarta</a></li>
-          </ul>
-          </div>
+      <div class="footer-section no-bull">
+        <h4>Om webbplatsen</h4>
+        <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
+          <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
+          <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
+          <li role="menuitem"><a href="#">Webbkarta</a></li>
+        </ul>
+      </div>
 
-          <div class="footer-section no-bull">
-                  <h4>Våra övriga webbplatser</h4>
-              <ul class ="no-bull" role="menu" aria-label="Våra övriga webbplatser">
-              <li role="menuitem"><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
-              <li role="menuitem"><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-              </li>
-              <li role="menuitem"><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-              <li role="menuitem"><a href="https://www.seqf.se">www.seqf.se</a></li>
-          </ul>
-          </div>
+      <div class="footer-section no-bull">
+        <h4>Våra övriga webbplatser</h4>
+        <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
+          <li role="menuitem"><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
+          <li role="menuitem"><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
+          </li>
+          <li role="menuitem"><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+          <li role="menuitem"><a href="https://www.seqf.se">www.seqf.se</a></li>
+        </ul>
+      </div>
 
-          <section class="footer-section" role="region" aria-label="Ansvarig utgivare">
-              <h4>Ansvarig utgivare</h4>
-              <p>Thomas Persson, generaldirektör MYH.</p>
-          </section>
+      <section class="footer-section" role="region" aria-label="Ansvarig utgivare">
+        <h4>Ansvarig utgivare</h4>
+        <p>Thomas Persson, generaldirektör MYH.</p>
       </section>
-      <section class="bottom-footer" role="region" aria-label="Myndigheten för yrkeshögskolan address">
-          <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
-      </section>
+    </section>
+    <section class="bottom-footer" role="region" aria-label="Myndigheten för yrkeshögskolan address">
+      <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
+    </section>
   </footer>
 </body>
 
