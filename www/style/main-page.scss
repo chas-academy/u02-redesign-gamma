@@ -783,6 +783,16 @@ CALENDAR PROPERTIES
     margin-right: 30px;
     background-color: white;
     border: 1px solid black;
+
+    .kalender-dag {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .kalender-manad {
+      font-size: 1rem;
+      font-weight: bold;
+    }
   }
 }
 
@@ -874,6 +884,7 @@ CALENDAR PROPERTIES
 .epale-image {
   @include image-background-section;
   background-color: #004890;
+
   a {
     background-image: url("../media/eu_flag.png");
     background-position-y: 28px;
@@ -894,11 +905,9 @@ CALENDAR PROPERTIES
   }
 }
 
-
 /***
 AKTUELLT
 ***/
-
 
 .aktuellt {
   background-color: $primary-color;
@@ -906,8 +915,8 @@ AKTUELLT
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
+
   h4 {
-    /*margin-bottom: 20px;*/
     text-align: center;
     width: 100%;
     padding-bottom: 10px;
@@ -932,7 +941,7 @@ AKTUELLT
     flex-flow: column wrap;
     p {
       span {
-        color: darkgrey;
+        color: rgb(54, 54, 54);
         display: block;
         margin: 10px 0px;
       }
@@ -978,6 +987,27 @@ AKTUELLT
 }
 */
 
+/* Elements without their own classes or id that needs additional styling */
+#publikationer-a, #brister {
+  margin-top: 20px;
+}
+
+.calendar-container {
+  header {
+    margin-bottom: 20px;
+
+    h4 {
+      display: inline;
+      border: none;
+    }
+
+    a {
+      font-weight: bold;
+      float: right;
+      text-decoration: underline;
+    }
+  }
+}
 
 /**
 FOOTER

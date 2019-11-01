@@ -99,7 +99,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   display: none;
 }
 
-#cb-hack:checked ~ .search-menu-ul {
+#toggle:checked ~ .search-menu-ul {
   display: block;
 }
 
@@ -132,8 +132,11 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .search-menu-ul form {
-  position: relative;
+  position: absolute;
   top: 200px;
+  left: 0;
+  z-index: 3;
+  width: 100%;
 }
 
 .search-menu-ul form #close-label {
@@ -186,7 +189,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   display: none;
 }
 
-#cb-hack-2:checked ~ .burger-menu-ul {
+#toggle-2:checked ~ .burger-menu-ul {
   display: block;
 }
 
@@ -291,7 +294,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 /* Search menu and hamburger menu accessibility */
-/* class to hide spans visually */
+/* Hide spans */
 .vh {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -302,7 +305,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   overflow: hidden;
 }
 
-/* reveal the correct state wording to screen readers based on state */
+/* Show spans based on checked/unchecked states */
 [type="checkbox"]:checked ~ label .expanded-text {
   display: inline;
 }
@@ -1744,6 +1747,16 @@ CALENDAR PROPERTIES
   border: 1px solid black;
 }
 
+.calendar-post .date .kalender-dag {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.calendar-post .date .kalender-manad {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .calendar-post + .calendar-post {
   margin-top: 20px;
 }
@@ -1925,7 +1938,6 @@ AKTUELLT
 }
 
 .aktuellt h4 {
-  /*margin-bottom: 20px;*/
   text-align: center;
   width: 100%;
   padding-bottom: 10px;
@@ -1964,7 +1976,7 @@ AKTUELLT
 }
 
 .aktuellt .aktuellt-article p span {
-  color: darkgrey;
+  color: #363636;
   display: block;
   margin: 10px 0px;
 }
@@ -2011,6 +2023,26 @@ AKTUELLT
   }
 }
 */
+/* Elements without their own classes or id that needs additional styling */
+#publikationer-a, #brister {
+  margin-top: 20px;
+}
+
+.calendar-container header {
+  margin-bottom: 20px;
+}
+
+.calendar-container header h4 {
+  display: inline;
+  border: none;
+}
+
+.calendar-container header a {
+  font-weight: bold;
+  float: right;
+  text-decoration: underline;
+}
+
 /**
 FOOTER
 **/
