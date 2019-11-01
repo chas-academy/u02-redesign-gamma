@@ -2043,6 +2043,10 @@ AKTUELLT
   text-decoration: underline;
 }
 
+.youtube-iframe {
+  border: none;
+}
+
 /**
 FOOTER
 **/
