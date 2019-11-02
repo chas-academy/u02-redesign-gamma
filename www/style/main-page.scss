@@ -423,17 +423,23 @@ CONTENT USED ON MULTIPLE PAGES
 
 /* Styling for heading - social container */
 .social {
-  h4 {
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin-top: 20px;
+  h2 {
     font-weight: 900;
-    border-bottom: 1px solid #101010;
+    font-size: 1rem;
+  }
+  li {
+    margin: 0px 0px 0px 10px;
   }
   li a:after {
     content: none;
+  }
+  img {
+    margin: 0px;
   }
 }
 
@@ -441,7 +447,7 @@ CONTENT USED ON MULTIPLE PAGES
 .social-icons {
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /*** 
@@ -1261,7 +1267,6 @@ footer {
 
     #dela-om-oss {
       //grid-area: om-oss-main;
-      height: 200px;
 
       #dela-om-oss-ul {
       }
@@ -1275,9 +1280,9 @@ footer {
 /*** HOLY GRAIL DESIGN 
 - For bigger screens ***/
 @media only screen and (min-width: 961px) {
-     .page {
+  .page {
     width: 1200px;
     margin: 0 auto;
     margin-top: 20px;
-  } 
+  }
 }
