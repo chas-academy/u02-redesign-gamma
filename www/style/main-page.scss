@@ -13,6 +13,15 @@ $yellow-box-color: #ffff00; // yellow
 $lblue-box-color: #bfe1f2; //light blue
 $green-box-color: #368f5f; // green
 
+// Media query mixins
+$desktop-width: 1020px;
+
+@mixin tablet-and-up {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 /// FONT COLORS
 $grey-text: #807e7e;
 $black-text: #101012;
@@ -26,11 +35,6 @@ $focus-setting: rgb(59, 153, 252) 1px solid;
 $font_roboto: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import "_header-nav.scss";
-
-// Media query mixins
-@mixin Tablet-and-up {
-   @media (min-width: 720px) {@content;}
-}
 
 
 /*** 
@@ -1024,6 +1028,9 @@ AKTUELLT
 
 .youtube-iframe { 
   border: none;
+  @include tablet-and-up {
+  width: 500px;
+  }
 }
 
 /**
@@ -1053,9 +1060,6 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-
-    @include Tablet-and-up {
-    }
   
     h4 {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1067,9 +1071,6 @@ footer {
     
     .footer-section {
       width: 300px;
-
-      @include Tablet-and-up {
-      }
 
       a {
         color: white;
@@ -1086,5 +1087,85 @@ footer {
     color: white;
     padding: 0 20px;
     text-align: center;
+  }
+}
+
+/*** Desktop grids ***/
+
+/** Index **/
+
+/* First half */
+@include tablet-and-up {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 350px 1fr;
+    grid-template-areas: "bakgr bakgr verks""ansok fordig forforetag""aktuellt annat annat";
+
+    .header-container {
+      grid-area: bakgr;
+      width: auto;
+      margin-left: 20px;
+    }
+
+    #grid-verks {
+      grid-area: verks;
+    }
+
+    #grid-ansok {
+      grid-area: ansok;
+      margin-right: 0px;
+    }
+
+    #grid-fordig {
+      grid-area: fordig;
+      margin-right: 0;
+    }
+
+    #grid-forforetag {
+      grid-area: forforetag;
+    }
+
+    .youtube {
+      grid-area: annat;
+      background: $grey-box-color;
+      margin-bottom: 20px;
+      h4 {
+        width: 90%;
+      }
+    }
+
+    .kalender {
+      grid-area: aktuellt;
+      margin-right: 0px;
+
+      iframe {
+        width: 600px;
+      }
+    }
+  }
+
+  /* Second half - News and aside */
+  .second-part {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.6fr;
+    grid-template-areas: "aktuellt aside";
+
+    .first-aside {
+      grid-area: aside;
+
+      #brister {
+        margin-top: 0px;
+      }
+    }
+
+    .aktuellt {
+      grid-area: aktuellt;
+
+      .aktuellt-article {
+        margin: 0 0 0 20px;
+      }
+    }
   }
 }
