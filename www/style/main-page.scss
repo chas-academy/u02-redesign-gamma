@@ -17,9 +17,9 @@ $green-box-color: #368f5f; // green
 $desktop-width: 1020px;
 
 @mixin tablet-and-up {
-    @media (min-width: #{$desktop-width}) {
-        @content;
-    }
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
 }
 
 /// FONT COLORS
@@ -35,7 +35,6 @@ $focus-setting: rgb(59, 153, 252) 1px solid;
 $font_roboto: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import "_header-nav.scss";
-
 
 /*** 
 DEFAULT STYLING 
@@ -676,7 +675,7 @@ FRONTPAGE CONTAINER PROPERTIES
     margin-bottom: 30px;
     font-weight: 900;
   }
-  
+
   a {
     display: inline-block;
     text-decoration: none;
@@ -733,7 +732,6 @@ FRONTPAGE CONTAINER PROPERTIES
 .content-spread {
   justify-content: space-between;
 }
-
 
 /***
 CALENDAR PROPERTIES
@@ -932,11 +930,11 @@ AKTUELLT
     font-weight: 900;
     border-bottom: 1px solid #101010;
   }
-  
+
   .aktuellt-container {
     display: flex;
     flex-flow: row wrap;
-    
+
     span {
       margin: 0 auto;
     }
@@ -976,7 +974,8 @@ AKTUELLT
 }
 
 /* Elements without their own classes or id that needs additional styling */
-#publikationer-a, #brister {
+#publikationer-a,
+#brister {
   margin-top: 20px;
 }
 
@@ -997,10 +996,10 @@ AKTUELLT
   }
 }
 
-.youtube-iframe { 
+.youtube-iframe {
   border: none;
   @include tablet-and-up {
-  width: 500px;
+    width: 500px;
   }
 }
 
@@ -1014,7 +1013,8 @@ footer {
   position: relative;
   bottom: 0px;
 
-  p, li {
+  p,
+  li {
     font-size: 0.9rem;
     padding-bottom: 5px;
   }
@@ -1031,15 +1031,16 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-  
+
     h4 {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: 500;
       font-size: 1.4rem;
       line-height: 1.5;
       margin-top: 10px;
     }
-    
+
     .footer-section {
       width: 300px;
 
@@ -1071,7 +1072,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 350px 1fr;
-    grid-template-areas: "bakgr bakgr verks""ansok fordig forforetag""aktuellt annat annat";
+    grid-template-areas: "bakgr bakgr verks" "ansok fordig forforetag" "aktuellt annat annat";
 
     .header-container {
       grid-area: bakgr;
@@ -1142,7 +1143,6 @@ footer {
       height: 78px;
     }*/
 
-
     .aktuellt {
       grid-area: aktuellt;
 
@@ -1152,16 +1152,13 @@ footer {
     }
   }
 
-
   /** Kontakt **/
   .grid-container-kontakt {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 420px;
     grid-template-rows: 1fr 500px 200px;
-    grid-template-areas: "kontakt-form kontakt-telefon""grid-hitta kontakt-3x""grid-dela grid-topknapp";
-
-    .page {}
+    grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x" "grid-dela grid-topknapp";
 
     .head-section {
       grid-area: kontakt-head;
@@ -1218,39 +1215,45 @@ footer {
       height: 78px;
     }
   }
-    /** Om Oss **/
-    .grid-container-om-oss {
-      display: grid;
-      grid-template-columns: 1fr 400px;
-      grid-template-rows: 1fr;
-      grid-template-areas: "om-oss-main om-oss-aside";
+  /** Om Oss **/
+  .grid-container-om-oss {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "om-oss-main om-oss-aside";
 
-
-      #om-oss-main {
-        grid-area: om-oss-main;
-      }
-
-      #om-oss-aside {
-        grid-area: om-oss-aside;
-        margin-top: 20px;
-
-        #hitta-utbildingar {
-          margin-top: 20px;
-        }
-      }
-
-      #dela-om-oss {
-        //grid-area: om-oss-main;
-        height: 200px;
-
-        #dela-om-oss-ul {
-          
-        }
-
-      }
-
-      .top-knapp-om-oss {}
-
+    #om-oss-main {
+      grid-area: om-oss-main;
     }
-  
+
+    #om-oss-aside {
+      grid-area: om-oss-aside;
+      margin-top: 20px;
+
+      #hitta-utbildingar {
+        margin-top: 20px;
+      }
+    }
+
+    #dela-om-oss {
+      //grid-area: om-oss-main;
+      height: 200px;
+
+      #dela-om-oss-ul {
+      }
+    }
+
+    .top-knapp-om-oss {
+    }
+  }
+}
+
+/*** HOLY GRAIL DESIGN 
+- For bigger screens ***/
+@media only screen and (min-width: 961px) {
+     .page {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+  } 
 }
