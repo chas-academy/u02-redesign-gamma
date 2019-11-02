@@ -1071,7 +1071,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 350px 1fr;
-    grid-template-areas: "bakgr bakgr verks""ansok fordig forforetag" "aktuellt annat annat";
+    grid-template-areas: "bakgr bakgr verks""ansok fordig forforetag""aktuellt annat annat";
 
     .header-container {
       grid-area: bakgr;
@@ -1101,6 +1101,7 @@ footer {
       grid-area: annat;
       background: $grey-box-color;
       margin-bottom: 20px;
+
       h4 {
         width: 90%;
       }
@@ -1152,72 +1153,104 @@ footer {
   }
 
 
-/** Kontakt **/
-.grid-container-kontakt {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  grid-template-rows: 1fr 500px 200px;
-  grid-template-areas: "kontakt-form kontakt-telefon""grid-hitta kontakt-3x""grid-dela grid-topknapp";
-
-  .page {}
-
-  .head-section {
-    grid-area: kontakt-head;
-  }
-
-  #contact-form-section {
-    grid-area: kontakt-form;
+  /** Kontakt **/
+  .grid-container-kontakt {
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    grid-template-rows: 1fr 500px 200px;
+    grid-template-areas: "kontakt-form kontakt-telefon""grid-hitta kontakt-3x""grid-dela grid-topknapp";
 
-    form {
-      width: 100%;
-    }
-  }
+    .page {}
 
-  #contact-section-container {
-    grid-area: kontakt-telefon;
-
-    #grid-tele {
-      margin: 20px 20px 0px 20px;
+    .head-section {
+      grid-area: kontakt-head;
     }
 
-    #grid-org {
+    #contact-form-section {
+      grid-area: kontakt-form;
       height: 100%;
+
+      form {
+        width: 100%;
+      }
     }
-  }
 
-  #grid-3x {
-    grid-area: kontakt-3x;
-  }
+    #contact-section-container {
+      grid-area: kontakt-telefon;
 
-  .social {
-    grid-area: none;
-  }
+      #grid-tele {
+        margin: 20px 20px 0px 20px;
+      }
 
-  #grid-hitta {
-    grid-area: grid-hitta;
-  }
+      #grid-org {
+        height: 100%;
+      }
+    }
 
-  #grid-dela {
-    grid-area: grid-dela;
-  }
+    #grid-3x {
+      grid-area: kontakt-3x;
+    }
 
-  #section-map {
-    width: 100%;
+    .social {
+      grid-area: none;
+    }
 
-    iframe {
+    #grid-hitta {
+      grid-area: grid-hitta;
+    }
+
+    #grid-dela {
+      grid-area: grid-dela;
+    }
+
+    #section-map {
       width: 100%;
-      height: 400px;
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    #top-knapp {
+      grid-area: grid-topknapp;
+      height: 78px;
     }
   }
+    /** Om Oss **/
+    .grid-container-om-oss {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      grid-template-rows: 1fr;
+      grid-template-areas: "om-oss-main om-oss-aside";
 
-  #top-knapp {
-    grid-area: grid-topknapp;
-    height: 78px;
-  }
 
+      #om-oss-main {
+        grid-area: om-oss-main;
+      }
 
+      #om-oss-aside {
+        grid-area: om-oss-aside;
+        margin-top: 20px;
 
-}
+        #hitta-utbildingar {
+          margin-top: 20px;
+        }
+      }
+
+      #dela-om-oss {
+        //grid-area: om-oss-main;
+        height: 200px;
+
+        #dela-om-oss-ul {
+          
+        }
+
+      }
+
+      .top-knapp-om-oss {}
+
+    }
+  
 }
