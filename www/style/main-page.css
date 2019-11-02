@@ -1403,20 +1403,38 @@ DEFAULT EFFECTS
 CONTENT USED ON MULTIPLE PAGES
 ***/
 /* Styling for heading - social container */
-.social h4 {
-  width: 100%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-top: 20px;
+}
+
+.social h2 {
   font-weight: 900;
-  border-bottom: 1px solid #101010;
+  font-size: 1rem;
+}
+
+.social li {
+  margin: 0px 0px 0px 10px;
 }
 
 .social li a:after {
   content: none;
+}
+
+.social img {
+  margin: 0px;
 }
 
 /* Styling for social icons */
@@ -1428,9 +1446,8 @@ CONTENT USED ON MULTIPLE PAGES
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*** 
@@ -2521,9 +2538,6 @@ footer .bottom-footer {
   }
   .grid-container-om-oss #om-oss-aside #hitta-utbildingar {
     margin-top: 20px;
-  }
-  .grid-container-om-oss #dela-om-oss {
-    height: 200px;
   }
 }
 
