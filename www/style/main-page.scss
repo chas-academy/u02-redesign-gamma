@@ -1032,6 +1032,7 @@ FOOTER
 **/
 
 footer {
+  margin-top: 20px;
   width: 100%;
   background-color: #363636;
   position: relative;
@@ -1280,4 +1281,18 @@ footer {
     margin: 0 auto;
     margin-top: 20px;
   } 
+}
+
+
+// VERKSAMHETSOMRADEN RESPONSIVE PROPERTIES
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  .flex-item {
+    width: 30%;
+    @media screen and (max-width: 930px) {
+      width: unset;
+    }
+  }
 }

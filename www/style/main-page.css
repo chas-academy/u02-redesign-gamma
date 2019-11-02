@@ -87,7 +87,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
         grid-template-columns: 280px 120px 1fr;
     -ms-grid-rows: 1fr 40px;
         grid-template-rows: 1fr 40px;
-        grid-template-areas: "a b c" "d d d";
+        grid-template-areas: "a b c" "d d d";
   }
 }
 
@@ -2269,6 +2269,7 @@ AKTUELLT
 FOOTER
 **/
 footer {
+  margin-top: 20px;
   width: 100%;
   background-color: #363636;
   position: relative;
@@ -2303,7 +2304,7 @@ footer .footer-container {
 }
 
 footer .footer-container h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -2533,6 +2534,29 @@ footer .bottom-footer {
     width: 1200px;
     margin: 0 auto;
     margin-top: 20px;
+  }
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container .flex-item {
+  width: 30%;
+}
+
+@media screen and (max-width: 930px) {
+  .flex-container .flex-item {
+    width: unset;
   }
 }
 /*# sourceMappingURL=main-page.css.map */
