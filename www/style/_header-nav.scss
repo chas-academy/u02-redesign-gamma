@@ -134,7 +134,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 /* Search Menu */
 
-//Checkbox hack - using a label for="" with same name as our checkbox id to open/close a dropdown
+//Checkbox hack - using a label for="" with same name as checkbox id to open/close a dropdown
 
 //hide dropdown as default
 #nav-search .search-menu-ul {
@@ -290,14 +290,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         @include tablet-and-up {
             display: flex;
-            //left: 0;
             top: 120px;
             width: 100%;
             z-index: 0;
-            margin-left: -8px;
+            margin-left: -8px; // Quick-fix for centering the menu in desktop mode
             height: 43px;
-            //max-width: 615px;
-            /*position: relative;*/
             justify-content: space-around;
         }
 
@@ -372,7 +369,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
                     cursor: pointer;
                     font-size: 1.1rem;
                 }
-
             }
 
             a {
@@ -384,8 +380,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
                 @include tablet-and-up {
                     font-size: 1.1rem;
-                    //background: rgb(228, 223, 223);
-                    //padding: 6px;
                     color: black;
                     display: block;
                     border-bottom: black solid 2px;
@@ -418,21 +412,13 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
     #nav-search {
         @include tablet-and-up {
-            //width: 85px;
             display: inline-block;
-            
         }
     }
 .burger-menu-image,
 .search-menu-image {
     width: 50px;
     margin-bottom: 16px;
-
-    @include tablet-and-up {
-        //width: 85px;
-        //display: inline-block;
-        
-    }
 }
 
 
@@ -481,21 +467,6 @@ input:focus:not(:checked)+#toggle-menu-2 {
 [type="checkbox"]:not(:checked) ~ label .collapsed-text {
     display: inline;
 }
-
-
-/*
-    @include tablet-and-up {
-        display: none;
-    }
-}
-*/
-
-/*#cb-hack, #cb-hack-2 {
-    @include tablet-and-up {
-    
-        display: none;
-    }
-}*/
 
 .main-menu-li-links {
     @include tablet-and-up {
