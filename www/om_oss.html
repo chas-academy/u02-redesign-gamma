@@ -40,7 +40,7 @@
               <label id="close-label" for="close-form"> <img id="img-close-search" src="media/close_icon_white.png"
                   alt=""> stäng </label>
               <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
-                aria-required="false" aria-label="Stäng sökmeny" />
+                aria-required="false" aria-label="Stäng sökmeny"/>
             </form>
           </ul>
         </nav>
@@ -105,8 +105,8 @@
     </ul>
   </nav>
 
-  <main class="page" id="om-oss-main">
-    <header class="head-section">
+  <main class="page" id="om-oss-main" role="main">
+    <header class="head-section" role="banner">
       <img src="media/om-oss/om-oss-image.jpg" class="page-head-img" alt="Om oss" />
       <h1>Om oss</h1>
       <p>
@@ -116,7 +116,7 @@
       </p>
     </header>
 
-    <article class="section">
+    <article class="section" role="article" aria-label="Vad vi gör">
       <h2>Vad vi gör</h2>
       <p>
         Vi analyserar arbetsmarknadens behov av utbildningar inom
@@ -140,32 +140,32 @@
         Qualifications Framework) som ska göra det lättare att jämföra
         utbildnings- och yrkeskvalifikationer inom EU.
       </p>
-      <a class="std-button" href="verksamhet.html">Läs mer om våra verksamhetsområden</a>
+      <a class="std-button" href="verksamhet.html" aria-label="Verksamhetsområden">Läs mer om våra verksamhetsområden</a>
     </article>
   </main>
 
-  <aside>
-    <section class="frontpage-link-container section-black">
+  <aside role="complementary">
+    <section class="frontpage-link-container section-black" role="section" aria-label="Om oss">
       <h4>Om oss</h4>
-      <ul>
-        <li class="no-bull"><a href="#">Organisation</a></li>
-        <li class="no-bull"><a href="#">Så styrs myndigheten</a></li>
-        <li class="no-bull"><a href="#">Redovisning av verksamheten</a></li>
-        <li class="no-bull"><a href="#">Remissvar och yttranden</a></li>
-        <li class="no-bull"><a href="#">Pågående upphandlingar</a></li>
-        <li class="no-bull"><a href="#">Fakturera oss</a></li>
-        <li class="no-bull"><a href="#">Jobba hos oss</a></li>
-        <li class="no-bull"><a href="#">Behandling av personuppgifter</a></li>
+      <ul role="menu">
+        <li role="menuitem" class="no-bull"><a href="#">Organisation</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Så styrs myndigheten</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Redovisning av verksamheten</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Remissvar och yttranden</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Pågående upphandlingar</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Fakturera oss</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Jobba hos oss</a></li>
+        <li role="menuitem" class="no-bull"><a href="#">Behandling av personuppgifter</a></li>
       </ul>
     </section>
 
-    <section class="section-yellow small-container">
-      <a href="#">Hitta utbildningar</a>
-    </section>
+    <div class="section-yellow small-container">
+      <a href="#" aria-label="Hitta utbildningar">Hitta utbildningar</a>
+    </div>
 
-    <section class="thomas-image">
-      <a href="#">GD har ordet</a>
-    </section>
+    <div class="thomas-image">
+      <a href="#" aria-label="GD har ordet">GD har ordet</a>
+    </div>
 
     <section class="frontpage-link-container section-lblue" s>
       <h4>Yrkes-SM, EM och VM</h4>
@@ -174,22 +174,22 @@
       <a class="std-button" href="#">Läs mer om MYH:s roll i yrkestävlingarna</a>
     </section>
 
-    <section class="section social">
+    <section class="section social" role="region" aria-label="Dela denna sida">
       <h4>Dela denna sida</h4>
-      <ul class="no-bull social-icons">
-        <li><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
-        <li><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
-        <li><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
-        <li><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
+      <ul class="no-bull social-icons" role="menubar">
+        <li role="menuitem"><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
       </ul>
     </section>
   </aside>
 
-  <section class="section-no-bg pos-right">
-    <a class="to-top-button" href="#top" role="button" title="Gå till toppen" aria-label="Topp av webbsida">
-      Gå till toppen av webbsidan
-    </a>
-  </section>
+  <div class="section-no-bg pos-right">
+      <a class="to-top-button" href="#top" role="button" aria-label="Gå till toppen av webbsidan">
+          Gå till toppen av webbsidan
+      </a>
+  </div>
 
   <footer role="contentinfo">
     <section class="footer-container" role="region">

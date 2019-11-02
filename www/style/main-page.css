@@ -1438,6 +1438,12 @@ STYLING: SPECIFIC PAGES
   margin-top: 20px;
 }
 
+#contact-form-section h2 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
 #contact-form-section form {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -105,9 +105,9 @@
     </ul>
   </nav>
 
-  <main class="page">
+  <main class="page" role="main">
     <section class="head-section">
-      <header id="kontakta-oss-header">
+      <header id="kontakta-oss-header" role="banner">
         <h1>Kontakta oss</h1>
       </header>
       <img src="media/kontakt/telephone.jpeg" class="page-head-img" alt="Kontakta oss" />
@@ -118,8 +118,8 @@
     </section>
 
     <section id="contact-form-section">
-      <form>
         <h2>Kontaktformulär</h2>
+      <form>
         <label for="field1" id="top-label">För- och efternamn*</label>
         <input type="text" name="field1" aria-required="true" aria-labelledby="field1" />
         <label for="field2">E-postadress*</label>
@@ -131,13 +131,13 @@
         <label for="field5">Meddelande*</label>
         <textarea name="field5" aria-required="true" aria-multiline="true" aria-labelledby="field5"></textarea>
         <p class="small-form-text">Samtliga fält markerade med * är obligatoriska.</p>
-        <input id="form-send-btn" type="submit" value="Skicka" aria-required="true" />
+        <input id="form-send-btn" type="submit" value="Skicka" aria-required="true" aria-label="Skicka meddelande"/>
       </form>
     </section>
   </main>
 
   <div id="contact-section-container">
-    <section class="section">
+    <section class="section" role="region" aria-label="Telefon, kundforum och e-post">
       <h2>Telefon</h2>
       <p>
         Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende! Växeln
@@ -157,7 +157,7 @@
       <p>Personlig e-post enligt <a href="#">fornamn.efternamn@myh.se</a></p>
     </section>
 
-    <section class="section-lyellow">
+    <section class="section-lyellow" role="region" aria-label="Postadresser och Besöksadresser">
       <h2>Postadress Västerås</h2>
       <p>Myndigheten för yrkeshögskolan</p>
       <p>Box 145</p>
@@ -181,7 +181,7 @@
       <p>281 31 Hässleholm</p>
     </section>
 
-    <section class="section-yellow">
+    <section class="section-yellow" role="region" aria-label="Organisationsnummer, skicka faktura, Innan du kontaktar oss">
       <h2>Organisationsnummer</h2>
       <p>202100-6230</p>
 
@@ -200,49 +200,49 @@
       </p>
     </section>
 
-    <section class="section">
+    <section class="section" role="region" aria-label="Hitta till oss">
       <h2>Hitta till oss</h2>
       <div id="section-map">
         <iframe
           src="https://maps.google.se/maps/ms?msa=0&msid=208106955202648480291.0004b2df7f01bd721b100&ie=UTF8&t=m&vpsrc=6&ll=58.813742,14.194336&spn=9.11878,20.610352&z=5&output=embed"
-          title="Our location on Google Maps" style="border:0;" allowfullscreen="">
+          title="Våra besöksaddresser på Google Maps" style="border:0;" allowfullscreen="">
         </iframe>
       </div>
       <p>
-        <a href="#">Visa Myndigheten för yrkeshögskolan på en större karta</a>
+        <a href="#" aria-label="Visa Myndigheten för yrkeshögskolan på en större karta">Visa Myndigheten för yrkeshögskolan på en större karta</a>
       </p>
     </section>
   </div>
 
-  <aside>
-    <section class="section-yellow small-container">
+  <aside role="complementary">
+    <section class="section-yellow small-container" role="region" aria-label="Hitta utbildningar">
       <a href="#">Hitta utbildningar</a>
     </section>
 
-    <section class="section-black small-container">
+    <section class="section-black small-container" role="region" aria-label="Anmäl brister i en utbildning">
       <a href="#">Anmäl brister i en utbildning</a>
     </section>
 
-    <section class="section-lblue small-container">
+    <section class="section-lblue small-container" role="region" aria-label="Jobba hos oss">
       <a href="#">Jobba hos oss</a>
     </section>
 
-    <section class="section social">
+    <section class="section social" role="region" aria-label="Dela denna sida">
       <h4>Dela denna sida</h4>
-      <ul class="no-bull social-icons">
-        <li><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
-        <li><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
-        <li><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
-        <li><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
+      <ul class="no-bull social-icons" role="menubar">
+        <li role="menuitem"><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
+        <li role="menuitem"><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
       </ul>
     </section>
   </aside>
 
-  <section class="section-no-bg pos-right">
-    <a class="to-top-button" href="#top" role="button" title="Gå till toppen" aria-label="Topp av webbsida">
-      Gå till toppen av webbsidan
-    </a>
-  </section>
+  <div class="section-no-bg pos-right">
+      <a class="to-top-button" href="#top" role="button" aria-label="Gå till toppen av webbsidan">
+          Gå till toppen av webbsidan
+      </a>
+  </div>
 
   <footer role="contentinfo">
     <section class="footer-container" role="region">

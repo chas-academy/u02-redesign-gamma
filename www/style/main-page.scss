@@ -539,6 +539,10 @@ STYLING: SPECIFIC PAGES
   @include standard-container;
   background-color: $lblue-box-color;
 
+  h2 {
+    align-self: end;
+  }
+
   form {
     display: flex;
     flex-direction: column;
