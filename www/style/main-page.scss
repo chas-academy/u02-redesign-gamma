@@ -382,11 +382,12 @@ i {
   height: 50px;
   background-color: $black-box-color;
   color: white;
-  box-shadow: 1px 1px 5px #505050;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   display: flex;
   flex-flow: column;
   font-size: 0.8rem;
+  z-index: 2;
   &:hover {
     color: white;
   }

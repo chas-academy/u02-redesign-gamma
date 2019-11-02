@@ -1359,8 +1359,8 @@ i {
   height: 50px;
   background-color: #101012;
   color: white;
-  -webkit-box-shadow: 1px 1px 5px #505050;
-          box-shadow: 1px 1px 5px #505050;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,6 +1370,7 @@ i {
       -ms-flex-flow: column;
           flex-flow: column;
   font-size: 0.8rem;
+  z-index: 2;
 }
 
 .to-top-btn:hover {
