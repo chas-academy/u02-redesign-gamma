@@ -1157,57 +1157,65 @@ footer {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 420px;
-  grid-template-rows:  1fr 500px 200px;
-  grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x" "grid-dela grid-topknapp";
+  grid-template-rows: 1fr 500px 200px;
+  grid-template-areas: "kontakt-form kontakt-telefon""grid-hitta kontakt-3x""grid-dela grid-topknapp";
 
-.head-section {
-  grid-area: kontakt-head;
-}
+  .page {}
 
-#contact-form-section {
-  grid-area: kontakt-form;
-  
- form {
- }
-}
-
-#contact-section-container {
-  grid-area: kontakt-telefon;
-  height: 1500px;
-  
-  #grid-tele {
-    margin: 20px 20px 0px 20px;
+  .head-section {
+    grid-area: kontakt-head;
   }
-}
 
-#grid-3x {
-  grid-area: kontakt-3x;
-}
+  #contact-form-section {
+    grid-area: kontakt-form;
+    height: 100%;
 
-.social {
-  grid-area: none;
-}
+    form {
+      width: 100%;
+    }
+  }
 
-#grid-hitta {
-  grid-area: grid-hitta;
-}
+  #contact-section-container {
+    grid-area: kontakt-telefon;
 
-#grid-dela {
-  grid-area: grid-dela;
-}
+    #grid-tele {
+      margin: 20px 20px 0px 20px;
+    }
 
-#section-map {
-  width: 100%;
-  iframe {
+    #grid-org {
+      height: 100%;
+    }
+  }
+
+  #grid-3x {
+    grid-area: kontakt-3x;
+  }
+
+  .social {
+    grid-area: none;
+  }
+
+  #grid-hitta {
+    grid-area: grid-hitta;
+  }
+
+  #grid-dela {
+    grid-area: grid-dela;
+  }
+
+  #section-map {
     width: 100%;
-    height: 400px;
-  }
-}
 
-#top-knapp {
-  grid-area: grid-topknapp;
-  height: 78px;
-}
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  #top-knapp {
+    grid-area: grid-topknapp;
+    height: 78px;
+  }
 
 
 

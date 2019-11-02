@@ -2412,15 +2412,21 @@ footer .bottom-footer {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: kontakt-form;
+    height: 100%;
+  }
+  .grid-container-kontakt #contact-form-section form {
+    width: 100%;
   }
   .grid-container-kontakt #contact-section-container {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: kontakt-telefon;
-    height: 1500px;
   }
   .grid-container-kontakt #contact-section-container #grid-tele {
     margin: 20px 20px 0px 20px;
+  }
+  .grid-container-kontakt #contact-section-container #grid-org {
+    height: 100%;
   }
   .grid-container-kontakt #grid-3x {
     -ms-grid-row: 2;
