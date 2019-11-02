@@ -291,10 +291,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
         @include tablet-and-up {
             display: flex;
             //left: 0;
-            top: 100px;
+            top: 120px;
             width: 100%;
             z-index: 0;
-            //margin-left: 20px;
+            margin-left: -8px;
             height: 43px;
             //max-width: 615px;
             /*position: relative;*/
