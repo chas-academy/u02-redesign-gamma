@@ -105,7 +105,9 @@
     </ul>
   </nav>
 
+  <div class="grid-container-kontakt">
   <main class="page" role="main">
+      
     <section class="head-section">
       <header id="kontakta-oss-header" role="banner">
         <h1>Kontakta oss</h1>
@@ -137,7 +139,7 @@
   </main>
 
   <div id="contact-section-container">
-    <section class="section" role="region" aria-label="Telefon, kundforum och e-post">
+    <section class="section" role="region" id="grid-tele" aria-label="Telefon, kundforum och e-post">
       <h2>Telefon</h2>
       <p>
         Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende! Växeln
@@ -181,7 +183,7 @@
       <p>281 31 Hässleholm</p>
     </section>
 
-    <section class="section-yellow" role="region" aria-label="Organisationsnummer, skicka faktura, Innan du kontaktar oss">
+    <section class="section-yellow" role="region" id="grid-org" aria-label="Organisationsnummer, skicka faktura, Innan du kontaktar oss">
       <h2>Organisationsnummer</h2>
       <p>202100-6230</p>
 
@@ -199,8 +201,9 @@
         registrerar allmänna handlingar och sparar dem i vårt diarium.
       </p>
     </section>
+  </div>
 
-    <section class="section" role="region" aria-label="Hitta till oss">
+    <section class="section" id="grid-hitta" role="region" aria-label="Hitta till oss">
       <h2>Hitta till oss</h2>
       <div id="section-map">
         <iframe
@@ -212,9 +215,8 @@
         <a href="#" aria-label="Visa Myndigheten för yrkeshögskolan på en större karta">Visa Myndigheten för yrkeshögskolan på en större karta</a>
       </p>
     </section>
-  </div>
 
-  <aside role="complementary">
+    <div id="grid-3x">
     <section class="section-yellow small-container" role="region" aria-label="Hitta utbildningar">
       <a href="#">Hitta utbildningar</a>
     </section>
@@ -226,8 +228,8 @@
     <section class="section-lblue small-container" role="region" aria-label="Jobba hos oss">
       <a href="#">Jobba hos oss</a>
     </section>
-
-    <section class="section social" role="region" aria-label="Dela denna sida">
+  </div>
+    <section class="section social" id="grid-dela" role="region" aria-label="Dela denna sida">
       <h4>Dela denna sida</h4>
       <ul class="no-bull social-icons" role="menubar">
         <li role="menuitem"><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
@@ -236,13 +238,13 @@
         <li role="menuitem"><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
       </ul>
     </section>
-  </aside>
-
-  <div class="section-no-bg pos-right">
+ 
+  <div class="section-no-bg pos-right" id="top-knapp">
       <a class="to-top-button" href="#top" role="button" aria-label="Gå till toppen av webbsidan">
           Gå till toppen av webbsidan
       </a>
   </div>
+</div>
 
   <footer role="contentinfo">
     <section class="footer-container" role="region">
