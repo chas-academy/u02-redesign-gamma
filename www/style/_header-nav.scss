@@ -279,7 +279,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
     .burger-menu-ul {
         z-index: 5;
-        position: fixed;
+        position: absolute;
         left: 0;
         width: 100%;
         background-color: transparent;
@@ -298,7 +298,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
             height: 43px;
             //max-width: 615px;
             /*position: relative;*/
-            justify-content: center;
+            justify-content: space-around;
         }
 
         #close-li {
@@ -386,6 +386,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
                     font-size: 1.1rem;
                     //background: rgb(228, 223, 223);
                     //padding: 6px;
+                    color: black;
                     display: block;
                     border-bottom: black solid 2px;
                     line-height: 1.8rem;
@@ -445,6 +446,9 @@ input:focus:not(:checked)+#toggle-menu-2 {
 #toggle-menu-2 {
     display: block;
     height: 85px;
+    @include tablet-and-up {
+        display: none;
+    }
 }
 
 /* Search menu and hamburger menu accessibility */
@@ -501,7 +505,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
     }
 }
 
-#toggle {
+#toggle-2 {
     @include tablet-and-up {
         display: none;
     }
