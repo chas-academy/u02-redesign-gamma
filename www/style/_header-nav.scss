@@ -1,4 +1,12 @@
 /*** SCSS for the main menu ***/
+$desktop-width: 900px;
+
+@mixin tablet-and-up {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 
 /* Accessibility links */
 
@@ -6,6 +14,14 @@
     background-color: $primary-color;
     display: flex;
     justify-content: center;
+    grid-area: c;
+
+    @include tablet-and-up {
+        top: 10px;
+        right: 0;
+        position: absolute;
+    }
+
 
     .top-links-ul {
         .top-links-li {
@@ -41,7 +57,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 /*** Main nav settings ***/
 .main-menu-nav {
-
+    @include tablet-and-up {
+        display: inline-block;
+    }
+        
     .main-menu-ul {
         display: flex;
         flex-direction: row;
@@ -49,13 +68,36 @@ input:focus:not(:checked)+#toggle-menu-2 {
         line-height: 0;
         padding: 0;
 
+        @include tablet-and-up {
+           // height: 400px;
+            display: grid;
+            grid-template-columns: 280px 120px 1fr;
+            grid-template-rows: 1fr 40px;
+            grid-template-areas: "a b c"
+                                 "d d d";
+            }
+        }
+
         #main-menu-li-logo {
             position: absolute;
             left: 8px;
             top: 0;
 
+            @include tablet-and-up {
+                /*position: relative;
+                left: auto;
+                top: auto;*/
+                display: inline-block;
+                grid-area: a;
+                }
+
             #kontakt-logo-anchor {
                 position: absolute;
+
+                @include tablet-and-up {
+                    /*position: relative;*/
+                    display: inline-block;
+                    }
 
                 .kontakt-logo-img {
                     max-width: 260px;
@@ -65,6 +107,9 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
         li {
             display: inline-block;
+            @include tablet-and-up {
+                display: inline;
+            }
         }
 
         .main-menu-li-links {
@@ -76,9 +121,16 @@ input:focus:not(:checked)+#toggle-menu-2 {
             :hover {
                 cursor: pointer;
             }
+
+            @include tablet-and-up {
+                text-align: center;
+                padding-right: 10px;
+                width: 60px;
+                //height: 120px;
+                }
+
         }
     }
-}
 
 /* Search Menu */
 
@@ -174,6 +226,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             &:hover {
                 cursor: pointer;
                 font-weight: bold;
+
+                @include tablet-and-up {
+                    font-weight: normal;
+                }
             }
         }
 
@@ -215,6 +271,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 // Burger dropdown
 #nav-menu {
+    
+    @include tablet-and-up {
+        display: inline-block;
+        grid-area: d;
+    }
 
     .burger-menu-ul {
         z-index: 5;
@@ -227,11 +288,28 @@ input:focus:not(:checked)+#toggle-menu-2 {
             cursor: default;
         }
 
+        @include tablet-and-up {
+            display: flex;
+            //left: 0;
+            top: 100px;
+            width: 100%;
+            z-index: 0;
+            //margin-left: 20px;
+            height: 43px;
+            //max-width: 615px;
+            /*position: relative;*/
+            justify-content: center;
+        }
+
         #close-li {
             position: fixed;
             top: 0;
             right: 2%;
             cursor: pointer;
+
+            @include tablet-and-up {
+               display: none;
+            }
         }
 
         #close-menu-icon {
@@ -248,6 +326,11 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 height: 45px;
                 margin: 0 0 8px 0;
             }
+
+            @include tablet-and-up {
+                display: none;
+            }
+
         }
 
         #opacity-cover-2 {
@@ -263,6 +346,10 @@ input:focus:not(:checked)+#toggle-menu-2 {
             :hover {
                 cursor: default;
             }
+
+            @include tablet-and-up {
+                display: none;
+            }
         }
 
         li {
@@ -277,6 +364,17 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 font-size: 1.7rem;
             }
 
+            @include tablet-and-up {
+                width: auto;
+                margin-left: 16px;
+
+                :hover {
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                }
+
+            }
+
             a {
                 text-decoration: none;
                 color: white;
@@ -284,9 +382,23 @@ input:focus:not(:checked)+#toggle-menu-2 {
                 position: relative;
                 overflow: hidden;
 
+                @include tablet-and-up {
+                    font-size: 1.1rem;
+                    //background: rgb(228, 223, 223);
+                    //padding: 6px;
+                    display: block;
+                    border-bottom: black solid 2px;
+                    line-height: 1.8rem;
+                }
+
                 &#burger-menu-current-page {
                     color: $grey-text;
                     font-size: 1.8rem;
+
+                    @include tablet-and-up {
+                        color: black;
+                        font-size: 1.1rem;
+                    }
                 }
 
             }
@@ -301,16 +413,36 @@ input:focus:not(:checked)+#toggle-menu-2 {
     font-size: 1.1rem;
     font-weight: bold;
     z-index: 1;
-}
+    }
 
+    #nav-search {
+        @include tablet-and-up {
+            //width: 85px;
+            display: inline-block;
+            
+        }
+    }
 .burger-menu-image,
 .search-menu-image {
     width: 50px;
     margin-bottom: 16px;
+
+    @include tablet-and-up {
+        //width: 85px;
+        //display: inline-block;
+        
+    }
 }
 
+
+
 // make focus on checkbox labels cover both image and text in a rectangle
-#toggle-menu, #toggle-menu-2 {
+#toggle-menu {
+    display: block;
+    height: 85px;
+}
+
+#toggle-menu-2 {
     display: block;
     height: 85px;
 }
@@ -347,3 +479,30 @@ input:focus:not(:checked)+#toggle-menu-2 {
 }
 
 
+/*
+    @include tablet-and-up {
+        display: none;
+    }
+}
+*/
+
+/*#cb-hack, #cb-hack-2 {
+    @include tablet-and-up {
+    
+        display: none;
+    }
+}*/
+
+.main-menu-li-links {
+    @include tablet-and-up {
+        grid-area: b;
+        display: inline-block;
+        justify-self: center;
+    }
+}
+
+#toggle {
+    @include tablet-and-up {
+        display: none;
+    }
+}

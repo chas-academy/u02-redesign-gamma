@@ -10,6 +10,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-area: c;
+}
+
+@media (min-width: 900px) {
+  .top-links-nav {
+    top: 10px;
+    right: 0;
+    position: absolute;
+  }
 }
 
 .top-links-nav .top-links-ul .top-links-li {
@@ -42,6 +51,7 @@
   margin-bottom: 0px;
   width: 20px;
   height: 20px;
+  margin: 5px 5px;
 }
 
 input:focus:not(:checked) + #toggle-menu,
@@ -50,6 +60,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 /*** Main nav settings ***/
+@media (min-width: 900px) {
+  .main-menu-nav {
+    display: inline-block;
+  }
+}
+
 .main-menu-nav .main-menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,33 +81,77 @@ input:focus:not(:checked) + #toggle-menu-2 {
   padding: 0;
 }
 
-.main-menu-nav .main-menu-ul #main-menu-li-logo {
+@media (min-width: 900px) {
+  .main-menu-nav .main-menu-ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 280px 120px 1fr;
+        grid-template-columns: 280px 120px 1fr;
+    -ms-grid-rows: 1fr 40px;
+        grid-template-rows: 1fr 40px;
+        grid-template-areas: "a b c"
+ "d d d";
+  }
+}
+
+.main-menu-nav #main-menu-li-logo {
   position: absolute;
   left: 8px;
   top: 0;
 }
 
-.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor {
+@media (min-width: 900px) {
+  .main-menu-nav #main-menu-li-logo {
+    /*position: relative;
+                left: auto;
+                top: auto;*/
+    display: inline-block;
+    grid-area: a;
+  }
+}
+
+.main-menu-nav #main-menu-li-logo #kontakt-logo-anchor {
   position: absolute;
 }
 
-.main-menu-nav .main-menu-ul #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
+@media (min-width: 900px) {
+  .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor {
+    /*position: relative;*/
+    display: inline-block;
+  }
+}
+
+.main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
   max-width: 260px;
 }
 
-.main-menu-nav .main-menu-ul li {
+.main-menu-nav li {
   display: inline-block;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links {
+@media (min-width: 900px) {
+  .main-menu-nav li {
+    display: inline;
+  }
+}
+
+.main-menu-nav .main-menu-li-links {
   width: 50px;
   margin-right: 8px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.main-menu-nav .main-menu-ul .main-menu-li-links :hover {
+.main-menu-nav .main-menu-li-links :hover {
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .main-menu-nav .main-menu-li-links {
+    text-align: center;
+    padding-right: 10px;
+    width: 60px;
+  }
 }
 
 /* Search Menu */
@@ -189,6 +249,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-weight: bold;
 }
 
+@media (min-width: 900px) {
+  .search-menu-ul form #menu-submit:hover {
+    font-weight: normal;
+  }
+}
+
 .search-menu-ul form #menu-submit-close {
   background-color: Transparent;
   position: fixed;
@@ -217,6 +283,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
   left: -9999px;
 }
 
+@media (min-width: 900px) {
+  #nav-menu {
+    display: inline-block;
+    grid-area: d;
+  }
+}
+
 #nav-menu .burger-menu-ul {
   z-index: 5;
   position: fixed;
@@ -229,11 +302,33 @@ input:focus:not(:checked) + #toggle-menu-2 {
   cursor: default;
 }
 
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 100px;
+    width: 100%;
+    z-index: 0;
+    height: 43px;
+    /*position: relative;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #nav-menu .burger-menu-ul #close-li {
   position: fixed;
   top: 0;
   right: 2%;
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul #close-li {
+    display: none;
+  }
 }
 
 #nav-menu .burger-menu-ul #close-menu-icon {
@@ -252,6 +347,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
   margin: 0 0 8px 0;
 }
 
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul #close-menu-icon {
+    display: none;
+  }
+}
+
 #nav-menu .burger-menu-ul #opacity-cover-2 {
   z-index: 4;
   position: fixed;
@@ -267,6 +368,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
   cursor: default;
 }
 
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul #opacity-cover-2 {
+    display: none;
+  }
+}
+
 #nav-menu .burger-menu-ul li {
   position: relative;
   width: 100%;
@@ -280,6 +387,17 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-size: 1.7rem;
 }
 
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul li {
+    width: auto;
+    margin-left: 16px;
+  }
+  #nav-menu .burger-menu-ul li :hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+}
+
 #nav-menu .burger-menu-ul li a {
   text-decoration: none;
   color: white;
@@ -288,9 +406,25 @@ input:focus:not(:checked) + #toggle-menu-2 {
   overflow: hidden;
 }
 
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul li a {
+    font-size: 1.1rem;
+    display: block;
+    border-bottom: black solid 2px;
+    line-height: 1.8rem;
+  }
+}
+
 #nav-menu .burger-menu-ul li a#burger-menu-current-page {
   color: #807e7e;
   font-size: 1.8rem;
+}
+
+@media (min-width: 900px) {
+  #nav-menu .burger-menu-ul li a#burger-menu-current-page {
+    color: black;
+    font-size: 1.1rem;
+  }
 }
 
 /* some common styling between search menu and hamburger menu */
@@ -301,13 +435,24 @@ input:focus:not(:checked) + #toggle-menu-2 {
   z-index: 1;
 }
 
+@media (min-width: 900px) {
+  #nav-search {
+    display: inline-block;
+  }
+}
+
 .burger-menu-image,
 .search-menu-image {
   width: 50px;
   margin-bottom: 16px;
 }
 
-#toggle-menu, #toggle-menu-2 {
+#toggle-menu {
+  display: block;
+  height: 85px;
+}
+
+#toggle-menu-2 {
   display: block;
   height: 85px;
 }
