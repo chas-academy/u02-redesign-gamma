@@ -2576,7 +2576,7 @@ footer .bottom-footer {
     grid-area: om-oss-main;
   }
   .grid-container-om-oss #om-oss-main .head-section {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   .grid-container-om-oss #om-oss-aside {
     -ms-grid-row: 1;
