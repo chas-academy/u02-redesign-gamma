@@ -1344,4 +1344,10 @@ footer {
       width: unset;
     }
   }
+    @media screen and (min-width: 931px) {
+      #verk-flex-mid-1, #verk-flex-mid-2 {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
 }
