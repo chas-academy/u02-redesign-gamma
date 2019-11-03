@@ -1865,18 +1865,27 @@ FRONTPAGE CONTAINER PROPERTIES
 }
 
 .youtube {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   background-color: whitesmoke;
-  padding: 10px 0px;
+  padding: 10px 0px;*/
+}
+
+.youtube #youtube-div {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.youtube .youtube-iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .content-spread {
@@ -2163,6 +2172,10 @@ AKTUELLT
           flex-flow: column nowrap;
 }
 
+.aktuellt #las-nyheter-button {
+  margin-top: 0;
+}
+
 .aktuellt h4 {
   text-align: center;
   width: 100%;
@@ -2187,7 +2200,7 @@ AKTUELLT
 }
 
 .aktuellt .aktuellt-article {
-  margin: 20px 20px;
+  margin: 0px 20px 20px 20px;
   padding: 20px 20px;
   background-color: #e3ede8;
   display: -webkit-box;
@@ -2254,16 +2267,6 @@ AKTUELLT
   font-weight: bold;
   float: right;
   text-decoration: underline;
-}
-
-.youtube-iframe {
-  border: none;
-}
-
-@media (min-width: 1020px) {
-  .youtube-iframe {
-    width: 500px;
-  }
 }
 
 /**
@@ -2362,6 +2365,7 @@ footer .bottom-footer {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: verks;
+    margin: 0 20px;
   }
   #main-index #grid-ansok {
     -ms-grid-row: 2;
