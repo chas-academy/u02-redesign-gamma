@@ -1870,6 +1870,7 @@ FRONTPAGE CONTAINER PROPERTIES
   align-items: center;
   background-color: whitesmoke;
   padding: 10px 0px;*/
+  margin-top: 0;
 }
 
 .youtube #youtube-div {
@@ -2340,9 +2341,9 @@ footer .bottom-footer {
   text-align: center;
 }
 
-/*** Desktop grids ***/
-/** Index **/
-/* First half */
+/*** Grids desktop***/
+/** Index desktop**/
+/* First half index desktop */
 @media (min-width: 1020px) {
   #main-index {
     display: -ms-grid;
@@ -2400,11 +2401,9 @@ footer .bottom-footer {
     -ms-grid-column: 1;
     grid-area: aktuellt;
     margin-right: 0px;
+    margin-top: 0;
   }
-  #main-index .kalender iframe {
-    width: 600px;
-  }
-  /* Second half - News and aside */
+  /* Second half - News and aside desktop*/
   .second-part {
     display: -ms-grid;
     display: grid;
@@ -2438,7 +2437,10 @@ footer .bottom-footer {
   .second-part .aktuellt .aktuellt-article {
     margin: 0 0 0 20px;
   }
-  /** Kontakt **/
+  .second-part #las-nyheter-button {
+    margin-top: 20px;
+  }
+  /** Kontakt desktop**/
   .grid-container-kontakt {
     height: 100%;
     display: -ms-grid;
@@ -2496,7 +2498,7 @@ footer .bottom-footer {
     grid-area: grid-topknapp;
     height: 78px;
   }
-  /** Om Oss **/
+  /** Om Oss desktop **/
   .grid-container-om-oss {
     display: -ms-grid;
     display: grid;
@@ -2511,14 +2513,20 @@ footer .bottom-footer {
     -ms-grid-column: 1;
     grid-area: om-oss-main;
   }
+  .grid-container-om-oss #om-oss-main .head-section {
+    margin-bottom: 0px;
+  }
   .grid-container-om-oss #om-oss-aside {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: om-oss-aside;
-    margin-top: 20px;
+  }
+  .grid-container-om-oss #om-oss-aside #om-oss-menu, .grid-container-om-oss #om-oss-aside #yrkes-sm, .grid-container-om-oss #om-oss-aside .thomas-image {
+    margin-left: 0px;
   }
   .grid-container-om-oss #om-oss-aside #hitta-utbildingar {
     margin-top: 20px;
+    margin-left: 0px;
   }
 }
 
