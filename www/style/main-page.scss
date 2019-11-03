@@ -801,30 +801,10 @@ FRONTPAGE CONTAINER PROPERTIES
   a {
     font-weight: 900;
     text-decoration: none;
-    position: relative;
-    right: 5px;
-    &:after {
-      position: absolute;
-      font-weight: 900;
-      content: ">";
-      margin-left: 10px;
-      right: -15px;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-  a:hover {
-    &:after {
-      right: -20px;
-    }
   }
 }
 
 .youtube {
-  /*flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 10px 0px;*/
   margin-top: 0;
 
   #youtube-div {
@@ -832,6 +812,7 @@ FRONTPAGE CONTAINER PROPERTIES
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom: 20px;
   }
     .youtube-iframe {
       border: none;
@@ -877,20 +858,6 @@ CALENDAR PROPERTIES
   justify-content: space-between;
   a {
     text-decoration: underline;
-    right: 0px;
-    position: relative;
-    &:after {
-      position: absolute;
-      content: ">";
-      margin-left: 140px;
-      left: -5px;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-  a:hover {
-    &:after {
-      left: 0px;
-    }
   }
 
   .date {
@@ -1222,7 +1189,7 @@ footer {
 
     .youtube {
       grid-area: annat;
-      background: $grey-box-color;
+      background: $black-box-color;
       margin-bottom: 20px;
 
       h4 {
@@ -1276,6 +1243,8 @@ footer {
 
     #las-nyheter-button {
       margin-top: 20px;
+      margin-left: 20px;
+      align-self: flex-start;
     }
   }
 
