@@ -2472,7 +2472,7 @@ footer .bottom-footer {
     grid-area: aktuellt;
   }
   .second-part .aktuellt .aktuellt-article {
-    margin: 0 0 0 20px;
+    margin: 0 0 20px 20px;
   }
   .second-part #las-nyheter-button {
     margin-top: 20px;
