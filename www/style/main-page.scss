@@ -80,6 +80,16 @@ body {
 
 .page {
   margin-top: 20px;
+
+  /*** HOLY GRAIL DESIGN 
+- For bigger screens ***/
+  @include tablet-and-up {
+    .page {
+      width: 1200px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
 }
 
 /*** 
@@ -368,13 +378,12 @@ a:hover {
   }
 }
 
-.small-white-btn {
-  @include small-btn
+.small-white-button {
+  @include small-btn;
 }
 
-.small-black-btn {
-  @include small-btn
-  color: $black-text;
+.small-black-button {
+  @include small-btn color: $black-text;
   border: 1px solid $black-box-color;
   &:hover {
     color: $black-text;
@@ -410,7 +419,7 @@ i {
   height: 50px;
   background-color: $black-box-color;
   color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
   text-decoration: none;
   display: flex;
   flex-flow: column;
@@ -891,7 +900,6 @@ CALENDAR PROPERTIES
     text-shadow: 2px 2px 8px black;
     font-weight: 900;
     transition: background-image 1s;
-    font-size: 1.8rem;
     padding-bottom: 20px;
     position: relative;
     right: 0px;
@@ -1229,7 +1237,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 420px;
     grid-template-rows: 1fr 500px 200px;
-    grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x" "grid-dela grid-topknapp";
+    grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x";
 
     .head-section {
       grid-area: kontakt-head;
@@ -1268,10 +1276,6 @@ footer {
       grid-area: grid-hitta;
     }
 
-    #grid-dela {
-      grid-area: grid-dela;
-    }
-
     #section-map {
       width: 100%;
 
@@ -1279,11 +1283,6 @@ footer {
         width: 100%;
         height: 400px;
       }
-    }
-
-    #top-knapp {
-      grid-area: grid-topknapp;
-      height: 78px;
     }
   }
   /** Om Oss **/
@@ -1308,22 +1307,6 @@ footer {
 
     #dela-om-oss {
       //grid-area: om-oss-main;
-
-      #dela-om-oss-ul {
-      }
     }
-
-    .top-knapp-om-oss {
-    }
-  }
-}
-
-/*** HOLY GRAIL DESIGN 
-- For bigger screens ***/
-@media only screen and (min-width: 961px) {
-  .page {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
   }
 }
