@@ -1188,18 +1188,6 @@ DEFAULT STYLING PAGES
   color: white;
 }
 
-.arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  content: ">";
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
 /* Styling for bulletin-lists */
 .no-bull {
   list-style-type: none;
@@ -1475,13 +1463,14 @@ CONTENT USED ON MULTIPLE PAGES
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1020px) {
   .social img {
     width: 25px;
     height: 25px;
+    margin-top: 0px;
   }
 }
 
@@ -1513,6 +1502,11 @@ CONTENT USED ON MULTIPLE PAGES
           flex-flow: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.social-icons li a {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*** 

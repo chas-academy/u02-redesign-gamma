@@ -264,13 +264,6 @@ DEFAULT STYLING PAGES
   }
 }
 
-.arrow {
-    display: flex;
-    justify-content: space-between;
-    content: ">";
-    transition: all 0.5s ease-in-out;
-}
-
 /* Styling for bulletin-lists */
 .no-bull {
   list-style-type: none;
@@ -476,12 +469,13 @@ CONTENT USED ON MULTIPLE PAGES
   align-items: center;
   justify-content: flex-start;
   flex-flow: row;
-  margin-top: 20px;
+  margin-top: 10px;
 
   @include tablet-and-up {
     img {
       width: 25px;
       height: 25px;
+      margin-top: 0px;
     }
   }
 
@@ -505,6 +499,10 @@ CONTENT USED ON MULTIPLE PAGES
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  li a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /*** 
