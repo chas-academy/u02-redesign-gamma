@@ -553,7 +553,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .desktop-navigation .desktop-ul li a:hover {
   text-decoration: none;
-  background: lightgrey;
 }
 
 .desktop-navigation .desktop-ul li a:active {
