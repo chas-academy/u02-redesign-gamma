@@ -2458,6 +2458,7 @@ footer .bottom-footer {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: forforetag;
+    margin-top: 20px;
   }
   #main-index .youtube {
     -ms-grid-row: 3;
@@ -2540,13 +2541,24 @@ footer .bottom-footer {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: contact-aside;
-    margin-top: 20px;
+  }
+  .grid-container-kontakt #contact-aside #grid-post-besok {
+    margin-left: 0px;
+  }
+  .grid-container-kontakt #contact-aside #grid-tele {
+    margin-left: 0;
   }
   .grid-container-kontakt #contact-aside #grid-3x {
     grid-area: kontakt-3x;
   }
+  .grid-container-kontakt #contact-aside #grid-3x #grid-3x-1, .grid-container-kontakt #contact-aside #grid-3x #grid-3x-2, .grid-container-kontakt #contact-aside #grid-3x #grid-3x-3 {
+    margin-left: 0px;
+  }
   .grid-container-kontakt #contact-aside #grid-hitta {
     grid-area: grid-hitta;
+  }
+  .grid-container-kontakt #contact-aside #grid-org {
+    margin-left: 0px;
   }
   /** Om Oss **/
   .grid-container-om-oss {

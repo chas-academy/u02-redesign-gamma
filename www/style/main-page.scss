@@ -1220,6 +1220,7 @@ footer {
 
     #grid-forforetag {
       grid-area: forforetag;
+      margin-top: 20px;
     }
 
     .youtube {
@@ -1303,14 +1304,22 @@ footer {
 
     #contact-aside {
       grid-area: contact-aside;
-      margin-top: 20px;
+
+      #grid-post-besok {
+        margin-left: 0px;
+      }
 
       #grid-tele {
+        margin-left: 0;
       }
 
       #grid-3x {
         grid-area: kontakt-3x;
-      }
+
+        #grid-3x-1, #grid-3x-2, #grid-3x-3 {
+          margin-left: 0px;
+        }
+    }
 
       #grid-hitta {
         grid-area: grid-hitta;
@@ -1322,6 +1331,7 @@ footer {
       }
 
       #grid-org {
+        margin-left: 0px;
       }
     }
   }
