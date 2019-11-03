@@ -2614,4 +2614,11 @@ footer .bottom-footer {
     width: unset;
   }
 }
+
+@media screen and (min-width: 931px) {
+  .flex-container #verk-flex-mid-1, .flex-container #verk-flex-mid-2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 /*# sourceMappingURL=main-page.css.map */
