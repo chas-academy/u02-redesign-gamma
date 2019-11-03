@@ -1901,7 +1901,6 @@ FRONTPAGE CONTAINER PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   text-align: right;
   margin: 20px 20px;
   padding: 40px 30px;
@@ -2084,7 +2083,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 50px;
   min-height: 400px;
   color: white;
@@ -2136,7 +2134,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 20px;
   color: white;
   font-weight: 900;
@@ -2186,7 +2183,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 20px;
   color: white;
   font-weight: 900;
