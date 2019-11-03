@@ -821,11 +821,27 @@ FRONTPAGE CONTAINER PROPERTIES
 }
 
 .youtube {
-  flex-flow: column nowrap;
+  /*flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  padding: 10px 0px;
+  padding: 10px 0px;*/
+  margin-top: 0;
+
+  #youtube-div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+    .youtube-iframe {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 }
 
 .content-spread {
@@ -1020,6 +1036,10 @@ AKTUELLT
   justify-content: center;
   flex-flow: column nowrap;
 
+  #las-nyheter-button {
+    margin-top: 0;
+  }
+
   h4 {
     text-align: center;
     width: 100%;
@@ -1038,7 +1058,7 @@ AKTUELLT
     }
   }
   .aktuellt-article {
-    margin: 20px 20px;
+    margin: 0px 20px 20px 20px;
     padding: 20px 20px;
     background-color: #e3ede8;
     display: flex;
@@ -1091,13 +1111,6 @@ AKTUELLT
       float: right;
       text-decoration: underline;
     }
-  }
-}
-
-.youtube-iframe {
-  border: none;
-  @include tablet-and-up {
-    width: 500px;
   }
 }
 
@@ -1170,11 +1183,11 @@ footer {
   }
 }
 
-/*** Desktop grids ***/
+/*** Grids desktop***/
 
-/** Index **/
+/** Index desktop**/
 
-/* First half */
+/* First half index desktop */
 @include tablet-and-up {
   #main-index {
     display: grid;
@@ -1190,6 +1203,7 @@ footer {
 
     #grid-verks {
       grid-area: verks;
+      margin: 0 20px;
     }
 
     #grid-ansok {
@@ -1221,14 +1235,15 @@ footer {
     .kalender {
       grid-area: aktuellt;
       margin-right: 0px;
+      margin-top: 0;
 
       iframe {
-        width: 600px;
+        //width: 600px;
       }
     }
   }
 
-  /* Second half - News and aside */
+  /* Second half - News and aside desktop*/
   .second-part {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -1260,9 +1275,13 @@ footer {
         margin: 0 0 0 20px;
       }
     }
+
+    #las-nyheter-button {
+      margin-top: 20px;
+    }
   }
 
-  /** Kontakt **/
+  /** Kontakt desktop**/
   .grid-container-kontakt {
     height: 100%;
     display: grid;
@@ -1316,14 +1335,23 @@ footer {
 
     #om-oss-main {
       grid-area: om-oss-main;
+
+      .head-section {
+        margin-bottom: 0px;
+      }
     }
 
     #om-oss-aside {
       grid-area: om-oss-aside;
-      margin-top: 20px;
+      //margin-top: 20px;
+
+      #om-oss-menu, #yrkes-sm, .thomas-image {
+        margin-left: 0px;
+      }
 
       #hitta-utbildingar {
         margin-top: 20px;
+        margin-left: 0px;
       }
     }
   }

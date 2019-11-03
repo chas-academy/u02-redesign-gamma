@@ -164,13 +164,14 @@
             <p><a href="#">Läs om hur du kan engagera dig och påverka utbildningarna inom yrkeshögskolan</a></p>
         </section>
 
-        <section class="frontpage-link-container section youtube" role="region"
-            aria-label="Inbäddad youtube Myndigheten för yrkeshögskolan">
+        <section class="frontpage-link-container section youtube" role="region" aria-label="Inbäddad youtube Myndigheten för yrkeshögskolan">
             <h4>Vår Youtube-kanal</h4>
-            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/z08L0dklN3o" width="370" height="300"
+            <div id="youtube-div">
+            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/z08L0dklN3o"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                 title="Myndigheten för yrkeshögskolan youtube-kanal">
             </iframe>
+        </div>
             <a class="std-button" href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">Gå till vår
                 kanal på Youtube</a>
         </section>
@@ -335,7 +336,7 @@
             <a class="article-post-link" href="#" aria-label="Läs hela inlägget">Läs hela inlägget</a>
         </article>
         
-            <a class="std-button" href="#" aria-label="Läs alla nyheter">Läs alla nyheter</a>
+            <a class="std-button" id="las-nyheter-button" href="#" aria-label="Läs alla nyheter">Läs alla nyheter</a>
     </section>
 
     <a href="#top" class="to-top-btn" role="button" title="Gå till toppen" aria-label="Toppen av webbsidan"><i
