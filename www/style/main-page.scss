@@ -131,7 +131,7 @@ DEFAULT STYLING PAGES
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px 20px 0px 20px;
+  margin: 20px 20px 20px 20px;
   a {
     color: $black-text;
   }
@@ -162,12 +162,12 @@ DEFAULT STYLING PAGES
   h4 {
     border-bottom: 1px solid #101010;
   }
-  &:last-of-type {
+  /*&:last-of-type {
     margin-bottom: 20px;
   }
   &:first-of-type {
     margin-top: 0px;
-  }
+  }*/
   li + a {
     margin-top: 20px;
   }
