@@ -685,7 +685,6 @@ STYLING: SPECIFIC PAGES
 
   #grid-hitta {
     margin-bottom: 20px;
-    height: 100%;
     
     p {
       margin-top: 20px;
@@ -697,7 +696,7 @@ STYLING: SPECIFIC PAGES
     height: 0;
     padding-bottom: 56.25%;
 
-    #google-maps {
+    iframe {
       position: absolute;
       top: 0;
       left: 0;

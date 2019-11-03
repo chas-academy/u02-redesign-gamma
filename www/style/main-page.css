@@ -1833,7 +1833,6 @@ STYLING: SPECIFIC PAGES
 
 #grid-hitta {
   margin-bottom: 20px;
-  height: 100%;
 }
 
 #grid-hitta p {
@@ -1847,7 +1846,7 @@ STYLING: SPECIFIC PAGES
   padding-bottom: 56.25%;
 }
 
-#grid-hitta #section-map #google-maps {
+#grid-hitta #section-map iframe {
   position: absolute;
   top: 0;
   left: 0;
