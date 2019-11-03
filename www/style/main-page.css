@@ -616,7 +616,7 @@ body {
 
 @media (min-width: 1020px) {
   .page .page {
-    width: 1200px;
+    width: 1020px;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -1468,7 +1468,7 @@ i {
   color: white;
 }
 
-@media (min-width: 1020px) {
+@media (max-width: 1020px) {
   a.to-top-btn {
     display: none;
   }

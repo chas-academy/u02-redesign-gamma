@@ -22,6 +22,12 @@ $desktop-width: 1020px;
   }
 }
 
+@mixin mobile {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 /// FONT COLORS
 $grey-text: #807e7e;
 $black-text: #101012;
@@ -85,7 +91,7 @@ body {
 - For bigger screens ***/
   @include tablet-and-up {
     .page {
-      width: 1200px;
+      width: 1020px;
       margin: 0 auto;
       margin-top: 20px;
     }
@@ -431,7 +437,7 @@ i {
 }
 
 a.to-top-btn {
-  @include tablet-and-up {
+  @include mobile {
     display: none;
   }
 }
