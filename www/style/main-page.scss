@@ -93,7 +93,6 @@ body {
     .page {
       width: 1020px;
       margin: 0 auto;
-      margin-top: 20px;
     }
   }
 }
@@ -147,7 +146,7 @@ DEFAULT STYLING PAGES
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   a {
     color: $black-text;
   }
@@ -160,14 +159,8 @@ DEFAULT STYLING PAGES
     a {
       text-decoration: underline;
       left: 0px;
-      position: relative;
-      &:after {
-        position: absolute;
-        content: ">";
-        margin-right: -20px;
-        right: 5px;
-        transition: all 0.5s ease-in-out;
-      }
+      display: flex;
+      justify-content: space-between;
     }
     a:hover {
       &:after {
@@ -389,8 +382,10 @@ a:hover {
 }
 
 .small-black-button {
-  @include small-btn color: $black-text;
-  border: 1px solid $black-box-color;
+  @include small-btn;
+    color: $black-text;
+    border: 1px solid $black-box-color;
+
   &:hover {
     color: $black-text;
     border: 1px solid $black-box-color;
@@ -476,12 +471,13 @@ CONTENT USED ON MULTIPLE PAGES
   align-items: center;
   justify-content: flex-start;
   flex-flow: row;
-  margin-top: 20px;
+  margin-top: 10px;
 
   @include tablet-and-up {
     img {
       width: 25px;
       height: 25px;
+      margin-top: 0px;
     }
   }
 
@@ -505,6 +501,10 @@ CONTENT USED ON MULTIPLE PAGES
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  li a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /*** 
@@ -689,15 +689,15 @@ STYLING: SPECIFIC PAGES
   text-align: left;
 }
 
-  #grid-hitta {
-    margin-bottom: 20px;
-    
-    p {
-      margin-top: 20px;
-    }
+#grid-hitta {
+  margin-bottom: 20px;
 
-    #section-map {
-      position: relative;
+  p {
+    margin-top: 20px;
+  }
+
+  #section-map {
+    position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
@@ -710,9 +710,8 @@ STYLING: SPECIFIC PAGES
       height: 100%;
       margin-top: 10px;
     }
-    }
   }
-
+}
 
 /***
 FRONTPAGE CSS
@@ -1196,11 +1195,13 @@ footer {
     #grid-ansok {
       grid-area: ansok;
       margin-right: 0px;
+      margin-top: 20px;
     }
 
     #grid-fordig {
       grid-area: fordig;
       margin-right: 0;
+      margin-top: 20px;
     }
 
     #grid-forforetag {
@@ -1296,7 +1297,6 @@ footer {
         grid-area: grid-hitta;
 
         #section-map {
-
           iframe {
           }
         }
@@ -1306,50 +1306,6 @@ footer {
       }
     }
   }
-
-  /* 
-  .head-section {
-    grid-area: contact-head;
-  }
-
-  #contact-form-section {
-    grid-area: kontakt-form;
-
-    form {
-      width: 100%;
-    }
-  }
-
-  #contact-section-container {
-    grid-area: kontakt-telefon;
-
-    #grid-tele {
-      margin: 20px 20px 0px 20px;
-    }
-  }
-
-  #grid-3x {
-    grid-area: kontakt-3x;
-  }
-
-  #grid-hitta {
-    grid-area: grid-hitta;
-
-    #section-map {
-      width: 100%;
-      margin-top: 14px;
-      margin-bottom: 20px;
-
-      iframe {
-       // width: 100%;
-      //  height: 400px;
-      }
-    }
-
-    #grid-org {
-    }
-  }
-} */
 
   /** Om Oss **/
   .grid-container-om-oss {
@@ -1372,7 +1328,6 @@ footer {
     }
   }
 }
-
 
 // VERKSAMHETSOMRADEN RESPONSIVE PROPERTIES
 .flex-container {
