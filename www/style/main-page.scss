@@ -461,10 +461,18 @@ CONTENT USED ON MULTIPLE PAGES
 /* Styling for heading - social container */
 .social {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-flow: row;
   margin-top: 20px;
+
+  @include tablet-and-up {
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
   h2 {
     font-weight: 900;
     font-size: 1rem;
@@ -1245,7 +1253,6 @@ footer {
 
     #contact-form-section {
       grid-area: kontakt-form;
-      height: 100%;
 
       form {
         width: 100%;
@@ -1258,33 +1265,29 @@ footer {
       #grid-tele {
         margin: 20px 20px 0px 20px;
       }
-
-      #grid-org {
-        height: 100%;
-      }
     }
 
     #grid-3x {
       grid-area: kontakt-3x;
-    }
 
-    .social {
-      grid-area: none;
-    }
+      #grid-hitta {
+        grid-area: grid-hitta;
 
-    #grid-hitta {
-      grid-area: grid-hitta;
-    }
+        #section-map {
+          width: 100%;
 
-    #section-map {
-      width: 100%;
+          iframe {
+            width: 100%;
+            height: 400px;
+          }
+        }
 
-      iframe {
-        width: 100%;
-        height: 400px;
+        #grid-org {
+        }
       }
     }
   }
+  
   /** Om Oss **/
   .grid-container-om-oss {
     display: grid;
