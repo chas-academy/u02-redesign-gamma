@@ -486,6 +486,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 62px;
   }
 }
 
@@ -1900,7 +1901,6 @@ FRONTPAGE CONTAINER PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   text-align: right;
   margin: 20px 20px;
   padding: 40px 30px;
@@ -1909,30 +1909,9 @@ FRONTPAGE CONTAINER PROPERTIES
 .small-container a {
   font-weight: 900;
   text-decoration: none;
-  position: relative;
-  right: 5px;
-}
-
-.small-container a:after {
-  position: absolute;
-  font-weight: 900;
-  content: ">";
-  margin-left: 10px;
-  right: -15px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.small-container a:hover:after {
-  right: -20px;
 }
 
 .youtube {
-  /*flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 10px 0px;*/
   margin-top: 0;
 }
 
@@ -1941,6 +1920,7 @@ FRONTPAGE CONTAINER PROPERTIES
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  margin-bottom: 20px;
 }
 
 .youtube .youtube-iframe {
@@ -2008,21 +1988,6 @@ CALENDAR PROPERTIES
 
 .calendar-post a {
   text-decoration: underline;
-  right: 0px;
-  position: relative;
-}
-
-.calendar-post a:after {
-  position: absolute;
-  content: ">";
-  margin-left: 140px;
-  left: -5px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.calendar-post a:hover:after {
-  left: 0px;
 }
 
 .calendar-post .date {
@@ -2083,7 +2048,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 50px;
   min-height: 400px;
   color: white;
@@ -2135,7 +2099,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 20px;
   color: white;
   font-weight: 900;
@@ -2185,7 +2148,6 @@ CALENDAR PROPERTIES
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-justify: flex-end;
   padding-right: 20px;
   color: white;
   font-weight: 900;
@@ -2465,7 +2427,7 @@ footer .bottom-footer {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: annat;
-    background: #c4c4c4;
+    background: #101012;
     margin-bottom: 20px;
   }
   #main-index .youtube h4 {
@@ -2510,10 +2472,13 @@ footer .bottom-footer {
     grid-area: aktuellt;
   }
   .second-part .aktuellt .aktuellt-article {
-    margin: 0 0 0 20px;
+    margin: 0 0 20px 20px;
   }
   .second-part #las-nyheter-button {
     margin-top: 20px;
+    margin-left: 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   /** Kontakt desktop**/
   .grid-container-kontakt {
@@ -2612,6 +2577,13 @@ footer .bottom-footer {
 @media screen and (max-width: 930px) {
   .flex-container .flex-item {
     width: unset;
+  }
+}
+
+@media screen and (min-width: 931px) {
+  .flex-container #verk-flex-mid-1, .flex-container #verk-flex-mid-2 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=main-page.css.map */

@@ -437,6 +437,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
     display: flex;
     flex-flow: row;
     align-items: center;
+    width: 62px;
   }
 }
 
