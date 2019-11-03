@@ -268,6 +268,7 @@ input:focus:not(:checked)+#toggle-menu-2 {
     }
 
     .burger-menu-ul {
+        visibility: hidden;
         z-index: 5;
         position: absolute;
         left: 0;
@@ -470,5 +471,47 @@ input:focus:not(:checked)+#toggle-menu-2 {
 #toggle-2 {
     @include tablet-and-up {
         display: none;
+    }
+}
+
+//DESKTOP MENU
+
+.desktop-navigation {
+    @media screen and (max-width: 930px) {
+        display: none;
+    }
+    display: flex;
+    justify-content: center;
+    .desktop-ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 70%;
+        li {
+            display: inline-block;
+            a {
+                white-space: nowrap;
+                padding: 10px 20px;
+                font-weight: 500;
+                font-size: 19px;
+                color: black;
+                transition: text-decoration 0.5s;
+            }
+            a:hover {
+                text-decoration: none;
+                background: lightgrey;
+            }
+            a:active {
+                position: relative;
+                top: 1px;
+            }
+
+            + li {
+                @media screen and (min-width: 1610px) {
+                    border-left: 2px solid black;
+                }
+            }
+
+        }
     }
 }

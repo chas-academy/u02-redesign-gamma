@@ -288,6 +288,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 #nav-menu .burger-menu-ul {
+  visibility: hidden;
   z-index: 5;
   position: absolute;
   left: 0;
@@ -502,6 +503,67 @@ input:focus:not(:checked) + #toggle-menu-2 {
 @media (min-width: 1020px) {
   #toggle-2 {
     display: none;
+  }
+}
+
+.desktop-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 930px) {
+  .desktop-navigation {
+    display: none;
+  }
+}
+
+.desktop-navigation .desktop-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+
+.desktop-navigation .desktop-ul li {
+  display: inline-block;
+}
+
+.desktop-navigation .desktop-ul li a {
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 19px;
+  color: black;
+  -webkit-transition: -webkit-text-decoration 0.5s;
+  transition: -webkit-text-decoration 0.5s;
+  transition: text-decoration 0.5s;
+  transition: text-decoration 0.5s, -webkit-text-decoration 0.5s;
+}
+
+.desktop-navigation .desktop-ul li a:hover {
+  text-decoration: none;
+  background: lightgrey;
+}
+
+.desktop-navigation .desktop-ul li a:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (min-width: 1610px) {
+  .desktop-navigation .desktop-ul li + li {
+    border-left: 2px solid black;
   }
 }
 
