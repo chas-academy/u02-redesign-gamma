@@ -1244,54 +1244,95 @@ footer {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 420px;
-    grid-template-rows: 1fr 500px 200px;
-    grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x";
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact-main contact-aside";
 
-    .head-section {
-      grid-area: kontakt-head;
-    }
+    #contact-main {
+      grid-area: contact-main;
 
-    #contact-form-section {
-      grid-area: kontakt-form;
+      #contact-form-section {
+        grid-area: kontakt-form;
 
-      form {
-        width: 100%;
+        form {
+          width: 100%;
+        }
       }
     }
 
-    #contact-section-container {
-      grid-area: kontakt-telefon;
+    #contact-aside {
+      grid-area: contact-aside;
+      margin-top: 20px;
 
       #grid-tele {
-        margin: 20px 20px 0px 20px;
       }
-    }
 
-    #grid-3x {
-      grid-area: kontakt-3x;
+      #grid-3x {
+        grid-area: kontakt-3x;
+      }
 
       #grid-hitta {
         grid-area: grid-hitta;
 
         #section-map {
-          width: 100%;
 
           iframe {
-            width: 100%;
-            height: 400px;
           }
         }
+      }
 
-        #grid-org {
-        }
+      #grid-org {
       }
     }
   }
-  
+
+  /* 
+  .head-section {
+    grid-area: contact-head;
+  }
+
+  #contact-form-section {
+    grid-area: kontakt-form;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  #contact-section-container {
+    grid-area: kontakt-telefon;
+
+    #grid-tele {
+      margin: 20px 20px 0px 20px;
+    }
+  }
+
+  #grid-3x {
+    grid-area: kontakt-3x;
+  }
+
+  #grid-hitta {
+    grid-area: grid-hitta;
+
+    #section-map {
+      width: 100%;
+      margin-top: 14px;
+      margin-bottom: 20px;
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    #grid-org {
+    }
+  }
+} */
+
   /** Om Oss **/
   .grid-container-om-oss {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 420px;
     grid-template-rows: 1fr;
     grid-template-areas: "om-oss-main om-oss-aside";
 
@@ -1306,10 +1347,6 @@ footer {
       #hitta-utbildingar {
         margin-top: 20px;
       }
-    }
-
-    #dela-om-oss {
-      //grid-area: om-oss-main;
     }
   }
 }
