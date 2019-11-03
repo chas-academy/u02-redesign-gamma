@@ -22,6 +22,12 @@ $desktop-width: 1020px;
   }
 }
 
+@mixin mobile {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 /// FONT COLORS
 $grey-text: #807e7e;
 $black-text: #101012;
@@ -80,6 +86,15 @@ body {
 
 .page {
   margin-top: 20px;
+
+  /*** HOLY GRAIL DESIGN 
+- For bigger screens ***/
+  @include tablet-and-up {
+    .page {
+      width: 1020px;
+      margin: 0 auto;
+    }
+  }
 }
 
 /*** 
@@ -131,7 +146,7 @@ DEFAULT STYLING PAGES
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   a {
     color: $black-text;
   }
@@ -144,14 +159,8 @@ DEFAULT STYLING PAGES
     a {
       text-decoration: underline;
       left: 0px;
-      position: relative;
-      &:after {
-        position: absolute;
-        content: ">";
-        margin-right: -20px;
-        right: 5px;
-        transition: all 0.5s ease-in-out;
-      }
+      display: flex;
+      justify-content: space-between;
     }
     a:hover {
       &:after {
@@ -354,6 +363,35 @@ a:hover {
   }
 }
 
+@mixin small-btn {
+  border: 1px solid rgb(200, 200, 200);
+  color: white;
+  font-size: 0.8rem;
+  padding: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  &:hover {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+.small-white-button {
+  @include small-btn;
+}
+
+.small-black-button {
+  @include small-btn;
+    color: $black-text;
+    border: 1px solid $black-box-color;
+
+  &:hover {
+    color: $black-text;
+    border: 1px solid $black-box-color;
+  }
+}
+
 /// Back to top button ///
 i {
   border: solid white;
@@ -382,7 +420,7 @@ i {
   height: 50px;
   background-color: $black-box-color;
   color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
   text-decoration: none;
   display: flex;
   flex-flow: column;
@@ -390,6 +428,12 @@ i {
   z-index: 2;
   &:hover {
     color: white;
+  }
+}
+
+a.to-top-btn {
+  @include mobile {
+    display: none;
   }
 }
 
@@ -424,10 +468,19 @@ CONTENT USED ON MULTIPLE PAGES
 /* Styling for heading - social container */
 .social {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-flow: row;
-  margin-top: 20px;
+  margin-top: 10px;
+
+  @include tablet-and-up {
+    img {
+      width: 25px;
+      height: 25px;
+      margin-top: 0px;
+    }
+  }
+
   h2 {
     font-weight: 900;
     font-size: 1rem;
@@ -448,6 +501,10 @@ CONTENT USED ON MULTIPLE PAGES
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  li a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /*** 
@@ -460,7 +517,7 @@ DEFAULT STYLING IMAGES
 
 img,
 object {
-  margin: 10px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 /***  
@@ -489,6 +546,10 @@ POSITIONING STYLING
 .make-row {
   display: flex;
   flex-flow: row;
+}
+
+.make-margin-up {
+  margin-top: 50px;
 }
 
 /*** 
@@ -628,20 +689,20 @@ STYLING: SPECIFIC PAGES
   text-align: left;
 }
 
-  #grid-hitta {
-    margin-bottom: 20px;
-    
-    p {
-      margin-top: 20px;
-    }
+#grid-hitta {
+  margin-bottom: 20px;
 
-    #section-map {
-      position: relative;
+  p {
+    margin-top: 20px;
+  }
+
+  #section-map {
+    position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
 
-    #google-maps {
+    iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -649,9 +710,8 @@ STYLING: SPECIFIC PAGES
       height: 100%;
       margin-top: 10px;
     }
-    }
   }
-
+}
 
 /***
 FRONTPAGE CSS
@@ -761,11 +821,27 @@ FRONTPAGE CONTAINER PROPERTIES
 }
 
 .youtube {
-  flex-flow: column nowrap;
+  /*flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  padding: 10px 0px;
+  padding: 10px 0px;*/
+  margin-top: 0;
+
+  #youtube-div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+    .youtube-iframe {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 }
 
 .content-spread {
@@ -868,7 +944,6 @@ CALENDAR PROPERTIES
     text-shadow: 2px 2px 8px black;
     font-weight: 900;
     transition: background-image 1s;
-    font-size: 1.8rem;
     padding-bottom: 20px;
     position: relative;
     right: 0px;
@@ -961,6 +1036,10 @@ AKTUELLT
   justify-content: center;
   flex-flow: column nowrap;
 
+  #las-nyheter-button {
+    margin-top: 0;
+  }
+
   h4 {
     text-align: center;
     width: 100%;
@@ -979,7 +1058,7 @@ AKTUELLT
     }
   }
   .aktuellt-article {
-    margin: 20px 20px;
+    margin: 0px 20px 20px 20px;
     padding: 20px 20px;
     background-color: #e3ede8;
     display: flex;
@@ -1035,13 +1114,6 @@ AKTUELLT
   }
 }
 
-.youtube-iframe {
-  border: none;
-  @include tablet-and-up {
-    width: 500px;
-  }
-}
-
 /**
 FOOTER
 **/
@@ -1052,6 +1124,8 @@ footer {
   background-color: #363636;
   position: relative;
   bottom: 0px;
+  margin-top: 30px;
+  padding-top: 30px;
 
   p,
   li {
@@ -1064,8 +1138,7 @@ footer {
     padding: 10px 30px;
     color: white;
     width: 100%;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 1rem;
     /** FLEX **/
     display: flex;
     flex-flow: row wrap;
@@ -1073,20 +1146,28 @@ footer {
     text-align: center;
 
     h4 {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: 500;
-      font-size: 1.4rem;
-      line-height: 1.5;
-      margin-top: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: white;
+      font-weight: 100;
+    }
+
+    a {
+      color: white;
+      font-weight: 400;
     }
 
     .footer-section {
       width: 300px;
+      margin-bottom: 40px;
+    }
 
-      a {
-        color: white;
-      }
+    li {
+      margin-bottom: 5px;
     }
   }
 
@@ -1102,11 +1183,11 @@ footer {
   }
 }
 
-/*** Desktop grids ***/
+/*** Grids desktop***/
 
-/** Index **/
+/** Index desktop**/
 
-/* First half */
+/* First half index desktop */
 @include tablet-and-up {
   #main-index {
     display: grid;
@@ -1122,20 +1203,24 @@ footer {
 
     #grid-verks {
       grid-area: verks;
+      margin: 0 20px;
     }
 
     #grid-ansok {
       grid-area: ansok;
       margin-right: 0px;
+      margin-top: 20px;
     }
 
     #grid-fordig {
       grid-area: fordig;
       margin-right: 0;
+      margin-top: 20px;
     }
 
     #grid-forforetag {
       grid-area: forforetag;
+      margin-top: 20px;
     }
 
     .youtube {
@@ -1151,14 +1236,15 @@ footer {
     .kalender {
       grid-area: aktuellt;
       margin-right: 0px;
+      margin-top: 0;
 
       iframe {
-        width: 600px;
+        //width: 600px;
       }
     }
   }
 
-  /* Second half - News and aside */
+  /* Second half - News and aside desktop*/
   .second-part {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -1190,113 +1276,96 @@ footer {
         margin: 0 0 0 20px;
       }
     }
+
+    #las-nyheter-button {
+      margin-top: 20px;
+    }
   }
 
-  /** Kontakt **/
+  /** Kontakt desktop**/
   .grid-container-kontakt {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 420px;
-    grid-template-rows: 1fr 500px 200px;
-    grid-template-areas: "kontakt-form kontakt-telefon" "grid-hitta kontakt-3x" "grid-dela grid-topknapp";
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact-main contact-aside";
 
-    .head-section {
-      grid-area: kontakt-head;
-    }
+    #contact-main {
+      grid-area: contact-main;
 
-    #contact-form-section {
-      grid-area: kontakt-form;
-      height: 100%;
+      #contact-form-section {
+        grid-area: kontakt-form;
 
-      form {
-        width: 100%;
+        form {
+          width: 100%;
+        }
       }
     }
 
-    #contact-section-container {
-      grid-area: kontakt-telefon;
+    #contact-aside {
+      grid-area: contact-aside;
+
+      #grid-post-besok {
+        margin-left: 0px;
+      }
 
       #grid-tele {
-        margin: 20px 20px 0px 20px;
+        margin-left: 0;
+      }
+
+      #grid-3x {
+        grid-area: kontakt-3x;
+
+        #grid-3x-1, #grid-3x-2, #grid-3x-3 {
+          margin-left: 0px;
+        }
+    }
+
+      #grid-hitta {
+        grid-area: grid-hitta;
+
+        #section-map {
+          iframe {
+          }
+        }
       }
 
       #grid-org {
-        height: 100%;
+        margin-left: 0px;
       }
-    }
-
-    #grid-3x {
-      grid-area: kontakt-3x;
-    }
-
-    .social {
-      grid-area: none;
-    }
-
-    #grid-hitta {
-      grid-area: grid-hitta;
-    }
-
-    #grid-dela {
-      grid-area: grid-dela;
-    }
-
-    #section-map {
-      //width: 100%;
-
-      iframe {
-       // width: 100%;
-      //  height: 400px;
-      }
-    }
-
-    #top-knapp {
-      grid-area: grid-topknapp;
-      height: 78px;
     }
   }
+
   /** Om Oss **/
   .grid-container-om-oss {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 420px;
     grid-template-rows: 1fr;
     grid-template-areas: "om-oss-main om-oss-aside";
 
     #om-oss-main {
       grid-area: om-oss-main;
+
+      .head-section {
+        margin-bottom: 20px;
+      }
     }
 
     #om-oss-aside {
       grid-area: om-oss-aside;
-      margin-top: 20px;
+      //margin-top: 20px;
+
+      #om-oss-menu, #yrkes-sm, .thomas-image {
+        margin-left: 0px;
+      }
 
       #hitta-utbildingar {
         margin-top: 20px;
+        margin-left: 0px;
       }
-    }
-
-    #dela-om-oss {
-      //grid-area: om-oss-main;
-
-      #dela-om-oss-ul {
-      }
-    }
-
-    .top-knapp-om-oss {
     }
   }
 }
-
-/*** HOLY GRAIL DESIGN 
-- For bigger screens ***/
-@media only screen and (min-width: 961px) {
-  .page {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-}
-
 
 // VERKSAMHETSOMRADEN RESPONSIVE PROPERTIES
 .flex-container {

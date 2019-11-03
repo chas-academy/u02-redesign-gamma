@@ -19,7 +19,7 @@
                 </a>
             </li>
 
-            <li class="main-menu-li-links">
+            <li class="main-menu-li-links" id="sok-li-links">
                 <nav id="nav-search" aria-label="Sökmeny">
                     <input type="checkbox" id="toggle" role="button" aria-haspopup="true">
                     <label for="toggle" id="toggle-menu">
@@ -31,18 +31,19 @@
                     </label>
 
                     <ul class="search-menu-ul">
-                        <div id="opacity-cover" aria-hidden="true"></div>
+                        <div id="opacity-cover" aria-hidden="true"> 
                         <form role="form" aria-label="Sök på hemsidan">
                             <input id="user-search" name="search" placeholder="Sök..." type="search"
                                 aria-required="true" aria-label="Sökfält" />
                             <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
                                 aria-label="Skicka sökningen" />
                             <label id="close-label" for="close-form"> <img id="img-close-search"
-                                    src="media/close_icon_white.png" alt=""> stäng </label>
+                                    src="media/close_icon_white.png" alt=""> Stäng </label>
                             <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
                                 aria-required="false" aria-label="Stäng sökmeny" />
                         </form>
-
+                    </div>
+                    
                     </ul>
                 </nav>
             </li>
@@ -69,7 +70,7 @@
                         <li role="menuitem"><a href="#">Nyhetsrum</a></li>
                         <li role="menuitem"><a href="kontakt.html">Kontakt</a></li>
                         <li id="close-li"> <a id=close-menu-icon href="index.html" aria-label="Stäng meny">
-                                <img class="img-close" src="media/close_icon_white.png" alt=""> stäng </a></li>
+                                <img class="img-close" src="media/close_icon_white.png" alt=""> Stäng </a></li>
                         <div id="opacity-cover-2" aria-hidden="true"></div>
                     </ul>
                 </nav>
@@ -116,28 +117,28 @@
                 <a class="white-button" href="#" aria-label="Läs mer">Läs mer</a>
             </article>
         </header>
-
-        <section class="frontpage-link-container section-lblue" id="grid-verks" role="region" aria-label="Verksamhetsområden">
+        
+        <section class="frontpage-link-container section-yellow" id="grid-verks" role="region" aria-label="Verksamhetsområden">
             <h4>Verksamhetsområden</h4>
             <ul role="menu">
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">Yrkeshögskolan</a></li>
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">Konst- och kulturutbildningar</a></li>
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">Tolkutbildningar</a></li>
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">Utbildningar med endast tillsyn</a>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">Yrkeshögskolan</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">Konst- och kulturutbildningar</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">Tolkutbildningar</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">Utbildningar med endast tillsyn</span></a>
                 </li>
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">SeQF</a></li>
-                <li class="no-bull" role="menuitem"><a href="verksamhet.html">Validering</a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">SeQF</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="verksamhet.html">Validering</span></a></li>
             </ul>
         </section>
 
         <section class="frontpage-link-container section-black" id="grid-ansok" role="region" aria-label="Ansökningar">
             <h4>Ansök om</h4>
             <ul role="menu">
-                <li class="no-bull" role="menuitem"><a href="#">Att bedriva utbildning inom yrkeshögskolan</a></li>
-                <li class="no-bull" role="menuitem"><a href="#">Stöd för konst- och kulturutbildningar</a></li>
-                <li class="no-bull" role="menuitem"><a href="#">Statsbidrag för tolkutbildningar inom
-                        folkbildningen</a></li>
-                <li class="no-bull" role="menuitem"><a href="#">Stöd i form av endast tillsyn</a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">Att bedriva utbildning inom yrkeshögskolan</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">Stöd för konst- och kulturutbildningar</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">Statsbidrag för tolkutbildningar inom
+                        folkbildningen</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">Stöd i form av endast tillsyn</span></a></li>
             </ul>
         </section>
 
@@ -145,12 +146,12 @@
             aria-label="För dig som bedriver utbildning">
             <h4>För dig som bedriver utbildning</h4>
             <ul role="menu">
-                <li class="no-bull" role="menuitem"><a href="#">För utbildningsanordnare inom yrkeshögskolan</a>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">För utbildningsanordnare inom yrkeshögskolan</span></a>
                 </li>
-                <li class="no-bull" role="menuitem"><a href="#">För utbildningsanordnare av konst- och
-                        kulturutbildning</a></li>
-                <li class="no-bull" role="menuitem"><a href="#">För anordnare av tolkutbildningar</a></li>
-                <li class="no-bull" role="menuitem"><a href="#">För anordnare av utbildning med endast tillsyn</a>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">För utbildningsanordnare av konst- och
+                        kulturutbildning</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">För anordnare av tolkutbildningar</span></a></li>
+                <li class="no-bull" role="menuitem"><span class="arrow"><a href="#">För anordnare av utbildning med endast tillsyn</span></a>
                 </li>
             </ul>
         </section>
@@ -163,13 +164,14 @@
             <p><a href="#">Läs om hur du kan engagera dig och påverka utbildningarna inom yrkeshögskolan</a></p>
         </section>
 
-        <section class="frontpage-link-container section youtube" role="region"
-            aria-label="Inbäddad youtube Myndigheten för yrkeshögskolan">
+        <section class="frontpage-link-container section youtube" role="region" aria-label="Inbäddad youtube Myndigheten för yrkeshögskolan">
             <h4>Vår Youtube-kanal</h4>
-            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/z08L0dklN3o" width="370" height="300"
+            <div id="youtube-div">
+            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/z08L0dklN3o"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                 title="Myndigheten för yrkeshögskolan youtube-kanal">
             </iframe>
+        </div>
             <a class="std-button" href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">Gå till vår
                 kanal på Youtube</a>
         </section>
@@ -226,7 +228,7 @@
         </section>
 
         <section class="thomas-image" role="region" aria-label="GD har ordet">
-            <a href="#">GD har ordet</a>
+            <a href="#">GD Thomas Persson har ordet</a>
         </section>
 
         <section class="epale-image" role="region" aria-label="EPALE, digital mötesplats för vuxenutbildningar">
@@ -242,23 +244,55 @@
         aria-label="Länkar till jobb, upphandlingar och diverse nyheter">
         <h4>Gå direkt till</h4>
         <ul role="menu">
-            <li class="no-bull" role="menuitem"><a href="#">Lediga jobb</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Pågående upphandlingar</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Pressmeddelanden</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Nyheter</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Nyhetsbrev</a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Lediga jobb</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Pågående upphandlingar</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Pressmeddelanden</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Nyheter</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Nyhetsbrev</span></a></li>
         </ul>
     </section>
     <section class="frontpage-link-container section-green" role="region" aria-label="Senaste publikationer">
         <h4>Senaste publikationer</h4>
         <ul role="menu">
-            <li class="no-bull" role="menuitem"><a href="#">MYH jubileumsbroschyr 2019</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Resultat av tillsyn 2018</a></li>
-            <li class="no-bull" role="menuitem"><a href="#">Ansökan om behörighetsgivande förutbildning</a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">MYH jubileumsbroschyr 2019</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Resultat av tillsyn 2018</span></a></li>
+            <li class="no-bull" role="menuitem"><a href="#"><span class="arrow">Ansökan om behörighetsgivande förutbildning</span></a></li>
         </ul>
         <a class="white-button" id="publikationer-a" href="#" aria-label="Se alla publikationer">Se alla
             publikationer</a>
     </section>
+
+    <section
+        class="social section"
+        role="region"
+        id="dela-om-oss"
+        aria-label="Dela denna sida"
+      >
+        <h2>Dela denna sida: </h2>
+        <ul class="no-bull social-icons" id="dela-om-oss-ul" role="menubar">
+          <li role="menuitem">
+            <a href="#"
+              ><img src="media/share_fb.png" width="45" height="45" alt="Facebook"
+            /></a>
+          </li>
+          <li role="menuitem">
+            <a href="#"
+              ><img src="media/share_twitter.png" width="45" height="45" alt="Twitter"
+            /></a>
+          </li>
+          <li role="menuitem">
+            <a href="#"
+              ><img src="media/share_linkedin.png" width="45" height="45" alt="linkedin"
+            /></a>
+          </li>
+          <li role="menuitem">
+            <a href="#"
+              ><img src="media/share_email.png" width="45" height="45" alt="E-mail"
+            /></a>
+          </li>
+        </ul>
+      </section>
+
 </aside>
 
     <section class="aktuellt" role="region" aria-label="Nyheter">
@@ -302,7 +336,7 @@
             <a class="article-post-link" href="#" aria-label="Läs hela inlägget">Läs hela inlägget</a>
         </article>
         
-            <a class="std-button" href="#" aria-label="Läs alla nyheter">Läs alla nyheter</a>
+            <a class="std-button" id="las-nyheter-button" href="#" aria-label="Läs alla nyheter">Läs alla nyheter</a>
     </section>
 
     <a href="#top" class="to-top-btn" role="button" title="Gå till toppen" aria-label="Toppen av webbsidan"><i
@@ -310,46 +344,68 @@
 </div>
 
 </section>
-    <footer role="contentinfo">
+    
+<footer role="contentinfo">
         <section class="footer-container" role="region">
-            <div class="footer-section no-bull">
-                <h4>Kontakta oss</h4>
-                <ul class="no-bull" role="menu" aria-label="Kontakta oss">
-                    <li>E-post: <a href="#">info@myh.se</a> eller <a href="#">registrator@myh.se</a></li>
-                    <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
-                    <li><a href="#">Fler kontaktuppgifter</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section no-bull">
-                <h4>Om webbplatsen</h4>
-                <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
-                    <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
-                    <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
-                    <li role="menuitem"><a href="#">Webbkarta</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section no-bull">
-                <h4>Våra övriga webbplatser</h4>
-                <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
-                    <li role="menuitem"><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
-                    <li role="menuitem"><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-                    </li>
-                    <li role="menuitem"><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-                    <li role="menuitem"><a href="https://www.seqf.se">www.seqf.se</a></li>
-                </ul>
-            </div>
-
-            <section class="footer-section" role="region" aria-label="Ansvarig utgivare">
-                <h4>Ansvarig utgivare</h4>
-                <p>Thomas Persson, generaldirektör MYH.</p>
-            </section>
+          <div class="footer-section no-bull">
+            <h4>Kontakta oss</h4>
+            <ul class="no-bull" role="menu" aria-label="Kontakta oss">
+              <li>
+                E-post: <a href="#">info@myh.se</a> eller
+                <a href="#">registrator@myh.se</a>
+              </li>
+              <li>Telefon: <a href="#">0102090100</a> </br>(vardagar 8.00 - 17.00)</li>
+            </ul>
+            <span class="make-margin-up"><a class="small-white-button" href="#">Hitta fler kontaktuppgifter</a></span>
+          </div>
+  
+          <div class="footer-section no-bull">
+            <h4>Om webbplatsen</h4>
+            <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
+              <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
+              <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
+              <li role="menuitem"><a href="#">Webbkarta</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section no-bull">
+            <h4>Våra övriga webbplatser</h4>
+            <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
+              <li role="menuitem">
+                <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://www.konstkulturutbildning.se"
+                  >www.konstkulturutbildning.se</a
+                >
+              </li>
+              <li role="menuitem">
+                <a href="https://www.blitolk.nu">www.blitolk.nu</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://www.seqf.se">www.seqf.se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+          <section
+            class="footer-section"
+            role="region"
+            aria-label="Ansvarig utgivare"
+          >
+            <h4>Ansvarig utgivare</h4>
+            <p>Thomas Persson, generaldirektör MYH.</p>
+          </section>
         </section>
-        <section class="bottom-footer" role="region" aria-label="Myndigheten för yrkeshögskolan address">
-            <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
+        <section
+          class="bottom-footer"
+          role="region"
+          aria-label="Myndigheten för yrkeshögskolan address"
+        >
+          <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
         </section>
-    </footer>
-</body>
-
-</html>
+      </footer>
+    </body>
+  </html>
+  

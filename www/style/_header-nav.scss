@@ -1,126 +1,132 @@
 /* Accessibility links */
 
 .top-links-nav {
-    background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    grid-area: c;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
 
+  @include tablet-and-up {
+    top: 10px;
+    right: 0;
+    position: absolute;
+  }
+
+  .top-links-ul {
     @include tablet-and-up {
-        top: 10px;
-        right: 0;
-        position: absolute;
+      margin: 5px 5px 0px 0px;
     }
 
+    .top-links-li {
+      display: inline-block;
+      margin: 0px 20px;
 
-    .top-links-ul {
-        .top-links-li {
-            display: inline-block;
-            margin: 0px 20px;
-            span {
-                white-space: nowrap;
-            }
-            a {
-                display: flex;
-                flex-direction: column;
-                color: black;
-                text-decoration: none;
-                font-size: 0.8rem;
-                font-weight: 300;
+      @include tablet-and-up {
+        margin: 0px 6px;
+      }
 
-                .top-links-image {
-                    align-self: center;
-                    margin-bottom: 0px;
-                    width: 20px;
-                    height: 20px;
-                }  
-            }
+      span {
+        white-space: nowrap;
+        font-size: 0.8rem;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        text-decoration: none;
+        font-weight: 300;
+
+        @include tablet-and-up {
+          flex-direction: row;
         }
+
+        .top-links-image {
+          align-self: center;
+          margin-bottom: 0px;
+          width: 20px;
+          height: 20px;
+
+          @include tablet-and-up {
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
     }
+  }
 }
 
 // Enable focus on search and hamburger menu labels. No focus while dropdown is open
-input:focus:not(:checked)+#toggle-menu,
-input:focus:not(:checked)+#toggle-menu-2 {
-    outline: $focus-setting;
+input:focus:not(:checked) + #toggle-menu,
+input:focus:not(:checked) + #toggle-menu-2 {
+  outline: $focus-setting;
 }
 
 /*** Main nav settings ***/
 .main-menu-nav {
+  @include tablet-and-up {
+    display: inline-block;
+  }
+
+  .main-menu-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 0;
+    padding: 20px;
+
     @include tablet-and-up {
+    margin-bottom: 100px;
+    }
+  }
+
+  #main-menu-li-logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    @include tablet-and-up {
+      display: inline-block;
+    }
+
+    #kontakt-logo-anchor {
+      position: absolute;
+
+      @include tablet-and-up {
         display: inline-block;
+      }
+
+      .kontakt-logo-img {
+        max-width: 260px;
+      }
     }
-        
-    .main-menu-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        line-height: 0;
-        padding: 0;
+  }
 
-        @include tablet-and-up {
-           // height: 400px;
-            display: grid;
-            grid-template-columns: 280px 120px 1fr;
-            grid-template-rows: 1fr 40px;
-            grid-template-areas: "a b c"
-                                 "d d d";
-            }
-        }
-
-        #main-menu-li-logo {
-            position: absolute;
-            left: 8px;
-            top: 0;
-
-            @include tablet-and-up {
-                /*position: relative;
-                left: auto;
-                top: auto;*/
-                display: inline-block;
-                grid-area: a;
-                }
-
-            #kontakt-logo-anchor {
-                position: absolute;
-
-                @include tablet-and-up {
-                    /*position: relative;*/
-                    display: inline-block;
-                    }
-
-                .kontakt-logo-img {
-                    max-width: 260px;
-                }
-            }
-        }
-
-        li {
-            display: inline-block;
-            @include tablet-and-up {
-                display: inline;
-            }
-        }
-
-        .main-menu-li-links {
-            width: 50px;
-            margin-right: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            :hover {
-                cursor: pointer;
-            }
-
-            @include tablet-and-up {
-                text-align: center;
-                padding-right: 10px;
-                width: 60px;
-                //height: 120px;
-                }
-
-        }
+  li {
+    display: inline-block;
+    @include tablet-and-up {
+      display: inline;
     }
+  }
+
+  .main-menu-li-links {
+    width: 50px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+
+    :hover {
+      cursor: pointer;
+    }
+
+    @include tablet-and-up {
+      text-align: center;
+      padding-right: 10px;
+      width: 60px;
+    }
+  }
+}
 
 /* Search Menu */
 
@@ -128,115 +134,115 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 //hide dropdown as default
 #nav-search .search-menu-ul {
-    display: none;
+  display: none;
 }
 
 //make dropdown visible when checkbox is checked
-#toggle:checked~.search-menu-ul {
-    display: block;
+#toggle:checked ~ .search-menu-ul {
+  display: block;
 }
 
 // hide the checkbox
 #nav-search input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 //Search dropdown
 .search-menu-ul {
+  cursor: text;
+  &:hover {
     cursor: text;
+  }
+  input#user-search {
+    position: relative;
+    width: 100%;
+    cursor: text;
+    height: 45px;
+    font-size: 1.8rem;
     &:hover {
-        cursor: text;
+      cursor: text;
     }
-    #user-search {
-        position: relative;
-        line-height: 36px;
-        font-size: 1.5rem;
-        width: 90%;
-        cursor: text;
-        &:hover {
-            cursor: text;
-        }
+  }
+
+  #opacity-cover {
+    width: 100%;
+    height: 1000vh;
+    background: rgba($color: #000000, $alpha: 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    cursor: default;
+
+    :hover {
+      cursor: default;
+    }
+  }
+
+  form {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 20px;
+    height: 0px; // Quick fix for removing cursor pointer which wont go away without some re-organization
+    cursor: default;
+    &:hover {
+      cursor: default;
     }
 
-    #opacity-cover {
-        width: 100%;
-        height: 1000vh;
-        background: rgba($color: #000000, $alpha: 0.95);
+    #close-label {
+      color: white;
+      padding: 0;
+      position: fixed;
+      right: 32px;
+      top: 70px;
+      font-weight: normal;
+
+      #img-close-search {
+        height: 45px;
+        margin: 0;
         position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        overflow: hidden;
-        cursor: default;
-
-        :hover {
-            cursor: default;
-        }
+        right: 32px;
+        top: 15px;
+      }
     }
 
-    form {
-        position: absolute;
-        top: 200px;
-        left: 0;
-        z-index: 3;
-        width: 100%;
-        height: 0px; // Quick fix for removing cursor pointer which wont go away without some re-organization
-        cursor: default;
-        &:hover {
-            cursor: default;
+    #menu-submit {
+      color: white;
+      font-size: 1.4rem;
+      padding: 8px;
+      background: transparent;
+      margin-top: 16px;
+      width: 90px;
+      //border: 1px solid rgb(250, 250, 250);
+      
+      &:hover {
+        cursor: pointer;
+        //border: 1px solid rgb(255, 255, 255);
+        @include tablet-and-up {
+          font-weight: normal;
         }
-
-        #close-label {
-            color: white;
-            padding: 0;
-            position: fixed;
-            right: 32px;
-            top: 70px;
-            font-weight: normal;
-
-        #img-close-search {
-            height: 45px;
-            margin: 0;
-            position: fixed;
-            right: 32px;
-            top: 15px;
-        }
+      }
     }
-       
 
-        #menu-submit {
-            color: white;
-            font-size: 1.4rem;
-            padding: 8px;
-            background: transparent;
-            margin-top: 16px;
-            width: 90px;
+    #menu-submit-close {
+      background-color: Transparent;
+      position: fixed;
+      right: 27px;
+      top: 15px;
+      width: 55px;
+      height: 72px;
+      border: none;
 
-            &:hover {
-                cursor: pointer;
-                font-weight: bold;
-
-                @include tablet-and-up {
-                    font-weight: normal;
-                }
-            }
-        }
-
-        #menu-submit-close {
-            background-color: Transparent;
-            position: fixed;
-            right: 27px;
-            top: 15px;
-            width: 55px;
-            height: 72px;
-            border: none;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
 }
 
 /* Hamburger Menu */
@@ -245,230 +251,249 @@ input:focus:not(:checked)+#toggle-menu-2 {
 
 //hide dropdown as default
 #nav-menu .burger-menu-ul {
-    display: none;
+  display: none;
 }
 
 //make dropdown visible when checkbox is checked
-#toggle-2:checked~.burger-menu-ul {
-    display: block;
+#toggle-2:checked ~ .burger-menu-ul {
+  display: block;
 }
 
 // hide the checkbox
 #nav-menu input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 // Burger dropdown
 #nav-menu {
-    
-    @include tablet-and-up {
-        display: inline-block;
-        grid-area: d;
+  @include tablet-and-up {
+    display: inline-block;
+  }
+
+  .burger-menu-ul {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+
+    :hover {
+      cursor: default;
     }
 
-    .burger-menu-ul {
-        z-index: 5;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: transparent;
+    @include tablet-and-up {
+      display: flex;
+      top: 115px;
+      width: 100%;
+      z-index: 0;
+      margin-left: -8px; // Quick-fix for centering the menu in desktop mode
+      padding-right: 8px;
+      height: 43px;
+      justify-content: center;
+    }
+
+    #close-li {
+      position: fixed;
+      top: 0;
+      right: 2%;
+      cursor: pointer;
+
+      @include tablet-and-up {
+        display: none;
+      }
+    }
+
+    #close-menu-icon {
+      position: fixed;
+      right: 27px;
+      top: 15px;
+      font-weight: normal;
+      width: 55px;
+      height: 72px;
+      font-size: 1.1rem;
+      line-height: 0;
+
+      .img-close {
+        height: 45px;
+        margin: 0 0 8px 0;
+      }
+
+      @include tablet-and-up {
+        display: none;
+      }
+    }
+
+    #opacity-cover-2 {
+      z-index: 4;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1000vh;
+      background-color: rgba(0, 0, 0, 0.95);
+      overflow: hidden;
+
+      :hover {
+        cursor: default;
+      }
+
+      @include tablet-and-up {
+        display: none;
+      }
+    }
+
+    li {
+      position: relative;
+      width: 100%;
+      line-height: 42px;
+      z-index: 6;
+      margin-bottom: 15px;
+
+      :hover {
+        cursor: pointer;
+      }
+
+      @include tablet-and-up {
+        width: auto;
+        margin-left: 16px;
 
         :hover {
-            cursor: default;
+          cursor: pointer;
+          font-size: 1.1rem;
         }
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        position: relative;
+        overflow: hidden;
 
         @include tablet-and-up {
-            display: flex;
-            top: 115px;
-            width: 100%;
-            z-index: 0;
-            margin-left: -8px; // Quick-fix for centering the menu in desktop mode
-            padding-right: 8px;
-            height: 43px;
-            justify-content: space-around;
+          font-size: 1.1rem;
+          color: black;
+          display: block;
+          border-bottom: black solid 2px;
+          line-height: 1.8rem;
         }
 
-        #close-li {
-            position: fixed;
-            top: 0;
-            right: 2%;
-            cursor: pointer;
+        &#burger-menu-current-page {
+          color: $grey-text;
+          font-size: 1.8rem;
 
-            @include tablet-and-up {
-               display: none;
-            }
-        }
-
-        #close-menu-icon {
-            position: fixed;
-            right: 27px;
-            top: 15px;
-            font-weight: normal;
-            width: 55px;
-            height: 72px;
+          @include tablet-and-up {
+            color: black;
             font-size: 1.1rem;
-            line-height: 0;
-
-            .img-close {
-                height: 45px;
-                margin: 0 0 8px 0;
-            }
-
-            @include tablet-and-up {
-                display: none;
-            }
-
+          }
         }
-
-        #opacity-cover-2 {
-            z-index: 4;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 1000vh;
-            background-color: rgba(0, 0, 0, 0.95);
-            overflow: hidden;
-
-            :hover {
-                cursor: default;
-            }
-
-            @include tablet-and-up {
-                display: none;
-            }
-        }
-
-        li {
-            position: relative;
-            width: 100%;
-            line-height: 42px;
-            z-index: 6;
-            margin-bottom: 15px;
-
-            :hover {
-                cursor: pointer;
-                font-size: 1.7rem;
-            }
-
-            @include tablet-and-up {
-                width: auto;
-                margin-left: 16px;
-
-                :hover {
-                    cursor: pointer;
-                    font-size: 1.1rem;
-                }
-            }
-
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 1.8rem;
-                position: relative;
-                overflow: hidden;
-
-                @include tablet-and-up {
-                    font-size: 1.1rem;
-                    color: black;
-                    display: block;
-                    border-bottom: black solid 2px;
-                    line-height: 1.8rem;
-                }
-
-                &#burger-menu-current-page {
-                    color: $grey-text;
-                    font-size: 1.8rem;
-
-                    @include tablet-and-up {
-                        color: black;
-                        font-size: 1.1rem;
-                    }
-                }
-
-            }
-        }
+      }
     }
+  }
 }
 
 /* some common styling between search menu and hamburger menu */
 
 #nav-search,
 #nav-menu {
-    font-size: 1.1rem;
-    font-weight: bold;
-    z-index: 1;
-    }
-
-    #nav-search {
-        @include tablet-and-up {
-            display: inline-block;
-        }
-    }
-.burger-menu-image,
-.search-menu-image {
-    width: 50px;
-    margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  z-index: 1;
 }
 
+#nav-search {
+  @include tablet-and-up {
+    //display: inline-block;
+    //position: relative;
+    //top: 0;
+    //right: 380px;
+    //top: 0;
+    //left: 600px;
+  }
+}
+.burger-menu-image {
+  width: 50px;
+  margin-bottom: 6px;
+}
 
+.search-menu-image {
+  width: 40px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  @include tablet-and-up {
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+}
 
 // make focus on checkbox labels cover both image and text in a rectangle
 #toggle-menu {
-    display: block;
-    height: 85px;
+  display: block;
+  height: 75px;
+  @include tablet-and-up {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
 }
 
 #toggle-menu-2 {
-    display: block;
-    height: 85px;
-    @include tablet-and-up {
-        display: none;
-    }
+  display: block;
+  height: 75px;
+  @include tablet-and-up {
+    display: none;
+  }
 }
 
 /* Search menu and hamburger menu accessibility */
 
 /* Hide spans */
 .vh {
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* Show spans based on checked/unchecked states */
 
 [type="checkbox"]:checked ~ label .expanded-text {
-    display: inline;
+  display: inline;
 }
 
 [type="checkbox"]:checked ~ label .collapsed-text {
-    display: none;
+  display: none;
 }
 
 [type="checkbox"]:not(:checked) ~ label .expanded-text {
-    display: none;
+  display: none;
 }
 
 [type="checkbox"]:not(:checked) ~ label .collapsed-text {
-    display: inline;
+  display: inline;
 }
 
 .main-menu-li-links {
-    @include tablet-and-up {
-        grid-area: b;
-        display: inline-block;
-        justify-self: center;
+  @include tablet-and-up {
+    display: inline-block;
+    justify-self: center;     
+
+    &#sok-li-links {
+      position: absolute;
+      right: 360px;
+      top: -12px;
     }
+  }
 }
 
 #toggle-2 {
-    @include tablet-and-up {
-        display: none;
-    }
+  @include tablet-and-up {
+    display: none;
+  }
 }

@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/main-page.css" />
+    <title>Myndigheten för yrkeshögskolan</title>
+  </head>
 
 <head>
   <meta charset="UTF-8" />
@@ -19,7 +26,7 @@
         </a>
       </li>
 
-      <li class="main-menu-li-links">
+      <li class="main-menu-li-links" id="sok-li-links">
         <nav id="nav-search" aria-label="Sökmeny">
           <input type="checkbox" id="toggle" role="button" aria-haspopup="true" />
           <label for="toggle" id="toggle-menu">
@@ -30,7 +37,7 @@
           </label>
 
           <ul class="search-menu-ul">
-            <div id="opacity-cover" aria-hidden="true"></div>
+            <div id="opacity-cover" aria-hidden="true">
             <form role="form" aria-label="Sök på hemsidan">
               <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
                 aria-label="Sökfält" />
@@ -38,11 +45,12 @@
                 aria-label="Skicka sökningen" />
               <label id="close-label" for="close-form">
                 <img id="img-close-search" src="media/close_icon_white.png" alt="" />
-                stäng
+                Stäng
               </label>
               <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
                 aria-required="false" aria-label="Stäng sökmeny" />
             </form>
+          </div>
           </ul>
         </nav>
       </li>
@@ -72,7 +80,7 @@
             <li id="close-li">
               <a id="close-menu-icon" href="verksamhet.html" aria-label="Stäng meny">
                 <img class="img-close" src="media/close_icon_white.png" alt="" />
-                stäng
+                Stäng
               </a>
             </li>
             <div id="opacity-cover-2" aria-hidden="true"></div>
@@ -222,56 +230,66 @@
   <a href="#top" class="to-top-btn" role="button" title="Gå till toppen" aria-label="Toppen av webbsidan"><i
       class="arrow up"></i>Upp</a>
 
-  <footer role="contentinfo">
-    <section class="footer-container" role="region">
-      <div class="footer-section no-bull">
-        <h4>Kontakta oss</h4>
-        <ul class="no-bull" role="menu" aria-label="Kontakta oss">
-          <li>
-            E-post: <a href="#">info@myh.se</a> eller
-            <a href="#">registrator@myh.se</a>
-          </li>
-          <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
-          <li><a href="#">Fler kontaktuppgifter</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section no-bull">
-        <h4>Om webbplatsen</h4>
-        <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
-          <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
-          <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
-          <li role="menuitem"><a href="#">Webbkarta</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section no-bull">
-        <h4>Våra övriga webbplatser</h4>
-        <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
-          <li role="menuitem">
-            <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-          </li>
-          <li role="menuitem">
-            <a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-          </li>
-          <li role="menuitem">
-            <a href="https://www.blitolk.nu">www.blitolk.nu</a>
-          </li>
-          <li role="menuitem">
-            <a href="https://www.seqf.se">www.seqf.se</a>
-          </li>
-        </ul>
-      </div>
-
-      <section class="footer-section" role="region" aria-label="Ansvarig utgivare">
-        <h4>Ansvarig utgivare</h4>
-        <p>Thomas Persson, generaldirektör MYH.</p>
-      </section>
-    </section>
-    <section class="bottom-footer" role="region" aria-label="Myndigheten för yrkeshögskolan address">
-      <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
-    </section>
-  </footer>
-</body>
-
-</html>
+      <footer role="contentinfo">
+          <section class="footer-container" role="region">
+            <div class="footer-section no-bull">
+              <h4>Kontakta oss</h4>
+              <ul class="no-bull" role="menu" aria-label="Kontakta oss">
+                <li>
+                  E-post: <a href="#">info@myh.se</a> eller
+                  <a href="#">registrator@myh.se</a>
+                </li>
+                <li>Telefon: <a href="#">0102090100</a> </br>(vardagar 8.00 - 17.00)</li>
+              </ul>
+              <span class="make-margin-up"><a class="small-white-button" href="#">Hitta fler kontaktuppgifter</a></span>
+            </div>
+    
+            <div class="footer-section no-bull">
+              <h4>Om webbplatsen</h4>
+              <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
+                <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
+                <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
+                <li role="menuitem"><a href="#">Webbkarta</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-section no-bull">
+              <h4>Våra övriga webbplatser</h4>
+              <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
+                <li role="menuitem">
+                  <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+                </li>
+                <li role="menuitem">
+                  <a href="https://www.konstkulturutbildning.se"
+                    >www.konstkulturutbildning.se</a
+                  >
+                </li>
+                <li role="menuitem">
+                  <a href="https://www.blitolk.nu">www.blitolk.nu</a>
+                </li>
+                <li role="menuitem">
+                  <a href="https://www.seqf.se">www.seqf.se</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+            <section
+              class="footer-section"
+              role="region"
+              aria-label="Ansvarig utgivare"
+            >
+              <h4>Ansvarig utgivare</h4>
+              <p>Thomas Persson, generaldirektör MYH.</p>
+            </section>
+          </section>
+          <section
+            class="bottom-footer"
+            role="region"
+            aria-label="Myndigheten för yrkeshögskolan address"
+          >
+            <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
+          </section>
+        </footer>
+      </body>
+    </html>    

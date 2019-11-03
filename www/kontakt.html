@@ -1,318 +1,475 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/main-page.css" />
+    <title>Myndigheten för yrkeshögskolan</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="style/main-page.css" />
-  <title>Myndigheten för yrkeshögskolan</title>
-</head>
+  <body>
+    <nav class="main-menu-nav" role="navigation">
+      <ul class="main-menu-ul" role="menu">
+        <li id="main-menu-li-logo">
+          <a id="kontakt-logo-anchor" href="index.html">
+            <img
+              src="media/myh_logo.png"
+              class="kontakt-logo-img"
+              alt="Länk till förstasidan"
+            />
+          </a>
+        </li>
 
-<body>
-  <nav class="main-menu-nav" role="navigation">
-    <ul class="main-menu-ul" role="menu">
-      <li id="main-menu-li-logo">
-        <a id="kontakt-logo-anchor" href="index.html">
-          <img src="media/myh_logo.png" class="kontakt-logo-img" alt="Länk till förstasidan">
-        </a>
-      </li>
+        <li class="main-menu-li-links" id="sok-li-links">
+          <nav id="nav-search" aria-label="Sökmeny">
+            <input
+              type="checkbox"
+              id="toggle"
+              role="button"
+              aria-haspopup="true"
+            />
+            <label for="toggle" id="toggle-menu">
+              <span class="vh expanded-text">Expanderad&lt;</span>
+              <span class="vh collapsed-text">Kollapsad</span>
 
-      <li class="main-menu-li-links">
-        <nav id="nav-search" aria-label="Sökmeny">
-          <input type="checkbox" id="toggle" role="button" aria-haspopup="true">
-          <label for="toggle" id="toggle-menu">
+              <img
+                src="media/search_icon.png"
+                class="search-menu-image"
+                alt=""
+              />Sök
+            </label>
 
-            <span class="vh expanded-text">Expanderad&lt;</span>
-            <span class="vh collapsed-text">Kollapsad</span>
+            <ul class="search-menu-ul">
+              <div id="opacity-cover" aria-hidden="true">
+              <form role="form" aria-label="Sök på hemsidan">
+                <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
+                  aria-label="Sökfält" />
+                <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
+                  aria-label="Skicka sökningen" />
+                <label id="close-label" for="close-form">
+                  <img id="img-close-search" src="media/close_icon_white.png" alt="" />
+                  Stäng
+                </label>
+                <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
+                  aria-required="false" aria-label="Stäng sökmeny" />
+              </form>
+            </div>
+            </ul>
+            </nav>
+        </li>
 
-            <img src="media/search_icon.png" class="search-menu-image" alt="">Sök
-          </label>
+        <li class="main-menu-li-links">
+          <nav id="nav-menu" role="navigation" aria-label="Dropdownmeny">
+            <input
+              type="checkbox"
+              id="toggle-2"
+              role="button"
+              aria-haspopup="true"
+            />
 
-          <ul class="search-menu-ul">
-            <div id="opacity-cover" aria-hidden="true"></div>
-            <form role="form" aria-label="Sök på hemsidan">
-              <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
-                aria-label="Sökfält" />
-              <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
-                aria-label="Skicka sökningen" />
-              <label id="close-label" for="close-form"> <img id="img-close-search" src="media/close_icon_white.png"
-                  alt=""> stäng </label>
-              <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
-                aria-required="false" aria-label="Stäng sökmeny" />
-            </form>
-          </ul>
-        </nav>
-      </li>
+            <label for="toggle-2" id="toggle-menu-2">
+              <span class="vh expanded-text">Expanderad&lt;</span>
+              <span class="vh collapsed-text">Kollapsad</span>
 
-      <li class="main-menu-li-links">
-        <nav id="nav-menu" role="navigation" aria-label="Dropdownmeny">
-          <input type="checkbox" id="toggle-2" role="button" aria-haspopup="true">
+              <img
+                src="media/burger_icon.png"
+                class="burger-menu-image"
+                alt=""
+              />Meny
+            </label>
 
-          <label for="toggle-2" id=toggle-menu-2>
+            <ul class="burger-menu-ul" role="menu">
+              <li role="menuitem"><a href="index.html">Start</a></li>
+              <li role="menuitem"><a href="om_oss.html">Om oss</a></li>
+              <li role="menuitem">
+                <a href="verksamhet.html">Verksamhetsområden</a>
+              </li>
+              <li role="menuitem"><a href="#">Lagar, regler, tillsyn</a></li>
+              <li role="menuitem"><a href="#">Statistik</a></li>
+              <li role="menuitem"><a href="#">Publikationer</a></li>
+              <li role="menuitem"><a href="#">Nyhetsrum</a></li>
+              <li role="menuitem">
+                <a id="burger-menu-current-page" href="kontakt.html">Kontakt</a>
+              </li>
+              <li id="close-li">
+                <a
+                  id="close-menu-icon"
+                  href="kontakt.html"
+                  aria-label="Stäng meny"
+                >
+                  <img
+                    class="img-close"
+                    src="media/close_icon_white.png"
+                    alt=""
+                  />
+                  Stäng
+                </a>
+              </li>
+              <div id="opacity-cover-2" aria-hidden="true"></div>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </nav>
 
-            <span class="vh expanded-text">Expanderad&lt;</span>
-            <span class="vh collapsed-text">Kollapsad</span>
-
-            <img src="media/burger_icon.png" class="burger-menu-image" alt="">Meny
-          </label>
-
-          <ul class="burger-menu-ul" role="menu">
-            <li role="menuitem"><a href="index.html">Start</a> </li>
-            <li role="menuitem"><a href="om_oss.html">Om oss</a></li>
-            <li role="menuitem"><a href="verksamhet.html">Verksamhetsområden</a></li>
-            <li role="menuitem"><a href="#">Lagar, regler, tillsyn</a></li>
-            <li role="menuitem"><a href="#">Statistik</a></li>
-            <li role="menuitem"><a href="#">Publikationer</a></li>
-            <li role="menuitem"><a href="#">Nyhetsrum</a></li>
-            <li role="menuitem"><a id="burger-menu-current-page" href="kontakt.html">Kontakt</a></li>
-            <li id="close-li"> <a id=close-menu-icon href="kontakt.html" aria-label="Stäng meny">
-                <img class="img-close" src="media/close_icon_white.png" alt=""> stäng </a></li>
-            <div id="opacity-cover-2" aria-hidden="true"></div>
-          </ul>
-        </nav>
-      </li>
-    </ul>
-  </nav>
-
-  <nav class="top-links-nav" role="navigation" aria-label="Meny för användarvänlighet">
-    <ul class="top-links-ul" role="menubar">
-      <li class="top-links-li" role="menuitem" aria-label="Större text">
-        <a href="#">
-          <img class="top-links-image" src="./media/larger_icon.png" alt="">
-          <span>Större text</span>
-        </a>
-      </li>
-      <li class="top-links-li" role="menuitem" aria-label="Lättläst">
-        <a href="#">
-          <img class="top-links-image" src="./media/eye_icon.png" alt="">
-          <span>Lättläst</span>
-        </a>
-      </li>
-      <li class="top-links-li" role="menuitem" aria-label="English">
-        <a href="#">
-          <img class="top-links-image" src="./media/uk_icon.png" alt="">
-          <span>English</span>
-        </a>
-      </li>
-      <li class="top-links-li" role="menuitem" aria-label="Mina sidor">
-        <a href="#">
-          <img class="top-links-image" src="./media/lock_icon.png" alt="">
-          <span>Mina sidor</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="grid-container-kontakt page">
-  <main role="main">
-      
-    <section class="head-section">
-      <header id="kontakta-oss-header" role="banner">
-        <h1>Kontakta oss</h1>
-      </header>
-      <img src="media/kontakt/telephone.png" class="page-head-img" alt="Kontakta oss" />
-      <p>
-        Här hittar du kontaktuppgifter till oss på Myndigheten för
-        yrkeshögskolan.
-      </p>
-      <section
-      class="social"
-      role="region"
-      id="dela-om-oss"
-      aria-label="Dela denna sida"
+    <nav
+      class="top-links-nav"
+      role="navigation"
+      aria-label="Meny för användarvänlighet"
     >
-      <h2>Dela denna sida via: </h3>
-      <ul class="no-bull social-icons" id="dela-om-oss-ul" role="menubar">
-        <li role="menuitem">
-          <a href="#"
-            ><img src="media/share_fb.png" width="25" height="25" alt="Facebook"
-          /></a>
+      <ul class="top-links-ul" role="menubar">
+        <li class="top-links-li" role="menuitem" aria-label="Större text">
+          <a href="#">
+            <img class="top-links-image" src="./media/larger_icon.png" alt="" />
+            <span>Större text</span>
+          </a>
         </li>
-        <li role="menuitem">
-          <a href="#"
-            ><img src="media/share_twitter.png" width="25" height="25" alt="Twitter"
-          /></a>
+        <li class="top-links-li" role="menuitem" aria-label="Lättläst">
+          <a href="#">
+            <img class="top-links-image" src="./media/eye_icon.png" alt="" />
+            <span>Lättläst</span>
+          </a>
         </li>
-        <li role="menuitem">
-          <a href="#"
-            ><img src="media/share_linkedin.png" width="25" height="25" alt="linkedin"
-          /></a>
+        <li class="top-links-li" role="menuitem" aria-label="English">
+          <a href="#">
+            <img class="top-links-image" src="./media/uk_icon.png" alt="" />
+            <span>English</span>
+          </a>
         </li>
-        <li role="menuitem">
-          <a href="#"
-            ><img src="media/share_email.png" width="25" height="25" alt="E-mail"
-          /></a>
+        <li class="top-links-li" role="menuitem" aria-label="Mina sidor">
+          <a href="#">
+            <img class="top-links-image" src="./media/lock_icon.png" alt="" />
+            <span>Mina sidor</span>
+          </a>
         </li>
       </ul>
-    </section>
-    </section>
+    </nav>
 
-    <section id="contact-form-section">
-        <h2>Kontaktformulär</h2>
-      <form>
-        <label for="field1" id="top-label">För- och efternamn*</label>
-        <input type="text" name="field1" aria-required="true" aria-labelledby="field1" />
-        <label for="field2">E-postadress*</label>
-        <input type="email" name="field2" aria-required="true" aria-labelledby="field2" />
-        <label for="field3">Telefonnummer</label>
-        <input type="tel" name="field3" aria-required="false" aria-labelledby="field3" />
-        <label for="field4">Ämne*</label>
-        <input type="text" name="field4" aria-required="true" aria-labelledby="field4" />
-        <label for="field5">Meddelande*</label>
-        <textarea name="field5" aria-required="true" aria-multiline="true" aria-labelledby="field5"></textarea>
-        <p class="small-form-text">Samtliga fält markerade med * är obligatoriska.</p>
-        <input id="form-send-btn" type="submit" value="Skicka" aria-required="true" aria-label="Skicka meddelande"/>
-      </form>
-    </section>
-  </main>
+    <div class="grid-container-kontakt page">
+      <main id="contact-main" role="main">
+        <section class="head-section">
+          <header id="kontakta-oss-header" role="banner">
+            <img
+              src="media/kontakt/telephone.png"
+              class="page-head-img"
+              alt="Kontakta oss"
+            />
+            <h1>Kontakta oss</h1>
+          </header>
+          <p>
+            Här hittar du kontaktuppgifter till oss på Myndigheten för
+            yrkeshögskolan.
+          </p>
+          <section
+            class="social"
+            role="region"
+            id="dela-om-oss"
+            aria-label="Dela denna sida"
+          >
+            <h2>Dela denna sida:</h2>
+            <ul class="no-bull social-icons" id="dela-om-oss-ul" role="menubar">
+              <li role="menuitem">
+                <a href="#"
+                  ><img
+                    src="media/share_fb.png"
+                    width="45"
+                    height="45"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li role="menuitem">
+                <a href="#"
+                  ><img
+                    src="media/share_twitter.png"
+                    width="45"
+                    height="45"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li role="menuitem">
+                <a href="#"
+                  ><img
+                    src="media/share_linkedin.png"
+                    width="45"
+                    height="45"
+                    alt="linkedin"
+                /></a>
+              </li>
+              <li role="menuitem">
+                <a href="#"
+                  ><img
+                    src="media/share_email.png"
+                    width="45"
+                    height="45"
+                    alt="E-mail"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </section>
 
-  <div id="contact-section-container">
-    <section class="section" role="region" id="grid-tele" aria-label="Telefon, kundforum och e-post">
-      <h2>Telefon</h2>
-      <p>
-        Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende! Växeln
-        är öppen vardagar kl 8.00-17.00.
-      </p>
+        <section id="contact-form-section">
+          <h2>Kontaktformulär</h2>
+          <form>
+            <label for="field1" id="top-label">För- och efternamn*</label>
+            <input
+              type="text"
+              name="field1"
+              aria-required="true"
+              aria-labelledby="field1"
+            />
+            <label for="field2">E-postadress*</label>
+            <input
+              type="email"
+              name="field2"
+              aria-required="true"
+              aria-labelledby="field2"
+            />
+            <label for="field3">Telefonnummer</label>
+            <input
+              type="tel"
+              name="field3"
+              aria-required="false"
+              aria-labelledby="field3"
+            />
+            <label for="field4">Ämne*</label>
+            <input
+              type="text"
+              name="field4"
+              aria-required="true"
+              aria-labelledby="field4"
+            />
+            <label for="field5">Meddelande*</label>
+            <textarea
+              name="field5"
+              aria-required="true"
+              aria-multiline="true"
+              aria-labelledby="field5"
+            ></textarea>
+            <p class="small-form-text">
+              Samtliga fält markerade med * är obligatoriska.
+            </p>
+            <input
+              id="form-send-btn"
+              type="submit"
+              value="Skicka"
+              aria-required="true"
+              aria-label="Skicka meddelande"
+            />
+          </form>
+        </section>
 
-      <h2>Kundforum</h2>
-      <p>
-        Se vanliga frågor och svar samt ställ dina frågor i vårt
-        <a href="#">digitala frågeforum.</a>
-      </p>
+        <section
+          class="section"
+          id="grid-hitta"
+          role="region"
+          aria-label="Hitta till oss"
+        >
+          <h2>Hitta till oss</h2>
+          <div id="section-map">
+            <iframe
+              src="https://maps.google.se/maps/ms?msa=0&msid=208106955202648480291.0004b2df7f01bd721b100&ie=UTF8&t=m&vpsrc=6&ll=58.813742,14.194336&spn=9.11878,20.610352&z=5&output=embed"
+              title="Våra besöksaddresser på Google Maps"
+              style="border:0;"
+              allowfullscreen=""
+            >
+            </iframe>
+          </div>
+          <p>
+            <a
+              href="#"
+              aria-label="Visa Myndigheten för yrkeshögskolan på en större karta"
+              >Visa Myndigheten för yrkeshögskolan på en större karta</a
+            >
+          </p>
+        </section>
+      </main>
 
-      <h2>E-post</h2>
-      <p>Allmänna frågor/synpunkter: <a href="#">info@myh.se</a></p>
-      <p>Registrator: <a href="#">registrator@myh.se</a></p>
-      <p>Webbfrågor: <a href="#">webbredaktionen@myh.se</a></p>
-      <p>Personlig e-post enligt <a href="#">fornamn.efternamn@myh.se</a></p>
-    </section>
+      <aside role="complementary" id="contact-aside">
+        <section
+          class="section-lyellow"
+          role="region"
+          id="grid-tele"
+          aria-label="Telefon, kundforum och e-post"
+        >
+          <h2>Telefon</h2>
+          <p>
+            Ring vår växel 010-209 01 00 så hjälper vi dig med ditt ärende!
+            Växeln är öppen vardagar kl 8.00-17.00.
+          </p>
 
-    <section class="section-lyellow" role="region" aria-label="Postadresser och Besöksadresser">
-      <h2>Postadress Västerås</h2>
-      <p>Myndigheten för yrkeshögskolan</p>
-      <p>Box 145</p>
-      <p>721 05 Västerås</p>
+          <h2>Kundforum</h2>
+          <p>
+            Se vanliga frågor och svar samt ställ dina frågor i vårt
+            <a href="#">digitala frågeforum.</a>
+          </p>
 
-      <h2>Besöksadress Västerås</h2>
-      <p>Ingenjör Bååths gata 19</p>
-      <p>722 12 Västerås</p>
-      <p>
-        Öppettider: Helgfri måndag-fredag kl 9.00-15.00 med lunchstängt kl
-        12.00-13.00. Begränsade öppettider 24 juni-16 augusti: 9.00-11.00.
-      </p>
+          <h2>E-post</h2>
+          <p>Allmänna frågor/synpunkter: <a href="#">info@myh.se</a></p>
+          <p>Registrator: <a href="#">registrator@myh.se</a></p>
+          <p>Webbfrågor: <a href="#">webbredaktionen@myh.se</a></p>
+          <p>
+            Personlig e-post enligt <a href="#">fornamn.efternamn@myh.se</a>
+          </p>
+        </section>
 
-      <h2>Postadress Hässleholm</h2>
-      <p>Myndigheten för yrkeshögskolan</p>
-      <p>Box 85</p>
-      <p>281 21 Hässleholm</p>
+        <section
+          class="section"
+          id="grid-post-besok"
+          role="region"
+          aria-label="Postadresser och Besöksadresser"
+        >
+          <h2>Postadress Västerås</h2>
+          <p>Myndigheten för yrkeshögskolan</p>
+          <p>Box 145</p>
+          <p>721 05 Västerås</p>
 
-      <h2>Besöksadress Hässleholm</h2>
-      <p>Frykholmsgatan 10</p>
-      <p>281 31 Hässleholm</p>
-    </section>
+          <h2>Besöksadress Västerås</h2>
+          <p>Ingenjör Bååths gata 19</p>
+          <p>722 12 Västerås</p>
+          <p>
+            Öppettider: Helgfri måndag-fredag kl 9.00-15.00 med lunchstängt kl
+            12.00-13.00. Begränsade öppettider 24 juni-16 augusti: 9.00-11.00.
+          </p>
 
-    <section class="section-yellow" role="region" id="grid-org" aria-label="Organisationsnummer, skicka faktura, Innan du kontaktar oss">
-      <h2>Organisationsnummer</h2>
-      <p>202100-6230</p>
+          <h2>Postadress Hässleholm</h2>
+          <p>Myndigheten för yrkeshögskolan</p>
+          <p>Box 85</p>
+          <p>281 21 Hässleholm</p>
 
-      <h2>Skicka faktura</h2>
-      <p>
-        Från och med den 1 april 2019 blir det lag på att alla inköp i
-        offentlig sektor ska faktureras med elektronisk faktura (e-faktura).
-        <a href="#">Läs här om hur du kan fakturera oss elektroniskt.</a></p>
+          <h2>Besöksadress Hässleholm</h2>
+          <p>Frykholmsgatan 10</p>
+          <p>281 31 Hässleholm</p>
+        </section>
 
+        <section
+          class="section-grey"
+          role="region"
+          id="grid-org"
+          aria-label="Organisationsnummer, skicka faktura, Innan du kontaktar oss"
+        >
+          <h2>Organisationsnummer</h2>
+          <p>202100-6230</p>
 
-      <h2>Bra att veta innan du kontaktar oss</h2>
-      <p>
-        Myndigheten för yrkeshögskolan är en statlig myndighet. Det du skickar
-        till oss via e-post, post eller fax blir därför en allmän handling. Vi
-        registrerar allmänna handlingar och sparar dem i vårt diarium.
-      </p>
-    </section>
-  </div>
+          <h2>Skicka faktura</h2>
+          <p>
+            Från och med den 1 april 2019 blir det lag på att alla inköp i
+            offentlig sektor ska faktureras med elektronisk faktura (e-faktura).
+            <a href="#">Läs här om hur du kan fakturera oss elektroniskt.</a>
+          </p>
 
-    <section class="section" id="grid-hitta" role="region" aria-label="Hitta till oss">
-      <h2>Hitta till oss</h2>
-      <div id="section-map">
-        <iframe id="google-maps"
-          src="https://maps.google.se/maps/ms?msa=0&msid=208106955202648480291.0004b2df7f01bd721b100&ie=UTF8&t=m&vpsrc=6&ll=58.813742,14.194336&spn=9.11878,20.610352&z=5&output=embed"
-          title="Våra besöksaddresser på Google Maps" style="border:0;" allowfullscreen="">
-        </iframe>
+          <h2>Bra att veta innan du kontaktar oss</h2>
+          <p>
+            Myndigheten för yrkeshögskolan är en statlig myndighet. Det du
+            skickar till oss via e-post, post eller fax blir därför en allmän
+            handling. Vi registrerar allmänna handlingar och sparar dem i vårt
+            diarium.
+          </p>
+        </section>
+
+        <div id="grid-3x">
+          <section
+            class="section-yellow small-container"
+            role="region"
+            id="grid-3x-1"
+            aria-label="Hitta utbildningar"
+          >
+            <a href="#">Hitta utbildningar</a>
+          </section>
+
+          <section
+            class="section-black small-container"
+            role="region"
+            id="grid-3x-2"
+            aria-label="Anmäl brister i en utbildning"
+          >
+            <a href="#">Anmäl brister i en utbildning</a>
+          </section>
+
+          <section
+            class="section-lblue small-container"
+            role="region"
+            id="grid-3x-3"
+            aria-label="Jobba hos oss"
+          >
+            <a href="#">Jobba hos oss</a>
+          </section>
+        </aside>
+
+        <a
+          href="#top"
+          class="to-top-btn"
+          role="button"
+          title="Gå till toppen"
+          aria-label="Toppen av webbsidan"
+          ><i class="arrow up"></i>Upp</a
+        >
       </div>
-      <p>
-        <a href="#" aria-label="Visa Myndigheten för yrkeshögskolan på en större karta">Visa Myndigheten för yrkeshögskolan på en större karta</a>
-      </p>
-    </section>
+    </div>
 
-    <div id="grid-3x">
-    <section class="section-yellow small-container" role="region" aria-label="Hitta utbildningar">
-      <a href="#">Hitta utbildningar</a>
-    </section>
-
-    <section class="section-black small-container" role="region" aria-label="Anmäl brister i en utbildning">
-      <a href="#">Anmäl brister i en utbildning</a>
-    </section>
-
-    <section class="section-lblue small-container" role="region" aria-label="Jobba hos oss">
-      <a href="#">Jobba hos oss</a>
-    </section>
-  </div>
-    <section class="section social" id="grid-dela" role="region" aria-label="Dela denna sida">
-      <h4>Dela denna sida</h4>
-      <ul class="no-bull social-icons" role="menubar">
-        <li role="menuitem"><a href="#"><img src="media/share_fb.png" width="50" alt="Facebook" /></a></li>
-        <li role="menuitem"><a href="#"><img src="media/share_twitter.png" width="50" alt="Twitter" /></a></li>
-        <li role="menuitem"><a href="#"><img src="media/share_linkedin.png" width="50" alt="linkedin" /></a></li>
-        <li role="menuitem"><a href="#"><img src="media/share_email.png" width="50" alt="E-mail" /></a></li>
-      </ul>
-    </section>
- 
-    <a href="#top" class="to-top-btn" role="button" title="Gå till toppen" aria-label="Toppen av webbsidan"><i
-      class="arrow up"></i>Upp</a>
-</div>
-
-  <footer role="contentinfo">
-    <section class="footer-container" role="region">
-      <div class="footer-section no-bull">
-        <h4>Kontakta oss</h4>
-        <ul class="no-bull" role="menu" aria-label="Kontakta oss">
-          <li>E-post: <a href="#">info@myh.se</a> eller <a href="#">registrator@myh.se</a></li>
-          <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
-          <li><a href="#">Fler kontaktuppgifter</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section no-bull">
-        <h4>Om webbplatsen</h4>
-        <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
-          <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
-          <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
-          <li role="menuitem"><a href="#">Webbkarta</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section no-bull">
-        <h4>Våra övriga webbplatser</h4>
-        <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
-          <li role="menuitem"><a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a></li>
-          <li role="menuitem"><a href="https://www.konstkulturutbildning.se">www.konstkulturutbildning.se</a>
-          </li>
-          <li role="menuitem"><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-          <li role="menuitem"><a href="https://www.seqf.se">www.seqf.se</a></li>
-        </ul>
-      </div>
-
-      <section class="footer-section" role="region" aria-label="Ansvarig utgivare">
-        <h4>Ansvarig utgivare</h4>
-        <p>Thomas Persson, generaldirektör MYH.</p>
-      </section>
-    </section>
-    <section class="bottom-footer" role="region" aria-label="Myndigheten för yrkeshögskolan address">
-      <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
-    </section>
-  </footer>
-</body>
-
-</html>
+    <footer role="contentinfo">
+        <section class="footer-container" role="region">
+          <div class="footer-section no-bull">
+            <h4>Kontakta oss</h4>
+            <ul class="no-bull" role="menu" aria-label="Kontakta oss">
+              <li>
+                E-post: <a href="#">info@myh.se</a> eller
+                <a href="#">registrator@myh.se</a>
+              </li>
+              <li>Telefon: <a href="#">0102090100</a> </br>(vardagar 8.00 - 17.00)</li>
+            </ul>
+            <span class="make-margin-up"><a class="small-white-button" href="#">Hitta fler kontaktuppgifter</a></span>
+          </div>
+  
+          <div class="footer-section no-bull">
+            <h4>Om webbplatsen</h4>
+            <ul class="no-bull" role="menu" aria-label="Om webbplatsen">
+              <li role="menuitem"><a href="#">Använda webbplatsen</a></li>
+              <li role="menuitem"><a href="#">Om webbkakor (cookies)</a></li>
+              <li role="menuitem"><a href="#">Webbkarta</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section no-bull">
+            <h4>Våra övriga webbplatser</h4>
+            <ul class="no-bull" role="menu" aria-label="Våra övriga webbplatser">
+              <li role="menuitem">
+                <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://www.konstkulturutbildning.se"
+                  >www.konstkulturutbildning.se</a
+                >
+              </li>
+              <li role="menuitem">
+                <a href="https://www.blitolk.nu">www.blitolk.nu</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://www.seqf.se">www.seqf.se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+          <section
+            class="footer-section"
+            role="region"
+            aria-label="Ansvarig utgivare"
+          >
+            <h4>Ansvarig utgivare</h4>
+            <p>Thomas Persson, generaldirektör MYH.</p>
+          </section>
+        </section>
+        <section
+          class="bottom-footer"
+          role="region"
+          aria-label="Myndigheten för yrkeshögskolan address"
+        >
+          <p>Myndigheten för yrkeshögskolan, Box 145, 721 05 Västerås</p>
+        </section>
+      </footer>
+    </body>
+  </html>
+  

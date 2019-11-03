@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
           </a>
         </li>
 
-        <li class="main-menu-li-links">
+        <li class="main-menu-li-links" id="sok-li-links">
           <nav id="nav-search" aria-label="Sökmeny">
             <input
               type="checkbox"
@@ -42,42 +42,20 @@
             </label>
 
             <ul class="search-menu-ul">
-              <div id="opacity-cover" aria-hidden="true"></div>
+              <div id="opacity-cover" aria-hidden="true">
               <form role="form" aria-label="Sök på hemsidan">
-                <input
-                  id="user-search"
-                  name="search"
-                  placeholder="Sök..."
-                  type="search"
-                  aria-required="true"
-                  aria-label="Sökfält"
-                />
-                <input
-                  id="menu-submit"
-                  type="submit"
-                  name="submit"
-                  value="Skicka"
-                  aria-required="true"
-                  aria-label="Skicka sökningen"
-                />
+                <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
+                  aria-label="Sökfält" />
+                <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
+                  aria-label="Skicka sökningen" />
                 <label id="close-label" for="close-form">
-                  <img
-                    id="img-close-search"
-                    src="media/close_icon_white.png"
-                    alt=""
-                  />
-                  stäng
+                  <img id="img-close-search" src="media/close_icon_white.png" alt="" />
+                  Stäng
                 </label>
-                <input
-                  id="menu-submit-close"
-                  type="submit"
-                  value="stäng"
-                  name="close-form"
-                  role="button"
-                  aria-required="false"
-                  aria-label="Stäng sökmeny"
-                />
+                <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
+                  aria-required="false" aria-label="Stäng sökmeny" />
               </form>
+            </div>
             </ul>
           </nav>
         </li>
@@ -126,7 +104,7 @@
                     src="media/close_icon_white.png"
                     alt=""
                   />
-                  stäng
+                  Stäng
                 </a>
               </li>
               <div id="opacity-cover-2" aria-hidden="true"></div>
@@ -190,26 +168,26 @@
         id="dela-om-oss"
         aria-label="Dela denna sida"
       >
-        <h2>Dela denna sida via: </h3>
+        <h2>Dela denna sida: </h2>
         <ul class="no-bull social-icons" id="dela-om-oss-ul" role="menubar">
           <li role="menuitem">
             <a href="#"
-              ><img src="media/share_fb.png" width="25" height="25" alt="Facebook"
+              ><img src="media/share_fb.png" width="45" height="45" alt="Facebook"
             /></a>
           </li>
           <li role="menuitem">
             <a href="#"
-              ><img src="media/share_twitter.png" width="25" height="25" alt="Twitter"
+              ><img src="media/share_twitter.png" width="45" height="45" alt="Twitter"
             /></a>
           </li>
           <li role="menuitem">
             <a href="#"
-              ><img src="media/share_linkedin.png" width="25" height="25" alt="linkedin"
+              ><img src="media/share_linkedin.png" width="45" height="45" alt="linkedin"
             /></a>
           </li>
           <li role="menuitem">
             <a href="#"
-              ><img src="media/share_email.png" width="25" height="25" alt="E-mail"
+              ><img src="media/share_email.png" width="45" height="45" alt="E-mail"
             /></a>
           </li>
         </ul>
@@ -248,6 +226,15 @@
             >Läs mer om våra verksamhetsområden</a
           >
         </article>
+
+        <section class="frontpage-link-container section-grey" s>
+            <h4>Yrkes-SM, EM och VM</h4>
+            <p>
+              Som ansvarig myndighet för yrkeshögskoleutbildningarna i Sverige har
+              vi ett naturligt engagemang i de yrkestävlingar som bedrivs.
+            </p>
+            <a href="#"><span class="arrow">Läs mer om MYH:s roll i yrkestävlingarna<span class="arrow"></a>
+          </section>
       </main>
 
       <aside role="complementary" id="om-oss-aside">
@@ -260,28 +247,28 @@
           <h4>Om oss</h4>
           <ul role="menu">
             <li role="menuitem" class="no-bull">
-              <a href="#">Organisation</a>
+              <a href="#"><span class="arrow">Organisation</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Så styrs myndigheten</a>
+                <a href="#"><span class="arrow">Så styrs myndigheten</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Redovisning av verksamheten</a>
+              <a href="#"><span class="arrow">Redovisning av verksamheten</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Remissvar och yttranden</a>
+              <a href="#"><span class="arrow">Remissvar och yttranden</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Pågående upphandlingar</a>
+              <a href="#"><span class="arrow">Pågående upphandlingar</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Fakturera oss</a>
+              <a href="#"><span class="arrow">Fakturera oss</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Jobba hos oss</a>
+              <a href="#"><span class="arrow">Jobba hos oss</span></a>
             </li>
             <li role="menuitem" class="no-bull">
-              <a href="#">Behandling av personuppgifter</a>
+              <a href="#"><span class="arrow">Behandling av personuppgifter</span></a>
             </li>
           </ul>
         </section>
@@ -291,24 +278,13 @@
         </div>
 
         <div class="thomas-image">
-          <a href="#" aria-label="GD har ordet">GD har ordet</a>
+          <a href="#" aria-label="GD har ordet">GD Thomas Persson har ordet</a>
         </div>
-
-        <section class="frontpage-link-container section-lblue" s>
-          <h4>Yrkes-SM, EM och VM</h4>
-          <p>
-            Som ansvarig myndighet för yrkeshögskoleutbildningarna i Sverige har
-            vi ett naturligt engagemang i de yrkestävlingar som bedrivs.
-          </p>
-          <a class="std-button" href="#"
-            >Läs mer om MYH:s roll i yrkestävlingarna</a
-          >
-        </section>
       </aside>
 
       <a href="#top" class="to-top-btn" role="button" title="Gå till toppen" aria-label="Toppen av webbsidan"><i
         class="arrow up"></i>Upp</a>
-
+        
     </div>
 
     <footer role="contentinfo">
@@ -320,9 +296,9 @@
               E-post: <a href="#">info@myh.se</a> eller
               <a href="#">registrator@myh.se</a>
             </li>
-            <li>Telefon: <a href="#">0102090100</a> (vardagar 8.00 - 17.00)</li>
-            <li><a href="#">Fler kontaktuppgifter</a></li>
+            <li>Telefon: <a href="#">0102090100</a> </br>(vardagar 8.00 - 17.00)</li>
           </ul>
+          <span class="make-margin-up"><a class="small-white-button" href="#">Hitta fler kontaktuppgifter</a></span>
         </div>
 
         <div class="footer-section no-bull">
