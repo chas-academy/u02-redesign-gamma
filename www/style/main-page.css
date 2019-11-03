@@ -1725,6 +1725,10 @@ STYLING: SPECIFIC PAGES
   text-align: left;
 }
 
+#grid-hitta {
+  margin-bottom: 20px;
+}
+
 #grid-hitta p {
   margin-top: 20px;
 }
