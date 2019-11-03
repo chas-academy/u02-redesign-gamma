@@ -22,7 +22,7 @@
           </a>
         </li>
 
-        <li class="main-menu-li-links">
+        <li class="main-menu-li-links" id="sok-li-links">
           <nav id="nav-search" aria-label="Sökmeny">
             <input
               type="checkbox"
@@ -42,42 +42,20 @@
             </label>
 
             <ul class="search-menu-ul">
-              <div id="opacity-cover" aria-hidden="true"></div>
+              <div id="opacity-cover" aria-hidden="true">
               <form role="form" aria-label="Sök på hemsidan">
-                <input
-                  id="user-search"
-                  name="search"
-                  placeholder="Sök..."
-                  type="search"
-                  aria-required="true"
-                  aria-label="Sökfält"
-                />
-                <input
-                  id="menu-submit"
-                  type="submit"
-                  name="submit"
-                  value="Skicka"
-                  aria-required="true"
-                  aria-label="Skicka sökningen"
-                />
+                <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
+                  aria-label="Sökfält" />
+                <input id="menu-submit" type="submit" name="submit" value="Skicka" aria-required="true"
+                  aria-label="Skicka sökningen" />
                 <label id="close-label" for="close-form">
-                  <img
-                    id="img-close-search"
-                    src="media/close_icon_white.png"
-                    alt=""
-                  />
+                  <img id="img-close-search" src="media/close_icon_white.png" alt="" />
                   Stäng
                 </label>
-                <input
-                  id="menu-submit-close"
-                  type="submit"
-                  value="stäng"
-                  name="close-form"
-                  role="button"
-                  aria-required="false"
-                  aria-label="Stäng sökmeny"
-                />
+                <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
+                  aria-required="false" aria-label="Stäng sökmeny" />
               </form>
+            </div>
             </ul>
           </nav>
         </li>

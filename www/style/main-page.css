@@ -257,12 +257,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
   background: transparent;
   margin-top: 16px;
   width: 90px;
-  border: 1px solid #fafafa;
 }
 
 .search-menu-ul form #menu-submit:hover {
   cursor: pointer;
-  border: 1px solid white;
 }
 
 @media (min-width: 1020px) {
@@ -539,8 +537,8 @@ input:focus:not(:checked) + #toggle-menu-2 {
   }
   .main-menu-li-links#sok-li-links {
     position: absolute;
-    top: 0;
-    right: 330px;
+    right: 360px;
+    top: -12px;
   }
 }
 
