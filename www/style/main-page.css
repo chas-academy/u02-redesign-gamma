@@ -42,12 +42,6 @@
   font-size: 0.8rem;
 }
 
-@media (min-width: 1020px) {
-  .top-links-nav .top-links-ul .top-links-li span {
-    font-size: 0.7rem;
-  }
-}
-
 .top-links-nav .top-links-ul .top-links-li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,8 +76,8 @@
 @media (min-width: 1020px) {
   .top-links-nav .top-links-ul .top-links-li a .top-links-image {
     margin-right: 5px;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
   }
 }
 

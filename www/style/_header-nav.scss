@@ -28,10 +28,6 @@
       span {
         white-space: nowrap;
         font-size: 0.8rem;
-
-        @include tablet-and-up {
-          font-size: 0.7rem;
-        }
       }
 
       a {
@@ -53,8 +49,8 @@
 
           @include tablet-and-up {
             margin-right: 5px;
-            width: 15px;
-            height: 15px;
+            width: 18px;
+            height: 18px;
           }
         }
       }
