@@ -141,7 +141,7 @@ DEFAULT STYLING PAGES
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px 20px 0px 20px;
+  margin: 20px 20px 20px 20px;
   a {
     color: $black-text;
   }
@@ -172,12 +172,12 @@ DEFAULT STYLING PAGES
   h4 {
     border-bottom: 1px solid #101010;
   }
-  &:last-of-type {
+  /*&:last-of-type {
     margin-bottom: 20px;
   }
   &:first-of-type {
     margin-top: 0px;
-  }
+  }*/
   li + a {
     margin-top: 20px;
   }
@@ -675,23 +675,32 @@ STYLING: SPECIFIC PAGES
   display: flex;
   flex-direction: column;
   text-align: left;
+}
 
-  #section-map {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 25px;
-    padding-top: 56.25%;
-
-    iframe {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+  #grid-hitta {
+    margin-bottom: 20px;
+    
+    p {
       margin-top: 20px;
     }
+
+    #section-map {
+      position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    #google-maps {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+    }
+    }
   }
-}
+
 
 /***
 FRONTPAGE CSS
@@ -1086,6 +1095,7 @@ FOOTER
 **/
 
 footer {
+  margin-top: 20px;
   width: 100%;
   background-color: #363636;
   position: relative;
@@ -1314,13 +1324,17 @@ footer {
     grid-area: grid-hitta;
 
     #section-map {
+<<<<<<< HEAD
       width: 100%;
       margin-top: 14px;
       margin-bottom: 20px;
+=======
+      //width: 100%;
+>>>>>>> master
 
       iframe {
-        width: 100%;
-        height: 400px;
+       // width: 100%;
+      //  height: 400px;
       }
     }
 
@@ -1347,6 +1361,20 @@ footer {
       #hitta-utbildingar {
         margin-top: 20px;
       }
+    }
+  }
+}
+
+
+// VERKSAMHETSOMRADEN RESPONSIVE PROPERTIES
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  .flex-item {
+    width: 30%;
+    @media screen and (max-width: 930px) {
+      width: unset;
     }
   }
 }
