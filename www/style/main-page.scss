@@ -430,6 +430,12 @@ i {
   }
 }
 
+a.to-top-btn {
+  @include tablet-and-up {
+    display: none;
+  }
+}
+
 /*** 
 STYLED LINKS 
 ***/
@@ -679,6 +685,7 @@ STYLING: SPECIFIC PAGES
 
   #grid-hitta {
     margin-bottom: 20px;
+    height: 100%;
     
     p {
       margin-top: 20px;

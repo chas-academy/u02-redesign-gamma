@@ -213,6 +213,8 @@ input:focus:not(:checked) + #toggle-menu-2 {
   position: relative;
   width: 100%;
   cursor: text;
+  height: 45px;
+  font-size: 1.8rem;
 }
 
 .search-menu-ul input#user-search:hover {
@@ -1466,6 +1468,12 @@ i {
   color: white;
 }
 
+@media (min-width: 1020px) {
+  a.to-top-btn {
+    display: none;
+  }
+}
+
 /*** 
 STYLED LINKS 
 ***/
@@ -1825,6 +1833,7 @@ STYLING: SPECIFIC PAGES
 
 #grid-hitta {
   margin-bottom: 20px;
+  height: 100%;
 }
 
 #grid-hitta p {

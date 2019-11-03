@@ -176,6 +176,8 @@ input:focus:not(:checked) + #toggle-menu-2 {
     position: relative;
     width: 100%;
     cursor: text;
+    height: 45px;
+    font-size: 1.8rem;
     &:hover {
       cursor: text;
     }
