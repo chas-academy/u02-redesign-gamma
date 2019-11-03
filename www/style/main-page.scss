@@ -93,7 +93,6 @@ body {
     .page {
       width: 1020px;
       margin: 0 auto;
-      margin-top: 20px;
     }
   }
 }
@@ -147,7 +146,7 @@ DEFAULT STYLING PAGES
 @mixin standard-container {
   padding: 16px;
   background-color: $secondary-color;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   a {
     color: $black-text;
   }
@@ -1196,11 +1195,13 @@ footer {
     #grid-ansok {
       grid-area: ansok;
       margin-right: 0px;
+      margin-top: 20px;
     }
 
     #grid-fordig {
       grid-area: fordig;
       margin-right: 0;
+      margin-top: 20px;
     }
 
     #grid-forforetag {
@@ -1306,54 +1307,6 @@ footer {
       }
     }
   }
-
-  /* 
-  .head-section {
-    grid-area: contact-head;
-  }
-
-  #contact-form-section {
-    grid-area: kontakt-form;
-
-    form {
-      width: 100%;
-    }
-  }
-
-  #contact-section-container {
-    grid-area: kontakt-telefon;
-
-    #grid-tele {
-      margin: 20px 20px 0px 20px;
-    }
-  }
-
-  #grid-3x {
-    grid-area: kontakt-3x;
-  }
-
-  #grid-hitta {
-    grid-area: grid-hitta;
-
-    #section-map {
-<<<<<<< HEAD
-      width: 100%;
-      margin-top: 14px;
-      margin-bottom: 20px;
-=======
-      //width: 100%;
->>>>>>> master
-
-      iframe {
-       // width: 100%;
-      //  height: 400px;
-      }
-    }
-
-    #grid-org {
-    }
-  }
-} */
 
   /** Om Oss **/
   .grid-container-om-oss {

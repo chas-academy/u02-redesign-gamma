@@ -612,7 +612,6 @@ body {
   .page .page {
     width: 1020px;
     margin: 0 auto;
-    margin-top: 20px;
   }
 }
 
@@ -668,7 +667,7 @@ DEFAULT STYLING PAGES
 .head-section {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -720,7 +719,7 @@ DEFAULT STYLING PAGES
 .section {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -767,7 +766,7 @@ DEFAULT STYLING PAGES
 .section-no-bg {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -815,7 +814,7 @@ DEFAULT STYLING PAGES
 .section-lblue {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -863,7 +862,7 @@ DEFAULT STYLING PAGES
 .section-lgrey {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -911,7 +910,7 @@ DEFAULT STYLING PAGES
 .section-green {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -968,7 +967,7 @@ DEFAULT STYLING PAGES
 .section-lyellow {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -1016,7 +1015,7 @@ DEFAULT STYLING PAGES
 .section-yellow {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -1064,7 +1063,7 @@ DEFAULT STYLING PAGES
 .section-grey {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -1112,7 +1111,7 @@ DEFAULT STYLING PAGES
 .section-dgrey {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -1161,7 +1160,7 @@ DEFAULT STYLING PAGES
 .section-black {
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -1710,7 +1709,7 @@ STYLING: SPECIFIC PAGES
           align-items: center;
   padding: 16px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   /*&:last-of-type {
     margin-bottom: 20px;
   }
@@ -2501,12 +2500,14 @@ footer .bottom-footer {
     -ms-grid-column: 1;
     grid-area: ansok;
     margin-right: 0px;
+    margin-top: 20px;
   }
   #main-index #grid-fordig {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: fordig;
     margin-right: 0;
+    margin-top: 20px;
   }
   #main-index #grid-forforetag {
     -ms-grid-row: 2;
@@ -2601,53 +2602,6 @@ footer .bottom-footer {
   .grid-container-kontakt #contact-aside #grid-hitta {
     grid-area: grid-hitta;
   }
-  /* 
-  .head-section {
-    grid-area: contact-head;
-  }
-
-  #contact-form-section {
-    grid-area: kontakt-form;
-
-    form {
-      width: 100%;
-    }
-  }
-
-  #contact-section-container {
-    grid-area: kontakt-telefon;
-
-    #grid-tele {
-      margin: 20px 20px 0px 20px;
-    }
-  }
-
-  #grid-3x {
-    grid-area: kontakt-3x;
-  }
-
-  #grid-hitta {
-    grid-area: grid-hitta;
-
-    #section-map {
-<<<<<<< HEAD
-      width: 100%;
-      margin-top: 14px;
-      margin-bottom: 20px;
-=======
-      //width: 100%;
->>>>>>> master
-
-      iframe {
-       // width: 100%;
-      //  height: 400px;
-      }
-    }
-
-    #grid-org {
-    }
-  }
-} */
   /** Om Oss **/
   .grid-container-om-oss {
     display: -ms-grid;
