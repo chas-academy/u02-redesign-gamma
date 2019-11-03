@@ -26,7 +26,7 @@
         </a>
       </li>
 
-      <li class="main-menu-li-links">
+      <li class="main-menu-li-links" id="sok-li-links">
         <nav id="nav-search" aria-label="Sökmeny">
           <input type="checkbox" id="toggle" role="button" aria-haspopup="true" />
           <label for="toggle" id="toggle-menu">
@@ -37,7 +37,7 @@
           </label>
 
           <ul class="search-menu-ul">
-            <div id="opacity-cover" aria-hidden="true"></div>
+            <div id="opacity-cover" aria-hidden="true">
             <form role="form" aria-label="Sök på hemsidan">
               <input id="user-search" name="search" placeholder="Sök..." type="search" aria-required="true"
                 aria-label="Sökfält" />
@@ -50,6 +50,7 @@
               <input id="menu-submit-close" type="submit" value="stäng" name="close-form" role="button"
                 aria-required="false" aria-label="Stäng sökmeny" />
             </form>
+          </div>
           </ul>
         </nav>
       </li>

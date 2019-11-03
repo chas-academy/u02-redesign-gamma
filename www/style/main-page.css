@@ -9,7 +9,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-area: c;
 }
 
 @media (min-width: 1020px) {
@@ -116,13 +115,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 @media (min-width: 1020px) {
   .main-menu-nav .main-menu-ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 280px 120px 1fr;
-        grid-template-columns: 280px 120px 1fr;
-    -ms-grid-rows: 1fr 40px;
-        grid-template-rows: 1fr 40px;
-        grid-template-areas: "a b c" "d d d";
+    margin-bottom: 80px;
   }
 }
 
@@ -134,11 +127,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 @media (min-width: 1020px) {
   .main-menu-nav #main-menu-li-logo {
-    /*position: relative;
-                left: auto;
-                top: auto;*/
     display: inline-block;
-    grid-area: a;
   }
 }
 
@@ -148,7 +137,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 @media (min-width: 1020px) {
   .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor {
-    /*position: relative;*/
     display: inline-block;
   }
 }
@@ -183,7 +171,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
     text-align: center;
     padding-right: 10px;
     width: 60px;
-    grid-area: b;
   }
 }
 
@@ -321,7 +308,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 @media (min-width: 1020px) {
   #nav-menu {
     display: inline-block;
-    grid-area: d;
   }
 }
 
@@ -471,12 +457,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
   z-index: 1;
 }
 
-@media (min-width: 1020px) {
-  #nav-search {
-    display: inline-block;
-  }
-}
-
 .burger-menu-image {
   width: 50px;
   margin-bottom: 6px;
@@ -559,10 +539,14 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 @media (min-width: 1020px) {
   .main-menu-li-links {
-    grid-area: b;
     display: inline-block;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  .main-menu-li-links#sok-li-links {
+    position: absolute;
+    top: 0;
+    right: 330px;
   }
 }
 
@@ -2636,13 +2620,9 @@ footer .bottom-footer {
     grid-area: grid-hitta;
 
     #section-map {
-<<<<<<< HEAD
       width: 100%;
       margin-top: 14px;
       margin-bottom: 20px;
-=======
-      //width: 100%;
->>>>>>> master
 
       iframe {
        // width: 100%;

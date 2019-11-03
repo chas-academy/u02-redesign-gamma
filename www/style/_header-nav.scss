@@ -4,7 +4,6 @@
   background-color: $primary-color;
   display: flex;
   justify-content: center;
-  grid-area: c;
 
   @include tablet-and-up {
     top: 10px;
@@ -82,13 +81,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
     padding: 20px;
 
     @include tablet-and-up {
-      // height: 400px;
-      display: grid;
-      grid-template-columns: 280px 120px 1fr;
-      grid-template-rows: 1fr 40px;
-      grid-template-areas:
-        "a b c"
-        "d d d";
+    margin-bottom: 80px;
     }
   }
 
@@ -98,18 +91,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
     top: 20px;
 
     @include tablet-and-up {
-      /*position: relative;
-                left: auto;
-                top: auto;*/
       display: inline-block;
-      grid-area: a;
     }
 
     #kontakt-logo-anchor {
       position: absolute;
 
       @include tablet-and-up {
-        /*position: relative;*/
         display: inline-block;
       }
 
@@ -140,8 +128,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
       text-align: center;
       padding-right: 10px;
       width: 60px;
-      grid-area: b;
-      //height: 120px;
     }
   }
 }
@@ -288,7 +274,6 @@ input:focus:not(:checked) + #toggle-menu-2 {
 #nav-menu {
   @include tablet-and-up {
     display: inline-block;
-    grid-area: d;
   }
 
   .burger-menu-ul {
@@ -424,7 +409,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-search {
   @include tablet-and-up {
-    display: inline-block;
+    //display: inline-block;
+    //position: relative;
+    //top: 0;
+    //right: 380px;
+    //top: 0;
+    //left: 600px;
   }
 }
 .burger-menu-image {
@@ -496,9 +486,14 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .main-menu-li-links {
   @include tablet-and-up {
-    grid-area: b;
     display: inline-block;
-    justify-self: center;
+    justify-self: center;     
+
+    &#sok-li-links {
+      position: absolute;
+      top: 0;
+      right: 330px;
+    }
   }
 }
 
