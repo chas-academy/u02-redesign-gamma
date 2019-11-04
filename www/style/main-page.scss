@@ -15,6 +15,14 @@ $green-box-color: #368f5f; // green
 
 // Media query mixins
 $desktop-width: 1020px;
+$mobile-width: 411px;
+
+@mixin mobile-view {
+  @media (max-width: #{mobile-width}) {
+    @content;
+  }
+}
+
 
 @mixin tablet-and-up {
   @media (min-width: #{$desktop-width}) {

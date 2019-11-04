@@ -575,6 +575,40 @@ input:focus:not(:checked) + #toggle-menu-2 {
   }
 }
 
+/** 320px **/
+@media (max-width: 380px) {
+  .main-menu-ul {
+    margin-bottom: 125px;
+  }
+  .burger-menu-ul {
+    position: relative;
+    left: -220px;
+    width: auto;
+    left: auto;
+  }
+  .burger-menu-ul li {
+    line-height: 32px;
+    font-size: 1.2rem;
+  }
+  #burger-li-links {
+    position: absolute;
+    margin-top: 60px;
+    right: 0;
+  }
+  #nav-menu {
+    width: auto;
+    left: auto;
+  }
+  #sok-li-links {
+    position: absolute;
+    margin-top: 60px;
+    right: 65px;
+  }
+  .top-links-li {
+    margin: 0px;
+  }
+}
+
 /*** 
 DEFAULT STYLING 
 ***/
