@@ -136,7 +136,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
-  max-width: 260px;
+  max-width: 250px;
 }
 
 .main-menu-nav li {
@@ -151,7 +151,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 .main-menu-nav .main-menu-li-links {
   width: 50px;
-  margin-right: 8px;
+  margin-right: 0px;
   margin-bottom: 8px;
   text-align: center;
 }
