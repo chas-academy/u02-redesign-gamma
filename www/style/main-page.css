@@ -27,7 +27,7 @@
 
 .top-links-nav .top-links-ul .top-links-li {
   display: inline-block;
-  margin: 0px 20px;
+  margin: 0px 10px 0px 10px;
 }
 
 @media (min-width: 1020px) {
@@ -136,7 +136,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
 }
 
 .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
-  max-width: 260px;
+  max-width: 220px;
+}
+
+@media (min-width: 1020px) {
+  .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
+    max-width: 260px;
+  }
 }
 
 .main-menu-nav li {
@@ -472,6 +478,16 @@ input:focus:not(:checked) + #toggle-menu-2 {
 #toggle-menu {
   display: block;
   height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1020px) {
@@ -493,6 +509,16 @@ input:focus:not(:checked) + #toggle-menu-2 {
 #toggle-menu-2 {
   display: block;
   height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1020px) {

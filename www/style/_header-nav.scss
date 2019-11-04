@@ -18,7 +18,7 @@
 
     .top-links-li {
       display: inline-block;
-      margin: 0px 20px;
+      margin: 0px 10px 0px 10px;
 
       @include tablet-and-up {
         margin: 0px 6px;
@@ -98,7 +98,11 @@ input:focus:not(:checked) + #toggle-menu-2 {
       }
 
       .kontakt-logo-img {
-        max-width: 260px;
+        max-width: 220px;
+
+        @include tablet-and-up {
+            max-width: 260px;
+        }
       }
     }
   }
@@ -433,6 +437,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
 #toggle-menu {
   display: block;
   height: 75px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   @include tablet-and-up {
     display: flex;
     flex-flow: row;
@@ -444,6 +451,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
 #toggle-menu-2 {
   display: block;
   height: 75px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   @include tablet-and-up {
     display: none;
   }
