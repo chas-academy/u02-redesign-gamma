@@ -15,16 +15,10 @@ $green-box-color: #368f5f; // green
 
 // Media query mixins
 $desktop-width: 1020px;
-$small-mobile-width: 385px;
+$small-mobile-width: 375px;
 
 @mixin tablet-and-up {
   @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$desktop-width}) {
     @content;
   }
 }
@@ -439,7 +433,7 @@ i {
 }
 
 a.to-top-btn {
-  @include mobile {
+  @include tablet-and-up {
     display: none;
   }
 }
@@ -508,9 +502,15 @@ CONTENT USED ON MULTIPLE PAGES
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  li a {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  li {
+    @include small-mobile {
+      margin-left: 0px;
+    }
+
+    a {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -1208,10 +1208,6 @@ footer {
       grid-area: aktuellt;
       margin-right: 0px;
       margin-top: 0;
-
-      iframe {
-        //width: 600px;
-      }
     }
   }
 
@@ -1229,16 +1225,6 @@ footer {
         margin-top: 0px;
       }
     }
-
-    /*#top-knapp {
-      grid-area: aside;
-      height: 78px;
-    }*/
-
-    /*.pos-right {
-      grid-area: aside;
-      height: 78px;
-    }*/
 
     .aktuellt {
       grid-area: aktuellt;
@@ -1296,11 +1282,6 @@ footer {
 
       #grid-hitta {
         grid-area: grid-hitta;
-
-        #section-map {
-          iframe {
-          }
-        }
       }
 
       #grid-org {
