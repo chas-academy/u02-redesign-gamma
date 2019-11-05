@@ -113,6 +113,18 @@ input:focus:not(:checked) + #toggle-menu-2 {
   }
 }
 
+@media (max-width: 321px) {
+  .main-menu-nav .main-menu-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .main-menu-nav #main-menu-li-logo {
   position: absolute;
   left: 20px;
@@ -142,6 +154,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
 @media (min-width: 1020px) {
   .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
     max-width: 260px;
+  }
+}
+
+@media (max-width: 321px) {
+  .main-menu-nav #main-menu-li-logo #kontakt-logo-anchor .kontakt-logo-img {
+    max-width: 180px;
   }
 }
 
