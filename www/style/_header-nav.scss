@@ -198,6 +198,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
       cursor: default;
     }
 
+    @media (max-height: 600px) {
+      top: 150px;
+    }
+
     #close-label {
       color: white;
       padding: 0;
@@ -286,6 +290,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
       cursor: default;
     }
 
+    @media (max-height: 600px) {
+      top: 20px;
+    }
+
     @include tablet-and-up {
       display: flex;
       top: 115px;
@@ -356,6 +364,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
       :hover {
         cursor: pointer;
+      }
+
+      @media (max-height: 700px) {
+        line-height: 24px !important;
       }
 
       @include tablet-and-up {
