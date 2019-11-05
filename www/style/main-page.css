@@ -593,7 +593,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   #burger-li-links {
     position: absolute;
     margin-top: 60px;
-    right: 0;
+    right: 60px;
   }
   #nav-menu {
     width: auto;
@@ -602,10 +602,13 @@ input:focus:not(:checked) + #toggle-menu-2 {
   #sok-li-links {
     position: absolute;
     margin-top: 60px;
-    right: 65px;
+    right: 135px;
   }
   .top-links-li {
-    margin: 0px;
+    margin: 0px 2px !important;
+  }
+  .social li {
+    margin-left: 0px !important;
   }
 }
 
