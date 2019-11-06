@@ -222,6 +222,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
       right: 32px;
       top: 70px;
       font-weight: normal;
+      font-size: 1rem;
 
       #img-close-search {
         height: 45px;
@@ -239,11 +240,9 @@ input:focus:not(:checked) + #toggle-menu-2 {
       background: transparent;
       margin-top: 16px;
       width: 90px;
-      //border: 1px solid rgb(250, 250, 250);
 
       &:hover {
         cursor: pointer;
-        //border: 1px solid rgb(255, 255, 255);
         @include tablet-and-up {
           font-weight: normal;
         }
@@ -336,7 +335,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
       font-weight: normal;
       width: 55px;
       height: 72px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 0;
 
       .img-close {

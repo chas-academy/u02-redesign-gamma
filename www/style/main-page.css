@@ -276,6 +276,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   right: 32px;
   top: 70px;
   font-weight: normal;
+  font-size: 1rem;
 }
 
 .search-menu-ul form #close-label #img-close-search {
@@ -394,7 +395,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
   font-weight: normal;
   width: 55px;
   height: 72px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 0;
 }
 
@@ -775,12 +776,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
 }
 
 .head-section a {
@@ -823,12 +818,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
 }
 
 .section a {
@@ -866,12 +855,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: whitesmoke;
 }
 
@@ -910,12 +893,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #bfe1f2;
 }
 
@@ -954,12 +931,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #c4c4c4;
 }
 
@@ -998,12 +969,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #368f5f;
   color: white;
 }
@@ -1051,12 +1016,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #ffffc6;
 }
 
@@ -1095,12 +1054,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #ffff00;
 }
 
@@ -1139,12 +1092,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #c4c4c4;
 }
 
@@ -1183,12 +1130,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #2b2b2b;
   color: white;
 }
@@ -1228,12 +1169,6 @@ DEFAULT STYLING PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #101012;
   color: white;
 }
@@ -1489,7 +1424,6 @@ i {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   position: fixed;
-  bottom: 0;
   right: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1501,7 +1435,6 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 3em 3em 0;
   padding: 0.25em;
   width: 50px;
   height: 50px;
@@ -1524,9 +1457,17 @@ i {
   color: white;
 }
 
+a.to-top-btn {
+  position: absolute;
+  bottom: unset;
+  margin: 3.2em 1em 1em 0;
+}
+
 @media (min-width: 1020px) {
   a.to-top-btn {
-    display: none;
+    position: fixed;
+    margin: 0 3em 3em 0;
+    bottom: 0;
   }
 }
 
@@ -1785,12 +1726,6 @@ STYLING: SPECIFIC PAGES
   padding: 16px;
   background-color: white;
   margin: 0px 20px 20px 20px;
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
   background-color: #bfe1f2;
 }
 
@@ -2253,9 +2188,11 @@ CALENDAR PROPERTIES
 
 .epale-image a {
   background-image: url("../media/eu_flag.png");
-  background-position-y: 28px;
-  background-position-x: 25px;
-  background-size: 10%;
+  background-position-y: 10px;
+  background-position-x: 5px;
+  background-size: 80px;
+  margin-left: 20px;
+  padding-left: 80px;
 }
 
 .ya-image {
@@ -2305,6 +2242,7 @@ CALENDAR PROPERTIES
   background-position-x: 30px;
   background-position-y: 17px;
   color: #101012;
+  padding-left: 100px;
 }
 
 /***
