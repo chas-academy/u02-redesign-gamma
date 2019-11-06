@@ -110,7 +110,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   line-height: 0;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 6px 20px;
 }
 
 @media (min-width: 1020px) {
@@ -273,10 +273,10 @@ input:focus:not(:checked) + #toggle-menu-2 {
   color: white;
   padding: 0;
   position: fixed;
-  right: 32px;
+  right: 38px;
   top: 70px;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .search-menu-ul form #close-label #img-close-search {
@@ -390,12 +390,12 @@ input:focus:not(:checked) + #toggle-menu-2 {
 
 #nav-menu .burger-menu-ul #close-menu-icon {
   position: fixed;
-  right: 27px;
+  right: 35px;
   top: 15px;
   font-weight: normal;
   width: 55px;
   height: 72px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 0;
 }
 
