@@ -110,7 +110,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   line-height: 0;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 @media (min-width: 1020px) {

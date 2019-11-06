@@ -78,7 +78,7 @@ input:focus:not(:checked) + #toggle-menu-2 {
     flex-direction: row;
     justify-content: flex-end;
     line-height: 0;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 
     @include tablet-and-up {
       margin-bottom: 100px;
