@@ -15,6 +15,7 @@ $green-box-color: #368f5f; // green
 
 // Media query mixins
 $desktop-width: 1020px;
+$small-mobile-width: 375px;
 
 @mixin tablet-and-up {
   @media (min-width: #{$desktop-width}) {
@@ -22,8 +23,8 @@ $desktop-width: 1020px;
   }
 }
 
-@mixin mobile {
-  @media (max-width: #{$desktop-width}) {
+@mixin small-mobile {
+  @media (max-width: #{$small-mobile-width}) {
     @content;
   }
 }
@@ -171,12 +172,7 @@ DEFAULT STYLING PAGES
   h4 {
     border-bottom: 1px solid #101010;
   }
-  /*&:last-of-type {
-    margin-bottom: 20px;
-  }
-  &:first-of-type {
-    margin-top: 0px;
-  }*/
+
   li + a {
     margin-top: 20px;
   }
@@ -408,13 +404,11 @@ i {
 .to-top-btn {
   transition: all 0.2s ease-out;
   position: fixed;
-  bottom: 0;
   right: 0;
   display: inline-flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  margin: 0 3em 3em 0;
   padding: 0.25em;
   width: 50px;
   height: 50px;
@@ -432,8 +426,14 @@ i {
 }
 
 a.to-top-btn {
-  @include mobile {
-    display: none;
+  position: absolute;
+  bottom: unset;
+  margin: 3.2em 1em 1em 0;
+
+  @include tablet-and-up {
+    position: fixed;
+    margin: 0 3em 3em 0;
+    bottom: 0;
   }
 }
 
@@ -501,9 +501,15 @@ CONTENT USED ON MULTIPLE PAGES
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  li a {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  li {
+    @include small-mobile {
+      margin-left: 0px;
+    }
+
+    a {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -971,9 +977,11 @@ CALENDAR PROPERTIES
 
   a {
     background-image: url("../media/eu_flag.png");
-    background-position-y: 28px;
-    background-position-x: 25px;
-    background-size: 10%;
+    background-position-y: 10px;
+    background-position-x: 5px;
+    background-size: 80px;
+    margin-left: 20px;
+    padding-left: 80px;
   }
 }
 
@@ -986,6 +994,8 @@ CALENDAR PROPERTIES
     background-position-x: 30px;
     background-position-y: 17px;
     color: $black-text;
+    padding-left: 100px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1201,10 +1211,6 @@ footer {
       grid-area: aktuellt;
       margin-right: 0px;
       margin-top: 0;
-
-      iframe {
-        //width: 600px;
-      }
     }
   }
 
@@ -1222,16 +1228,6 @@ footer {
         margin-top: 0px;
       }
     }
-
-    /*#top-knapp {
-      grid-area: aside;
-      height: 78px;
-    }*/
-
-    /*.pos-right {
-      grid-area: aside;
-      height: 78px;
-    }*/
 
     .aktuellt {
       grid-area: aktuellt;
@@ -1289,11 +1285,6 @@ footer {
 
       #grid-hitta {
         grid-area: grid-hitta;
-
-        #section-map {
-          iframe {
-          }
-        }
       }
 
       #grid-org {
